@@ -1,15 +1,40 @@
 import React from 'react'
 import {PokemonCardContainer, PokemonCardImg} from './PokemonCardStyled'
+import {FlexRow} from '../../commonStyled'
 
-const PokemonCard = ({pokemon}) => {
-  const imagePokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.nationalPokedexNum}.png`
+function capitalize(name){
+  return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
+const PokemonCard = ({urlPokemon, index}) => {
+  const [dataPokemon, setDataPokemon] = React.useState([])
+  const [imagePokemon, setImagePokemon] = React.useState([])
+  const [loading, setLoading] = React.useState(true)
+
+  React.useEffect(()=>{
+    fetch(urlPokemon)
+      .then((response)=>response.json())
+      .then(data=> {
+        setDataPokemon(data)
+        setImagePokemon(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`)
+      })
+      .catch((error)=>console.log(error))
+      .finally(()=> setLoading(false))
+  },[urlPokemon])
+
+  console.log(dataPokemon)
 
   return (
     <PokemonCardContainer>
-      <p>{pokemon.hisuiPokedexNum}</p>
-      <PokemonCardImg alt={pokemon.name} src={imagePokemon} />
-      <div>
-        <p>{pokemon.name}</p>
+      {loading && <p>Loading...</p>}
+      {!loading &&
+        <FlexRow>
+          <p>{index}</p>
+          <PokemonCardImg alt={dataPokemon.name} src={imagePokemon} />
+          <p>{capitalize(dataPokemon.name)}</p>
+        </FlexRow>
+      }
+      {/*<div>
         <p>{pokemon.type}</p>
         <p>Time: {pokemon.time}</p>
         <p>Location: {pokemon.location}</p>
@@ -22,7 +47,7 @@ const PokemonCard = ({pokemon}) => {
             {pokemon.evolution.feature && <p>Feature: {pokemon.evolution.feature}</p>}
           </div>
         }
-      </div>
+      </div>*/}
     </PokemonCardContainer>
   )
 }

@@ -5,8 +5,10 @@ export const PokemonCardContainer = styled.div `
   background: lightyellow;
   border: 1px solid dimgrey;
   display: flex;
+  gap: 0.5rem;
   margin: 0.5rem;
   padding: 1rem;
+  width: 100%
 `
 
 export const PokemonCardImg = styled.img `

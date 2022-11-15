@@ -753,6 +753,20 @@ export const pokemons = [
   },
 ]
 
+export const backgroundImage = 'https://legends.pokemon.com/assets/home/bg-dp-desktop.jpg'
+
+export const finalBanner = 'https://legends.pokemon.com/assets/home/home_trailer_thumb.jpg'
+
+export const pokemonLogo = 'https://legends.pokemon.com/en-us/assets/arceus-logo-large.png'
+
+export const areasLogos = {
+  praderaObsidiana: 'https://images.wikidexcdn.net/mwuploads/wikidex/0/0a/latest/20220722112256/Pradera_Obsidiana_icono.png',
+  pantanalCarmesi: 'https://images.wikidexcdn.net/mwuploads/wikidex/8/80/latest/20220722112246/Pantanal_Carmes%C3%AD_icono.png',
+  costaCobalto: 'https://images.wikidexcdn.net/mwuploads/wikidex/a/a3/latest/20220722112227/Costa_Cobalto_icono.png',
+  laderaCorona: 'https://images.wikidexcdn.net/mwuploads/wikidex/0/01/latest/20220722112236/Ladera_Corona_icono.png',
+  tundraAlba: 'https://images.wikidexcdn.net/mwuploads/wikidex/8/82/latest/20220722112318/Tundra_Alba_icono.png',
+}
+
 const todoPokedex = [
   // pokemon ajenos
   {

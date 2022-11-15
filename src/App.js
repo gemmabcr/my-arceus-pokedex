@@ -1,17 +1,15 @@
-import {pokemons} from './data'
-import PokemonCard from "./components/PokemonCard/PokemonCard";
+import React from 'react'
+import {FinalBannerImg, MainContainer} from './commonStyled'
+import {finalBanner} from './data'
+import PokemonList from './pages/PokemonList/PokemonList'
 
-function App() {
-  const sortedArray = pokemons.sort((a,b) => a.hisuiPokedexNum - b.hisuiPokedexNum)
-  console.log(sortedArray)
+const App = () => {
   return (
-    <div>
-      <h1>This is my tracking list of my arceus pokedex</h1>
-      <div className='pokemonList'>
-        {sortedArray.map(pokemon => <PokemonCard pokemon={pokemon} key={pokemon.hisuiPokedexNum} />)}
-      </div>
-    </div>
-  );
+    <MainContainer>
+      <PokemonList />
+      <FinalBannerImg alt='Thanks for visiting us' src={finalBanner} />
+    </MainContainer>
+  )
 }
 
 export default App;
