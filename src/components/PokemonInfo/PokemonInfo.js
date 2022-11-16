@@ -2,6 +2,7 @@ import React from 'react'
 import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
 import { FlexRow } from '../../commonStyled'
+import PokemonEvolutionInfo from "../PokemonEvolutionInfo/PokemonEvolutionInfo";
 
 function capitalize(name) {
   return name.charAt(0).toUpperCase() + name.slice(1)
@@ -29,21 +30,24 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
     <div>
       {loading && <p>Loading...</p>}
       {!loading &&
-        <div>
+        <FlexRow>
           <PokemonCardImg
             alt={dataPokemon.name}
             src={imagePokemon}
           />
-          <p>{capitalize(dataPokemon.name)}</p>
-          <FlexRow>
-            {typeDataPokemon.map(item=>
-              <PokemonTypeInfo
-                key={item.slot}
-                urlTypePokemon={item.type.url}
-              />
-            )}
-          </FlexRow>
-        </div>
+          <div>
+            <p>{capitalize(dataPokemon.name)}</p>
+            <FlexRow>
+              {typeDataPokemon.map(item=>
+                <PokemonTypeInfo
+                  key={item.slot}
+                  urlTypePokemon={item.type.url}
+                />
+              )}
+            </FlexRow>
+            <PokemonEvolutionInfo urlEvolutionData={evolutionPokemonData.url} />
+          </div>
+        </FlexRow>
       }
     </div>
   )

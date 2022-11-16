@@ -1,5 +1,5 @@
 import React from 'react'
-import {PokemonListContainer, LogoArceus} from './PokemonListStyled'
+import {PokemonListContainer, LogoArceus, PokemonListContent} from './PokemonListStyled'
 import {FlexRow} from '../../commonStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import {areasLogos, pokemonLogo} from '../../data'
@@ -29,7 +29,7 @@ const PokemonList = () => {
       </FlexRow>
       {loading && <p>Loading... </p>}
       {!loading &&
-        <div className='pokemonList'>
+        <PokemonListContent>
           {hisuiPokedex.map(pokemon =>
             <PokemonCard
               key={pokemon.entry_number}
@@ -37,7 +37,7 @@ const PokemonList = () => {
               index={pokemon.entry_number}
             />
           )}
-        </div>
+        </PokemonListContent>
       }
     </PokemonListContainer>
   )
