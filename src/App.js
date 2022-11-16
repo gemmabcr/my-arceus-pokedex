@@ -1,12 +1,12 @@
 import React from 'react'
-import {FinalBannerImg, MainContainer} from './commonStyled'
-import {finalBanner} from './data'
-import PokemonList from './pages/PokemonList/PokemonList'
+import Router from './application/Router'
+import { FinalBannerImg, MainContainer } from './commonStyled'
+import { finalBanner } from './data'
 
 const App = () => {
   return (
     <MainContainer>
-      <PokemonList />
+      <Router />
       <FinalBannerImg alt='Thanks for visiting us' src={finalBanner} />
     </MainContainer>
   )

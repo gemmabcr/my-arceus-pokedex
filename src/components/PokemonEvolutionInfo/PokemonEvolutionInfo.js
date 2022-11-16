@@ -24,7 +24,7 @@ const PokemonEvolutionInfo = ({urlEvolutionData, namePokemon}) => {
       .finally(()=>{setLoading(false)})
   }, [urlEvolutionData])
 
-  console.log(evolutionData)
+  //console.log(evolutionData)
 
   return (
     <Fragment>
