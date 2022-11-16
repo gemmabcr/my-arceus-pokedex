@@ -2,11 +2,8 @@ import React from 'react'
 import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
 import { FlexRow } from '../../commonStyled'
+import { capitalize } from '../../commonFunctions'
 import PokemonEvolutionInfo from "../PokemonEvolutionInfo/PokemonEvolutionInfo";
-
-function capitalize(name) {
-  return name.charAt(0).toUpperCase() + name.slice(1)
-}
 
 const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
@@ -45,7 +42,9 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
                 />
               )}
             </FlexRow>
-            <PokemonEvolutionInfo urlEvolutionData={evolutionPokemonData.url} />
+            {evolutionPokemonData && evolutionPokemonData.url &&
+              <PokemonEvolutionInfo namePokemon={dataPokemon.name} urlEvolutionData={evolutionPokemonData.url} />
+            }
           </div>
         </FlexRow>
       }
