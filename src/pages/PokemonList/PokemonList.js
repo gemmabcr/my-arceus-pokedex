@@ -30,8 +30,12 @@ const PokemonList = () => {
       {loading && <p>Loading... </p>}
       {!loading &&
         <div className='pokemonList'>
-          {hisuiPokedex.map((pokemon,index) =>
-            <PokemonCard key={pokemon.entry_number} urlPokemon={pokemon.pokemon_species.url} index={index} />
+          {hisuiPokedex.map(pokemon =>
+            <PokemonCard
+              key={pokemon.entry_number}
+              urlPokemon={pokemon.pokemon_species.url}
+              index={pokemon.entry_number}
+            />
           )}
         </div>
       }

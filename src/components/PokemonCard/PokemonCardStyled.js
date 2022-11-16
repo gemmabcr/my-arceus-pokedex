@@ -12,5 +12,6 @@ export const PokemonCardContainer = styled.div `
 `
 
 export const PokemonCardImg = styled.img `
+  max-width: 80px;
   object-fit: contain;
 `
