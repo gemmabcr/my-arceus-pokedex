@@ -4,16 +4,16 @@ import { PokemonListContainer, LogoArceus, PokemonListContent } from './PokemonL
 import { FlexRow } from '../../commonStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import {areasLogos, pokemonLogo} from '../../data'
+import {PokeService} from "../../service/pokeService";
 
 const PokemonList = () => {
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
   const [loading, setLoading] = React.useState(true)
 
   React.useEffect(()=>{
-    const POKEDEX_API = 'https://pokeapi.co/api/v2/pokedex/30/'
-    fetch(POKEDEX_API)
-      .then((response) => response.json())
-      .then(data => setHisuiPokedex(data.pokemon_entries))
+    const pokeService = PokeService.getInstance()
+    pokeService.getPokemons()
+      .then(data => setHisuiPokedex(data))
       .catch((error)=>console.log(error))
       .finally(()=>setLoading(false))
   },[])

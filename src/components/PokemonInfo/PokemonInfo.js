@@ -4,6 +4,7 @@ import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
 import { FlexRow } from '../../commonStyled'
 import { capitalize } from '../../commonFunctions'
 import PokemonEvolutionInfo from "../PokemonEvolutionInfo/PokemonEvolutionInfo";
+import {PokeService} from "../../service/pokeService";
 
 const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
@@ -12,11 +13,10 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
   const [loading, setLoading] = React.useState(true)
 
   React.useEffect(()=>{
-    fetch(urlDataPokemon)
-      .then((response)=>response.json())
+    PokeService.getInstance().getPokemon(urlDataPokemon)
       .then(data=> {
-        setDataPokemon(data)
-        setImagePokemon(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`)
+        setDataPokemon(data.data)
+        setImagePokemon(data.image)
         setTypeDataPokemon(data.types)
       })
       .catch((error)=>console.log(error))
