@@ -1,4 +1,5 @@
-import {pokemons} from '../data'
+import { pokemons, todoPokedex } from '../data'
+
 let instance = null
 
 export class PokeService {
@@ -43,6 +44,8 @@ export class PokeService {
   }
 
   getAddedData(id) {
-    return pokemons.find(pokemon => pokemon.id === id)
+    const pokemon = pokemons.find(pokemon => pokemon.id === id)
+    pokemon['toDos'].map(todo => todo.id = todoPokedex.find(tarea => tarea.id === todo.id))
+    return pokemon
   }
 }
