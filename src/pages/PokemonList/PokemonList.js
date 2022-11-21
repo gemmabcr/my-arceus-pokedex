@@ -30,7 +30,11 @@ const PokemonList = () => {
       {!loading &&
         <PokemonListContent>
           {hisuiPokedex.map(pokemon =>
-            <Link key={pokemon.entry_number} to={`/pokemon/${pokemon.entry_number}`}>
+            <Link
+              key={pokemon.entry_number}
+              to={`/pokemon/${pokemon.entry_number}`}
+              state={{ urlPokemon: pokemon.pokemon_species.url, index: pokemon.entry_number }}
+            >
               <PokemonCard
                 urlPokemon={pokemon.pokemon_species.url}
                 index={pokemon.entry_number}
