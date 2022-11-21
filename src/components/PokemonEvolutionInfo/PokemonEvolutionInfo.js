@@ -10,7 +10,7 @@ import {
   getFirstEvolutionLevel
 } from './EvolutionFunctions'
 import { FlexRow } from '../../commonStyled'
-import { capitalize } from '../../commonFunctions'
+import { formatedName } from '../../commonFunctions'
 
 const PokemonEvolutionInfo = ({urlEvolutionData, namePokemon}) => {
   const [loading, setLoading] = React.useState(true)
@@ -53,7 +53,7 @@ const PokemonEvolutionInfo = ({urlEvolutionData, namePokemon}) => {
               <p>Evoluciona a</p>
               {evolutionData.evolves_to.map((evolution, i) =>
                 <FlexRow key={i}>
-                  <p>{capitalize(evolution.species.name)}</p>
+                  <p>{formatedName(evolution.species.name)}</p>
                   <p>Forma: {evolution.evolution_details[0].trigger.name}</p>
                 </FlexRow>
               )}

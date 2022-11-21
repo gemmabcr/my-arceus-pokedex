@@ -1,4 +1,4 @@
-import { capitalize } from '../../commonFunctions'
+import { formatedName } from '../../commonFunctions'
 
 export function checkSimpleEvolution(data) {
   return data.evolves_to.length === 1 && data.evolves_to[0] && data.evolves_to[0].species
@@ -25,9 +25,9 @@ export function getFirstEvolutionLevel(data) {
 }
 
 export function getFirstEvolution(data) {
-  return capitalize(data.evolves_to[0].species.name)
+  return formatedName(data.evolves_to[0].species.name)
 }
 
 export function getSecondEvolution(data) {
-  return capitalize(data.evolves_to[0].evolves_to[0].species.name)
+  return formatedName(data.evolves_to[0].evolves_to[0].species.name)
 }

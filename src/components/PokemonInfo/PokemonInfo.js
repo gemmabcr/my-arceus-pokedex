@@ -2,7 +2,7 @@ import React from 'react'
 import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
 import { FlexRow } from '../../commonStyled'
-import { capitalize } from '../../commonFunctions'
+import { formatedName } from '../../commonFunctions'
 import PokemonEvolutionInfo from '../PokemonEvolutionInfo/PokemonEvolutionInfo'
 import { PokeService } from '../../service/pokeService'
 
@@ -33,7 +33,7 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData, locations, specialCo
             src={imagePokemon}
           />
           <div>
-            <p>{capitalize(dataPokemon.name)}</p>
+            <p>{formatedName(dataPokemon.name)}</p>
             <FlexRow>
               {typeDataPokemon.map(item=>
                 <PokemonTypeInfo
