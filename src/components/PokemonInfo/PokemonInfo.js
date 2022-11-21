@@ -3,10 +3,10 @@ import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
 import { FlexRow } from '../../commonStyled'
 import { capitalize } from '../../commonFunctions'
-import PokemonEvolutionInfo from "../PokemonEvolutionInfo/PokemonEvolutionInfo";
-import {PokeService} from "../../service/pokeService";
+import PokemonEvolutionInfo from '../PokemonEvolutionInfo/PokemonEvolutionInfo'
+import { PokeService } from '../../service/pokeService'
 
-const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
+const PokemonInfo = ({urlDataPokemon, evolutionPokemonData, locations, specialConditions}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
   const [imagePokemon, setImagePokemon] = React.useState([])
   const [typeDataPokemon, setTypeDataPokemon] = React.useState([])
@@ -45,6 +45,10 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData}) => {
             {evolutionPokemonData && evolutionPokemonData.url &&
               <PokemonEvolutionInfo namePokemon={dataPokemon.name} urlEvolutionData={evolutionPokemonData.url} />
             }
+            {/*TODO: fix that
+            {locations !== undefined && locations.map(location => <p key={location.id}>Location: {location.name}</p>)}
+            {specialConditions.time.map(time => <p key={time}>Time: {time}</p>)}
+            {specialConditions.weather.map(weather => <p key={weather}>Weather: {weather}</p>)}*/}
           </div>
         </FlexRow>
       }

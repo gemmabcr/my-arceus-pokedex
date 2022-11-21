@@ -1,3 +1,4 @@
+import {pokemons} from '../data'
 let instance = null
 
 export class PokeService {
@@ -13,9 +14,13 @@ export class PokeService {
     return await response.json();
   }
 
-  async getPokemonEvolution(urlPokemon) {
+  async getPokemonData(urlPokemon, index) {
     const response = await this.sendRequest(urlPokemon)
-    return {evolution : response.evolution_chain, hisuiPokemon: this.checkHusuiPokemon(response.varieties)}
+    return {
+      evolution : response.evolution_chain,
+      hisuiPokemon: this.checkHusuiPokemon(response.varieties),
+      addedData: this.getAddedData(index)
+    }
   }
 
   checkHusuiPokemon(varieties){
@@ -37,7 +42,7 @@ export class PokeService {
     return {data, image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`, types: data.types}
   }
 
-  getTareas(id) {
-
+  getAddedData(id) {
+    return pokemons.find(pokemon => pokemon.id === id)
   }
 }
