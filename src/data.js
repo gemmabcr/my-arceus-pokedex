@@ -19,6 +19,7 @@ export const areas = [
       {id: 2, name: 'Bosque Recóndito'},
       {id: 3, name: 'Campo Aromaflor'},
       {id: 4, name: 'Cascada Obsidiana'},
+      {id: 17, name: 'Caverna Veraz'},
       {id: 5, name: 'Colina del Anhelo'},
       {id: 6, name: 'Foresta Funesta'},
       {id: 7, name: 'Gruta Pirita'},
@@ -30,13 +31,112 @@ export const areas = [
       {id: 13, name: 'Presa del Estuario'},
       {id: 14, name: 'Puente Erosionado'},
       {id: 15, name: 'Senda del Venado'},
-      {id: 16, name: 'Vereda del Viento'},
+      {id: 16, name: 'Vereda del Viento'}
     ],
   },
-  {id: 1, name: 'Pantanal Carmesí'},
-  {id: 2, name: 'Costa Cobalto'},
-  {id: 3, name: 'Ladera Corona'},
-  {id: 4, name: 'Tundra Alba'},
+  {
+    id: 1,
+    name: 'Pantanal Carmesí',
+    locations: [
+      {id: 0, name: 'Arena del Escenario'},
+      {id: 1, name: 'Banco del Juicio'},
+      {id: 2, name: 'Caverna del Valor'},
+      {id: 3, name: 'Ciénaga Bermeja'},
+      {id: 4, name: 'Ciénaga Bocazas'},
+      {id: 5, name: 'Ladera Derrumbe'},
+      {id: 6, name: 'Lago Valor'},
+      {id: 7, name: 'Llanura Diamante'},
+      {id: 8, name: 'Loma Lodosa'},
+      {id: 9, name: 'Palestra Ursa'},
+      {id: 10, name: 'Poblado Diamante'},
+      {id: 11, name: 'Pradera Aleteo'},
+      {id: 12, name: 'Pradera Áurea'},
+      {id: 13, name: 'Prado Erióforo'},
+      {id: 14, name: 'Rellano Nebuloso'},
+      {id: 15, name: 'Ruinas de la Niebla'},
+      {id: 16, name: 'Ruinas Sosiego'}
+    ]
+  },
+  {
+    id: 2,
+    name: 'Costa Cobalto',
+    locations: [
+      {id: 0, name: 'Albuferas Chapuzón'},
+      {id: 1, name: 'Altar Domo Lava'},
+      {id: 2, name: 'Arboleda Tétrica'},
+      {id: 3, name: 'Arena del Magma'},
+      {id: 4, name: 'Bahía Silente'},
+      {id: 5, name: 'Bosque Rompeviento'},
+      {id: 6, name: 'Cabo Rocavelo'},
+      {id: 7, name: 'Cala Oculta'},
+      {id: 8, name: 'Camino del Tómbolo'},
+      {id: 9, name: 'Cerro Aipom'},
+      {id: 10, name: 'Costa Ínsola'},
+      {id: 11, name: 'Cueva Costera'},
+      {id: 12, name: 'Cueva Retorno'},
+      {id: 13, name: 'Gruta Pasamar'},
+      {id: 14, name: 'Guarida del Gran Pez'},
+      {id: 15, name: 'Isla Escupefuego'},
+      {id: 16, name: 'Mano de Arena'},
+      {id: 17, name: 'Paso Costanero'},
+      {id: 18, name: 'Playa del Errante'},
+      {id: 19, name: 'Playa Ginkgo'},
+      {id: 20, name: 'Vergel Marino'},
+      {id: 21, name: 'Vía Manantial'}
+    ]
+  },
+  {
+    id: 3,
+    name: 'Ladera Corona',
+    locations: [
+      {id: 0, name: 'Ágora de la Plegaria'},
+      {id: 1, name: 'Arena de la Luna'},
+      {id: 2, name: 'Bosque Extravío'},
+      {id: 3, name: 'Cañón Lítico'},
+      {id: 4, name: 'Cantera Ancestral'},
+      {id: 5, name: 'Caverna Inmemorial'},
+      {id: 6, name: 'Columnas Lanza'},
+      {id: 7, name: 'Cordillera Derrumbe'},
+      {id: 8, name: 'Cueva Extravío'},
+      {id: 9, name: 'Fuente de las Hadas'},
+      {id: 10, name: 'Loma Sagrada'},
+      {id: 11, name: 'Manantial Solitario'},
+      {id: 12, name: 'Paso Píleo'},
+      {id: 13, name: 'Risco Riscoso'},
+      {id: 14, name: 'Ruinas Celestiales'},
+      {id: 15, name: 'Senda Celestial'},
+      {id: 16, name: 'Senda del Peregrino'},
+      {id: 17, name: 'Templo de Sinnoh'},
+      {id: 18, name: 'Umbral Pétreo'}
+    ]
+  },
+  {
+    id: 4,
+    name: 'Tundra Alba',
+    locations: [
+      {id: 0, name: 'Arena del Glaciar'},
+      {id: 1, name: 'Cascada Glaliar'},
+      {id: 2, name: 'Caverna Agudeza'},
+      {id: 3, name: 'Caverna Hiberna'},
+      {id: 4, name: 'Desfiladero Alud'},
+      {id: 5, name: 'Lago Agudeza'},
+      {id: 6, name: 'Páramo Algente'},
+      {id: 7, name: 'Pasaje de la Grieta'},
+      {id: 8, name: 'Peñasco Espíritu'},
+      {id: 9, name: 'Poblado Perla'},
+      {id: 10, name: 'Senda de la Arena'},
+      {id: 11, name: 'Témpano Avalugg'},
+      {id: 12, name: 'Templo Puntaneva'},
+      {id: 13, name: 'Termas Nevavista'},
+      {id: 14, name: 'Terraza Glaciar'},
+      {id: 15, name: 'Tundra Alba'},
+      {id: 16, name: 'Valle Nevasca'},
+    ]
+  },
+  {
+    id: 5,
+    name: 'Distorsión espaciotemporal',
+  },
 ]
 
 export const todoPokedex = [
@@ -251,156 +351,177 @@ export const todoPokedex = [
 export const pokemons = [
   {
     id: 1,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 1},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 77, goal: 15},
-      {id: 119, goal: 15},
-      {id: 120, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 77, goal: 15, done: 0},
+      {id: 119, goal: 15, done: 0},
+      {id: 120, goal: 15, done: 0}
     ]
   },
   {
     id: 2,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 77, goal: 15},
-      {id: 120, goal: 15},
-      {id: 121, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 77, goal: 15, done: 0},
+      {id: 120, goal: 15, done: 0},
+      {id: 121, goal: 15, done: 0}
     ]
   },
   {
     id: 3,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 82, goal: 25},
-      {id: 122, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 82, goal: 25, done: 0},
+      {id: 122, goal: 25, done: 0}
     ]
   },
   {
     id: 4,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 1},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 54, goal: 15},
-      {id: 55, goal: 15},
-      {id: 104, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 54, goal: 15, done: 0},
+      {id: 55, goal: 15, done: 0},
+      {id: 104, goal: 15, done: 0}
     ]
   },
   {
     id: 5,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 54, goal: 15},
-      {id: 55, goal: 15},
-      {id: 104, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 54, goal: 15, done: 0},
+      {id: 55, goal: 15, done: 0},
+      {id: 104, goal: 15, done: 0}
     ]
   },
   {
     id: 6,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 84, goal: 25},
-      {id: 123, goal: 40},
-      {id: 124, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 84, goal: 25, done: 0},
+      {id: 123, goal: 40, done: 0},
+      {id: 124, goal: 25, done: 0}
     ]
   },
   {
     id: 7,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 1},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 50, goal: 15},
-      {id: 67, goal: 15},
-      {id: 80, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 50, goal: 15, done: 0},
+      {id: 67, goal: 15, done: 0},
+      {id: 80, goal: 15, done: 0}
     ]
   },
   {
     id: 8,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 50, goal: 15},
-      {id: 67, goal: 15},
-      {id: 80, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 50, goal: 15, done: 0},
+      {id: 67, goal: 15, done: 0},
+      {id: 80, goal: 15, done: 0}
     ]
   },
   {
     id: 9,
-    location: [],
+    location: [areas[5]],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 49, goal: 25},
-      {id: 125, goal: 25},
-      {id: 126, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 49, goal: 25, done: 0},
+      {id: 125, goal: 25, done: 0},
+      {id: 126, goal: 40, done: 0}
     ]
   },
   {
     id: 10,
-    location: [areas[0].locations[5], areas[0].locations[12], areas[0].locations[13]],
+    location: [
+      areas[0].locations[5],
+      areas[0].locations[12],
+      areas[0].locations[13],
+      areas[1].locations[4],
+      areas[1].locations[9],
+      areas[1].locations[11],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 30, goal: 7},
-      {id: 31, goal: 1},
-      {id: 41, goal: 2}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 31, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0}
     ]
   },
   {
     id: 11,
-    location: [areas[0].locations[13]],
+    location: [
+      areas[0].locations[13],
+      areas[1].locations[4],
+      areas[1].locations[9],
+      areas[1].locations[11],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 5},
-      {id: 3, goal: 25},
-      {id: 10, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 25},
-      {id: 49, goal: 25},
-      {id: 88, goal: 25}
+      {id: 0, goal: 5, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 49, goal: 25, done: 0},
+      {id: 88, goal: 25, done: 0}
     ]
   },
   {
     id: 12,
-    location: [areas[0].locations[5], areas[0].locations[12], areas[0].locations[13], areas[0].locations[16]],
+    location: [
+      areas[0].locations[5],
+      areas[0].locations[12],
+      areas[0].locations[13],
+      areas[0].locations[16],
+      areas[2].locations[2],
+      areas[2].locations[19],
+    ],
     specialCondition: {
       time: [
         {id: 0, name: 'mañana'},
@@ -410,16 +531,23 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0}
     ]
   },
   {
     id: 13,
-    location: [areas[0].locations[0], areas[0].locations[8], areas[0].locations[11], areas[0].locations[13]],
+    location: [
+      areas[0].locations[0],
+      areas[0].locations[8],
+      areas[0].locations[11],
+      areas[0].locations[13],
+      areas[2].locations[2],
+      areas[2].locations[19],
+    ],
     specialCondition: {
       time: [
         {id: 0, name: 'mañana'},
@@ -429,89 +557,118 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 14, goal: 10},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 44, goal: 10},
-      {id: 77, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 77, goal: 25, done: 0}
     ]
   },
   {
     id: 14,
-    location: [areas[0].locations[0]],
+    location: [
+      areas[0].locations[0],
+      areas[2].locations[2]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 5, goal: 5},
-      {id: 10, goal: 15},
-      {id: 22, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 15},
-      {id: 90, goal: 40},
-      {id: 106, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 5, goal: 5, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 22, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 90, goal: 40, done: 0},
+      {id: 106, goal: 40, done: 0}
     ]
   },
   {
     id: 15,
-    location: [areas[0].locations[3], areas[0].locations[5], areas[0].locations[7]],
+    location: [
+      areas[0].locations[3],
+      areas[0].locations[5],
+      areas[0].locations[7],
+      areas[3].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 24, goal: 10},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 55, goal: 25},
-      {id: 88, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 24, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 55, goal: 25, done: 0},
+      {id: 88, goal: 25, done: 0}
     ]
   },
   {
     id: 16,
-    location: [areas[0].locations[3], areas[0].locations[7], areas[0].locations[11]],
+    location: [
+      areas[0].locations[3],
+      areas[0].locations[7],
+      areas[0].locations[11],
+      areas[3].locations[0],
+      areas[3].locations[10],
+      areas[3].locations[12],
+      areas[3].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 24, goal: 20},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 64, goal: 40},
-      {id: 88, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 24, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 64, goal: 40, done: 0},
+      {id: 88, goal: 25, done: 0}
     ]
   },
   {
     id: 17,
-    location: [areas[0].locations[11]],
+    location: [
+      areas[0].locations[11],
+      areas[3].locations[0],
+      areas[3].locations[10],
+      areas[3].locations[12],
+      areas[3].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 24, goal: 10},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 64, goal: 25},
-      {id: 111, goal: 25},
-      {id: 117, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 24, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 64, goal: 25, done: 0},
+      {id: 111, goal: 25, done: 0},
+      {id: 117, goal: 40, done: 0}
     ]
   },
   {
     id: 18,
-    location: [areas[0].locations[2], areas[0].locations[3], areas[0].locations[12]],
+    location: [
+      areas[0].locations[2],
+      areas[0].locations[3],
+      areas[0].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 10},
-      {id: 10, goal: 25},
-      {id: 26, goal: 3},
-      {id: 28, goal: 5},
-      {id: 94, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 28, goal: 5, done: 0},
+      {id: 94, goal: 25, done: 0}
     ]
   },
   {
     id: 19,
-    location: [areas[0].locations[2], areas[0].locations[3]],
+    location: [
+      areas[0].locations[2],
+      areas[0].locations[3]
+    ],
     specialCondition:  {
       time: [
         {id: 0, name: 'mañana'},
@@ -521,17 +678,22 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 4, goal: 20},
-      {id: 10, goal: 25},
-      {id: 25, goal: 10},
-      {id: 26, goal: 3},
-      {id: 94, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 4, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 25, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 94, goal: 25, done: 0}
     ]
   },
   {
     id: 20,
-    location: [areas[0].locations[2], areas[0].locations[3], areas[0].locations[6]],
+    location: [
+      areas[0].locations[2],
+      areas[0].locations[3],
+      areas[0].locations[6],
+      areas[2].locations[6]
+    ],
     specialCondition:  {
       time: [
         {id: 0, name: 'mañana'},
@@ -541,18 +703,21 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 4, goal: 20},
-      {id: 10, goal: 25},
-      {id: 22, goal: 10},
-      {id: 41, goal: 2},
-      {id: 43, goal: 25},
-      {id: 91, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 4, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 22, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 91, goal: 25, done: 0}
     ]
   },
   {
     id: 21,
-    location: [areas[0].locations[2], areas[0].locations[3]],
+    location: [
+      areas[0].locations[2],
+      areas[0].locations[3]
+    ],
     specialCondition:  {
       time: [
         {id: 3, name: 'noche'}
@@ -560,18 +725,23 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 8, goal: 20},
-      {id: 10, goal: 20},
-      {id: 16, goal: 15},
-      {id: 26, goal: 3},
-      {id: 40, goal: 1},
-      {id: 94, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 20, done: 0},
+      {id: 16, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 40, goal: 1, done: 0},
+      {id: 94, goal: 25, done: 0}
     ]
   },
   {
     id: 22,
-    location: [areas[0].locations[2], areas[0].locations[3], areas[0].locations[6]],
+    location: [
+      areas[0].locations[2],
+      areas[0].locations[3],
+      areas[0].locations[6],
+      areas[2].locations[6]
+    ],
     specialCondition:  {
       time: [
         {id: 3, name: 'noche'}
@@ -579,18 +749,20 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 8, goal: 20},
-      {id: 10, goal: 25},
-      {id: 21, goal: 10},
-      {id: 41, goal: 2},
-      {id: 43, goal: 25},
-      {id: 95, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 21, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 95, goal: 25, done: 0}
     ]
   },
   {
     id: 23,
-    location: [areas[0].locations[12]],
+    location: [
+      areas[0].locations[12]
+    ],
     specialCondition:  {
       time: [],
       weather: [
@@ -600,18 +772,20 @@ export const pokemons = [
       ]
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 12, goal: 10},
-      {id: 30, goal: 5},
-      {id: 35, goal: 1},
-      {id: 44, goal: 5},
-      {id: 54, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 12, goal: 10, done: 0},
+      {id: 30, goal: 5, done: 0},
+      {id: 35, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 54, goal: 25, done: 0}
     ]
   },
   {
     id: 24,
-    location: [areas[0].locations[12]],
+    location: [
+      areas[0].locations[12]
+    ],
     specialCondition:  {
       time: [],
       weather: [
@@ -621,119 +795,152 @@ export const pokemons = [
       ]
     },
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 12, goal: 3},
-      {id: 43, goal: 40},
-      {id: 86, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 12, goal: 3, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 86, goal: 40, done: 0}
     ]
   },
   {
     id: 25,
-    location: [areas[0].locations[12]],
-    specialCondition:  {},
+    location: [
+      areas[0].locations[12],
+      areas[2].locations[17],
+      areas[4].locations[4],
+      areas[4].locations[11],
+      areas[5]
+    ],
+    specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 26, goal: 10},
-      {id: 33, goal: 1},
-      {id: 41, goal: 2},
-      {id: 44, goal: 5},
-      {id: 55, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 26, goal: 10, done: 0},
+      {id: 33, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 55, goal: 40, done: 0}
     ]
   },
   {
     id: 26,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 49, goal: 40},
-      {id: 89, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 49, goal: 40, done: 0},
+      {id: 89, goal: 15, done: 0}
     ]
   },
   {
     id: 27,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 89, goal: 15},
-      {id: 100, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 89, goal: 15, done: 0},
+      {id: 100, goal: 40, done: 0}
     ]
   },
   {
     id: 28,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 84, goal: 40},
-      {id: 89, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 84, goal: 40, done: 0},
+      {id: 89, goal: 15, done: 0}
     ]
   },
   {
     id: 29,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 89, goal: 15},
-      {id: 97, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 89, goal: 15, done: 0},
+      {id: 97, goal: 40, done: 0}
     ]
   },
   {
     id: 30,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 89, goal: 15},
-      {id: 98, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 89, goal: 15, done: 0},
+      {id: 98, goal: 40, done: 0}
     ]
   },
   {
     id: 31,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 82, goal: 40},
-      {id: 89, goal: 15}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 82, goal: 40, done: 0},
+      {id: 89, goal: 15, done: 0}
     ]
   },
   {
     id: 32,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 89, goal: 15},
-      {id: 101, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 89, goal: 15, done: 0},
+      {id: 101, goal: 40, done: 0}
     ]
   },
   {
     id: 33,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 89, goal: 15},
-      {id: 115, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 89, goal: 15, done: 0},
+      {id: 115, goal: 40, done: 0}
     ]
   },
   {
     id: 34,
-    location: [areas[0].locations[0], areas[0].locations[2], areas[0].locations[7], areas[0].locations[15]],
+    location: [
+      areas[0].locations[0],
+      areas[0].locations[2],
+      areas[0].locations[7],
+      areas[0].locations[15],
+      areas[1].locations[5],
+      areas[1].locations[7],
+      areas[1].locations[14],
+      areas[3].locations[8],
+      areas[3].locations[10],
+      areas[4].locations[12]
+    ],
     specialCondition: {
       time: [
         {id: 3, name: 'noche'}
@@ -741,19 +948,27 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 25},
-      {id: 4, goal: 20},
-      {id: 10, goal: 25},
-      {id: 22, goal: 10},
-      {id: 26, goal: 1},
-      {id: 38, goal: 1},
-      {id: 41, goal: 2},
-      {id: 109, goal: 25},
+      {id: 3, goal: 25, done: 0},
+      {id: 4, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 22, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 38, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 109, goal: 25, done: 0},
     ]
   },
   {
     id: 35,
-    location: [areas[0].locations[7]],
+    location: [
+      areas[0].locations[7],
+      areas[1].locations[5],
+      areas[1].locations[7],
+      areas[1].locations[14],
+      areas[3].locations[8],
+      areas[3].locations[10],
+      areas[4].locations[12]
+    ],
     specialCondition: {
       time: [
         {id: 3, name: 'noche'}
@@ -761,34 +976,48 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 8, goal: 20},
-      {id: 10, goal: 15},
-      {id: 18, goal: 25},
-      {id: 21, goal: 25},
-      {id: 41, goal: 2},
-      {id: 51, goal: 25},
-      {id: 88, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 18, goal: 25, done: 0},
+      {id: 21, goal: 25, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 51, goal: 25, done: 0},
+      {id: 88, goal: 25, done: 0}
     ]
   },
   {
     id: 36,
-    location: [],
+    location: [
+      areas[3].locations[8],
+      areas[4].locations[1]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 0, goal: 3},
-      {id: 5, goal: 5},
-      {id: 10, goal: 5},
-      {id: 18, goal: 3},
-      {id: 113, goal: 25},
-      {id: 62, goal: 40},
-      {id: 43, goal: 70},
+      {id: 3, goal: 5, done: 0},
+      {id: 0, goal: 3, done: 0},
+      {id: 5, goal: 5, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 18, goal: 3, done: 0},
+      {id: 113, goal: 25, done: 0},
+      {id: 62, goal: 40, done: 0},
+      {id: 43, goal: 70, done: 0},
     ]
   },
   {
     id: 37,
-    location: [areas[0].locations[3], areas[0].locations[5], areas[0].locations[8], areas[0].locations[12]],
+    location: [
+      areas[0].locations[3],
+      areas[0].locations[5],
+      areas[0].locations[8],
+      areas[0].locations[12],
+      areas[2].locations[0],
+      areas[2].locations[2],
+      areas[2].locations[4],
+      areas[2].locations[19],
+      areas[4].locations[11],
+      areas[4].locations[14]
+    ],
     specialCondition: {
       time: [
         {id: 3, name: 'noche'}
@@ -796,19 +1025,28 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 25},
-      {id: 8, goal: 20},
-      {id: 10, goal: 40},
-      {id: 15, goal: 10},
-      {id: 26, goal: 1},
-      {id: 37, goal: 1},
-      {id: 65, goal: 25},
-      {id: 81, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 15, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 37, goal: 1, done: 0},
+      {id: 65, goal: 25, done: 0},
+      {id: 81, goal: 40, done: 0}
     ]
   },
   {
     id: 38,
-    location: [areas[0].locations[8], areas[0].locations[11]],
+    location: [
+      areas[0].locations[8],
+      areas[0].locations[11],
+      areas[2].locations[0],
+      areas[2].locations[2],
+      areas[2].locations[4],
+      areas[2].locations[19],
+      areas[4].locations[11],
+      areas[4].locations[14]
+    ],
     specialCondition: {
       time: [
         {id: 3, name: 'noche'}
@@ -816,166 +1054,267 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 3, goal: 15},
-      {id: 8, goal: 20},
-      {id: 10, goal: 25},
-      {id: 23, goal: 40},
-      {id: 43, goal: 40},
-      {id: 56, goal: 15},
-      {id: 85, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 23, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 56, goal: 15, done: 0},
+      {id: 85, goal: 25, done: 0}
     ]
   },
   {
     id: 39,
-    location: [areas[0].locations[0], areas[0].locations[15], areas[0].locations[16]],
+    location: [
+      areas[0].locations[0],
+      areas[0].locations[15],
+      areas[0].locations[16],
+      areas[1].locations[12],
+      areas[1].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 25},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 44, goal: 8}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 8, done: 0}
     ]
   },
   {
     id: 40,
-    location: [areas[0].locations[0]],
+    location: [
+      areas[0].locations[0],
+      areas[1].locations[12],
+      areas[1].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 41, goal: 2},
-      {id: 44, goal: 10},
-      {id: 67, goal: 25},
-      {id: 108, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 67, goal: 25, done: 0},
+      {id: 108, goal: 25, done: 0}
     ]
   },
   {
     id: 41,
-    location: [areas[0].locations[12], areas[0].locations[14], areas[0].locations[16]],
+    location: [
+      areas[0].locations[12],
+      areas[0].locations[14],
+      areas[0].locations[16],
+      areas[2].locations[0],
+      areas[2].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 14, goal: 10},
-      {id: 27, goal: 7},
-      {id: 41, goal: 2},
-      {id: 50, goal: 15}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 50, goal: 15, done: 0}
     ]
   },
   {
     id: 42,
-    location: [areas[0].locations[14]],
+    location: [
+      areas[0].locations[14],
+      areas[2].locations[0],
+      areas[2].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 20, goal: 20},
-      {id: 41, goal: 2},
-      {id: 43, goal: 25},
-      {id: 80, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 20, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 80, goal: 40, done: 0}
     ]
   },
   {
     id: 43,
-    location: [areas[0].locations[0], areas[0].locations[6], areas[0].locations[10], areas[0].locations[15]],
+    location: [
+      areas[0].locations[0],
+      areas[0].locations[6],
+      areas[0].locations[10],
+      areas[0].locations[15],
+      areas[1].locations[4],
+      areas[1].locations[12],
+      areas[1].locations[14],
+      areas[1].locations[15],
+      areas[2].locations[0],
+      areas[2].locations[6],
+      areas[2].locations[18],
+      areas[2].locations[19],
+      areas[3].locations[3],
+      areas[3].locations[10],
+      areas[3].locations[14],
+      areas[3].locations[15],
+      areas[4].locations[4],
+      areas[4].locations[5],
+      areas[4].locations[6],
+      areas[4].locations[14],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 1, goal: 25},
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 25, goal: 20},
-      {id: 26, goal: 3},
-      {id: 41, goal: 3},
-      {id: 75, goal: 25}
+      {id: 1, goal: 25, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 25, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 3, done: 0},
+      {id: 75, goal: 25, done: 0}
     ]
   },
   {
     id: 44,
-    location: [areas[0].locations[6], areas[0].locations[11]],
+    location: [
+      areas[0].locations[6],
+      areas[0].locations[11],
+      areas[1].locations[4],
+      areas[1].locations[12],
+      areas[2].locations[0],
+      areas[2].locations[6],
+      areas[2].locations[18],
+      areas[2].locations[19],
+      areas[3].locations[3],
+      areas[3].locations[10],
+      areas[3].locations[14],
+      areas[3].locations[15],
+      areas[4].locations[4],
+      areas[4].locations[5],
+      areas[4].locations[6],
+      areas[4].locations[14],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 16, goal: 20},
-      {id: 65, goal: 25},
-      {id: 118, goal: 40},
-      {id: 43, goal: 70},
-      {id: 41, goal: 3},
-      {id: 1, goal: 15},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 16, goal: 20, done: 0},
+      {id: 65, goal: 25, done: 0},
+      {id: 118, goal: 40, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 41, goal: 3, done: 0},
+      {id: 1, goal: 15, done: 0},
     ]
   },
   {
     id: 45,
-    location: [areas[0].locations[6]],
+    location: [
+      areas[0].locations[6],
+      areas[2].locations[6],
+      areas[2].locations[9],
+      areas[2].locations[19],
+      areas[2].locations[21],
+      areas[3].locations[2]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 25},
-      {id: 22, goal: 20},
-      {id: 42, goal: 25},
-      {id: 116, goal: 25},
-      {id: 118, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 22, goal: 20, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 116, goal: 25, done: 0},
+      {id: 118, goal: 40, done: 0}
     ]
   },
   {
     id: 46,
-    location: [areas[0].locations[7], areas[0].locations[10], areas[0].locations[14]],
+    location: [
+      areas[0].locations[7],
+      areas[0].locations[10],
+      areas[0].locations[14],
+      areas[1].locations[3],
+      areas[1].locations[4],
+      areas[1].locations[5],
+      areas[1].locations[9],
+      areas[2].locations[0],
+      areas[2].locations[6],
+      areas[2].locations[9],
+      areas[2].locations[19],
+      areas[3].locations[7],
+      areas[3].locations[13],
+      areas[3].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 2, goal: 25},
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 12, goal: 20},
-      {id: 20, goal: 20},
-      {id: 26, goal: 3},
-      {id: 30, goal: 5},
-      {id: 103, goal: 25}
+      {id: 2, goal: 25, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 12, goal: 20, done: 0},
+      {id: 20, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 5, done: 0},
+      {id: 103, goal: 25, done: 0}
     ]
   },
   {
     id: 47,
-    location: [areas[0].locations[7], areas[0].locations[11]],
+    location: [
+      areas[0].locations[7],
+      areas[0].locations[11],
+      areas[1].locations[3],
+      areas[1].locations[4],
+      areas[1].locations[5],
+      areas[1].locations[9],
+      areas[2].locations[5],
+      areas[2].locations[10],
+      areas[2].locations[15],
+      areas[2].locations[21],
+      areas[3].locations[7],
+      areas[3].locations[10],
+      areas[3].locations[13],
+      areas[3].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 2, goal: 15},
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 19, goal: 20},
-      {id: 26, goal: 3},
-      {id: 30, goal: 10},
-      {id: 57, goal: 25}
+      {id: 2, goal: 15, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 19, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 57, goal: 25, done: 0}
     ]
   },
   {
     id: 48,
-    location: [],
+    location: [
+      areas[3].locations[7]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 11, goal: 3},
-      {id: 42, goal: 15},
-      {id: 70, goal: 40},
-      {id: 110, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 11, goal: 3, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 70, goal: 40, done: 0},
+      {id: 110, goal: 25, done: 0}
     ]
   },
   {
     id: 49,
-    location: [areas[0].locations[10]],
+    location: [
+      areas[0].locations[10],
+      areas[3].locations[2],
+      areas[4].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 43, goal: 40},
-      {id: 53, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 53, goal: 40, done: 0}
     ]
   },
   {
@@ -983,317 +1322,415 @@ export const pokemons = [
     location: [],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 53, goal: 40},
-      {id: 92, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 53, goal: 40, done: 0},
+      {id: 92, goal: 40, done: 0}
     ]
   },
   {
     id: 51,
-    location: [areas[0].locations[10]],
+    location: [
+      areas[0].locations[10],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 7, goal: 5},
-      {id: 26, goal: 1},
-      {id: 44, goal: 20},
-      {id: 69, goal: 15}
+      {id: 3, goal: 10, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 20, done: 0},
+      {id: 69, goal: 15, done: 0}
     ]
   },
   {
     id: 52,
-    location: [areas[0].locations[11]],
+    location: [
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 6, goal: 1},
-      {id: 10, goal: 10},
-      {id: 19, goal: 3},
-      {id: 44, goal: 50},
-      {id: 70, goal: 25},
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 19, goal: 3, done: 0},
+      {id: 44, goal: 50, done: 0},
+      {id: 70, goal: 25, done: 0},
     ]
   },
   {
     id: 53,
-    location: [areas[0].locations[0]],
+    location: [
+      areas[0].locations[0],
+      areas[1].locations[7],
+      areas[1].locations[12],
+      areas[1].locations[13],
+      areas[1].locations[14],
+      areas[2].locations[5],
+      areas[3].locations[2],
+      areas[3].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 16, goal: 20},
-      {id: 26, goal: 1},
-      {id: 27, goal: 7},
-      {id: 48, goal: 25},
-      {id: 91, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 16, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 48, goal: 25, done: 0},
+      {id: 91, goal: 40, done: 0}
     ]
   },
   {
     id: 54,
-    location: [areas[0].locations[0]],
+    location: [
+      areas[0].locations[0],
+      areas[1].locations[7],
+      areas[1].locations[12],
+      areas[1].locations[13],
+      areas[1].locations[14],
+      areas[2].locations[5],
+      areas[3].locations[2],
+      areas[3].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 25, goal: 10},
-      {id: 32, goal: 1},
-      {id: 42, goal: 40},
-      {id: 61, goal: 25},
-      {id: 74, goal: 25},
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 25, goal: 10, done: 0},
+      {id: 32, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 61, goal: 25, done: 0},
+      {id: 74, goal: 25, done: 0},
     ]
   },
   {
     id: 55,
-    location: [areas[0].locations[0], areas[0].locations[3]],
+    location: [
+      areas[0].locations[0],
+      areas[0].locations[3],
+      areas[1].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 4, goal: 10},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 26, goal: 3},
-      {id: 29, goal: 3},
-      {id: 44, goal: 10}
+      {id: 3, goal: 15, done: 0},
+      {id: 4, goal: 10, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 29, goal: 3, done: 0},
+      {id: 44, goal: 10, done: 0}
     ]
   },
   {
     id: 56,
-    location: [areas[0].locations[0]],
+    location: [
+      areas[0].locations[0],
+      areas[1].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 10},
-      {id: 26, goal: 3},
-      {id: 28, goal: 10},
-      {id: 41, goal: 2},
-      {id: 83, goal: 25},
-      {id: 100, goal: 40},
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 28, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 83, goal: 25, done: 0},
+      {id: 100, goal: 40, done: 0},
     ]
   },
   {
     id: 57,
-    location: [],
+    location: [
+      areas[1].locations[12]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 24, goal: 10},
-      {id: 41, goal: 2},
-      {id: 43, goal: 15},
-      {id: 63, goal: 40},
-      {id: 112, goal: 70}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 24, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 63, goal: 40, done: 0},
+      {id: 112, goal: 70, done: 0}
     ]
   },
   {
     id: 58,
-    location: [areas[0].locations[11], areas[0].locations[16]],
+    location: [
+      areas[0].locations[11],
+      areas[0].locations[16],
+      areas[4].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 5},
-      {id: 26, goal: 3},
-      {id: 28, goal: 7},
-      {id: 45, goal: 5},
-      {id: 107, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 28, goal: 7, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 107, goal: 25, done: 0}
     ]
   },
   {
     id: 59,
-    location: [areas[0].locations[11]],
+    location: [
+      areas[0].locations[11],
+      areas[4].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 13, goal: 20},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 93, goal: 25},
-      {id: 96, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 13, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 93, goal: 25, done: 0},
+      {id: 96, goal: 25, done: 0}
     ]
   },
   {
     id: 60,
-    location: [areas[0].locations[11]],
+    location: [
+      areas[0].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 23, goal: 3},
-      {id: 41, goal: 2},
-      {id: 43, goal: 15},
-      {id: 97, goal: 70},
-      {id: 102, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 23, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 97, goal: 70, done: 0},
+      {id: 102, goal: 40, done: 0}
     ]
   },
   {
     id: 61,
-    location: [areas[0].locations[8], areas[0].locations[10]],
+    location: [
+      areas[0].locations[8],
+      areas[0].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 7, goal: 5},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 54, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 54, goal: 25, done: 0}
     ]
   },
   {
     id: 62,
-    location: [areas[0].locations[8]],
+    location: [
+      areas[0].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 84, goal: 25},
-      {id: 104, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 84, goal: 25, done: 0},
+      {id: 104, goal: 25, done: 0}
     ]
   },
   {
     id: 63,
-    location: [areas[0].locations[8]],
+    location: [
+      areas[0].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 10, goal: 5},
-      {id: 24, goal: 3},
-      {id: 43, goal: 40},
-      {id: 46, goal: 5},
-      {id: 72, goal: 40},
-      {id: 73, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 24, goal: 3, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 72, goal: 40, done: 0},
+      {id: 73, goal: 40, done: 0}
     ]
   },
   {
     id: 64,
-    location: [areas[0].locations[2]],
+    location: [
+      areas[0].locations[2],
+      areas[4].locations[6],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 89, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 89, goal: 25, done: 0}
     ]
   },
   {
     id: 65,
-    location: [areas[0].locations[2]],
+    location: [
+      areas[0].locations[2],
+      areas[4].locations[6],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 10},
-      {id: 7, goal: 5},
-      {id: 10, goal: 10},
-      {id: 43, goal: 40},
-      {id: 44, goal: 5},
-      {id: 47, goal: 40},
-      {id: 58, goal: 25}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 47, goal: 40, done: 0},
+      {id: 58, goal: 25, done: 0}
     ]
   },
   {
     id: 66,
-    location: [areas[0].locations[2]],
+    location: [
+      areas[0].locations[2],
+      areas[1].locations[4],
+      areas[3].locations[5],
+      areas[3].locations[9],
+      areas[3].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 1, goal: 15},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 26, goal: 1},
-      {id: 48, goal: 40}
+      {id: 1, goal: 15, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 48, goal: 40, done: 0}
     ]
   },
   {
     id: 67,
-    location: [areas[0].locations[2]],
+    location: [
+      areas[0].locations[2],
+      areas[1].locations[4],
+      areas[3].locations[5],
+      areas[3].locations[9],
+      areas[3].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 1, goal: 15},
-      {id: 3, goal: 15},
-      {id: 4, goal: 10},
-      {id: 10, goal: 5},
-      {id: 43, goal: 15},
-      {id: 68, goal: 40}
+      {id: 1, goal: 15, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 4, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 68, goal: 40, done: 0}
     ]
   },
   {
     id: 68,
-    location: [areas[0].locations[2]],
+    location: [
+      areas[0].locations[2],
+      areas[1].locations[1],
+      areas[1].locations[4],
+      areas[1].locations[12],
+      areas[2].locations[0],
+      areas[3].locations[2],
+      areas[3].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 14, goal: 10},
-      {id: 26, goal: 1},
-      {id: 30, goal: 5},
-      {id: 44, goal: 5},
-      {id: 65, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 30, goal: 5, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 65, goal: 25, done: 0}
     ]
   },
   {
     id: 69,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[2].locations[0],
+      areas[2].locations[21],
+      areas[3].locations[2],
+      areas[3].locations[11]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 20, goal: 10},
-      {id: 43, goal: 25},
-      {id: 45, goal: 5},
-      {id: 46, goal: 5},
-      {id: 49, goal: 25},
-      {id: 60, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 20, goal: 10, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 49, goal: 25, done: 0},
+      {id: 60, goal: 25, done: 0}
     ]
   },
   {
     id: 70,
-    location: [areas[0].locations[2], areas[0].locations[6], areas[0].locations[8]],
+    location: [
+      areas[0].locations[2],
+      areas[0].locations[6],
+      areas[0].locations[8],
+      areas[1].locations[6],
+      areas[1].locations[11],
+      areas[1].locations[13],
+      areas[1].locations[14],
+      areas[2].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 1, goal: 40},
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 22, goal: 10},
-      {id: 26, goal: 3},
-      {id: 34, goal: 1},
-      {id: 41, goal: 2},
-      {id: 109, goal: 25}
+      {id: 1, goal: 40, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 22, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 34, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 109, goal: 25, done: 0}
     ]
   },
   {
     id: 71,
-    location: [],
+    location: [
+      areas[1].locations[6],
+      areas[1].locations[11],
+      areas[1].locations[13]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 1, goal: 5},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 16, goal: 15},
-      {id: 30, goal: 7},
-      {id: 43, goal: 15},
-      {id: 106, goal: 25},
-      {id: 118, goal: 40}
+      {id: 1, goal: 5, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 16, goal: 15, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 106, goal: 25, done: 0},
+      {id: 118, goal: 40, done: 0}
     ]
   },
   {
     id: 72,
-    location: [areas[0].locations[1]],
+    location: [
+      areas[0].locations[1],
+      areas[3].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 22, goal: 10},
-      {id: 41, goal: 2},
-      {id: 43, goal: 40},
-      {id: 106, goal: 25},
-      {id: 108, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 22, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 106, goal: 25, done: 0},
+      {id: 108, goal: 25, done: 0}
     ]
   },
   {
@@ -1301,30 +1738,35 @@ export const pokemons = [
     location: [],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 79, goal: 40},
-      {id: 108, goal: 25},
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 79, goal: 40, done: 0},
+      {id: 108, goal: 25, done: 0},
     ]
   },
   {
     id: 74,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 5},
-      {id: 10, goal: 5},
-      {id: 16, goal: 3},
-      {id: 41, goal: 2},
-      {id: 43, goal: 15},
-      {id: 71, goal: 25},
-      {id: 108, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 16, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 71, goal: 25, done: 0},
+      {id: 108, goal: 40, done: 0}
     ]
   },
   {
     id: 75,
-    location: [areas[0].locations[6]],
+    location: [
+      areas[0].locations[6],
+      areas[3].locations[8]
+    ],
     specialCondition:  {
       time: [
         {id: 0, name: 'mañana'},
@@ -1334,142 +1776,179 @@ export const pokemons = [
       weather: []
     },
     toDos: [
-      {id: 0, goal: 3},
-      {id: 1, goal: 15},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 27, goal: 5},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 70, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 1, goal: 15, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 27, goal: 5, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 70, goal: 40, done: 0}
     ]
   },
   {
     id: 76,
-    location: [areas[0].locations[11], areas[0].locations[12]],
+    location: [
+      areas[0].locations[11],
+      areas[0].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 7, goal: 5},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 87, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 87, goal: 25, done: 0}
     ]
   },
   {
     id: 77,
-    location: [areas[0].locations[11]],
+    location: [
+      areas[0].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 38, goal: 1},
-      {id: 43, goal: 25},
-      {id: 44, goal: 5},
-      {id: 45, goal: 5},
-      {id: 87, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 38, goal: 1, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 87, goal: 25, done: 0}
     ]
   },
   {
     id: 78,
-    location: [areas[0].locations[8]],
+    location: [
+      areas[0].locations[8],
+      areas[2].locations[7],
+      areas[2].locations[9],
+      areas[4].locations[8],
+      areas[4].locations[13],
+      areas[4].locations[14],
+      areas[4].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 1, goal: 15},
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 19, goal: 20},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 44, goal: 8},
-      {id: 71, goal: 25},
+      {id: 1, goal: 15, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 19, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 71, goal: 25, done: 0},
     ]
   },
   {
     id: 79,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[8],
+      areas[4].locations[10],
+    ],
     specialCondition: [],
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 19, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 15},
-      {id: 63, goal: 40},
-      {id: 71, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 19, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 63, goal: 40, done: 0},
+      {id: 71, goal: 25, done: 0}
     ]
   },
   {
     id: 80,
-    location: [areas[0].locations[4], areas[0].locations[9]],
+    location: [
+      areas[0].locations[4],
+      areas[0].locations[9],
+      areas[3].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 40},
-      {id: 26, goal: 10},
-      {id: 27, goal: 7},
-      {id: 41, goal: 2},
-      {id: 44, goal: 5},
-      {id: 105, goal: 100}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 26, goal: 10, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 105, goal: 100, done: 0}
     ]
   },
   {
     id: 81,
-    location: [areas[0].locations[4], areas[0].locations[9]],
+    location: [
+      areas[0].locations[4],
+      areas[0].locations[9],
+      areas[2].locations[16],
+      areas[3].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 5, goal: 3},
-      {id: 10, goal: 25},
-      {id: 14, goal: 25},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 88, goal: 40},
-      {id: 114, goal: 70}
+      {id: 3, goal: 15, done: 0},
+      {id: 5, goal: 3, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 14, goal: 25, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 88, goal: 40, done: 0},
+      {id: 114, goal: 70, done: 0}
     ]
   },
   {
     id: 82,
-    location: [areas[0].locations[8], areas[0].locations[11]],
+    location: [
+      areas[0].locations[8],
+      areas[0].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 29, goal: 5},
-      {id: 41, goal: 2},
-      {id: 44, goal: 8},
-      {id: 80, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 29, goal: 5, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 80, goal: 25, done: 0}
     ]
   },
   {
     id: 83,
-    location: [areas[0].locations[8], areas[0].locations[11]],
+    location: [
+      areas[0].locations[8],
+      areas[0].locations[11],
+      areas[2].locations[20]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 30, goal: 10},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 59, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 59, goal: 40, done: 0}
     ]
   },
   {
     id: 84,
-    location: [],
+    location: [
+      areas[2].locations[4],
+      areas[2].locations[10],
+      areas[2].locations[14],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 24, goal: 10},
-      {id: 26, goal: 1},
-      {id: 42, goal: 40},
-      {id: 127, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 24, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 127, goal: 40, done: 0}
     ]
   },
   {
@@ -1477,124 +1956,156 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 98, goal: 25},
-      {id: 127, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 98, goal: 25, done: 0},
+      {id: 127, goal: 40, done: 0}
     ]
   },
   {
     id: 86,
-    location: [areas[0].locations[4], areas[0].locations[7]],
+    location: [
+      areas[0].locations[4],
+      areas[0].locations[7],
+      areas[2].locations[7],
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 7, goal: 5},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 89, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 89, goal: 25, done: 0}
     ]
   },
   {
     id: 87,
-    location: [areas[0].locations[4]],
+    location: [
+      areas[0].locations[4],
+      areas[2].locations[7],
+      areas[2].locations[8],
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 6, goal: 1},
-      {id: 10, goal: 15},
-      {id: 19, goal: 10},
-      {id: 26, goal: 3},
-      {id: 44, goal: 20},
-      {id: 52, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 19, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 20, done: 0},
+      {id: 52, goal: 25, done: 0}
     ]
   },
   {
     id: 88,
-    location: [areas[0].locations[4]],
+    location: [
+      areas[0].locations[4],
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 19, goal: 10},
-      {id: 36, goal: 1},
-      {id: 42, goal: 15},
-      {id: 44, goal: 5},
-      {id: 58, goal: 40},
-      {id: 70, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 19, goal: 10, done: 0},
+      {id: 36, goal: 1, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 58, goal: 40, done: 0},
+      {id: 70, goal: 25, done: 0}
     ]
   },
   {
     id: 89,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[1].locations[12],
+      areas[3].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 4, goal: 20},
-      {id: 7, goal: 20},
-      {id: 10, goal: 5},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 48, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 4, goal: 20, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 48, goal: 40, done: 0}
     ]
   },
   {
     id: 90,
-    location: [],
+    location: [
+      areas[1].locations[4],
+      areas[1].locations[14],
+      areas[3].locations[9],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 4, goal: 10},
-      {id: 10, goal: 25},
-      {id: 21, goal: 10},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 95, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 4, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 21, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 95, goal: 40, done: 0}
     ]
   },
   {
     id: 91,
-    location: [],
+    location: [
+      areas[1].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 25, goal: 3},
-      {id: 41, goal: 2},
-      {id: 43, goal: 40},
-      {id: 46, goal: 10},
-      {id: 68, goal: 40},
-      {id: 128, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 25, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 68, goal: 40, done: 0},
+      {id: 128, goal: 25, done: 0}
     ]
   },
   {
     id: 92,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[1].locations[4],
+      areas[1].locations[12],
+      areas[1].locations[14],
+      areas[3].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 27, goal: 10},
-      {id: 25, goal: 25},
-      {id: 42, goal: 15},
-      {id: 46, goal: 5},
-      {id: 129, goal: 25}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 27, goal: 10, done: 0},
+      {id: 25, goal: 25, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 129, goal: 25, done: 0}
     ]
   },
   {
     id: 93,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[1].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 29, goal: 20},
-      {id: 44, goal: 10},
-      {id: 95, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 29, goal: 20, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 95, goal: 25, done: 0}
     ]
   },
   {
@@ -1602,289 +2113,354 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 40},
-      {id: 68, goal: 25},
-      {id: 130, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 68, goal: 25, done: 0},
+      {id: 130, goal: 40, done: 0}
     ]
   },
   {
     id: 95,
-    location: [],
+    location: [
+      areas[1].locations[4],
+      areas[2].locations[17]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 16, goal: 10},
-      {id: 26, goal: 1},
-      {id: 29, goal: 10},
-      {id: 44, goal: 5},
-      {id: 131, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 16, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 29, goal: 10, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 131, goal: 25, done: 0}
     ]
   },
   {
     id: 96,
-    location: [],
+    location: [
+      areas[1].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 46, goal: 3},
-      {id: 71, goal: 25},
-      {id: 128, goal: 40},
-      {id: 132, goal: 3}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 3, done: 0},
+      {id: 71, goal: 25, done: 0},
+      {id: 128, goal: 40, done: 0},
+      {id: 132, goal: 3, done: 0}
     ]
   },
   {
     id: 97,
-    location: [],
+    location: [
+      areas[1].locations[4],
+      areas[1].locations[6],
+      areas[3].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 20, goal: 10},
-      {id: 26, goal: 1},
-      {id: 29, goal: 20},
-      {id: 44, goal: 10},
-      {id: 59, goal: 25},
-      {id: 133, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 20, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 29, goal: 20, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 59, goal: 25, done: 0},
+      {id: 133, goal: 25, done: 0}
     ]
   },
   {
     id: 98,
-    location: [],
+    location: [
+      areas[1].locations[4],
+      areas[1].locations[6],
+      areas[3].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 20, goal: 20},
-      {id: 30, goal: 10},
-      {id: 42, goal: 25},
-      {id: 49, goal: 40},
-      {id: 59, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 20, goal: 20, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 49, goal: 40, done: 0},
+      {id: 59, goal: 25, done: 0}
     ]
   },
   {
     id: 99,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[1].locations[3],
+      areas[1].locations[4],
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 21, goal: 20},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 45, goal: 5},
-      {id: 59, goal: 25},
-      {id: 134, goal: 1}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 21, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 59, goal: 25, done: 0},
+      {id: 134, goal: 1, done: 0}
     ]
   },
   {
     id: 100,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[2].locations[21],
+      areas[3].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 21, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 25},
-      {id: 45, goal: 5},
-      {id: 61, goal: 40},
-      {id: 135, goal: 25}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 21, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 61, goal: 40, done: 0},
+      {id: 135, goal: 25, done: 0}
     ]
   },
   {
     id: 101,
-    location: [],
+    location: [
+      areas[1].locations[4],
+      areas[1].locations[15],
+      areas[4].locations[8],
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 29, goal: 10},
-      {id: 44, goal: 5},
-      {id: 81, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 29, goal: 10, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 81, goal: 25, done: 0}
     ]
   },
   {
     id: 102,
-    location: [],
+    location: [
+      areas[1].locations[15],
+      areas[4].locations[8],
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 29, goal: 10},
-      {id: 44, goal: 5},
-      {id: 58, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 29, goal: 10, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 58, goal: 25, done: 0}
     ]
   },
   {
     id: 103,
-    location: [],
+    location: [
+      areas[4].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 11, goal: 3},
-      {id: 43, goal: 40},
-      {id: 97, goal: 40},
-      {id: 136, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 11, goal: 3, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 97, goal: 40, done: 0},
+      {id: 136, goal: 25, done: 0}
     ]
   },
   {
     id: 104,
-    location: [],
+    location: [
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 15, goal: 5},
-      {id: 43, goal: 70},
-      {id: 46, goal: 5},
-      {id: 47, goal: 40},
-      {id: 137, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 15, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 47, goal: 40, done: 0},
+      {id: 137, goal: 25, done: 0}
     ]
   },
   {
     id: 105,
-    location: [],
+    location: [
+      areas[1].locations[4],
+      areas[1].locations[9],
+      areas[1].locations[11],
+      areas[3].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 22, goal: 10},
-      {id: 26, goal: 1},
-      {id: 131, goal: 40},
-      {id: 138, goal: 20}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 22, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 131, goal: 40, done: 0},
+      {id: 138, goal: 20, done: 0}
     ]
   },
   {
     id: 106,
-    location: [],
+    location: [
+      areas[1].locations[11],
+      areas[3].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 25, goal: 20},
-      {id: 42, goal: 40},
-      {id: 118, goal: 40},
-      {id: 131, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 25, goal: 20, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 118, goal: 40, done: 0},
+      {id: 131, goal: 25, done: 0}
     ]
   },
   {
     id: 107,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[1].locations[8],
+      areas[3].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 20, goal: 10},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 44, goal: 8},
-      {id: 88, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 20, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 88, goal: 25, done: 0}
     ]
   },
   {
     id: 108,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[1].locations[8],
+      areas[3].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 25, goal: 25},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 46, goal: 5},
-      {id: 59, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 25, goal: 25, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 59, goal: 40, done: 0}
     ]
   },
   {
     id: 109,
-    location: [],
+    location: [
+      areas[1].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 1, goal: 25},
-      {id: 3, goal: 15},
-      {id: 6, goal: 1},
-      {id: 10, goal: 15},
-      {id: 41, goal: 2},
-      {id: 44, goal: 5},
-      {id: 139, goal: 40},
-      {id: 140, goal: 1}
+      {id: 1, goal: 25, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 139, goal: 40, done: 0},
+      {id: 140, goal: 1, done: 0}
     ]
   },
   {
     id: 110,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[3].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 24, goal: 25},
-      {id: 26, goal: 1},
-      {id: 46, goal: 5},
-      {id: 129, goal: 25},
-      {id: 141, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 24, goal: 25, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 129, goal: 25, done: 0},
+      {id: 141, goal: 25, done: 0}
     ]
   },
   {
     id: 111,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[3].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 24, goal: 25},
-      {id: 42, goal: 25},
-      {id: 46, goal: 5},
-      {id: 61, goal: 25},
-      {id: 84, goal: 40}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 24, goal: 25, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 61, goal: 25, done: 0},
+      {id: 84, goal: 40, done: 0}
     ]
   },
   {
     id: 112,
-    location: [],
+    location: [
+      areas[1].locations[9],
+      areas[3].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 30, goal: 10},
-      {id: 44, goal: 10},
-      {id: 89, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 89, goal: 40, done: 0}
     ]
   },
   {
     id: 113,
-    location: [],
+    location: [
+      areas[1].locations[9],
+      areas[3].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 19, goal: 20},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 45, goal: 5},
-      {id: 67, goal: 25},
-      {id: 142, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 19, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 67, goal: 25, done: 0},
+      {id: 142, goal: 40, done: 0}
     ]
   },
   {
@@ -1892,339 +2468,422 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 70, goal: 25},
-      {id: 143, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 70, goal: 25, done: 0},
+      {id: 143, goal: 40, done: 0}
     ]
   },
   {
     id: 115,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[3].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 44, goal: 8},
-      {id: 129, goal: 25},
-      {id: 144, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 129, goal: 25, done: 0},
+      {id: 144, goal: 25, done: 0}
     ]
   },
   {
     id: 116,
-    location: [],
+    location: [
+      areas[1].locations[1],
+      areas[3].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 24, goal: 10},
-      {id: 26, goal: 3},
-      {id: 80, goal: 40},
-      {id: 145, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 24, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 80, goal: 40, done: 0},
+      {id: 145, goal: 40, done: 0}
     ]
   },
   {
     id: 117,
-    location: [],
+    location: [
+      areas[3].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 19, goal: 3},
-      {id: 42, goal: 70},
-      {id: 146, goal: 25},
-      {id: 147, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 19, goal: 3, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 146, goal: 25, done: 0},
+      {id: 147, goal: 40, done: 0}
     ]
   },
   {
     id: 118,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[1].locations[5],
+      areas[1].locations[6],
+      areas[3].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 12, goal: 10},
-      {id: 26, goal: 1},
-      {id: 27, goal: 7},
-      {id: 57, goal: 40},
-      {id: 110, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 12, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 57, goal: 40, done: 0},
+      {id: 110, goal: 25, done: 0}
     ]
   },
   {
     id: 119,
-    location: [],
+    location: [
+      areas[3].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 16, goal: 3},
-      {id: 41, goal: 2},
-      {id: 42, goal: 15},
-      {id: 63, goal: 25},
-      {id: 110, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 16, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 63, goal: 25, done: 0},
+      {id: 110, goal: 25, done: 0}
     ]
   },
   {
     id: 120,
-    location: [],
+    location: [
+      areas[1].locations[5],
+      areas[1].locations[7],
+      areas[1].locations[15],
+      areas[3].locations[0],
+      areas[3].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 20, goal: 25},
-      {id: 26, goal: 3},
-      {id: 30, goal: 10},
-      {id: 41, goal: 2},
-      {id: 46, goal: 5},
-      {id: 110, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 20, goal: 25, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 110, goal: 25, done: 0}
     ]
   },
   {
     id: 121,
-    location: [],
+    location: [
+      areas[3].locations[0],
+      areas[3].locations[15],
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 12, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 57, goal: 40},
-      {id: 70, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 12, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 57, goal: 40, done: 0},
+      {id: 70, goal: 40, done: 0}
     ]
   },
   {
     id: 122,
-    location: [],
+    location: [
+      areas[3].locations[0],
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 18, goal: 3},
-      {id: 41, goal: 2},
-      {id: 42, goal: 40},
-      {id: 46, goal: 3},
-      {id: 57, goal: 25},
-      {id: 70, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 18, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 3, done: 0},
+      {id: 57, goal: 25, done: 0},
+      {id: 70, goal: 40, done: 0}
     ]
   },
   {
     id: 123,
-    location: [],
+    location: [
+      areas[1].locations[14],
+      areas[3].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 2, goal: 5},
-      {id: 3, goal: 5},
-      {id: 7, goal: 5},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 87, goal: 25}
+      {id: 2, goal: 5, done: 0},
+      {id: 3, goal: 5, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 87, goal: 25, done: 0}
     ]
   },
   {
     id: 124,
-    location: [],
+    location: [
+      areas[1].locations[14],
+      areas[3].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 12, goal: 10},
-      {id: 41, goal: 2},
-      {id: 45, goal: 5},
-      {id: 87, goal: 25},
-      {id: 148, goal: 1}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 12, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 87, goal: 25, done: 0},
+      {id: 148, goal: 1, done: 0}
     ]
   },
   {
     id: 125,
-    location: [],
+    location: [
+      areas[1].locations[15],
+      areas[4].locations[4],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 6, goal: 1},
-      {id: 10, goal: 15},
-      {id: 19, goal: 10},
-      {id: 26, goal: 1},
-      {id: 44, goal: 50},
-      {id: 103, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 19, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 50, done: 0},
+      {id: 103, goal: 25, done: 0}
     ]
   },
   {
     id: 126,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 19, goal: 3},
-      {id: 42, goal: 40},
-      {id: 46, goal: 3},
-      {id: 60, goal: 25},
-      {id: 149, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 19, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 3, done: 0},
+      {id: 60, goal: 25, done: 0},
+      {id: 149, goal: 40, done: 0}
     ]
   },
   {
     id: 127,
-    location: [],
+    location: [
+      areas[1].locations[13],
+      areas[2].locations[0],
+      areas[2].locations[4]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 15},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 26, goal: 3},
-      {id: 29, goal: 7},
-      {id: 44, goal: 5},
-      {id: 58, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 29, goal: 7, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 58, goal: 25, done: 0}
     ]
   },
   {
     id: 128,
-    location: [],
+    location: [
+      areas[1].locations[5],
+      areas[1].locations[13],
+      areas[2].locations[4]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 3, goal: 15},
-      {id: 5, goal: 5},
-      {id: 10, goal: 1},
-      {id: 26, goal: 3},
-      {id: 43, goal: 40},
-      {id: 106, goal: 40},
-      {id: 115, goal: 25},
+      {id: 3, goal: 15, done: 0},
+      {id: 5, goal: 5, done: 0},
+      {id: 10, goal: 1, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 106, goal: 40, done: 0},
+      {id: 115, goal: 25, done: 0},
     ]
   },
   {
     id: 129,
-    location: [areas[0].locations[9]],
+    location: [
+      areas[0].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 5, goal: 3},
-      {id: 10, goal: 1},
-      {id: 28, goal: 3},
-      {id: 43, goal: 70},
-      {id: 76, goal: 40},
-      {id: 92, goal: 25},
-      {id: 106, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 5, goal: 3, done: 0},
+      {id: 10, goal: 1, done: 0},
+      {id: 28, goal: 3, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 76, goal: 40, done: 0},
+      {id: 92, goal: 25, done: 0},
+      {id: 106, goal: 25, done: 0}
     ]
   },
   {
     id: 130,
-    location: [],
+    location: [
+      areas[1].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 7, goal: 5},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 119, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 119, goal: 25, done: 0}
     ]
   },
   {
     id: 131,
-    location: [],
+    location: [
+      areas[1].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 82, goal: 40},
-      {id: 88, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 82, goal: 40, done: 0},
+      {id: 88, goal: 25, done: 0}
     ]
   },
   {
     id: 132,
-    location: [],
+    location: [
+      areas[1].locations[1]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 10, goal: 5},
-      {id: 18, goal: 3},
-      {id: 42, goal: 40},
-      {id: 46, goal: 5},
-      {id: 143, goal: 40},
-      {id: 150, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 18, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 143, goal: 40, done: 0},
+      {id: 150, goal: 40, done: 0}
     ]
   },
   {
     id: 133,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 27, goal: 3},
-      {id: 151, goal: 15},
-      {id: 152, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 27, goal: 3, done: 0},
+      {id: 151, goal: 15, done: 0},
+      {id: 152, goal: 40, done: 0}
     ]
   },
   {
     id: 134,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 102, goal: 25},
-      {id: 100, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 102, goal: 25, done: 0},
+      {id: 100, goal: 40, done: 0}
     ]
   },
   {
     id: 135,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 25},
-      {id: 43, goal: 25},
-      {id: 100, goal: 25},
-      {id: 102, goal: 25},
-      {id: 153, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 100, goal: 25, done: 0},
+      {id: 102, goal: 25, done: 0},
+      {id: 153, goal: 40, done: 0}
     ]
   },
   {
     id: 136,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[1].locations[4],
+      areas[1].locations[12],
+      areas[1].locations[15],
+      areas[3].locations[0],
+      areas[3].locations[7],
+      areas[3].locations[14],
+      areas[4].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 8, goal: 20},
-      {id: 10, goal: 25},
-      {id: 15, goal: 20},
-      {id: 26, goal: 3},
-      {id: 45, goal: 5},
-      {id: 154, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 15, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 154, goal: 25, done: 0}
     ]
   },
   {
     id: 137,
-    location: [],
+    location: [
+      areas[1].locations[3],
+      areas[1].locations[4],
+      areas[1].locations[13],
+      areas[1].locations[15],
+      areas[3].locations[0],
+      areas[3].locations[7],
+      areas[3].locations[14],
+      areas[4].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 8, goal: 20},
-      {id: 10, goal: 25},
-      {id: 23, goal: 20},
-      {id: 26, goal: 3},
-      {id: 45, goal: 7},
-      {id: 61, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 23, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 45, goal: 7, done: 0},
+      {id: 61, goal: 25, done: 0}
     ]
   },
   {
     id: 138,
-    location: [],
+    location: [
+      areas[5],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 43, goal: 70},
-      {id: 81, goal: 25},
-      {id: 155, goal: 70}
+      {id: 3, goal: 5, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 81, goal: 25, done: 0},
+      {id: 155, goal: 70, done: 0}
     ]
   },
   {
@@ -2232,39 +2891,48 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 70},
-      {id: 98, goal: 40},
-      {id: 156, goal: 40},
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 98, goal: 40, done: 0},
+      {id: 156, goal: 40, done: 0},
     ]
   },
   {
     id: 140,
-    location: [],
+    location: [
+      areas[1].locations[14],
+      areas[2].locations[6],
+      areas[2].locations[7],
+      areas[2].locations[10],
+      areas[2].locations[17]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 8, goal: 20},
-      {id: 10, goal: 25},
-      {id: 22, goal: 20},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 120, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 22, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 120, goal: 25, done: 0}
     ]
   },
   {
     id: 141,
-    location: [],
+    location: [
+      areas[1].locations[14],
+      areas[2].locations[0]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 5, goal: 5},
-      {id: 10, goal: 10},
-      {id: 17, goal: 3},
-      {id: 42, goal: 40},
-      {id: 98, goal: 40},
-      {id: 157, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 5, goal: 5, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 17, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 98, goal: 40, done: 0},
+      {id: 157, goal: 25, done: 0}
     ]
   },
   {
@@ -2272,122 +2940,144 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 41, goal: 28},
+      {id: 41, goal: 28, done: 0},
     ]
   },
   {
     id: 143,
-    location: [],
+    location: [
+      areas[2].locations[19]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 26, goal: 3},
-      {id: 30, goal: 10},
-      {id: 44, goal: 8},
-      {id: 45, goal: 5},
-      {id: 103, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 103, goal: 25, done: 0}
     ]
   },
   {
     id: 144,
-    location: [],
+    location: [
+      areas[2].locations[10],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 22, goal: 10},
-      {id: 26, goal: 3},
-      {id: 30, goal: 7},
-      {id: 44, goal: 10},
-      {id: 158, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 22, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 158, goal: 25, done: 0}
     ]
   },
   {
     id: 145,
-    location: [],
+    location: [
+      areas[2].locations[9],
+      areas[2].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 19, goal: 3},
-      {id: 42, goal: 40},
-      {id: 46, goal: 8},
-      {id: 101, goal: 25},
-      {id: 159, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 19, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 8, done: 0},
+      {id: 101, goal: 25, done: 0},
+      {id: 159, goal: 40, done: 0}
     ]
   },
   {
     id: 146,
-    location: [],
+    location: [
+      areas[2].locations[4],
+      areas[2].locations[16],
+      areas[2].locations[18]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 25},
-      {id: 20, goal: 10},
-      {id: 26, goal: 1},
-      {id: 101, goal: 25},
-      {id: 160, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 20, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 101, goal: 25, done: 0},
+      {id: 160, goal: 25, done: 0}
     ]
   },
   {
     id: 147,
-    location: [],
+    location: [
+      areas[2].locations[10],
+      areas[2].locations[18]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 14, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 15},
-      {id: 125, goal: 25},
-      {id: 153, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 125, goal: 25, done: 0},
+      {id: 153, goal: 40, done: 0}
     ]
   },
   {
     id: 148,
-    location: [],
+    location: [
+      areas[2].locations[18],
+      areas[2].locations[19]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 25},
-      {id: 16, goal: 10},
-      {id: 26, goal: 1},
-      {id: 29, goal: 7},
-      {id: 94, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 16, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 29, goal: 7, done: 0},
+      {id: 94, goal: 25, done: 0}
     ]
   },
   {
     id: 149,
-    location: [],
+    location: [
+      areas[2].locations[19],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 24, goal: 5},
-      {id: 42, goal: 25},
-      {id: 46, goal: 10},
-      {id: 61, goal: 25},
-      {id: 113, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 24, goal: 5, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 61, goal: 25, done: 0},
+      {id: 113, goal: 40, done: 0}
     ]
   },
   {
     id: 150,
-    location: [],
+    location: [
+      areas[2].locations[5],
+      areas[2].locations[6],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 12, goal: 10},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 161, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 12, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 161, goal: 25, done: 0}
     ]
   },
   {
@@ -2395,221 +3085,277 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 15},
-      {id: 43, goal: 15},
-      {id: 57, goal: 25},
-      {id: 72, goal: 25},
-      {id: 73, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 57, goal: 25, done: 0},
+      {id: 72, goal: 25, done: 0},
+      {id: 73, goal: 25, done: 0}
     ]
   },
   {
     id: 152,
-    location: [],
+    location: [
+      areas[2].locations[6],
+      areas[2].locations[17],
+      areas[4].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 28, goal: 10},
-      {id: 44, goal: 5},
-      {id: 135, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 10, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 135, goal: 25, done: 0}
     ]
   },
   {
     id: 153,
-    location: [],
+    location: [
+      areas[2].locations[6],
+      areas[2].locations[17],
+      areas[4].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 25},
-      {id: 30, goal: 10},
-      {id: 43, goal: 25},
-      {id: 44, goal: 20},
-      {id: 70, goal: 40},
-      {id: 162, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 44, goal: 20, done: 0},
+      {id: 70, goal: 40, done: 0},
+      {id: 162, goal: 25, done: 0}
     ]
   },
   {
     id: 154,
-    location: [areas[0].locations[4], areas[0].locations[7]],
+    location: [
+      areas[0].locations[4],
+      areas[0].locations[7],
+      areas[2].locations[18],
+      areas[3].locations[7],
+      areas[3].locations[12],
+      areas[4].locations[1],
+      areas[4].locations[10],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 25, goal: 25},
-      {id: 26, goal: 3},
-      {id: 30, goal: 7},
-      {id: 42, goal: 25},
-      {id: 46, goal: 5},
-      {id: 78, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 25, goal: 25, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 78, goal: 25, done: 0}
     ]
   },
   {
     id: 155,
-    location: [areas[0].locations[4]],
+    location: [
+      areas[0].locations[4],
+      areas[2].locations[18],
+      areas[3].locations[7],
+      areas[3].locations[12],
+      areas[4].locations[1],
+      areas[4].locations[10],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 40},
-      {id: 21, goal: 10},
-      {id: 26, goal: 3},
-      {id: 42, goal: 15},
-      {id: 46, goal: 5},
-      {id: 99, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 21, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 99, goal: 25, done: 0}
     ]
   },
   {
     id: 156,
-    location: [],
+    location: [
+      areas[4].locations[10]
+    ],
     specialCondition: [],
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 17, goal: 3},
-      {id: 42, goal: 70},
-      {id: 46, goal: 5},
-      {id: 47, goal: 40},
-      {id: 66, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 17, goal: 3, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 47, goal: 40, done: 0},
+      {id: 66, goal: 25, done: 0}
     ]
   },
   {
     id: 157,
-    location: [],
+    location: [
+      areas[2].locations[2]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 4, goal: 10},
-      {id: 10, goal: 15},
-      {id: 14, goal: 10},
-      {id: 43, goal: 40},
-      {id: 44, goal: 5},
-      {id: 51, goal: 25},
+      {id: 3, goal: 15, done: 0},
+      {id: 4, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 51, goal: 25, done: 0},
     ]
   },
   {
     id: 158,
-    location: [],
+    location: [
+      areas[2].locations[2],
+      areas[4].locations[4],
+      areas[4].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 8, goal: 10},
-      {id: 10, goal: 25},
-      {id: 15, goal: 10},
-      {id: 26, goal: 3},
-      {id: 45, goal: 5},
-      {id: 156, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 8, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 15, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 156, goal: 25, done: 0}
     ]
   },
   {
     id: 159,
-    location: [],
+    location: [
+      areas[2].locations[2],
+      areas[4].locations[4],
+      areas[4].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 8, goal: 10},
-      {id: 10, goal: 15},
-      {id: 15, goal: 20},
-      {id: 26, goal: 3},
-      {id: 98, goal: 25},
-      {id: 155, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 8, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 15, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 98, goal: 25, done: 0},
+      {id: 155, goal: 40, done: 0}
     ]
   },
   {
     id: 160,
-    location: [],
+    location: [
+      areas[2].locations[2]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 23, goal: 5},
-      {id: 42, goal: 70},
-      {id: 46, goal: 5},
-      {id: 98, goal: 25},
-      {id: 155, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 23, goal: 5, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 98, goal: 25, done: 0},
+      {id: 155, goal: 40, done: 0}
     ]
   },
   {
     id: 161,
-    location: [],
+    location: [
+      areas[2].locations[21]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 7, goal: 5},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 163, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 7, goal: 5, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 163, goal: 25, done: 0}
     ]
   },
   {
     id: 162,
-    location: [],
+    location: [
+      areas[2].locations[21]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 80, goal: 25},
-      {id: 120, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 80, goal: 25, done: 0},
+      {id: 120, goal: 25, done: 0}
     ]
   },
   {
     id: 163,
-    location: [],
+    location: [
+      areas[2].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 10, goal: 5},
-      {id: 19, goal: 3},
-      {id: 42, goal: 40},
-      {id: 46, goal: 5},
-      {id: 125, goal: 40},
-      {id: 164, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 19, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 125, goal: 40, done: 0},
+      {id: 164, goal: 40, done: 0}
     ]
   },
   {
     id: 164,
-    location: [],
+    location: [
+      areas[2].locations[4],
+      areas[2].locations[19]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 14, goal: 10},
-      {id: 26, goal: 1},
-      {id: 29, goal: 7},
-      {id: 80, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 29, goal: 7, done: 0},
+      {id: 80, goal: 25, done: 0}
     ]
   },
   {
     id: 165,
-    location: [],
+    location: [
+      areas[2].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 14, goal: 20},
-      {id: 27, goal: 7},
-      {id: 43, goal: 25},
-      {id: 70, goal: 25},
-      {id: 106, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 20, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 70, goal: 25, done: 0},
+      {id: 106, goal: 40, done: 0}
     ]
   },
   {
     id: 166,
-    location: [],
+    location: [
+      areas[2].locations[4],
+      areas[2].locations[10],
+      areas[3].locations[9],
+      areas[4].locations[5],
+      areas[4].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 26, goal: 1},
-      {id: 27, goal: 7},
-      {id: 70, goal: 40},
-      {id: 164, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 70, goal: 40, done: 0},
+      {id: 164, goal: 40, done: 0}
     ]
   },
   {
@@ -2617,369 +3363,448 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 155, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 155, goal: 25, done: 0}
     ]
   },
   {
     id: 168,
-    location: [],
+    location: [
+      areas[2].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 44, goal: 5},
-      {id: 54, goal: 25},
-      {id: 165, goal: 1}
+      {id: 3, goal: 25, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 54, goal: 25, done: 0},
+      {id: 165, goal: 1, done: 0}
     ]
   },
   {
     id: 169,
-    location: [],
+    location: [
+      areas[2].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 12, goal: 3},
-      {id: 41, goal: 2},
-      {id: 43, goal: 15},
-      {id: 84, goal: 25},
-      {id: 86, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 12, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 84, goal: 25, done: 0},
+      {id: 86, goal: 40, done: 0}
     ]
   },
   {
     id: 170,
-    location: [],
+    location: [
+      areas[2].locations[10],
+      areas[2].locations[14],
+      areas[2].locations[20]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 25},
-      {id: 14, goal: 20},
-      {id: 26, goal: 1},
-      {id: 28, goal: 7},
-      {id: 163, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 14, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 7, done: 0},
+      {id: 163, goal: 25, done: 0}
     ]
   },
   {
     id: 171,
-    location: [],
+    location: [
+      areas[2].locations[10],
+      areas[2].locations[14],
+      areas[2].locations[20]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 14, goal: 10},
-      {id: 43, goal: 70},
-      {id: 125, goal: 40},
-      {id: 166, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 125, goal: 40, done: 0},
+      {id: 166, goal: 25, done: 0}
     ]
   },
   {
     id: 172,
-    location: [],
+    location: [
+      areas[2].locations[20]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 8, goal: 10},
-      {id: 10, goal: 15},
-      {id: 20, goal: 10},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 163, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 8, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 20, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 163, goal: 25, done: 0}
     ]
   },
   {
     id: 173,
-    location: [],
+    location: [
+      areas[2].locations[20]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 8, goal: 10},
-      {id: 10, goal: 15},
-      {id: 14, goal: 10},
-      {id: 41, goal: 2},
-      {id: 43, goal: 40},
-      {id: 116, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 8, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 116, goal: 40, done: 0}
     ]
   },
   {
     id: 174,
-    location: [],
+    location: [
+      areas[2].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 26, goal: 3},
-      {id: 44, goal: 10},
-      {id: 104, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 104, goal: 25, done: 0}
     ]
   },
   {
     id: 175,
-    location: [],
+    location: [
+      areas[2].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 12, goal: 20},
-      {id: 26, goal: 3},
-      {id: 46, goal: 10},
-      {id: 84, goal: 40},
-      {id: 86, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 12, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 84, goal: 40, done: 0},
+      {id: 86, goal: 25, done: 0}
     ]
   },
   {
     id: 176,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 70},
-      {id: 84, goal: 40},
-      {id: 86, goal: 40},
-      {id: 167, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 84, goal: 40, done: 0},
+      {id: 86, goal: 40, done: 0},
+      {id: 167, goal: 25, done: 0}
     ]
   },
   {
     id: 177,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 24, goal: 10},
-      {id: 26, goal: 3},
-      {id: 28, goal: 5},
-      {id: 83, goal: 25},
-      {id: 168, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 24, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 28, goal: 5, done: 0},
+      {id: 83, goal: 25, done: 0},
+      {id: 168, goal: 25, done: 0}
     ]
   },
   {
     id: 178,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 26, goal: 3},
-      {id: 43, goal: 25},
-      {id: 139, goal: 25},
-      {id: 152, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 139, goal: 25, done: 0},
+      {id: 152, goal: 25, done: 0}
     ]
   },
   {
     id: 179,
-    location: [],
+    location: [
+      areas[3].locations[9],
+      areas[3].locations[13],
+      areas[3].locations[15],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 5, goal: 3},
-      {id: 42, goal: 40},
-      {id: 100, goal: 40},
-      {id: 169, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 5, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 100, goal: 40, done: 0},
+      {id: 169, goal: 25, done: 0}
     ]
   },
   {
     id: 180,
-    location: [],
+    location: [
+      areas[3].locations[3],
+      areas[3].locations[4],
+      areas[3].locations[13],
+      areas[3].locations[14],
+      areas[4].locations[5],
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 2, goal: 15},
-      {id: 3, goal: 25},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 16, goal: 10},
-      {id: 26, goal: 1},
-      {id: 27, goal: 7},
-      {id: 65, goal: 25}
+      {id: 2, goal: 15, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 16, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 27, goal: 7, done: 0},
+      {id: 65, goal: 25, done: 0}
     ]
   },
   {
     id: 181,
-    location: [],
+    location: [
+      areas[3].locations[3],
+      areas[3].locations[4],
+      areas[3].locations[13],
+      areas[3].locations[14],
+      areas[4].locations[5],
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 15, goal: 25},
-      {id: 30, goal: 7},
-      {id: 42, goal: 40},
-      {id: 92, goal: 25},
-      {id: 169, goal: 25}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 15, goal: 25, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 92, goal: 25, done: 0},
+      {id: 169, goal: 25, done: 0}
     ]
   },
   {
     id: 182,
-    location: [],
+    location: [
+      areas[3].locations[12],
+      areas[4].locations[1],
+      areas[4].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 26, goal: 3},
-      {id: 44, goal: 10},
-      {id: 139, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 139, goal: 25, done: 0}
     ]
   },
   {
     id: 183,
-    location: [],
+    location: [
+      areas[3].locations[12],
+      areas[4].locations[1],
+      areas[4].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 24, goal: 20},
-      {id: 26, goal: 3},
-      {id: 46, goal: 10},
-      {id: 112, goal: 25},
-      {id: 170, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 24, goal: 20, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 112, goal: 25, done: 0},
+      {id: 170, goal: 40, done: 0}
     ]
   },
   {
     id: 184,
-    location: [],
+    location: [
+      areas[3].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 24, goal: 3},
-      {id: 42, goal: 40},
-      {id: 46, goal: 3},
-      {id: 168, goal: 25},
-      {id: 170, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 24, goal: 3, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 46, goal: 3, done: 0},
+      {id: 168, goal: 25, done: 0},
+      {id: 170, goal: 40, done: 0}
     ]
   },
   {
     id: 185,
-    location: [],
+    location: [
+      areas[3].locations[5],
+      areas[3].locations[12],
+      areas[3].locations[13],
+      areas[3].locations[14],
+      areas[4].locations[10],
+      areas[4].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 10, goal: 40},
-      {id: 18, goal: 20},
-      {id: 26, goal: 1},
-      {id: 41, goal: 2},
-      {id: 46, goal: 8},
-      {id: 59, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 18, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 46, goal: 8, done: 0},
+      {id: 59, goal: 25, done: 0}
     ]
   },
   {
     id: 186,
-    location: [],
+    location: [
+      areas[3].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 12, goal: 3},
-      {id: 42, goal: 70},
-      {id: 46, goal: 5},
-      {id: 59, goal: 25},
-      {id: 108, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 12, goal: 3, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 59, goal: 25, done: 0},
+      {id: 108, goal: 40, done: 0}
     ]
   },
   {
     id: 187,
-    location: [],
+    location: [
+      areas[3].locations[8],
+      areas[3].locations[13],
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 18, goal: 10},
-      {id: 26, goal: 3},
-      {id: 30, goal: 7},
-      {id: 41, goal: 2},
-      {id: 67, goal: 40},
-      {id: 171, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 18, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 67, goal: 40, done: 0},
+      {id: 171, goal: 25, done: 0}
     ]
   },
   {
     id: 188,
-    location: [],
+    location: [
+      areas[3].locations[13],
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 26, goal: 3},
-      {id: 41, goal: 2},
-      {id: 46, goal: 8},
-      {id: 172, goal: 3},
-      {id: 173, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 46, goal: 8, done: 0},
+      {id: 172, goal: 3, done: 0},
+      {id: 173, goal: 25, done: 0}
     ]
   },
   {
     id: 189,
-    location: [],
+    location: [
+      areas[4].locations[4]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 17, goal: 3},
-      {id: 41, goal: 2},
-      {id: 42, goal: 100},
-      {id: 46, goal: 10},
-      {id: 173, goal: 40},
-      {id: 174, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 17, goal: 3, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 100, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 173, goal: 40, done: 0},
+      {id: 174, goal: 40, done: 0}
     ]
   },
   {
     id: 190,
-    location: [],
+    location: [
+      areas[3].locations[5],
+      areas[3].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 2, goal: 15},
-      {id: 3, goal: 25},
-      {id: 7, goal: 25},
-      {id: 10, goal: 15},
-      {id: 20, goal: 10},
-      {id: 26, goal: 1},
-      {id: 30, goal: 10},
-      {id: 175, goal: 25},
-      {id: 176, goal: 1}
+      {id: 2, goal: 15, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 20, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 175, goal: 25, done: 0},
+      {id: 176, goal: 1, done: 0}
     ]
   },
   {
     id: 191,
-    location: [],
+    location: [
+      areas[3].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 24, goal: 3},
-      {id: 42, goal: 70},
-      {id: 46, goal: 10},
-      {id: 177, goal: 25},
-      {id: 178, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 24, goal: 3, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 177, goal: 25, done: 0},
+      {id: 178, goal: 40, done: 0}
     ]
   },
   {
     id: 192,
-    location: [],
+    location: [
+      areas[3].locations[0]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 16, goal: 20},
-      {id: 26, goal: 1},
-      {id: 30, goal: 10},
-      {id: 45, goal: 7},
-      {id: 139, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 16, goal: 20, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 45, goal: 7, done: 0},
+      {id: 139, goal: 40, done: 0}
     ]
   },
   {
@@ -2987,141 +3812,165 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 56, goal: 25},
-      {id: 112, goal: 25},
-      {id: 179, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 56, goal: 25, done: 0},
+      {id: 112, goal: 25, done: 0},
+      {id: 179, goal: 40, done: 0}
     ]
   },
   {
     id: 194,
-    location: [],
+    location: [
+      areas[3].locations[0],
+      areas[3].locations[3]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 41, goal: 6},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 83, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 41, goal: 6, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 83, goal: 25, done: 0}
     ]
   },
   {
     id: 195,
-    location: [],
+    location: [
+      areas[3].locations[0],
+      areas[4].locations[5],
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 28, goal: 7},
-      {id: 44, goal: 10},
-      {id: 45, goal: 5},
-      {id: 65, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 7, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 45, goal: 5, done: 0},
+      {id: 65, goal: 25, done: 0}
     ]
   },
   {
     id: 196,
-    location: [],
+    location: [
+      areas[3].locations[15],
+      areas[4].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 28, goal: 5},
-      {id: 43, goal: 40},
-      {id: 92, goal: 40},
-      {id: 180, goal: 25},
-      {id: 181, goal: 1}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 28, goal: 5, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 92, goal: 40, done: 0},
+      {id: 180, goal: 25, done: 0},
+      {id: 181, goal: 1, done: 0}
     ]
   },
   {
     id: 197,
-    location: [],
+    location: [
+      areas[3].locations[0],
+      areas[3].locations[3],
+      areas[3].locations[14],
+      areas[4].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 8, goal: 20},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 44, goal: 8},
-      {id: 156, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 156, goal: 25, done: 0}
     ]
   },
   {
     id: 198,
-    location: [],
+    location: [
+      areas[3].locations[3]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 10},
-      {id: 10, goal: 10},
-      {id: 23, goal: 3},
-      {id: 43, goal: 40},
-      {id: 46, goal: 5},
-      {id: 156, goal: 40},
-      {id: 177, goal: 40}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 23, goal: 3, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 156, goal: 40, done: 0},
+      {id: 177, goal: 40, done: 0}
     ]
   },
   {
     id: 199,
-    location: [],
+    location: [
+      areas[3].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 6, goal: 1},
-      {id: 7, goal: 10},
-      {id: 8, goal: 10},
-      {id: 26, goal: 3},
-      {id: 29, goal: 3},
-      {id: 44, goal: 5}
+      {id: 3, goal: 15, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 8, goal: 10, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 29, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0}
     ]
   },
   {
     id: 200,
-    location: [],
+    location: [
+      areas[3].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 7, goal: 10},
-      {id: 8, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 44, goal: 5},
-      {id: 182, goal: 25},
-      {id: 183, goal: 1}
+      {id: 3, goal: 15, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 8, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 182, goal: 25, done: 0},
+      {id: 183, goal: 1, done: 0}
     ]
   },
   {
     id: 201,
-    location: [],
+    location: [
+      areas[3].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 8, goal: 25},
-      {id: 10, goal: 10},
-      {id: 43, goal: 15},
-      {id: 76, goal: 40},
-      {id: 97, goal: 25},
-      {id: 132, goal: 3}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 8, goal: 25, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 76, goal: 40, done: 0},
+      {id: 97, goal: 25, done: 0},
+      {id: 132, goal: 3, done: 0}
     ]
   },
   {
     id: 202,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 28, goal: 7},
-      {id: 41, goal: 4},
-      {id: 44, goal: 8},
-      {id: 67, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 7, done: 0},
+      {id: 41, goal: 4, done: 0},
+      {id: 44, goal: 8, done: 0},
+      {id: 67, goal: 25, done: 0}
     ]
   },
   {
@@ -3129,475 +3978,569 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 137, goal: 25},
-      {id: 184, goal: 40}
+      {id: 3, goal: 5, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 137, goal: 25, done: 0},
+      {id: 184, goal: 40, done: 0}
     ]
   },
   {
     id: 204,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 5},
-      {id: 41, goal: 2},
-      {id: 43, goal: 70},
-      {id: 67, goal: 40},
-      {id: 137, goal: 25}
+      {id: 3, goal: 5, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 67, goal: 40, done: 0},
+      {id: 137, goal: 25, done: 0}
     ]
   },
   {
     id: 205,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[6],
+      areas[4].locations[11],
+      areas[4].locations[16]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 20},
-      {id: 10, goal: 25},
-      {id: 26, goal: 1},
-      {id: 28, goal: 10},
-      {id: 44, goal: 10},
-      {id: 185, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 20, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 10, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 185, goal: 25, done: 0}
     ]
   },
   {
     id: 206,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[6],
+      areas[4].locations[11],
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 25},
-      {id: 10, goal: 40},
-      {id: 11, goal: 25},
-      {id: 30, goal: 10},
-      {id: 42, goal: 15},
-      {id: 46, goal: 5},
-      {id: 111, goal: 25},
-      {id: 185, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 40, done: 0},
+      {id: 11, goal: 25, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 111, goal: 25, done: 0},
+      {id: 185, goal: 40, done: 0}
     ]
   },
   {
     id: 207,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[6],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 43, goal: 15},
-      {id: 44, goal: 5},
-      {id: 186, goal: 40}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 186, goal: 40, done: 0}
     ]
   },
   {
     id: 208,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 42, goal: 15},
-      {id: 70, goal: 40},
-      {id: 145, goal: 25},
-      {id: 187, goal: 40}
+      {id: 3, goal: 10, done: 0},
+      {id: 42, goal: 15, done: 0},
+      {id: 70, goal: 40, done: 0},
+      {id: 145, goal: 25, done: 0},
+      {id: 187, goal: 40, done: 0}
     ]
   },
   {
     id: 209,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 26, goal: 1},
-      {id: 27, goal: 5},
-      {id: 131, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 27, goal: 5, done: 0},
+      {id: 131, goal: 25, done: 0}
     ]
   },
   {
     id: 210,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 26, goal: 1},
-      {id: 30, goal: 5},
-      {id: 131, goal: 25}
+      {id: 3, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 30, goal: 5, done: 0},
+      {id: 131, goal: 25, done: 0}
     ]
   },
   {
     id: 211,
-    location: [],
+    location: [
+      areas[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 43, goal: 15},
-      {id: 110, goal: 40},
-      {id: 175, goal: 25},
-      {id: 178, goal: 40}
+      {id: 3, goal: 10, done: 0},
+      {id: 43, goal: 15, done: 0},
+      {id: 110, goal: 40, done: 0},
+      {id: 175, goal: 25, done: 0},
+      {id: 178, goal: 40, done: 0}
     ]
   },
   {
     id: 212,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[6],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 7, goal: 10},
-      {id: 10, goal: 15},
-      {id: 26, goal: 3},
-      {id: 30, goal: 10},
-      {id: 44, goal: 10},
-      {id: 188, goal: 25},
-      {id: 189, goal: 1}
+      {id: 3, goal: 25, done: 0},
+      {id: 7, goal: 10, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 3, done: 0},
+      {id: 30, goal: 10, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 188, goal: 25, done: 0},
+      {id: 189, goal: 1, done: 0}
     ]
   },
   {
     id: 213,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[6],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 20, goal: 20},
-      {id: 30, goal: 7},
-      {id: 41, goal: 2},
-      {id: 131, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 20, goal: 20, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 131, goal: 25, done: 0}
     ]
   },
   {
     id: 214,
-    location: [],
+    location: [
+      areas[4].locations[4],
+      areas[4].locations[6],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 3},
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 16, goal: 5},
-      {id: 41, goal: 2},
-      {id: 42, goal: 70},
-      {id: 46, goal: 5},
-      {id: 159, goal: 40},
-      {id: 190, goal: 25}
+      {id: 0, goal: 3, done: 0},
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 16, goal: 5, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 46, goal: 5, done: 0},
+      {id: 159, goal: 40, done: 0},
+      {id: 190, goal: 25, done: 0}
     ]
   },
   {
     id: 215,
-    location: [],
+    location: [
+      areas[4].locations[10],
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 2, goal: 15},
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 26, goal: 1},
-      {id: 28, goal: 10},
-      {id: 44, goal: 10},
-      {id: 188, goal: 25}
+      {id: 2, goal: 15, done: 0},
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 10, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 188, goal: 25, done: 0}
     ]
   },
   {
     id: 216,
-    location: [],
+    location: [
+      areas[4].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 15},
-      {id: 10, goal: 15},
-      {id: 19, goal: 25},
-      {id: 30, goal: 7},
-      {id: 42, goal: 40},
-      {id: 159, goal: 25},
-      {id: 191, goal: 40}
+      {id: 0, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 19, goal: 25, done: 0},
+      {id: 30, goal: 7, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 159, goal: 25, done: 0},
+      {id: 191, goal: 40, done: 0}
     ]
   },
   {
     id: 217,
-    location: [],
+    location: [
+      areas[4].locations[11],
+      areas[4].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 16, goal: 10},
-      {id: 26, goal: 1},
-      {id: 27, goal: 10},
-      {id: 41, goal: 2},
-      {id: 192, goal: 25}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 16, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 27, goal: 10, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 192, goal: 25, done: 0}
     ]
   },
   {
     id: 218,
-    location: [],
+    location: [
+      areas[4].locations[11],
+      areas[4].locations[14]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 15},
-      {id: 10, goal: 25},
-      {id: 16, goal: 20},
-      {id: 41, goal: 2},
-      {id: 42, goal: 70},
-      {id: 150, goal: 40},
-      {id: 159, goal: 25}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 25, done: 0},
+      {id: 16, goal: 20, done: 0},
+      {id: 41, goal: 2, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 150, goal: 40, done: 0},
+      {id: 159, goal: 25, done: 0}
     ]
   },
   {
     id: 219,
-    location: [],
+    location: [
+      areas[4].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 8, goal: 20},
-      {id: 10, goal: 10},
-      {id: 23, goal: 10},
-      {id: 26, goal: 1},
-      {id: 44, goal: 10},
-      {id: 157, goal: 40}
+      {id: 3, goal: 25, done: 0},
+      {id: 8, goal: 20, done: 0},
+      {id: 10, goal: 10, done: 0},
+      {id: 23, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 10, done: 0},
+      {id: 157, goal: 40, done: 0}
     ]
   },
   {
     id: 220,
-    location: [],
+    location: [
+      areas[4].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 10},
-      {id: 10, goal: 5},
-      {id: 23, goal: 10},
-      {id: 43, goal: 70},
-      {id: 46, goal: 10},
-      {id: 135, goal: 25},
-      {id: 193, goal: 40}
+      {id: 3, goal: 10, done: 0},
+      {id: 10, goal: 5, done: 0},
+      {id: 23, goal: 10, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 135, goal: 25, done: 0},
+      {id: 193, goal: 40, done: 0}
     ]
   },
   {
     id: 221,
-    location: [],
+    location: [
+      areas[4].locations[5],
+      areas[4].locations[15]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 25},
-      {id: 10, goal: 15},
-      {id: 14, goal: 10},
-      {id: 26, goal: 1},
-      {id: 28, goal: 10},
-      {id: 106, goal: 25},
-      {id: 120, goal: 15}
+      {id: 3, goal: 25, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 14, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 28, goal: 10, done: 0},
+      {id: 106, goal: 25, done: 0},
+      {id: 120, goal: 15, done: 0}
     ]
   },
   {
     id: 222,
-    location: [],
+    location: [
+      areas[4].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 5, goal: 5},
-      {id: 42, goal: 70},
-      {id: 90, goal: 25},
-      {id: 194, goal: 40}
+      {id: 3, goal: 15, done: 0},
+      {id: 5, goal: 5, done: 0},
+      {id: 42, goal: 70, done: 0},
+      {id: 90, goal: 25, done: 0},
+      {id: 194, goal: 40, done: 0}
     ]
   },
   {
     id: 223,
-    location: [],
+    location: [
+      areas[4].locations[1],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 70},
-      {id: 93, goal: 40}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 93, goal: 40, done: 0}
     ]
   },
   {
     id: 224,
-    location: [],
+    location: [
+      areas[4].locations[1],
+      areas[4].locations[13]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 15},
-      {id: 25, goal: 10},
-      {id: 26, goal: 1},
-      {id: 44, goal: 5},
-      {id: 46, goal: 10},
-      {id: 78, goal: 25}
+      {id: 3, goal: 15, done: 0},
+      {id: 25, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 78, goal: 25, done: 0}
     ]
   },
   {
     id: 225,
-    location: [],
+    location: [
+      areas[4].locations[5]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 0, goal: 1},
-      {id: 3, goal: 15},
-      {id: 10, goal: 15},
-      {id: 16, goal: 10},
-      {id: 43, goal: 70},
-      {id: 46, goal: 20},
-      {id: 47, goal: 40},
-      {id: 195, goal: 70}
+      {id: 0, goal: 1, done: 0},
+      {id: 3, goal: 15, done: 0},
+      {id: 10, goal: 15, done: 0},
+      {id: 16, goal: 10, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 46, goal: 20, done: 0},
+      {id: 47, goal: 40, done: 0},
+      {id: 195, goal: 70, done: 0}
     ]
   },
   {
     id: 226,
-    location: [],
+    location: [
+      areas[0].locations[9]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 70},
-      {id: 102, goal: 40}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 102, goal: 40, done: 0}
     ]
   },
   {
     id: 227,
-    location: [],
+    location: [
+      areas[1].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 70},
-      {id: 56, goal: 40},
-      {id: 196, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 70, done: 0},
+      {id: 56, goal: 40, done: 0},
+      {id: 196, goal: 25, done: 0}
     ]
   },
   {
     id: 228,
-    location: [],
+    location: [
+      areas[2].locations[1]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 25},
-      {id: 161, goal: 25},
-      {id: 197, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 161, goal: 25, done: 0},
+      {id: 197, goal: 25, done: 0}
     ]
   },
   {
     id: 229,
-    location: [],
+    location: [
+      areas[4].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 25},
-      {id: 145, goal: 25},
-      {id: 149, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 145, goal: 25, done: 0},
+      {id: 149, goal: 25, done: 0}
     ]
   },
   {
     id: 230,
-    location: [],
+    location: [
+      areas[3].locations[1]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 198, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 198, goal: 25, done: 0}
     ]
   },
   {
     id: 231,
-    location: [],
+    location: [
+      areas[4].locations[6]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 92, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 92, goal: 25, done: 0}
     ]
   },
   {
     id: 232,
-    location: [],
+    location: [
+      areas[2].locations[10]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 92, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 92, goal: 25, done: 0}
     ]
   },
   {
     id: 233,
-    location: [],
+    location: [
+      areas[0].locations[8]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 92, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 92, goal: 25, done: 0}
     ]
   },
   {
     id: 234,
-    location: [],
+    location: [
+      areas[1].locations[3]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 92, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 92, goal: 25, done: 0}
     ]
   },
   {
     id: 235,
-    location: [],
+    location: [
+      areas[3].locations[17]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 63, goal: 25},
-      {id: 199, goal: 40}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 63, goal: 25, done: 0},
+      {id: 199, goal: 40, done: 0}
     ]
   },
   {
     id: 236,
-    location: [],
+    location: [
+      areas[3].locations[17]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 40},
-      {id: 49, goal: 25},
-      {id: 200, goal: 40}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 49, goal: 25, done: 0},
+      {id: 200, goal: 40, done: 0}
     ]
   },
   {
     id: 237,
-    location: [],
+    location: [
+      areas[2].locations[12]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 201, goal: 25},
-      {id: 202, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 201, goal: 25, done: 0},
+      {id: 202, goal: 25, done: 0}
     ]
   },
   {
     id: 238,
-    location: [],
+    location: [
+      areas[3].locations[17]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 203, goal: 1}
+      {id: 203, goal: 1, done: 0}
     ]
   },
   {
     id: 239,
-    location: [],
+    location: [
+      areas[2].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 60, goal: 25},
-      {id: 80, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 60, goal: 25, done: 0},
+      {id: 80, goal: 25, done: 0}
     ]
   },
   {
     id: 240,
-    location: [],
+    location: [
+      areas[2].locations[11]
+    ],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 76, goal: 25},
-      {id: 204, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 76, goal: 25, done: 0},
+      {id: 204, goal: 25, done: 0}
     ]
   },
   {
@@ -3605,11 +4548,11 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 25},
-      {id: 43, goal: 40},
-      {id: 178, goal: 25},
-      {id: 205, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 25, done: 0},
+      {id: 43, goal: 40, done: 0},
+      {id: 178, goal: 25, done: 0},
+      {id: 205, goal: 25, done: 0}
     ]
   },
   {
@@ -3617,11 +4560,11 @@ export const pokemons = [
     location: [],
     specialCondition: {},
     toDos: [
-      {id: 3, goal: 1},
-      {id: 42, goal: 40},
-      {id: 43, goal: 25},
-      {id: 155, goal: 25},
-      {id: 206, goal: 25}
+      {id: 3, goal: 1, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 25, done: 0},
+      {id: 155, goal: 25, done: 0},
+      {id: 206, goal: 25, done: 0}
     ]
   },
 ]
