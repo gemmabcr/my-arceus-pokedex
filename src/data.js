@@ -1,6 +1,6 @@
 export const backgroundImage = 'https://legends.pokemon.com/assets/home/bg-dp-desktop.jpg'
 export const finalBanner = 'https://legends.pokemon.com/assets/home/home_trailer_thumb.jpg'
-export const pokemonLogo = 'https://legends.pokemon.com/en-us/assets/arceus-logo-large.png'
+export const pokemonLogo = 'https://pokemon-project.com/leyendasarceus/img/header.png'
 export const areasLogos = {
   praderaObsidiana: 'https://images.wikidexcdn.net/mwuploads/wikidex/0/0a/latest/20220722112256/Pradera_Obsidiana_icono.png',
   pantanalCarmesi: 'https://images.wikidexcdn.net/mwuploads/wikidex/8/80/latest/20220722112246/Pantanal_Carmes%C3%AD_icono.png',

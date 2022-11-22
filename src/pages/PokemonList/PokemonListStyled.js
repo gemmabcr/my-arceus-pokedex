@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const LogoArceus = styled.img `
-  max-width: 200px
+  max-width: 300px
 `
 
 export const PokemonListContainer = styled.div `

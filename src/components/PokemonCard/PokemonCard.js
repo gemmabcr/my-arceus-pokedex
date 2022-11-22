@@ -1,6 +1,6 @@
-import React, {Fragment} from 'react'
-import { PokemonCardContainer } from './PokemonCardStyled'
-import { FlexRow } from '../../commonStyled'
+import React from 'react'
+import { PokemonCardContainer, PokemonCardContent } from './PokemonCardStyled'
+import {FlexColumn, FlexRow} from '../../commonStyled'
 import PokemonInfo from '../PokemonInfo/PokemonInfo'
 import { PokeService } from '../../service/pokeService'
 import PokemonTodosInfo from '../PokemonTodosInfo/PokemonTodosInfo'
@@ -27,7 +27,7 @@ const PokemonCard = ({urlPokemon, index}) => {
     <PokemonCardContainer>
       {loading && <p>Loading...</p>}
       {!loading &&
-        <Fragment>
+        <PokemonCardContent>
           <FlexRow>
             <p>{index}</p>
             <PokemonInfo
@@ -37,13 +37,11 @@ const PokemonCard = ({urlPokemon, index}) => {
               specialConditions={addedPokemonData.specialCondition}
             />
           </FlexRow>
-          <div>
-            <p>
-              Tareas de la pokedex
-            </p>
+          <FlexColumn>
+            <h4>Tareas de la pokedex</h4>
             <PokemonTodosInfo todos={addedPokemonData.toDos} />
-          </div>
-        </Fragment>
+          </FlexColumn>
+        </PokemonCardContent>
       }
     </PokemonCardContainer>
   )

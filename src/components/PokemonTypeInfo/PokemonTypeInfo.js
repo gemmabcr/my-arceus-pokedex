@@ -1,6 +1,6 @@
 import React from 'react'
-import { FlexRow } from '../../commonStyled'
 import { PokeService } from '../../service/pokeService'
+import { TypeLabel } from './PokemonTypeInfoStyled'
 
 const PokemonTypeInfo = ({urlTypePokemon}) => {
   const [loading, setLoading] = React.useState(true)
@@ -21,10 +21,10 @@ const PokemonTypeInfo = ({urlTypePokemon}) => {
     <div>
       {loading && <p>Loading...</p>}
       {!loading &&
-        <FlexRow>
+        <TypeLabel>
           <img width={16} height={16} src={typeImagePokemon} alt={typePokemon} />
           <span>{typePokemon}</span>
-        </FlexRow>
+        </TypeLabel>
       }
     </div>
   )

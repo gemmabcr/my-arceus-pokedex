@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { PokemonListContainer, LogoArceus, PokemonListContent } from './PokemonListStyled'
 import { FlexRow } from '../../commonStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
-import {areasLogos, pokemonLogo} from '../../data'
-import {PokeService} from "../../service/pokeService";
+import { pokemonLogo } from '../../data'
+import {PokeService} from '../../service/pokeService'
 
 const PokemonList = () => {
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
@@ -20,11 +20,10 @@ const PokemonList = () => {
 
   return (
     <PokemonListContainer>
-      <h1>This is my tracking list of my arceus pokedex</h1>
+      <h1>This is my tracking list of my Pokedex</h1>
       <LogoArceus src={pokemonLogo} alt='Pokemon Leyendas: Arceus' />
       <FlexRow>
-        <img src={areasLogos.praderaObsidiana} alt='Pradera Obsidiana' />
-        <h3>Pradera Obsidiana</h3>
+        <h3>All Hisui</h3>
       </FlexRow>
       {loading && <p>Loading... </p>}
       {!loading &&

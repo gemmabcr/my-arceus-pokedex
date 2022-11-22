@@ -1,9 +1,8 @@
 import React from 'react'
 import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
-import { FlexRow } from '../../commonStyled'
+import { FlexColumn, FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
-import PokemonEvolutionInfo from '../PokemonEvolutionInfo/PokemonEvolutionInfo'
 import { PokeService } from '../../service/pokeService'
 
 const PokemonInfo = ({urlDataPokemon, evolutionPokemonData, locations, specialConditions}) => {
@@ -27,39 +26,23 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData, locations, specialCo
     <div>
       {loading && <p>Loading...</p>}
       {!loading &&
-        <FlexRow>
-          <PokemonCardImg
-            alt={dataPokemon.name}
-            src={imagePokemon}
-          />
-          <div>
-            <p>{formatedName(dataPokemon.name)}</p>
-            <FlexRow>
-              {typeDataPokemon.map(item=>
-                <PokemonTypeInfo
-                  key={item.slot}
-                  urlTypePokemon={item.type.url}
-                />
-              )}
-            </FlexRow>
-            {evolutionPokemonData && evolutionPokemonData.url &&
-              <PokemonEvolutionInfo namePokemon={dataPokemon.name} urlEvolutionData={evolutionPokemonData.url} />
-            }
-            {locations !== undefined && locations.map(location =>
-              <p key={location.id}>Location: {location.name}</p>
+        <FlexColumn>
+          <FlexRow>
+            <PokemonCardImg
+              alt={dataPokemon.name}
+              src={imagePokemon}
+            />
+            <h4>{formatedName(dataPokemon.name)}</h4>
+          </FlexRow>
+          <FlexRow>
+            {typeDataPokemon.map(item=>
+              <PokemonTypeInfo
+                key={item.slot}
+                urlTypePokemon={item.type.url}
+              />
             )}
-            {specialConditions !== undefined &&
-              <div>
-                {specialConditions.time !== undefined && specialConditions.time.map(time =>
-                  <p key={time.id}>Time: {time.name}</p>
-                )}
-                {specialConditions.weather !== undefined && specialConditions.weather.map(weather =>
-                  <p key={weather.id}>Time: {weather.name}</p>
-                )}
-              </div>
-            }
-          </div>
-        </FlexRow>
+          </FlexRow>
+        </FlexColumn>
       }
     </div>
   )
