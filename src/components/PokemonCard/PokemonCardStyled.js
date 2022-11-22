@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PokemonCardContainer = styled.div `
   align-items: flex-start;
-  background: lightyellow;
+  background: #e5dca4;
   border: 1px solid dimgrey;
   display: flex;
   gap: 0.5rem;

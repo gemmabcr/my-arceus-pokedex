@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { PokemonListContainer, LogoArceus, PokemonListContent } from './PokemonListStyled'
-import { FlexRow } from '../../commonStyled'
+import { PokemonListContainer, PokemonListContent } from './PokemonListStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
-import { pokemonLogo } from '../../data'
 import {PokeService} from '../../service/pokeService'
 
 const PokemonList = () => {
@@ -20,11 +18,7 @@ const PokemonList = () => {
 
   return (
     <PokemonListContainer>
-      <h1>This is my tracking list of my Pokedex</h1>
-      <LogoArceus src={pokemonLogo} alt='Pokemon Leyendas: Arceus' />
-      <FlexRow>
-        <h3>All Hisui</h3>
-      </FlexRow>
+      <h3>Pokémons de Hisui</h3>
       {loading && <p>Loading... </p>}
       {!loading &&
         <PokemonListContent>

@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-export const LogoArceus = styled.img `
-  max-width: 300px
-`
-
 export const PokemonListContainer = styled.div `
   align-items: center;
   display: flex;
