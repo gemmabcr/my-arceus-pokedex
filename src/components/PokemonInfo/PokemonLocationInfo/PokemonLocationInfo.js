@@ -1,6 +1,6 @@
 import React from 'react'
-import { areasLogos } from '../../data'
-import {FlexColumn, FlexRow} from "../../commonStyled";
+import { areasLogos } from '../../../data'
+import {FlexColumn, FlexRow} from "../../../commonStyled";
 
 const PokemonLocationInfo = ({locations}) => {
   return (

@@ -1,4 +1,4 @@
-import { formatedName } from '../../commonFunctions'
+import { formatedName } from '../../../commonFunctions'
 
 export function checkSimpleEvolution(data) {
   return data.evolves_to.length === 1 && data.evolves_to[0] && data.evolves_to[0].species

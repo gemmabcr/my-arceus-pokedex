@@ -9,8 +9,8 @@ import {
   checkFirstEvolutionDetails,
   getFirstEvolutionLevel
 } from './EvolutionFunctions'
-import { FlexRow } from '../../commonStyled'
-import { formatedName } from '../../commonFunctions'
+import { FlexRow } from '../../../commonStyled'
+import { formatedName } from '../../../commonFunctions'
 
 const PokemonEvolutionInfo = ({urlEvolutionData, namePokemon}) => {
   const [loading, setLoading] = React.useState(true)

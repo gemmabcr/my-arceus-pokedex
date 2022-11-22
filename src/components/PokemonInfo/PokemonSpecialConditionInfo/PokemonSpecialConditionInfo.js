@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlexColumn, FlexRow } from '../../commonStyled'
+import { FlexColumn, FlexRow } from '../../../commonStyled'
 
 const PokemonSpecialConditionInfo = ({conditions}) => {
   return (

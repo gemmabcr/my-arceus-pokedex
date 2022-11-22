@@ -3,7 +3,7 @@ import { PokemonCardContainer, PokemonCardContent } from './PokemonCardStyled'
 import {FlexColumn, FlexRow} from '../../commonStyled'
 import PokemonInfo from '../PokemonInfo/PokemonInfo'
 import { PokeService } from '../../service/pokeService'
-import PokemonTodosInfo from '../PokemonTodosInfo/PokemonTodosInfo'
+import PokemonTodosInfo from '../PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
 
 const PokemonCard = ({urlPokemon, index}) => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])

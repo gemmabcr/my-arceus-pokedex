@@ -1,13 +1,5 @@
 import React, { Fragment } from 'react'
-import {
-  Overlay,
-  WrapperModal,
-  HeaderModal,
-  ContentModal,
-  InputWrapper,
-  InputModal,
-  CloseButton,
-} from './ModalStyled'
+import { Overlay, WrapperModal, HeaderModal, ContentModal, InputWrapper, InputModal, CloseButton } from './ModalStyled'
 import { PrimaryButton } from '../../commonStyled'
 
 const Modal = ({ show, setShow, setLogged }) => {

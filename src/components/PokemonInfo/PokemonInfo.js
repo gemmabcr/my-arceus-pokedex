@@ -1,6 +1,6 @@
 import React from 'react'
 import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
-import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
+import PokemonTypeInfo from './PokemonTypeInfo/PokemonTypeInfo'
 import { FlexColumn, FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { PokeService } from '../../service/pokeService'
@@ -32,7 +32,7 @@ const PokemonInfo = ({urlDataPokemon}) => {
               alt={dataPokemon.name}
               src={imagePokemon}
             />
-            <h4>{formatedName(dataPokemon.name)}</h4>
+            {/*<h4>{formatedName(dataPokemon.name)}</h4>*/}
           </FlexRow>
           <FlexRow>
             {typeDataPokemon.map(item=>

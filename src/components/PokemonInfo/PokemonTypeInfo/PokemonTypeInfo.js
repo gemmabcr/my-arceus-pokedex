@@ -1,5 +1,5 @@
 import React from 'react'
-import { PokeService } from '../../service/pokeService'
+import { PokeService } from '../../../service/pokeService'
 import { TypeLabel } from './PokemonTypeInfoStyled'
 
 const PokemonTypeInfo = ({urlTypePokemon}) => {
