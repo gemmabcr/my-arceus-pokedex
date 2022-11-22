@@ -45,10 +45,19 @@ const PokemonInfo = ({urlDataPokemon, evolutionPokemonData, locations, specialCo
             {evolutionPokemonData && evolutionPokemonData.url &&
               <PokemonEvolutionInfo namePokemon={dataPokemon.name} urlEvolutionData={evolutionPokemonData.url} />
             }
-            {/*TODO: fix that
-            {locations !== undefined && locations.map(location => <p key={location.id}>Location: {location.name}</p>)}
-            {specialConditions.time.map(time => <p key={time}>Time: {time}</p>)}
-            {specialConditions.weather.map(weather => <p key={weather}>Weather: {weather}</p>)}*/}
+            {locations !== undefined && locations.map(location =>
+              <p key={location.id}>Location: {location.name}</p>
+            )}
+            {specialConditions !== undefined &&
+              <div>
+                {specialConditions.time !== undefined && specialConditions.time.map(time =>
+                  <p key={time.id}>Time: {time.name}</p>
+                )}
+                {specialConditions.weather !== undefined && specialConditions.weather.map(weather =>
+                  <p key={weather.id}>Time: {weather.name}</p>
+                )}
+              </div>
+            }
           </div>
         </FlexRow>
       }
