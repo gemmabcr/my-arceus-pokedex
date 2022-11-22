@@ -5,9 +5,8 @@ import PokemonInfo from '../PokemonInfo/PokemonInfo'
 import { PokeService } from '../../service/pokeService'
 import PokemonTodosInfo from '../PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
 
-const PokemonCard = ({urlPokemon, index}) => {
+const PokemonCard = ({urlPokemon, index, todos}) => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
-  const [addedPokemonData, setAddedPokemonData] = React.useState([])
   const [loading, setLoading] = React.useState(true)
 
   React.useEffect(()=>{
@@ -15,7 +14,6 @@ const PokemonCard = ({urlPokemon, index}) => {
       pokeService.getPokemonData(urlPokemon, index)
       .then(data=> {
         setUrlDataPokemon(data.hisuiPokemon)
-        setAddedPokemonData(data.addedData)
       })
       .catch((error)=>console.log(error))
       .finally(()=> setLoading(false))
@@ -30,13 +28,11 @@ const PokemonCard = ({urlPokemon, index}) => {
             <p>{index}</p>
             <PokemonInfo
               urlDataPokemon={urlDataPokemon}
-              locations={addedPokemonData.location}
-              specialConditions={addedPokemonData.specialCondition}
             />
           </FlexRow>
           <FlexColumn>
             <h4>Tareas de la pokedex</h4>
-            <PokemonTodosInfo todos={addedPokemonData.toDos} />
+            <PokemonTodosInfo todos={todos} />
           </FlexColumn>
         </PokemonCardContent>
       }

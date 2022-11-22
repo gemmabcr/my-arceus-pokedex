@@ -17,7 +17,9 @@ const PokemonDetail = () => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [evolutionChainData, setEvolutionChainData] = React.useState([])
   const [evolutionFromData, setEvolutionFromData] = React.useState([])
-  const [addedPokemonData, setAddedPokemonData] = React.useState([])
+  const [locationsData, setLocationsData] = React.useState([])
+  const [specialConditionsData, setSpecialConditionsData] = React.useState([])
+  const [todosData, setTodosData] = React.useState([])
   const [loading, setLoading] = React.useState(true)
 
   React.useEffect(()=>{
@@ -27,7 +29,9 @@ const PokemonDetail = () => {
         setEvolutionChainData(data.evolutionChain)
         setEvolutionFromData(data.evolutionFrom)
         setUrlDataPokemon(data.hisuiPokemon)
-        setAddedPokemonData(data.addedData)
+        setLocationsData(data.locations)
+        setSpecialConditionsData(data.specialConditions)
+        setTodosData(data.toDos)
       })
       .catch((error)=>console.log(error))
       .finally(()=> setLoading(false))
@@ -57,16 +61,12 @@ const PokemonDetail = () => {
               evolutionFromData={evolutionFromData}
             />
           }*/}
-          {addedPokemonData.location !== undefined && addedPokemonData.location.length > 0 &&
-            <PokemonLocationInfo locations={addedPokemonData.location} />
-          }
-          {addedPokemonData.specialCondition !== undefined && addedPokemonData.specialCondition.length > 0 &&
-            <PokemonSpecialConditionInfo conditions={addedPokemonData.specialCondition} />
-          }
+          <PokemonLocationInfo locations={locationsData} />
+          <PokemonSpecialConditionInfo conditions={specialConditionsData} />
           <p>
             Tareas de la pokedex
           </p>
-          <PokemonTodosInfo todos={addedPokemonData.toDos} />
+          <PokemonTodosInfo todos={todosData} />
         </PokemonDetailContent>
       }
     </PokemonDetailContainer>

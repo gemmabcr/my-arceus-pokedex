@@ -24,13 +24,14 @@ const PokemonList = () => {
         <PokemonListContent>
           {hisuiPokedex.map(pokemon =>
             <Link
-              key={pokemon.entry_number}
-              to={`/pokemon/${pokemon.entry_number}`}
-              state={{ urlPokemon: pokemon.pokemon_species.url, index: pokemon.entry_number }}
+              key={pokemon.index}
+              to={`/pokemon/${pokemon.index}`}
+              state={{ urlPokemon: pokemon.url, index: pokemon.index }}
             >
               <PokemonCard
-                urlPokemon={pokemon.pokemon_species.url}
-                index={pokemon.entry_number}
+                urlPokemon={pokemon.url}
+                index={pokemon.index}
+                todos={pokemon.toDos}
               />
             </Link>
           )}

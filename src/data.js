@@ -352,7 +352,7 @@ export const pokemons = [
   {
     id: 1,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 1, done: 0},
@@ -366,7 +366,7 @@ export const pokemons = [
   {
     id: 2,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -380,7 +380,7 @@ export const pokemons = [
   {
     id: 3,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -392,7 +392,7 @@ export const pokemons = [
   {
     id: 4,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 1, done: 0},
@@ -406,7 +406,7 @@ export const pokemons = [
   {
     id: 5,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -420,7 +420,7 @@ export const pokemons = [
   {
     id: 6,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -433,7 +433,7 @@ export const pokemons = [
   {
     id: 7,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 1, done: 0},
@@ -447,7 +447,7 @@ export const pokemons = [
   {
     id: 8,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -461,7 +461,7 @@ export const pokemons = [
   {
     id: 9,
     location: [areas[5]],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -482,7 +482,7 @@ export const pokemons = [
       areas[1].locations[11],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -501,7 +501,7 @@ export const pokemons = [
       areas[1].locations[11],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 5, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -572,7 +572,7 @@ export const pokemons = [
       areas[0].locations[0],
       areas[2].locations[2]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 5, goal: 5, done: 0},
@@ -592,7 +592,7 @@ export const pokemons = [
       areas[0].locations[7],
       areas[3].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -614,7 +614,7 @@ export const pokemons = [
       areas[3].locations[12],
       areas[3].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -634,7 +634,7 @@ export const pokemons = [
       areas[3].locations[12],
       areas[3].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -653,7 +653,7 @@ export const pokemons = [
       areas[0].locations[3],
       areas[0].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -812,7 +812,7 @@ export const pokemons = [
       areas[4].locations[11],
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -1072,7 +1072,7 @@ export const pokemons = [
       areas[1].locations[12],
       areas[1].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 25, done: 0},
@@ -1089,7 +1089,7 @@ export const pokemons = [
       areas[1].locations[12],
       areas[1].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -1110,7 +1110,7 @@ export const pokemons = [
       areas[2].locations[0],
       areas[2].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -1127,7 +1127,7 @@ export const pokemons = [
       areas[2].locations[0],
       areas[2].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -1162,7 +1162,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[14],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 1, goal: 25, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -1193,7 +1193,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[14],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -1215,7 +1215,7 @@ export const pokemons = [
       areas[2].locations[21],
       areas[3].locations[2]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -1244,7 +1244,7 @@ export const pokemons = [
       areas[3].locations[13],
       areas[3].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 2, goal: 25, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -1274,7 +1274,7 @@ export const pokemons = [
       areas[3].locations[13],
       areas[3].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 2, goal: 15, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -1308,7 +1308,7 @@ export const pokemons = [
       areas[3].locations[2],
       areas[4].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -1335,7 +1335,7 @@ export const pokemons = [
       areas[0].locations[10],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 7, goal: 5, done: 0},
@@ -1349,7 +1349,7 @@ export const pokemons = [
     location: [
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -1372,7 +1372,7 @@ export const pokemons = [
       areas[3].locations[2],
       areas[3].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -1395,7 +1395,7 @@ export const pokemons = [
       areas[3].locations[2],
       areas[3].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -1414,7 +1414,7 @@ export const pokemons = [
       areas[0].locations[3],
       areas[1].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 4, goal: 10, done: 0},
@@ -1431,7 +1431,7 @@ export const pokemons = [
       areas[0].locations[0],
       areas[1].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -1467,7 +1467,7 @@ export const pokemons = [
       areas[0].locations[16],
       areas[4].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -1484,7 +1484,7 @@ export const pokemons = [
       areas[0].locations[11],
       areas[4].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -1500,7 +1500,7 @@ export const pokemons = [
     location: [
       areas[0].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -1518,7 +1518,7 @@ export const pokemons = [
       areas[0].locations[8],
       areas[0].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 7, goal: 5, done: 0},
@@ -1532,7 +1532,7 @@ export const pokemons = [
     location: [
       areas[0].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -1546,7 +1546,7 @@ export const pokemons = [
     location: [
       areas[0].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 10, goal: 5, done: 0},
@@ -1564,7 +1564,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -1581,7 +1581,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -1602,7 +1602,7 @@ export const pokemons = [
       areas[3].locations[9],
       areas[3].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 1, goal: 15, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -1620,7 +1620,7 @@ export const pokemons = [
       areas[3].locations[9],
       areas[3].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 1, goal: 15, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -1641,7 +1641,7 @@ export const pokemons = [
       areas[3].locations[2],
       areas[3].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -1685,7 +1685,7 @@ export const pokemons = [
       areas[1].locations[14],
       areas[2].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 1, goal: 40, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -1722,7 +1722,7 @@ export const pokemons = [
       areas[0].locations[1],
       areas[3].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -1792,7 +1792,7 @@ export const pokemons = [
       areas[0].locations[11],
       areas[0].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 7, goal: 5, done: 0},
@@ -1806,7 +1806,7 @@ export const pokemons = [
     location: [
       areas[0].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -1829,7 +1829,7 @@ export const pokemons = [
       areas[4].locations[14],
       areas[4].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 1, goal: 15, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -1867,7 +1867,7 @@ export const pokemons = [
       areas[0].locations[9],
       areas[3].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -1886,7 +1886,7 @@ export const pokemons = [
       areas[2].locations[16],
       areas[3].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 5, goal: 3, done: 0},
@@ -1904,7 +1904,7 @@ export const pokemons = [
       areas[0].locations[8],
       areas[0].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -1923,7 +1923,7 @@ export const pokemons = [
       areas[0].locations[11],
       areas[2].locations[20]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -1941,7 +1941,7 @@ export const pokemons = [
       areas[2].locations[10],
       areas[2].locations[14],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -1954,7 +1954,7 @@ export const pokemons = [
   {
     id: 85,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -1971,7 +1971,7 @@ export const pokemons = [
       areas[2].locations[7],
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 7, goal: 5, done: 0},
@@ -1988,7 +1988,7 @@ export const pokemons = [
       areas[2].locations[8],
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -2005,7 +2005,7 @@ export const pokemons = [
       areas[0].locations[4],
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -2024,7 +2024,7 @@ export const pokemons = [
       areas[1].locations[12],
       areas[3].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 4, goal: 20, done: 0},
@@ -2042,7 +2042,7 @@ export const pokemons = [
       areas[1].locations[14],
       areas[3].locations[9],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 4, goal: 10, done: 0},
@@ -2058,7 +2058,7 @@ export const pokemons = [
     location: [
       areas[1].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 10, goal: 10, done: 0},
@@ -2079,7 +2079,7 @@ export const pokemons = [
       areas[1].locations[14],
       areas[3].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -2097,7 +2097,7 @@ export const pokemons = [
       areas[1].locations[1],
       areas[1].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -2111,7 +2111,7 @@ export const pokemons = [
   {
     id: 94,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 43, goal: 40, done: 0},
@@ -2125,7 +2125,7 @@ export const pokemons = [
       areas[1].locations[4],
       areas[2].locations[17]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -2141,7 +2141,7 @@ export const pokemons = [
     location: [
       areas[1].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2161,7 +2161,7 @@ export const pokemons = [
       areas[1].locations[6],
       areas[3].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -2180,7 +2180,7 @@ export const pokemons = [
       areas[1].locations[6],
       areas[3].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -2199,7 +2199,7 @@ export const pokemons = [
       areas[1].locations[4],
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -2218,7 +2218,7 @@ export const pokemons = [
       areas[2].locations[21],
       areas[3].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -2239,7 +2239,7 @@ export const pokemons = [
       areas[4].locations[8],
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -2257,7 +2257,7 @@ export const pokemons = [
       areas[4].locations[8],
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -2273,7 +2273,7 @@ export const pokemons = [
     location: [
       areas[4].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2289,7 +2289,7 @@ export const pokemons = [
     location: [
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2309,7 +2309,7 @@ export const pokemons = [
       areas[1].locations[11],
       areas[3].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -2326,7 +2326,7 @@ export const pokemons = [
       areas[1].locations[11],
       areas[3].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -2345,7 +2345,7 @@ export const pokemons = [
       areas[1].locations[8],
       areas[3].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -2364,7 +2364,7 @@ export const pokemons = [
       areas[1].locations[8],
       areas[3].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -2381,7 +2381,7 @@ export const pokemons = [
     location: [
       areas[1].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 1, goal: 25, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -2399,7 +2399,7 @@ export const pokemons = [
       areas[1].locations[3],
       areas[3].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -2416,7 +2416,7 @@ export const pokemons = [
       areas[1].locations[3],
       areas[3].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -2434,7 +2434,7 @@ export const pokemons = [
       areas[1].locations[9],
       areas[3].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -2451,7 +2451,7 @@ export const pokemons = [
       areas[1].locations[9],
       areas[3].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -2466,7 +2466,7 @@ export const pokemons = [
   {
     id: 114,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -2481,7 +2481,7 @@ export const pokemons = [
       areas[1].locations[1],
       areas[3].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -2498,7 +2498,7 @@ export const pokemons = [
       areas[1].locations[1],
       areas[3].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -2513,7 +2513,7 @@ export const pokemons = [
     location: [
       areas[3].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2532,7 +2532,7 @@ export const pokemons = [
       areas[1].locations[6],
       areas[3].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -2548,7 +2548,7 @@ export const pokemons = [
     location: [
       areas[3].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2569,7 +2569,7 @@ export const pokemons = [
       areas[3].locations[0],
       areas[3].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -2588,7 +2588,7 @@ export const pokemons = [
       areas[3].locations[15],
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -2605,7 +2605,7 @@ export const pokemons = [
       areas[3].locations[0],
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2624,7 +2624,7 @@ export const pokemons = [
       areas[1].locations[14],
       areas[3].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 2, goal: 5, done: 0},
       {id: 3, goal: 5, done: 0},
@@ -2640,7 +2640,7 @@ export const pokemons = [
       areas[1].locations[14],
       areas[3].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -2659,7 +2659,7 @@ export const pokemons = [
       areas[4].locations[4],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -2676,7 +2676,7 @@ export const pokemons = [
       areas[4].locations[4],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2729,7 +2729,7 @@ export const pokemons = [
     location: [
       areas[0].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 5, goal: 3, done: 0},
@@ -2746,7 +2746,7 @@ export const pokemons = [
     location: [
       areas[1].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 7, goal: 5, done: 0},
@@ -2760,7 +2760,7 @@ export const pokemons = [
     location: [
       areas[1].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -2774,7 +2774,7 @@ export const pokemons = [
     location: [
       areas[1].locations[1]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 10, goal: 5, done: 0},
@@ -2790,7 +2790,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -2804,7 +2804,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -2817,7 +2817,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -2839,7 +2839,7 @@ export const pokemons = [
       areas[3].locations[14],
       areas[4].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 8, goal: 20, done: 0},
@@ -2862,7 +2862,7 @@ export const pokemons = [
       areas[3].locations[14],
       areas[4].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 8, goal: 20, done: 0},
@@ -2878,7 +2878,7 @@ export const pokemons = [
     location: [
       areas[5],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 43, goal: 70, done: 0},
@@ -2889,7 +2889,7 @@ export const pokemons = [
   {
     id: 139,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 70, done: 0},
@@ -2906,7 +2906,7 @@ export const pokemons = [
       areas[2].locations[10],
       areas[2].locations[17]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 8, goal: 20, done: 0},
@@ -2923,7 +2923,7 @@ export const pokemons = [
       areas[1].locations[14],
       areas[2].locations[0]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -2938,7 +2938,7 @@ export const pokemons = [
   {
     id: 142,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 41, goal: 28, done: 0},
     ]
@@ -2948,7 +2948,7 @@ export const pokemons = [
     location: [
       areas[2].locations[19]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -2964,7 +2964,7 @@ export const pokemons = [
     location: [
       areas[2].locations[10],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -2981,7 +2981,7 @@ export const pokemons = [
       areas[2].locations[9],
       areas[2].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3000,7 +3000,7 @@ export const pokemons = [
       areas[2].locations[16],
       areas[2].locations[18]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3017,7 +3017,7 @@ export const pokemons = [
       areas[2].locations[10],
       areas[2].locations[18]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -3035,7 +3035,7 @@ export const pokemons = [
       areas[2].locations[18],
       areas[2].locations[19]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -3050,7 +3050,7 @@ export const pokemons = [
     location: [
       areas[2].locations[19],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3068,7 +3068,7 @@ export const pokemons = [
       areas[2].locations[5],
       areas[2].locations[6],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -3083,7 +3083,7 @@ export const pokemons = [
   {
     id: 151,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 15, done: 0},
@@ -3100,7 +3100,7 @@ export const pokemons = [
       areas[2].locations[17],
       areas[4].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -3118,7 +3118,7 @@ export const pokemons = [
       areas[2].locations[17],
       areas[4].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3142,7 +3142,7 @@ export const pokemons = [
       areas[4].locations[10],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -3165,7 +3165,7 @@ export const pokemons = [
       areas[4].locations[10],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 40, done: 0},
@@ -3198,7 +3198,7 @@ export const pokemons = [
     location: [
       areas[2].locations[2]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 4, goal: 10, done: 0},
@@ -3216,7 +3216,7 @@ export const pokemons = [
       areas[4].locations[4],
       areas[4].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -3235,7 +3235,7 @@ export const pokemons = [
       areas[4].locations[4],
       areas[4].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 8, goal: 10, done: 0},
@@ -3251,7 +3251,7 @@ export const pokemons = [
     location: [
       areas[2].locations[2]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3268,7 +3268,7 @@ export const pokemons = [
     location: [
       areas[2].locations[21]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 7, goal: 5, done: 0},
@@ -3282,7 +3282,7 @@ export const pokemons = [
     location: [
       areas[2].locations[21]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -3296,7 +3296,7 @@ export const pokemons = [
     location: [
       areas[2].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 10, goal: 5, done: 0},
@@ -3313,7 +3313,7 @@ export const pokemons = [
       areas[2].locations[4],
       areas[2].locations[19]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3329,7 +3329,7 @@ export const pokemons = [
     location: [
       areas[2].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3349,7 +3349,7 @@ export const pokemons = [
       areas[4].locations[5],
       areas[4].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 26, goal: 1, done: 0},
@@ -3361,7 +3361,7 @@ export const pokemons = [
   {
     id: 167,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -3374,7 +3374,7 @@ export const pokemons = [
     location: [
       areas[2].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -3392,7 +3392,7 @@ export const pokemons = [
     location: [
       areas[2].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3411,7 +3411,7 @@ export const pokemons = [
       areas[2].locations[14],
       areas[2].locations[20]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3429,7 +3429,7 @@ export const pokemons = [
       areas[2].locations[14],
       areas[2].locations[20]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -3446,7 +3446,7 @@ export const pokemons = [
     location: [
       areas[2].locations[20]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3463,7 +3463,7 @@ export const pokemons = [
     location: [
       areas[2].locations[20]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3480,7 +3480,7 @@ export const pokemons = [
     location: [
       areas[2].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -3495,7 +3495,7 @@ export const pokemons = [
     location: [
       areas[2].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3511,7 +3511,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 70, done: 0},
@@ -3525,7 +3525,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3541,7 +3541,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 26, goal: 3, done: 0},
@@ -3557,7 +3557,7 @@ export const pokemons = [
       areas[3].locations[13],
       areas[3].locations[15],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 5, goal: 3, done: 0},
@@ -3576,7 +3576,7 @@ export const pokemons = [
       areas[4].locations[5],
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 2, goal: 15, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -3598,7 +3598,7 @@ export const pokemons = [
       areas[4].locations[5],
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -3617,7 +3617,7 @@ export const pokemons = [
       areas[4].locations[1],
       areas[4].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -3634,7 +3634,7 @@ export const pokemons = [
       areas[4].locations[1],
       areas[4].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3650,7 +3650,7 @@ export const pokemons = [
     location: [
       areas[3].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3672,7 +3672,7 @@ export const pokemons = [
       areas[4].locations[10],
       areas[4].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3689,7 +3689,7 @@ export const pokemons = [
     location: [
       areas[3].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3708,7 +3708,7 @@ export const pokemons = [
       areas[3].locations[13],
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3726,7 +3726,7 @@ export const pokemons = [
       areas[3].locations[13],
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 10, goal: 10, done: 0},
@@ -3742,7 +3742,7 @@ export const pokemons = [
     location: [
       areas[4].locations[4]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3761,7 +3761,7 @@ export const pokemons = [
       areas[3].locations[5],
       areas[3].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 2, goal: 15, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -3779,7 +3779,7 @@ export const pokemons = [
     location: [
       areas[3].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3796,7 +3796,7 @@ export const pokemons = [
     location: [
       areas[3].locations[0]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3810,7 +3810,7 @@ export const pokemons = [
   {
     id: 193,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -3826,7 +3826,7 @@ export const pokemons = [
       areas[3].locations[0],
       areas[3].locations[3]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 10, goal: 5, done: 0},
@@ -3842,7 +3842,7 @@ export const pokemons = [
       areas[3].locations[0],
       areas[4].locations[5],
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3859,7 +3859,7 @@ export const pokemons = [
       areas[3].locations[15],
       areas[4].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -3879,7 +3879,7 @@ export const pokemons = [
       areas[3].locations[14],
       areas[4].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -3895,7 +3895,7 @@ export const pokemons = [
     location: [
       areas[3].locations[3]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3912,7 +3912,7 @@ export const pokemons = [
     location: [
       areas[3].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 6, goal: 1, done: 0},
@@ -3928,7 +3928,7 @@ export const pokemons = [
     location: [
       areas[3].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -3945,7 +3945,7 @@ export const pokemons = [
     location: [
       areas[3].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -3962,7 +3962,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -3976,7 +3976,7 @@ export const pokemons = [
   {
     id: 203,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -3990,7 +3990,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 41, goal: 2, done: 0},
@@ -4007,7 +4007,7 @@ export const pokemons = [
       areas[4].locations[11],
       areas[4].locations[16]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 20, done: 0},
@@ -4026,7 +4026,7 @@ export const pokemons = [
       areas[4].locations[11],
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -4046,7 +4046,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -4061,7 +4061,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 42, goal: 15, done: 0},
@@ -4075,7 +4075,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 26, goal: 1, done: 0},
@@ -4088,7 +4088,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 26, goal: 1, done: 0},
@@ -4101,7 +4101,7 @@ export const pokemons = [
     location: [
       areas[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 43, goal: 15, done: 0},
@@ -4117,7 +4117,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 7, goal: 10, done: 0},
@@ -4136,7 +4136,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 10, goal: 25, done: 0},
@@ -4153,7 +4153,7 @@ export const pokemons = [
       areas[4].locations[6],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 3, done: 0},
       {id: 3, goal: 10, done: 0},
@@ -4172,7 +4172,7 @@ export const pokemons = [
       areas[4].locations[10],
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 2, goal: 15, done: 0},
       {id: 3, goal: 25, done: 0},
@@ -4188,7 +4188,7 @@ export const pokemons = [
     location: [
       areas[4].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 15, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -4205,7 +4205,7 @@ export const pokemons = [
       areas[4].locations[11],
       areas[4].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -4222,7 +4222,7 @@ export const pokemons = [
       areas[4].locations[11],
       areas[4].locations[14]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -4239,7 +4239,7 @@ export const pokemons = [
     location: [
       areas[4].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 8, goal: 20, done: 0},
@@ -4255,7 +4255,7 @@ export const pokemons = [
     location: [
       areas[4].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 10, done: 0},
       {id: 10, goal: 5, done: 0},
@@ -4272,7 +4272,7 @@ export const pokemons = [
       areas[4].locations[5],
       areas[4].locations[15]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
       {id: 10, goal: 15, done: 0},
@@ -4288,7 +4288,7 @@ export const pokemons = [
     location: [
       areas[4].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 5, goal: 5, done: 0},
@@ -4303,7 +4303,7 @@ export const pokemons = [
       areas[4].locations[1],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4317,7 +4317,7 @@ export const pokemons = [
       areas[4].locations[1],
       areas[4].locations[13]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 15, done: 0},
       {id: 25, goal: 10, done: 0},
@@ -4332,7 +4332,7 @@ export const pokemons = [
     location: [
       areas[4].locations[5]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 0, goal: 1, done: 0},
       {id: 3, goal: 15, done: 0},
@@ -4349,7 +4349,7 @@ export const pokemons = [
     location: [
       areas[0].locations[9]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4362,7 +4362,7 @@ export const pokemons = [
     location: [
       areas[1].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4376,7 +4376,7 @@ export const pokemons = [
     location: [
       areas[2].locations[1]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4390,7 +4390,7 @@ export const pokemons = [
     location: [
       areas[4].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4404,7 +4404,7 @@ export const pokemons = [
     location: [
       areas[3].locations[1]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4417,7 +4417,7 @@ export const pokemons = [
     location: [
       areas[4].locations[6]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4430,7 +4430,7 @@ export const pokemons = [
     location: [
       areas[2].locations[10]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4443,7 +4443,7 @@ export const pokemons = [
     location: [
       areas[0].locations[8]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4456,7 +4456,7 @@ export const pokemons = [
     location: [
       areas[1].locations[3]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4469,7 +4469,7 @@ export const pokemons = [
     location: [
       areas[3].locations[17]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4483,7 +4483,7 @@ export const pokemons = [
     location: [
       areas[3].locations[17]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},
@@ -4497,7 +4497,7 @@ export const pokemons = [
     location: [
       areas[2].locations[12]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4511,7 +4511,7 @@ export const pokemons = [
     location: [
       areas[3].locations[17]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 203, goal: 1, done: 0}
     ]
@@ -4521,7 +4521,7 @@ export const pokemons = [
     location: [
       areas[2].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4534,7 +4534,7 @@ export const pokemons = [
     location: [
       areas[2].locations[11]
     ],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4546,7 +4546,7 @@ export const pokemons = [
   {
     id: 241,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 25, done: 0},
@@ -4558,7 +4558,7 @@ export const pokemons = [
   {
     id: 242,
     location: [],
-    specialCondition: {},
+    specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
       {id: 42, goal: 40, done: 0},

@@ -8,7 +8,23 @@ export class PokeService {
 
   async getPokemons() {
     const json = await this.sendRequest(this.POKEDEX_API);
-    return json.pokemon_entries
+    const newData = json.pokemon_entries.map(pokemonEntry => {return {
+      name: pokemonEntry.pokemon_species.name,
+      url: pokemonEntry.pokemon_species.url,
+      index: pokemonEntry.entry_number,
+      locations: this.getAddedPokemonData(pokemonEntry.entry_number).location,
+      specialConditions: this.getAddedPokemonData(pokemonEntry.entry_number).specialCondition,
+      toDos: this.getAddedPokemonData(pokemonEntry.entry_number).toDos,
+    }})
+
+    /* TODO: fetched2
+    const fetched2 = newData.map(pokemon => {
+      pokemon = {
+        ...pokemon,
+        fetched: this.sendRequest(pokemon.url)
+      }
+    })*/
+    return newData;
   }
 
   async sendRequest(pokedexapi) {
@@ -30,7 +46,9 @@ export class PokeService {
       evolutionChain : response.evolution_chain,
       evolutionFrom : response.evolves_from_species,
       hisuiPokemon: this.checkHusuiPokemon(response.varieties),
-      addedData: this.getAddedData(index)
+      locations: this.getAddedPokemonData(index).location,
+      specialConditions: this.getAddedPokemonData(index).specialCondition,
+      toDos: this.getAddedPokemonData(index).toDos,
     }
   }
 
@@ -40,15 +58,17 @@ export class PokeService {
     else return foundHusui[0].pokemon.url
   }
 
-  getAddedData(id) {
-    const pokemon = pokemons.find(pokemon => pokemon.id === id)
-    pokemon['toDos'].map(todo => todo.id = todoPokedex.find(tarea => tarea.id === todo.id))
-    return pokemon
+  getAddedPokemonData(id){
+    return pokemons.find(pokemon => pokemon.id === id)
   }
 
   async getPokemon(url) {
     const data = await this.sendRequest(url)
     return {data, image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`, types: data.types}
+  }
+
+  getTodoPokedexText(id){
+    return todoPokedex.find(tarea => tarea.id === id)
   }
 
   async getTypePokemon(url) {
