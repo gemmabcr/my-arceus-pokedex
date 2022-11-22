@@ -15,7 +15,8 @@ const PokemonDetail = () => {
   const { urlPokemon, index } = location.state
 
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
-  const [evolutionPokemonData, setEvolutionPokemonData] = React.useState([])
+  const [evolutionChainData, setEvolutionChainData] = React.useState([])
+  const [evolutionFromData, setEvolutionFromData] = React.useState([])
   const [addedPokemonData, setAddedPokemonData] = React.useState([])
   const [loading, setLoading] = React.useState(true)
 
@@ -23,7 +24,8 @@ const PokemonDetail = () => {
     const pokeService = new PokeService()
     pokeService.getPokemonData(urlPokemon, index)
       .then(data=> {
-        setEvolutionPokemonData(data.evolution)
+        setEvolutionChainData(data.evolutionChain)
+        setEvolutionFromData(data.evolutionFrom)
         setUrlDataPokemon(data.hisuiPokemon)
         setAddedPokemonData(data.addedData)
       })
@@ -45,12 +47,16 @@ const PokemonDetail = () => {
             <p>{index}</p>
             <PokemonInfo
               urlDataPokemon={urlDataPokemon}
-              evolutionPokemonData={evolutionPokemonData}
             />
           </FlexRow>
-          {evolutionPokemonData && evolutionPokemonData.url &&
-            <PokemonEvolutionInfo namePokemon={evolutionPokemonData.name} urlEvolutionData={evolutionPokemonData.url} />
-          }
+          {/* TODO: evolution data
+          {evolutionChainData &&
+            <PokemonEvolutionInfo
+              namePokemon={evolutionChainData.name}
+              evolutionChainData={evolutionChainData}
+              evolutionFromData={evolutionFromData}
+            />
+          }*/}
           {addedPokemonData.location !== undefined && addedPokemonData.location.length > 0 &&
             <PokemonLocationInfo locations={addedPokemonData.location} />
           }

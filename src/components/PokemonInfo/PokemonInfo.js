@@ -5,7 +5,7 @@ import { FlexColumn, FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { PokeService } from '../../service/pokeService'
 
-const PokemonInfo = ({urlDataPokemon, evolutionPokemonData, locations, specialConditions}) => {
+const PokemonInfo = ({urlDataPokemon}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
   const [imagePokemon, setImagePokemon] = React.useState([])
   const [typeDataPokemon, setTypeDataPokemon] = React.useState([])

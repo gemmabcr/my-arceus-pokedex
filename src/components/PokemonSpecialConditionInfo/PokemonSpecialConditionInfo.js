@@ -15,6 +15,7 @@ const PokemonSpecialConditionInfo = ({conditions}) => {
       }
       {conditions.weather.length > 0 &&
         <FlexRow>
+          {/*TODO: Fix weather conditions*/}
           <h5>Weather:</h5>
           {conditions.weather.map((weather, index) =>
             <span key={weather.id}>{weather.name}{index !== conditions.weather.length-1 && ', '}</span>

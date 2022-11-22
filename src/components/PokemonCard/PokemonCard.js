@@ -7,7 +7,6 @@ import PokemonTodosInfo from '../PokemonTodosInfo/PokemonTodosInfo'
 
 const PokemonCard = ({urlPokemon, index}) => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
-  const [evolutionPokemonData, setEvolutionPokemonData] = React.useState([])
   const [addedPokemonData, setAddedPokemonData] = React.useState([])
   const [loading, setLoading] = React.useState(true)
 
@@ -15,7 +14,6 @@ const PokemonCard = ({urlPokemon, index}) => {
     const pokeService = new PokeService()
       pokeService.getPokemonData(urlPokemon, index)
       .then(data=> {
-        setEvolutionPokemonData(data.evolution)
         setUrlDataPokemon(data.hisuiPokemon)
         setAddedPokemonData(data.addedData)
       })
@@ -32,7 +30,6 @@ const PokemonCard = ({urlPokemon, index}) => {
             <p>{index}</p>
             <PokemonInfo
               urlDataPokemon={urlDataPokemon}
-              evolutionPokemonData={evolutionPokemonData}
               locations={addedPokemonData.location}
               specialConditions={addedPokemonData.specialCondition}
             />
