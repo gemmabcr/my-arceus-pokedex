@@ -13,7 +13,7 @@ const PokemonLocationInfo = ({locations}) => {
       </FlexRow>
       <FlexRow>
         {locations.map((location, index) =>
-          <span key={location.id}>{location.name}{index !== locations.length-1 && ', '}</span>
+          <span key={index}>{location.name}{index !== locations.length-1 && ', '}</span>
         )}
       </FlexRow>
     </PokemonDetailContent>

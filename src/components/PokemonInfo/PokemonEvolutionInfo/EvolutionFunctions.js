@@ -1,33 +1,37 @@
-import { formatedName } from '../../../commonFunctions'
+import React from 'react'
+import {formatedName} from '../../../commonFunctions'
 
-export function checkSimpleEvolution(data) {
-  return data.evolves_to.length === 1 && data.evolves_to[0] && data.evolves_to[0].species
+export function getFirstPlaceName(data) {
+  return formatedName(data.species.name)
 }
 
-export function checkFirstInChain(pokemon, data) {
-  return (data.species.name === pokemon)
+export function checkFirstPlaceInChain(evolvesFrom){
+  return evolvesFrom === undefined || evolvesFrom === null
 }
 
-export function checkSecondInChain(pokemon, data) {
-  return (data.evolves_to[0].species.name === pokemon)
+export function evolvesFromName(evolvesFrom) {
+  return formatedName(evolvesFrom.name)
 }
 
-export function checkThirdInChain(data) {
-  return data.evolves_to[0].evolves_to.length > 0
+export function checkSecondPlaceInChain(data){
+  return data.evolves_to.length > 0
 }
 
-export function checkFirstEvolutionDetails(data) {
-  return data.evolves_to[0].evolution_details[0]
+export function getFirstEvolution(data){
+  const firstEvolution = data.evolves_to
+  const nameTemplates = firstEvolution.map(evolution => evolution.species.name)
+  return nameTemplates.map(item => <span key={item}>{formatedName(item)}</span>)
 }
 
-export function getFirstEvolutionLevel(data) {
-  return data.evolves_to[0].evolution_details[0].min_level
+export function checkThirdPlaceinChain(data) {
+  if (checkSecondPlaceInChain(data)) {
+    return data.evolves_to[0].evolves_to.length > 0
+  }
+  return false
 }
 
-export function getFirstEvolution(data) {
-  return formatedName(data.evolves_to[0].species.name)
-}
-
-export function getSecondEvolution(data) {
-  return formatedName(data.evolves_to[0].evolves_to[0].species.name)
+export function getSecondEvolution(data){
+  const secondEvolution = data.evolves_to[0].evolves_to
+  const nameTemplates = secondEvolution.map(evolution => evolution.species.name)
+  return nameTemplates.map(item => <span key={item}>{formatedName(item)}</span>)
 }
