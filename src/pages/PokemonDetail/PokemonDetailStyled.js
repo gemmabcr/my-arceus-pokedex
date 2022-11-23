@@ -17,6 +17,7 @@ export const PokemonDetailContent = styled.div `
   border: 1px solid dimgrey;
   display: flex;
   flex-direction: column;
-  padding-inline: 1rem;
+  gap: 0.5rem;
+  padding: 1rem;
   width: 95%;
 `

@@ -67,13 +67,18 @@ export class PokeService {
     return {data, image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`, types: data.types}
   }
 
-  getTodoPokedexText(id){
-    return todoPokedex.find(tarea => tarea.id === id)
-  }
-
   async getTypePokemon(url) {
     const data = await this.sendRequest(url)
     let spanishType = data.names.filter(item => item.language.name === 'es')
     return {name: spanishType[0].name, image: `https://rerollcdn.com/ARCEUS/Types/${capitalize(data.name)}.svg`}
+  }
+
+  getTodoPokedexText(id){
+    return todoPokedex.find(tarea => tarea.id === id)
+  }
+
+  async getEvolutionData(url){
+    const data = await this.sendRequest(url)
+    return data.chain
   }
 }

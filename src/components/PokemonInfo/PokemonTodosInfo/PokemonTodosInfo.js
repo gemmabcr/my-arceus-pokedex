@@ -1,5 +1,6 @@
 import React from 'react'
 import { PokeService } from '../../../service/pokeService'
+import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 
 const PokemonTodosInfo = ({todos}) => {
 
@@ -10,9 +11,10 @@ const PokemonTodosInfo = ({todos}) => {
 
   if (todos !== undefined) {
     return (
-      <div>
+      <PokemonDetailContent>
+        <h3>Tareas de la Pokédex</h3>
         {todos.map((todo,index) => <p key={index}>{getTodoText(todo.id)} -> Goal: {todo.goal}</p>)}
-      </div>
+      </PokemonDetailContent>
     )
   }
 }

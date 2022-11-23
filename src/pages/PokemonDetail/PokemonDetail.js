@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useParams, useLocation } from 'react-router-dom'
-import { PokemonDetailContainer, BackButtonContainer, PokemonDetailContent } from './PokemonDetailStyled'
-import { FlexRow } from '../../commonStyled'
+import { PokemonDetailContainer, BackButtonContainer } from './PokemonDetailStyled'
+import { FlexColumn } from '../../commonStyled'
 import PokemonEvolutionInfo from '../../components/PokemonInfo/PokemonEvolutionInfo/PokemonEvolutionInfo'
 import PokemonInfo from '../../components/PokemonInfo/PokemonInfo'
 import PokemonLocationInfo from '../../components/PokemonInfo/PokemonLocationInfo/PokemonLocationInfo'
@@ -46,28 +46,21 @@ const PokemonDetail = () => {
       </BackButtonContainer>
       {loading && <p>Loading...</p>}
       {!loading &&
-        <PokemonDetailContent>
-          <FlexRow>
-            <p>{index}</p>
-            <PokemonInfo
-              urlDataPokemon={urlDataPokemon}
-            />
-          </FlexRow>
-          {/* TODO: evolution data
-          {evolutionChainData &&
-            <PokemonEvolutionInfo
-              namePokemon={evolutionChainData.name}
-              evolutionChainData={evolutionChainData}
-              evolutionFromData={evolutionFromData}
-            />
-          }*/}
+        <FlexColumn>
+          <PokemonInfo
+            urlDataPokemon={urlDataPokemon}
+            index={index}
+          />
           <PokemonLocationInfo locations={locationsData} />
           <PokemonSpecialConditionInfo conditions={specialConditionsData} />
-          <p>
-            Tareas de la pokedex
-          </p>
+          {evolutionChainData &&
+            <PokemonEvolutionInfo
+              evolutionChainData={evolutionChainData.url}
+              evolutionFromData={evolutionFromData}
+            />
+          }
           <PokemonTodosInfo todos={todosData} />
-        </PokemonDetailContent>
+        </FlexColumn>
       }
     </PokemonDetailContainer>
   )

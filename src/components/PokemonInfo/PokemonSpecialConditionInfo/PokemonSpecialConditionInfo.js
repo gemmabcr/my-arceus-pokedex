@@ -1,9 +1,10 @@
 import React from 'react'
 import { FlexColumn, FlexRow } from '../../../commonStyled'
+import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 
 const PokemonSpecialConditionInfo = ({conditions}) => {
   return (
-    <FlexColumn>
+    <PokemonDetailContent>
       <h3>Special Condition</h3>
       {/*<FlexRow>
           <h5>Time:</h5>
@@ -21,7 +22,7 @@ const PokemonSpecialConditionInfo = ({conditions}) => {
           )}
         </FlexRow>
       }*/}
-    </FlexColumn>
+    </PokemonDetailContent>
   )
 }
 

@@ -4,8 +4,9 @@ import PokemonTypeInfo from './PokemonTypeInfo/PokemonTypeInfo'
 import { FlexColumn, FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { PokeService } from '../../service/pokeService'
+import {PokemonDetailContent} from "../../pages/PokemonDetail/PokemonDetailStyled";
 
-const PokemonInfo = ({urlDataPokemon}) => {
+const PokemonInfo = ({urlDataPokemon, index}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
   const [imagePokemon, setImagePokemon] = React.useState([])
   const [typeDataPokemon, setTypeDataPokemon] = React.useState([])
@@ -23,17 +24,15 @@ const PokemonInfo = ({urlDataPokemon}) => {
   },[urlDataPokemon])
 
   return (
-    <div>
+    <PokemonDetailContent>
       {loading && <p>Loading...</p>}
       {!loading &&
         <FlexColumn>
-          <FlexRow>
-            <PokemonCardImg
-              alt={dataPokemon.name}
-              src={imagePokemon}
-            />
-            {/*<h4>{formatedName(dataPokemon.name)}</h4>*/}
-          </FlexRow>
+          <h3>#{index} {formatedName(dataPokemon.name)}</h3>
+          <PokemonCardImg
+            alt={dataPokemon.name}
+            src={imagePokemon}
+          />
           <FlexRow>
             {typeDataPokemon.map(item=>
               <PokemonTypeInfo
@@ -44,7 +43,7 @@ const PokemonInfo = ({urlDataPokemon}) => {
           </FlexRow>
         </FlexColumn>
       }
-    </div>
+    </PokemonDetailContent>
   )
 }
 

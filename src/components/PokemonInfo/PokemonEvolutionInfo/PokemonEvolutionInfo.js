@@ -11,57 +11,64 @@ import {
 } from './EvolutionFunctions'
 import { FlexRow } from '../../../commonStyled'
 import { formatedName } from '../../../commonFunctions'
+import {PokeService} from "../../../service/pokeService";
+import {PokemonDetailContent} from "../../../pages/PokemonDetail/PokemonDetailStyled";
 
-const PokemonEvolutionInfo = ({urlEvolutionData, namePokemon}) => {
+const PokemonEvolutionInfo = ({evolutionChainData, evolutionFromData}) => {
   const [loading, setLoading] = React.useState(true)
-  const [evolutionData, setEvolutionData] = React.useState([])
+  const [evolutionChain, setEvolutionChain] = React.useState([])
+
+  const evolvesFrom = evolutionFromData.name
 
   React.useEffect(()=>{
-    fetch(urlEvolutionData)
-      .then((response)=>response.json())
-      .then(data=>setEvolutionData(data.chain))
+    const pokeService = PokeService.getInstance()
+    pokeService.getEvolutionData(evolutionChainData)
+      .then(data=> {
+        setEvolutionChain(data)
+      })
       .catch(error=>console.log(error))
       .finally(()=>{setLoading(false)})
-  }, [urlEvolutionData])
+  }, [evolutionChainData])
 
-  //console.log(evolutionData)
+  console.log(evolutionChain)
 
   return (
-    <Fragment>
+    <PokemonDetailContent>
+      <h3>Cadena de evolución</h3>
       {loading && <p>Loading...</p>}
       {!loading &&
         <FlexRow>
-          {checkSimpleEvolution(evolutionData) &&
-            checkFirstInChain(namePokemon, evolutionData) &&
+          {checkSimpleEvolution(evolutionChain) &&
+            checkFirstInChain(evolutionChain.name, evolutionChain) &&
             <FlexRow>
-              <p>Evoluciona a {getFirstEvolution(evolutionData)}</p>
-              {checkFirstEvolutionDetails(evolutionData) &&
-                <p>al nivel {getFirstEvolutionLevel(evolutionData)}</p>
+              <p>Evoluciona a {getFirstEvolution(evolutionChain)}</p>
+              {checkFirstEvolutionDetails(evolutionChain) &&
+                <p>al nivel {getFirstEvolutionLevel(evolutionChain)}</p>
               }
             </FlexRow>
           }
-          {checkSimpleEvolution(evolutionData) &&
-            checkSecondInChain(namePokemon, evolutionData) &&
-            checkThirdInChain(evolutionData) &&
+          {/*{checkSimpleEvolution(evolutionChain) &&
+            checkSecondInChain(evolutionChain.name, evolutionChain) &&
+            checkThirdInChain(evolutionChain) &&
             <FlexRow>
-              <p>Evoluciona a {getSecondEvolution(evolutionData)}</p>
-              {evolutionData.evolves_to[0].evolves_to[0].evolution_details[0] && <p>al nivel {evolutionData.evolves_to[0].evolves_to[0].evolution_details[0].min_level}</p>}
+              <p>Evoluciona a {getSecondEvolution(evolutionChain)}</p>
+              {evolutionChain.evolves_to[0].evolves_to[0].evolution_details[0] && <p>al nivel {evolutionChain.evolves_to[0].evolves_to[0].evolution_details[0].min_level}</p>}
             </FlexRow>
-          }
-          {!checkSimpleEvolution(evolutionData) && evolutionData.species.name === namePokemon &&
+          }*/}
+          {/*{!checkSimpleEvolution(evolutionChain) && evolutionChain.species.name === evolutionChain.name &&
             <div>
               <p>Evoluciona a</p>
-              {evolutionData.evolves_to.map((evolution, i) =>
+              {evolutionChain.evolves_to.map((evolution, i) =>
                 <FlexRow key={i}>
                   <p>{formatedName(evolution.species.name)}</p>
                   <p>Forma: {evolution.evolution_details[0].trigger.name}</p>
                 </FlexRow>
               )}
             </div>
-          }
+          }*/}
         </FlexRow>
       }
-    </Fragment>
+    </PokemonDetailContent>
   )
 }
 
