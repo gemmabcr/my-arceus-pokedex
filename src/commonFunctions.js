@@ -16,3 +16,7 @@ export function compoundName(name) {
   const joinedSplitedName = capitalizeSplitedName.join(' ')
   return joinedSplitedName
 }
+
+export function loggedUsername(){
+  return JSON.parse(localStorage.getItem('username'))
+}

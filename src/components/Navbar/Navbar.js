@@ -4,6 +4,7 @@ import Modal from '../Modal/Modal'
 import { Header, LogoArceus, LoginContainer, LinksMenu, LinkMenu, LogoContainer } from './NavbarStyled'
 import { useLoggedContext } from '../../application/PageLayout'
 import { PrimaryButton } from '../../commonStyled'
+import { loggedUsername } from '../../commonFunctions'
 import { pokemonLogo, links, areaText } from '../../data'
 
 export const generalTabs = [
@@ -29,10 +30,6 @@ const Navbar = () => {
     setLogged(false)
   }
 
-  function loggedUsername(){
-    return JSON.parse(localStorage.getItem('username'))
-  }
-
   return (
     <div>
       <Header>
@@ -41,7 +38,13 @@ const Navbar = () => {
           <LogoArceus src={pokemonLogo} alt='Pokemon Leyendas: Arceus' />
         </LogoContainer>
         <LoginContainer>
-          {logged && <p>{loggedUsername()}</p>}
+          {logged &&
+            <LinkMenu>
+              <Link to={links.myList}>
+                Pokedex de {loggedUsername()}
+              </Link>
+            </LinkMenu>
+          }
           <PrimaryButton onClick={()=> {
             if(!logged) {
               loginButton()
@@ -62,13 +65,6 @@ const Navbar = () => {
             </Link>
           </LinkMenu>
         )}
-        <LinkMenu>
-          {logged &&
-            <Link to={links.myList}>
-              My list
-            </Link>
-          }
-        </LinkMenu>
       </LinksMenu>
       <Modal
         show={loginModal}
