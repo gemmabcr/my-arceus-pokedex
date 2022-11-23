@@ -1,9 +1,10 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { PokemonListContainer, PokemonListContent } from '../PokemonList/PokemonListStyled'
 import { loggedUsername } from '../../commonFunctions'
-import { FlexRow } from '../../commonStyled'
+import { FlexColumn } from '../../commonStyled'
 import CompletedPokemon from '../../components/CompletedPokemon/CompletedPokemon'
+import { CompletedPokemonRow } from '../../components/CompletedPokemon/CompletedPokemonStyled'
 import Loading from '../../components/Loading/Loading'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import { PokeService } from '../../service/pokeService'
@@ -29,21 +30,23 @@ const MyList = () => {
       {loading && <Loading />}
       {!loading &&
         <PokemonListContent>
-          <h4>Pokémons completados</h4>
           {completedPokemons.length > 0 &&
-            <FlexRow style={{flexWrap: 'wrap'}}>
-              {completedPokemons.map(completedPokemon =>
-                <CompletedPokemon
-                  key={completedPokemon.name}
-                  urlPokemon={completedPokemon.url}
-                  index={completedPokemon.index}
-                />
-              )}
-            </FlexRow>
+            <FlexColumn>
+              <h4>Pokémons completados ({completedPokemons.length}/{hisuiPokedex.length})</h4>
+              <CompletedPokemonRow>
+                {completedPokemons.map(completedPokemon =>
+                  <CompletedPokemon
+                    key={completedPokemon.name}
+                    urlPokemon={completedPokemon.url}
+                    index={completedPokemon.index}
+                  />
+                )}
+              </CompletedPokemonRow>
+            </FlexColumn>
           }
           {uncompletedPokemons.length > 0 &&
-            <Fragment>
-              <h4>Pokémons en progreso</h4>
+            <FlexColumn>
+              <h4>Pokémons en progreso ({uncompletedPokemons.length}/{hisuiPokedex.length})</h4>
               {uncompletedPokemons.map(pokemon =>
                 <Link
                   key={pokemon.index}
@@ -57,7 +60,7 @@ const MyList = () => {
                   />
                 </Link>
               )}
-            </Fragment>
+            </FlexColumn>
           }
         </PokemonListContent>
       }

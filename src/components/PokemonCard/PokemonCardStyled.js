@@ -5,6 +5,7 @@ export const PokemonCardContainer = styled.div `
   display: flex;
   gap: 0.5rem;
   padding: 1rem;
+  width: 100%;
 `
 
 export const PokemonCardImg = styled.img `

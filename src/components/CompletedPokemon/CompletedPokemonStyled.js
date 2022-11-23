@@ -1,6 +1,15 @@
 import styled from 'styled-components'
 
+export const CompletedPokemonRow = styled.div `
+  display: grid;
+  grid-template-columns: repeat(auto-fill,130px);
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+`
+
 export const CompletedPokemonCard = styled.div `
+  align-items: center;
   background-color: lightgoldenrodyellow;
   border: 1px solid lightgray;
   border-radius: 0.25rem;
