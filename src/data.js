@@ -10,118 +10,130 @@ export const areasLogos = {
   distorsionEspaciotemporal: 'https://pokemon-project.com/leyendasarceus/img/misc/map_icon_spmap_00.png',
 }
 
-export const praderaText = 'Pradera Obsidiana'
-export const pantanalText = 'Pantanal Carmesí'
-export const costaText = 'Costa Cobalto'
-export const laderaText = 'Ladera Corona'
-export const tundraText = 'Tundra Alba'
-export const distorsionText = 'Distorsión Espaciotemporal'
+export const links = {
+  pradera: '/pradera-obsidiana',
+  pantanal: '/pantanal-carmesi',
+  costa: '/costa-cobalto',
+  ladera: '/ladera-corona',
+  tundra: '/tundra-alba',
+  distorsion: '/distorion-espaciotemporal',
+  myList: 'my-list'
+}
+
+export const areaText = {
+  pradera: 'Pradera Obsidiana',
+  pantanal: 'Pantanal Carmesí',
+  costa: 'Costa Cobalto',
+  ladera: 'Ladera Corona',
+  tundra: 'Tundra Alba',
+  distorsion: 'Distorsión Espaciotemporal'
+}
 
 export const locations = [
   //area 0 : Pradera Obsidiana
-  {id: 0, name: 'Alacena del Bosque', area: praderaText},
-  {id: 1, name: 'Arena del Gran Árbol', area: praderaText},
-  {id: 2, name: 'Bosque Recóndito', area: praderaText},
-  {id: 3, name: 'Campo Aromaflor', area: praderaText},
-  {id: 4, name: 'Cascada Obsidiana', area: praderaText},
-  {id: 5, name: 'Colina del Anhelo', area: praderaText},
-  {id: 6, name: 'Foresta Funesta', area: praderaText},
-  {id: 7, name: 'Gruta Pirita', area: praderaText},
-  {id: 8, name: 'Isla Hansa', area: praderaText},
-  {id: 9, name: 'Lago Veraz', area: praderaText},
-  {id: 10, name: 'Loma del Venado', area: praderaText},
-  {id: 11, name: 'Planicie Arena', area: praderaText},
-  {id: 12, name: 'Prado Herradura', area: praderaText},
-  {id: 13, name: 'Presa del Estuario', area: praderaText},
-  {id: 14, name: 'Puente Erosionado', area: praderaText},
-  {id: 15, name: 'Senda del Venado', area: praderaText},
-  {id: 16, name: 'Vereda del Viento', area: praderaText},
+  {id: 0, name: 'Alacena del Bosque', area: areaText.pradera},
+  {id: 1, name: 'Arena del Gran Árbol', area: areaText.pradera},
+  {id: 2, name: 'Bosque Recóndito', area: areaText.pradera},
+  {id: 3, name: 'Campo Aromaflor', area: areaText.pradera},
+  {id: 4, name: 'Cascada Obsidiana', area: areaText.pradera},
+  {id: 5, name: 'Colina del Anhelo', area: areaText.pradera},
+  {id: 6, name: 'Foresta Funesta', area: areaText.pradera},
+  {id: 7, name: 'Gruta Pirita', area: areaText.pradera},
+  {id: 8, name: 'Isla Hansa', area: areaText.pradera},
+  {id: 9, name: 'Lago Veraz', area: areaText.pradera},
+  {id: 10, name: 'Loma del Venado', area: areaText.pradera},
+  {id: 11, name: 'Planicie Arena', area: areaText.pradera},
+  {id: 12, name: 'Prado Herradura', area: areaText.pradera},
+  {id: 13, name: 'Presa del Estuario', area: areaText.pradera},
+  {id: 14, name: 'Puente Erosionado', area: areaText.pradera},
+  {id: 15, name: 'Senda del Venado', area: areaText.pradera},
+  {id: 16, name: 'Vereda del Viento', area: areaText.pradera},
 
   //area 1 : Pantanal Carmesí
-  {id: 17, name: 'Arena del Escenario', area: pantanalText}, //0 results
-  {id: 18, name: 'Banco del Juicio', area: pantanalText},
-  {id: 19, name: 'Caverna del Valor', area: pantanalText}, //0 results
-  {id: 20, name: 'Ciénaga Bermeja', area: pantanalText},
-  {id: 21, name: 'Ciénaga Bocazas', area: pantanalText},
-  {id: 22, name: 'Ladera Derrumbe', area: pantanalText},
-  {id: 23, name: 'Lago Valor', area: pantanalText},
-  {id: 24, name: 'Llanura Diamante', area: pantanalText},
-  {id: 25, name: 'Loma Lodosa', area: pantanalText},
-  {id: 26, name: 'Palestra Ursa', area: pantanalText},
-  {id: 27, name: 'Poblado Diamante', area: pantanalText}, //0 results
-  {id: 28, name: 'Pradera Aleteo', area: pantanalText},
-  {id: 29, name: 'Pradera Áurea', area: pantanalText},
-  {id: 30, name: 'Prado Erióforo', area: pantanalText},
-  {id: 31, name: 'Rellano Nebuloso', area: pantanalText},
-  {id: 32, name: 'Ruinas de la Niebla', area: pantanalText},
-  {id: 33, name: 'Ruinas Sosiego', area: pantanalText}, //0 results
+  {id: 17, name: 'Arena del Escenario', area: areaText.pantanal}, //0 results
+  {id: 18, name: 'Banco del Juicio', area: areaText.pantanal},
+  {id: 19, name: 'Caverna del Valor', area: areaText.pantanal}, //0 results
+  {id: 20, name: 'Ciénaga Bermeja', area: areaText.pantanal},
+  {id: 21, name: 'Ciénaga Bocazas', area: areaText.pantanal},
+  {id: 22, name: 'Ladera Derrumbe', area: areaText.pantanal},
+  {id: 23, name: 'Lago Valor', area: areaText.pantanal},
+  {id: 24, name: 'Llanura Diamante', area: areaText.pantanal},
+  {id: 25, name: 'Loma Lodosa', area: areaText.pantanal},
+  {id: 26, name: 'Palestra Ursa', area: areaText.pantanal},
+  {id: 27, name: 'Poblado Diamante', area: areaText.pantanal}, //0 results
+  {id: 28, name: 'Pradera Aleteo', area: areaText.pantanal},
+  {id: 29, name: 'Pradera Áurea', area: areaText.pantanal},
+  {id: 30, name: 'Prado Erióforo', area: areaText.pantanal},
+  {id: 31, name: 'Rellano Nebuloso', area: areaText.pantanal},
+  {id: 32, name: 'Ruinas de la Niebla', area: areaText.pantanal},
+  {id: 33, name: 'Ruinas Sosiego', area: areaText.pantanal}, //0 results
 
   //area 2 : Costa Cobalto
-  {id: 34, name: 'Albuferas Chapuzón', area: costaText},
-  {id: 35, name: 'Altar Domo Lava', area: costaText},
-  {id: 36, name: 'Arboleda Tétrica', area: costaText},
-  {id: 37, name: 'Arena del Magma', area: costaText}, //0 results
-  {id: 38, name: 'Bahía Silente', area: costaText},
-  {id: 39, name: 'Bosque Rompeviento', area: costaText},
-  {id: 40, name: 'Cabo Rocavelo', area: costaText},
-  {id: 41, name: 'Cala Oculta', area: costaText},
-  {id: 42, name: 'Camino del Tómbolo', area: costaText},
-  {id: 43, name: 'Cerro Aipom', area: costaText},
-  {id: 44, name: 'Costa Ínsola', area: costaText},
-  {id: 45, name: 'Cueva Costera', area: costaText},
-  {id: 46, name: 'Cueva Retorno', area: costaText},
-  {id: 47, name: 'Gruta Pasamar', area: costaText}, //0 results
-  {id: 48, name: 'Guarida del Gran Pez', area: costaText},
-  {id: 49, name: 'Isla Escupefuego', area: costaText},
-  {id: 50, name: 'Mano de Arena', area: costaText},
-  {id: 51, name: 'Paso Costanero', area: costaText},
-  {id: 52, name: 'Playa del Errante', area: costaText},
-  {id: 53, name: 'Playa Ginkgo', area: costaText},
-  {id: 54, name: 'Vergel Marino', area: costaText},
-  {id: 55, name: 'Vía Manantial', area: costaText},
+  {id: 34, name: 'Albuferas Chapuzón', area: areaText.costa},
+  {id: 35, name: 'Altar Domo Lava', area: areaText.costa},
+  {id: 36, name: 'Arboleda Tétrica', area: areaText.costa},
+  {id: 37, name: 'Arena del Magma', area: areaText.costa}, //0 results
+  {id: 38, name: 'Bahía Silente', area: areaText.costa},
+  {id: 39, name: 'Bosque Rompeviento', area: areaText.costa},
+  {id: 40, name: 'Cabo Rocavelo', area: areaText.costa},
+  {id: 41, name: 'Cala Oculta', area: areaText.costa},
+  {id: 42, name: 'Camino del Tómbolo', area: areaText.costa},
+  {id: 43, name: 'Cerro Aipom', area: areaText.costa},
+  {id: 44, name: 'Costa Ínsola', area: areaText.costa},
+  {id: 45, name: 'Cueva Costera', area: areaText.costa},
+  {id: 46, name: 'Cueva Retorno', area: areaText.costa},
+  {id: 47, name: 'Gruta Pasamar', area: areaText.costa}, //0 results
+  {id: 48, name: 'Guarida del Gran Pez', area: areaText.costa},
+  {id: 49, name: 'Isla Escupefuego', area: areaText.costa},
+  {id: 50, name: 'Mano de Arena', area: areaText.costa},
+  {id: 51, name: 'Paso Costanero', area: areaText.costa},
+  {id: 52, name: 'Playa del Errante', area: areaText.costa},
+  {id: 53, name: 'Playa Ginkgo', area: areaText.costa},
+  {id: 54, name: 'Vergel Marino', area: areaText.costa},
+  {id: 55, name: 'Vía Manantial', area: areaText.costa},
 
   //area 3 : Ladera Corona
-  {id: 56, name: 'Ágora de la Plegaria', area: laderaText},
-  {id: 57, name: 'Arena de la Luna', area: laderaText},
-  {id: 58, name: 'Bosque Extravío', area: laderaText},
-  {id: 59, name: 'Cañón Lítico', area: laderaText},
-  {id: 60, name: 'Cantera Ancestral', area: laderaText},
-  {id: 61, name: 'Caverna Inmemorial', area: laderaText},
-  {id: 62, name: 'Columnas Lanza', area: laderaText}, //0 results
-  {id: 63, name: 'Cordillera Derrumbe', area: laderaText},
-  {id: 64, name: 'Cueva Extravío', area: laderaText},
-  {id: 65, name: 'Fuente de las Hadas', area: laderaText},
-  {id: 66, name: 'Loma Sagrada', area: laderaText},
-  {id: 67, name: 'Manantial Solitario', area: laderaText},
-  {id: 68, name: 'Paso Píleo', area: laderaText},
-  {id: 69, name: 'Risco Riscoso', area: laderaText},
-  {id: 70, name: 'Ruinas Celestiales', area: laderaText},
-  {id: 71, name: 'Senda Celestial', area: laderaText},
-  {id: 72, name: 'Senda del Peregrino', area: laderaText},
-  {id: 73, name: 'Templo de Sinnoh', area: laderaText},
-  {id: 74, name: 'Umbral Pétreo', area: laderaText}, //0 results
+  {id: 56, name: 'Ágora de la Plegaria', area: areaText.ladera},
+  {id: 57, name: 'Arena de la Luna', area: areaText.ladera},
+  {id: 58, name: 'Bosque Extravío', area: areaText.ladera},
+  {id: 59, name: 'Cañón Lítico', area: areaText.ladera},
+  {id: 60, name: 'Cantera Ancestral', area: areaText.ladera},
+  {id: 61, name: 'Caverna Inmemorial', area: areaText.ladera},
+  {id: 62, name: 'Columnas Lanza', area: areaText.ladera}, //0 results
+  {id: 63, name: 'Cordillera Derrumbe', area: areaText.ladera},
+  {id: 64, name: 'Cueva Extravío', area: areaText.ladera},
+  {id: 65, name: 'Fuente de las Hadas', area: areaText.ladera},
+  {id: 66, name: 'Loma Sagrada', area: areaText.ladera},
+  {id: 67, name: 'Manantial Solitario', area: areaText.ladera},
+  {id: 68, name: 'Paso Píleo', area: areaText.ladera},
+  {id: 69, name: 'Risco Riscoso', area: areaText.ladera},
+  {id: 70, name: 'Ruinas Celestiales', area: areaText.ladera},
+  {id: 71, name: 'Senda Celestial', area: areaText.ladera},
+  {id: 72, name: 'Senda del Peregrino', area: areaText.ladera},
+  {id: 73, name: 'Templo de Sinnoh', area: areaText.ladera},
+  {id: 74, name: 'Umbral Pétreo', area: areaText.ladera}, //0 results
 
   //area 4 : Tundra Alba
-  {id: 75, name: 'Arena del Glaciar', area: tundraText}, //0 results
-  {id: 76, name: 'Cascada Glaliar', area: tundraText},
-  {id: 77, name: 'Caverna Agudeza', area: tundraText}, //0 results
-  {id: 78, name: 'Caverna Hiberna', area: tundraText}, //0 results
-  {id: 79, name: 'Desfiladero Alud', area: tundraText},
-  {id: 80, name: 'Lago Agudeza', area: tundraText},
-  {id: 81, name: 'Páramo Algente', area: tundraText},
-  {id: 82, name: 'Pasaje de la Grieta', area: tundraText}, //0 results
-  {id: 83, name: 'Peñasco Espíritu', area: tundraText},
-  {id: 84, name: 'Poblado Perla', area: tundraText}, //0 results
-  {id: 85, name: 'Senda de la Arena', area: tundraText},
-  {id: 86, name: 'Témpano Avalugg', area: tundraText},
-  {id: 87, name: 'Templo Puntaneva', area: tundraText},
-  {id: 88, name: 'Termas Nevavista', area: tundraText},
-  {id: 89, name: 'Terraza Glaciar', area: tundraText},
-  {id: 90, name: 'Tundra Alba', area: tundraText},
-  {id: 91, name: 'Valle Nevasca', area: tundraText},
+  {id: 75, name: 'Arena del Glaciar', area: areaText.tundra}, //0 results
+  {id: 76, name: 'Cascada Glaliar', area: areaText.tundra},
+  {id: 77, name: 'Caverna Agudeza', area: areaText.tundra}, //0 results
+  {id: 78, name: 'Caverna Hiberna', area: areaText.tundra}, //0 results
+  {id: 79, name: 'Desfiladero Alud', area: areaText.tundra},
+  {id: 80, name: 'Lago Agudeza', area: areaText.tundra},
+  {id: 81, name: 'Páramo Algente', area: areaText.tundra},
+  {id: 82, name: 'Pasaje de la Grieta', area: areaText.tundra}, //0 results
+  {id: 83, name: 'Peñasco Espíritu', area: areaText.tundra},
+  {id: 84, name: 'Poblado Perla', area: areaText.tundra}, //0 results
+  {id: 85, name: 'Senda de la Arena', area: areaText.tundra},
+  {id: 86, name: 'Témpano Avalugg', area: areaText.tundra},
+  {id: 87, name: 'Templo Puntaneva', area: areaText.tundra},
+  {id: 88, name: 'Termas Nevavista', area: areaText.tundra},
+  {id: 89, name: 'Terraza Glaciar', area: areaText.tundra},
+  {id: 90, name: 'Tundra Alba', area: areaText.tundra},
+  {id: 91, name: 'Valle Nevasca', area: areaText.tundra},
 
   //area 5 : Distorsión espaciotemporal
-  {id: 92, name: 'Distorsión espaciotemporal', area: distorsionText}
+  {id: 92, name: 'Distorsión espaciotemporal', area: areaText.distorsion}
 ]
 
 

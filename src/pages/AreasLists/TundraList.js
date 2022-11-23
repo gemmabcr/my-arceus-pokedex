@@ -4,12 +4,14 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import { PokeService } from '../../service/pokeService'
 import Loading from '../../components/Loading/Loading'
-import { tundraText } from '../../data'
+import { areaText } from '../../data'
 
 const TundraList = () => {
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
   const [showPokedex, setShowPokedex] = React.useState(hisuiPokedex)
   const [loading, setLoading] = React.useState(true)
+
+  const tundraText = areaText.tundra
 
   React.useEffect(()=>{
     const pokeService = PokeService.getInstance()

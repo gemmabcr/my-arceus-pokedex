@@ -4,37 +4,16 @@ import Modal from '../Modal/Modal'
 import { Header, LogoArceus, LoginContainer, LinksMenu, LinkMenu, LogoContainer } from './NavbarStyled'
 import { useLoggedContext } from '../../application/PageLayout'
 import { PrimaryButton } from '../../commonStyled'
-import { costaText, distorsionText, laderaText, pantanalText, pokemonLogo, praderaText, tundraText } from '../../data'
+import { pokemonLogo, links, areaText } from '../../data'
 
 export const generalTabs = [
-  {
-    link: '/',
-    name: 'Todo Hisui'
-  },
-  {
-    link: '/pradera-obsidiana',
-    name: praderaText
-  },
-  {
-    link: '/pantanal-carmesi',
-    name: pantanalText
-  },
-  {
-    link: '/costa-cobalto',
-    name: costaText
-  },
-  {
-    link: '/ladera-corona',
-    name: laderaText
-  },
-  {
-    link: '/tundra-alba',
-    name: tundraText
-  },
-  {
-    link: '/distorion-espaciotemporal',
-    name: distorsionText
-  },
+  { link: '/', name: 'Todo Hisui' },
+  { link: links.pradera, name: areaText.pradera },
+  { link: links.pantanal, name: areaText.pantanal },
+  { link: links.costa, name: areaText.costa },
+  { link: links.ladera, name: areaText.ladera },
+  { link: links.tundra, name: areaText.tundra },
+  { link: links.distorsion, name: areaText.distorsion },
 ]
 
 const Navbar = () => {
@@ -61,21 +40,19 @@ const Navbar = () => {
         <LogoContainer>
           <LogoArceus src={pokemonLogo} alt='Pokemon Leyendas: Arceus' />
         </LogoContainer>
-        {!logged &&
-          <LoginContainer>
-            <PrimaryButton onClick={()=> loginButton()}>
-              Log in
-            </PrimaryButton>
-          </LoginContainer>
-        }
-        {logged &&
-          <LoginContainer>
-            <p>{loggedUsername()}</p>
-            <PrimaryButton onClick={()=> logoutButton()}>
-              Log Out
-            </PrimaryButton>
-          </LoginContainer>
-        }
+        <LoginContainer>
+          {logged && <p>{loggedUsername()}</p>}
+          <PrimaryButton onClick={()=> {
+            if(!logged) {
+              loginButton()
+            }
+            if (logged) {
+              logoutButton()
+            }
+          }}>
+            {logged? 'Log Out' : 'Log in'}
+          </PrimaryButton>
+        </LoginContainer>
       </Header>
       <LinksMenu>
         {generalTabs.map(tab =>
@@ -87,7 +64,7 @@ const Navbar = () => {
         )}
         <LinkMenu>
           {logged &&
-            <Link to={'/myList'}>
+            <Link to={links.myList}>
               My list
             </Link>
           }

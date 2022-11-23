@@ -4,12 +4,14 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import { PokeService } from '../../service/pokeService'
 import Loading from '../../components/Loading/Loading'
-import { laderaText } from '../../data'
+import { areaText } from '../../data'
 
 const LaderaList = () => {
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
   const [showPokedex, setShowPokedex] = React.useState(hisuiPokedex)
   const [loading, setLoading] = React.useState(true)
+
+  const laderaText = areaText.ladera
 
   React.useEffect(()=>{
     const pokeService = PokeService.getInstance()

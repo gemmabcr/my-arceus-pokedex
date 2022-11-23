@@ -10,6 +10,7 @@ import TundraList from '../pages/AreasLists/TundraList'
 import MyList from '../pages/MyList/MyList'
 import PokemonDetail from '../pages/PokemonDetail/PokemonDetail'
 import PokemonList from '../pages/PokemonList/PokemonList'
+import { links } from '../data'
 
 const Router = () => {
   return (
@@ -17,14 +18,14 @@ const Router = () => {
       <Routes>
         <Route element={<PageLayout />}>
           <Route path={'/'} element={<PokemonList />} />
-          <Route path={'/pradera-obsidiana'} element={<PraderaList />} />
-          <Route path={'/pantanal-carmesi'} element={<PantanalList />} />
-          <Route path={'/costa-cobalto'} element={<CostaList />} />
-          <Route path={'/ladera-corona'} element={<LaderaList />} />
-          <Route path={'/tundra-alba'} element={<TundraList />} />
-          <Route path={'/distorion-espaciotemporal'} element={<DistorsionList />} />
+          <Route path={links.pradera} element={<PraderaList />} />
+          <Route path={links.pantanal} element={<PantanalList />} />
+          <Route path={links.costa} element={<CostaList />} />
+          <Route path={links.ladera} element={<LaderaList />} />
+          <Route path={links.tundra} element={<TundraList />} />
+          <Route path={links.distorsion} element={<DistorsionList />} />
           <Route path={'pokemon/:id'} element={<PokemonDetail />} />
-          <Route path={'my-list'} element={<MyList />} />
+          <Route path={links.myList} element={<MyList />} />
           <Route path='*' element={<div>404</div>} />
         </Route>
       </Routes>
