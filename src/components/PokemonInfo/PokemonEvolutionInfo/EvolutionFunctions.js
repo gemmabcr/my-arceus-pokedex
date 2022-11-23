@@ -13,8 +13,12 @@ export function evolvesFromName(evolvesFrom) {
   return formatedName(evolvesFrom.name)
 }
 
-export function checkSecondPlaceInChain(data){
+export function checkEvolvesTo(data){
   return data.evolves_to.length > 0
+}
+
+export function checkMultipleEvolution(data) {
+  return data.evolves_to.length > 1
 }
 
 export function getFirstEvolution(data){
@@ -24,13 +28,17 @@ export function getFirstEvolution(data){
 }
 
 export function checkThirdPlaceinChain(data) {
-  if (checkSecondPlaceInChain(data)) {
+  if (checkEvolvesTo(data)) {
     return data.evolves_to[0].evolves_to.length > 0
   }
   return false
 }
 
 export function getSecondEvolution(data){
+  if (checkMultipleEvolution(data)) {
+    const nameTemplates = data.evolves_to.map(evolution => evolution.evolves_to[0].species.name)
+    return nameTemplates.map(item => <span key={item}>{formatedName(item)}</span>)
+  }
   const secondEvolution = data.evolves_to[0].evolves_to
   const nameTemplates = secondEvolution.map(evolution => evolution.species.name)
   return nameTemplates.map(item => <span key={item}>{formatedName(item)}</span>)

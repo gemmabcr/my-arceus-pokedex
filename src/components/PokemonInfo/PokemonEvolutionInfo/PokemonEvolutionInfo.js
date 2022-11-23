@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import {
   checkFirstPlaceInChain,
-  checkSecondPlaceInChain, checkThirdPlaceinChain,
+  checkEvolvesTo, checkThirdPlaceinChain,
   evolvesFromName,
   getFirstEvolution, getFirstPlaceName, getSecondEvolution,
 } from './EvolutionFunctions'
@@ -34,7 +34,7 @@ const PokemonEvolutionInfo = ({evolutionChainData, evolutionFromData, namePokemo
           {!checkFirstPlaceInChain(evolvesFrom) && <p>Evoluciona de {evolvesFromName(evolvesFrom)}</p>}
           <p>1 - {getFirstPlaceName(evolutionChain)}</p>
 
-          {checkSecondPlaceInChain(evolutionChain) &&
+          {checkEvolvesTo(evolutionChain) &&
             <Fragment>
               <FlexRow>2 - {getFirstEvolution(evolutionChain)}</FlexRow>
             </Fragment>
