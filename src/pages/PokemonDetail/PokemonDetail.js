@@ -8,6 +8,7 @@ import PokemonLocationInfo from '../../components/PokemonInfo/PokemonLocationInf
 import PokemonSpecialConditionInfo from '../../components/PokemonInfo/PokemonSpecialConditionInfo/PokemonSpecialConditionInfo'
 import PokemonTodosInfo from '../../components/PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
 import { PokeService } from '../../service/pokeService'
+import Loading from '../../components/Loading/Loading'
 
 const PokemonDetail = () => {
   const {id} = useParams()
@@ -46,7 +47,7 @@ const PokemonDetail = () => {
           <p>Atrás</p>
         </Link>
       </BackButtonContainer>
-      {loading && <p>Loading...</p>}
+      {loading && <Loading />}
       {!loading &&
         <FlexColumn>
           <PokemonInfo

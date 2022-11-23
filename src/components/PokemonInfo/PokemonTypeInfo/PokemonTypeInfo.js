@@ -1,6 +1,7 @@
 import React from 'react'
 import { PokeService } from '../../../service/pokeService'
 import { TypeLabel } from './PokemonTypeInfoStyled'
+import Loading from '../../Loading/Loading'
 
 const PokemonTypeInfo = ({urlTypePokemon}) => {
   const [loading, setLoading] = React.useState(true)
@@ -19,7 +20,7 @@ const PokemonTypeInfo = ({urlTypePokemon}) => {
 
   return (
     <div>
-      {loading && <p>Loading...</p>}
+      {loading && <Loading />}
       {!loading &&
         <TypeLabel>
           <img width={16} height={16} src={typeImagePokemon} alt={typePokemon} />

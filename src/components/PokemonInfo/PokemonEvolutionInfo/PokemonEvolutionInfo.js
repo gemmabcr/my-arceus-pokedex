@@ -1,13 +1,17 @@
 import React, { Fragment } from 'react'
 import {
   checkFirstPlaceInChain,
-  checkEvolvesTo, checkThirdPlaceinChain,
+  checkEvolvesTo,
+  checkThirdPlaceinChain,
   evolvesFromName,
-  getFirstEvolution, getFirstPlaceName, getSecondEvolution,
+  getFirstEvolution,
+  getFirstPlaceName,
+  getSecondEvolution,
 } from './EvolutionFunctions'
 import { FlexColumn, FlexRow } from '../../../commonStyled'
 import { PokeService } from '../../../service/pokeService'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
+import Loading from '../../Loading/Loading'
 
 const PokemonEvolutionInfo = ({evolutionChainData, evolutionFromData, namePokemon}) => {
   const [loading, setLoading] = React.useState(true)
@@ -28,7 +32,7 @@ const PokemonEvolutionInfo = ({evolutionChainData, evolutionFromData, namePokemo
   return (
     <PokemonDetailContent>
       <h3>Evolución</h3>
-      {loading && <p>Loading...</p>}
+      {loading && <Loading />}
       {!loading &&
         <FlexColumn>
           {!checkFirstPlaceInChain(evolvesFrom) && <p>Evoluciona de {evolvesFromName(evolvesFrom)}</p>}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { PokemonListContainer, PokemonListContent } from './PokemonListStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import {PokeService} from '../../service/pokeService'
+import Loading from '../../components/Loading/Loading'
 
 const PokemonList = () => {
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
@@ -19,7 +20,7 @@ const PokemonList = () => {
   return (
     <PokemonListContainer>
       <h3>Pokémons de Hisui</h3>
-      {loading && <p>Loading... </p>}
+      {loading && <Loading />}
       {!loading &&
         <PokemonListContent>
           {hisuiPokedex.map(pokemon =>

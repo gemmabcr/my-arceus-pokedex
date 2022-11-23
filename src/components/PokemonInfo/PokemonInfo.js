@@ -5,6 +5,7 @@ import { FlexColumn, FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { PokeService } from '../../service/pokeService'
 import {PokemonDetailContent} from "../../pages/PokemonDetail/PokemonDetailStyled";
+import Loading from '../Loading/Loading'
 
 const PokemonInfo = ({urlDataPokemon, index}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
@@ -25,7 +26,7 @@ const PokemonInfo = ({urlDataPokemon, index}) => {
 
   return (
     <PokemonDetailContent>
-      {loading && <p>Loading...</p>}
+      {loading && <Loading />}
       {!loading &&
         <FlexColumn>
           <h3>#{index} {formatedName(dataPokemon.name)}</h3>
