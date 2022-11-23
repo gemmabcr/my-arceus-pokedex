@@ -1,7 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Modal from '../Modal/Modal'
-import { Header, LogoArceus, LoginContainer, LinksMenu, LinkMenu, LogoContainer } from './NavbarStyled'
+import {
+  NavbarContainer,
+  Header,
+  LogoArceus,
+  LoginContainer,
+  LinksMenu,
+  LinkMenu,
+  LogoContainer, LinkTitle,
+} from './NavbarStyled'
 import { useLoggedContext } from '../../application/PageLayout'
 import { PrimaryButton } from '../../commonStyled'
 import { loggedUsername } from '../../commonFunctions'
@@ -31,7 +39,7 @@ const Navbar = () => {
   }
 
   return (
-    <div>
+    <NavbarContainer>
       <Header>
         <h1>Pokédex tracking list</h1>
         <LogoContainer>
@@ -57,7 +65,9 @@ const Navbar = () => {
           </PrimaryButton>
         </LoginContainer>
       </Header>
+      <hr />
       <LinksMenu>
+        <LinkTitle>Areas:</LinkTitle>
         {generalTabs.map(tab =>
           <LinkMenu key={tab.name}>
             <Link to={tab.link}>
@@ -71,7 +81,7 @@ const Navbar = () => {
         setShow={setLoginModal}
         setLogged={setLogged}
       />
-    </div>
+    </NavbarContainer>
   )
 }
 

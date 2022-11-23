@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import {backgroundImage} from './data'
 
+export const maxWidthScreen = '900px'
+
 export const FlexRow = styled.div `
   align-items: center;
   display: flex;
@@ -22,6 +24,17 @@ export const FinalBannerImg = styled.img `
 
 export const MainContainer = styled.div `
   background-image: url(${backgroundImage});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+`
+
+export const ContentContainer = styled.div `
+  margin: 0 auto;
+  max-width: ${maxWidthScreen};
 `
 
 export const PrimaryButton = styled.button `

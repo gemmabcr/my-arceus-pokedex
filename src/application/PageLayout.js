@@ -1,6 +1,6 @@
-import React, { createContext, useContext } from 'react'
+import React, {createContext, useContext} from 'react'
 import { Outlet } from 'react-router-dom'
-import { FinalBannerImg, MainContainer } from '../commonStyled'
+import { MainContainer, ContentContainer, FinalBannerImg } from '../commonStyled'
 import Navbar from '../components/Navbar/Navbar'
 import { finalBanner } from '../data'
 
@@ -24,7 +24,9 @@ const PageLayout = () => {
     <MainContainer>
       <Provider>
         <Navbar />
-        <Outlet />
+        <ContentContainer>
+          <Outlet />
+        </ContentContainer>
         <FinalBannerImg
           alt='Thanks for visiting us'
           src={finalBanner}
