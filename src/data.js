@@ -31,9 +31,9 @@ export const locations = [
   {id: 16, name: 'Vereda del Viento'},
 
   //area 1 : Pradera Obsidiana
-  {id: 17, name: 'Arena del Escenario'},
+  {id: 17, name: 'Arena del Escenario'}, //0 results
   {id: 18, name: 'Banco del Juicio'},
-  {id: 19, name: 'Caverna del Valor'},
+  {id: 19, name: 'Caverna del Valor'}, //0 results
   {id: 20, name: 'Ciénaga Bermeja'},
   {id: 21, name: 'Ciénaga Bocazas'},
   {id: 22, name: 'Ladera Derrumbe'},
@@ -41,13 +41,77 @@ export const locations = [
   {id: 24, name: 'Llanura Diamante'},
   {id: 25, name: 'Loma Lodosa'},
   {id: 26, name: 'Palestra Ursa'},
-  {id: 27, name: 'Poblado Diamante'},
+  {id: 27, name: 'Poblado Diamante'}, //0 results
   {id: 28, name: 'Pradera Aleteo'},
   {id: 29, name: 'Pradera Áurea'},
   {id: 30, name: 'Prado Erióforo'},
   {id: 31, name: 'Rellano Nebuloso'},
   {id: 32, name: 'Ruinas de la Niebla'},
-  {id: 33, name: 'Ruinas Sosiego'}
+  {id: 33, name: 'Ruinas Sosiego'}, //0 results
+
+  //area 2 : Pradera Obsidiana
+  {id: 34, name: 'Albuferas Chapuzón'},
+  {id: 35, name: 'Altar Domo Lava'},
+  {id: 36, name: 'Arboleda Tétrica'},
+  {id: 37, name: 'Arena del Magma'}, //0 results
+  {id: 38, name: 'Bahía Silente'},
+  {id: 39, name: 'Bosque Rompeviento'},
+  {id: 40, name: 'Cabo Rocavelo'},
+  {id: 41, name: 'Cala Oculta'},
+  {id: 42, name: 'Camino del Tómbolo'},
+  {id: 43, name: 'Cerro Aipom'},
+  {id: 44, name: 'Costa Ínsola'},
+  {id: 45, name: 'Cueva Costera'},
+  {id: 46, name: 'Cueva Retorno'},
+  {id: 47, name: 'Gruta Pasamar'}, //0 results
+  {id: 48, name: 'Guarida del Gran Pez'},
+  {id: 49, name: 'Isla Escupefuego'},
+  {id: 50, name: 'Mano de Arena'},
+  {id: 51, name: 'Paso Costanero'},
+  {id: 52, name: 'Playa del Errante'},
+  {id: 53, name: 'Playa Ginkgo'},
+  {id: 54, name: 'Vergel Marino'},
+  {id: 55, name: 'Vía Manantial'},
+
+  //area 3 : Ladera Corona
+  {id: 56, name: 'Ágora de la Plegaria'},
+  {id: 57, name: 'Arena de la Luna'},
+  {id: 58, name: 'Bosque Extravío'},
+  {id: 59, name: 'Cañón Lítico'},
+  {id: 60, name: 'Cantera Ancestral'},
+  {id: 61, name: 'Caverna Inmemorial'},
+  {id: 62, name: 'Columnas Lanza'}, //0 results
+  {id: 63, name: 'Cordillera Derrumbe'},
+  {id: 64, name: 'Cueva Extravío'},
+  {id: 65, name: 'Fuente de las Hadas'},
+  {id: 66, name: 'Loma Sagrada'},
+  {id: 67, name: 'Manantial Solitario'},
+  {id: 68, name: 'Paso Píleo'},
+  {id: 69, name: 'Risco Riscoso'},
+  {id: 70, name: 'Ruinas Celestiales'},
+  {id: 71, name: 'Senda Celestial'},
+  {id: 72, name: 'Senda del Peregrino'},
+  {id: 73, name: 'Templo de Sinnoh'},
+  {id: 74, name: 'Umbral Pétreo'}, //0 results
+
+  //area 4 : Tundra Alba
+  {id: 75, name: 'Arena del Glaciar'}, //0 results
+  {id: 76, name: 'Cascada Glaliar'},
+  {id: 77, name: 'Caverna Agudeza'}, //0 results
+  {id: 78, name: 'Caverna Hiberna'}, //0 results
+  {id: 79, name: 'Desfiladero Alud'},
+  {id: 80, name: 'Lago Agudeza'},
+  {id: 81, name: 'Páramo Algente'},
+  {id: 82, name: 'Pasaje de la Grieta'}, //0 results
+  {id: 83, name: 'Peñasco Espíritu'},
+  {id: 84, name: 'Poblado Perla'}, //0 results
+  {id: 85, name: 'Senda de la Arena'},
+  {id: 86, name: 'Témpano Avalugg'},
+  {id: 87, name: 'Templo Puntaneva'},
+  {id: 88, name: 'Termas Nevavista'},
+  {id: 89, name: 'Terraza Glaciar'},
+  {id: 90, name: 'Tundra Alba'},
+  {id: 91, name: 'Valle Nevasca'},
 ]
 
 export const areas = [
@@ -78,99 +142,99 @@ export const areas = [
     id: 1,
     name: 'Pantanal Carmesí',
     locations: [
-      {id: 0, name: 'Arena del Escenario'},
-      {id: 1, name: 'Banco del Juicio'},
-      {id: 2, name: 'Caverna del Valor'},
-      {id: 3, name: 'Ciénaga Bermeja'},
-      {id: 4, name: 'Ciénaga Bocazas'},
-      {id: 5, name: 'Ladera Derrumbe'},
-      {id: 6, name: 'Lago Valor'},
-      {id: 7, name: 'Llanura Diamante'},
-      {id: 8, name: 'Loma Lodosa'},
-      {id: 9, name: 'Palestra Ursa'},
-      {id: 10, name: 'Poblado Diamante'},
-      {id: 11, name: 'Pradera Aleteo'},
-      {id: 12, name: 'Pradera Áurea'},
-      {id: 13, name: 'Prado Erióforo'},
-      {id: 14, name: 'Rellano Nebuloso'},
-      {id: 15, name: 'Ruinas de la Niebla'},
-      {id: 16, name: 'Ruinas Sosiego'}
+      locations[17],
+      locations[18],
+      locations[19],
+      locations[20],
+      locations[21],
+      locations[22],
+      locations[23],
+      locations[24],
+      locations[25],
+      locations[26],
+      locations[27],
+      locations[28],
+      locations[29],
+      locations[30],
+      locations[31],
+      locations[32],
+      locations[33]
     ]
   },
   {
     id: 2,
     name: 'Costa Cobalto',
     locations: [
-      {id: 0, name: 'Albuferas Chapuzón'},
-      {id: 1, name: 'Altar Domo Lava'},
-      {id: 2, name: 'Arboleda Tétrica'},
-      {id: 3, name: 'Arena del Magma'},
-      {id: 4, name: 'Bahía Silente'},
-      {id: 5, name: 'Bosque Rompeviento'},
-      {id: 6, name: 'Cabo Rocavelo'},
-      {id: 7, name: 'Cala Oculta'},
-      {id: 8, name: 'Camino del Tómbolo'},
-      {id: 9, name: 'Cerro Aipom'},
-      {id: 10, name: 'Costa Ínsola'},
-      {id: 11, name: 'Cueva Costera'},
-      {id: 12, name: 'Cueva Retorno'},
-      {id: 13, name: 'Gruta Pasamar'},
-      {id: 14, name: 'Guarida del Gran Pez'},
-      {id: 15, name: 'Isla Escupefuego'},
-      {id: 16, name: 'Mano de Arena'},
-      {id: 17, name: 'Paso Costanero'},
-      {id: 18, name: 'Playa del Errante'},
-      {id: 19, name: 'Playa Ginkgo'},
-      {id: 20, name: 'Vergel Marino'},
-      {id: 21, name: 'Vía Manantial'}
+      locations[34],
+      locations[35],
+      locations[36],
+      locations[37],
+      locations[38],
+      locations[39],
+      locations[40],
+      locations[41],
+      locations[42],
+      locations[43],
+      locations[44],
+      locations[45],
+      locations[46],
+      locations[47],
+      locations[48],
+      locations[49],
+      locations[50],
+      locations[51],
+      locations[52],
+      locations[53],
+      locations[54],
+      locations[55],
     ]
   },
   {
     id: 3,
     name: 'Ladera Corona',
     locations: [
-      {id: 0, name: 'Ágora de la Plegaria'},
-      {id: 1, name: 'Arena de la Luna'},
-      {id: 2, name: 'Bosque Extravío'},
-      {id: 3, name: 'Cañón Lítico'},
-      {id: 4, name: 'Cantera Ancestral'},
-      {id: 5, name: 'Caverna Inmemorial'},
-      {id: 6, name: 'Columnas Lanza'},
-      {id: 7, name: 'Cordillera Derrumbe'},
-      {id: 8, name: 'Cueva Extravío'},
-      {id: 9, name: 'Fuente de las Hadas'},
-      {id: 10, name: 'Loma Sagrada'},
-      {id: 11, name: 'Manantial Solitario'},
-      {id: 12, name: 'Paso Píleo'},
-      {id: 13, name: 'Risco Riscoso'},
-      {id: 14, name: 'Ruinas Celestiales'},
-      {id: 15, name: 'Senda Celestial'},
-      {id: 16, name: 'Senda del Peregrino'},
-      {id: 17, name: 'Templo de Sinnoh'},
-      {id: 18, name: 'Umbral Pétreo'}
+      locations[56],
+      locations[57],
+      locations[58],
+      locations[59],
+      locations[60],
+      locations[61],
+      locations[62],
+      locations[63],
+      locations[64],
+      locations[65],
+      locations[66],
+      locations[67],
+      locations[68],
+      locations[69],
+      locations[70],
+      locations[71],
+      locations[72],
+      locations[73],
+      locations[74]
     ]
   },
   {
     id: 4,
     name: 'Tundra Alba',
     locations: [
-      {id: 0, name: 'Arena del Glaciar'},
-      {id: 1, name: 'Cascada Glaliar'},
-      {id: 2, name: 'Caverna Agudeza'},
-      {id: 3, name: 'Caverna Hiberna'},
-      {id: 4, name: 'Desfiladero Alud'},
-      {id: 5, name: 'Lago Agudeza'},
-      {id: 6, name: 'Páramo Algente'},
-      {id: 7, name: 'Pasaje de la Grieta'},
-      {id: 8, name: 'Peñasco Espíritu'},
-      {id: 9, name: 'Poblado Perla'},
-      {id: 10, name: 'Senda de la Arena'},
-      {id: 11, name: 'Témpano Avalugg'},
-      {id: 12, name: 'Templo Puntaneva'},
-      {id: 13, name: 'Termas Nevavista'},
-      {id: 14, name: 'Terraza Glaciar'},
-      {id: 15, name: 'Tundra Alba'},
-      {id: 16, name: 'Valle Nevasca'},
+      locations[75],
+      locations[76],
+      locations[77],
+      locations[78],
+      locations[79],
+      locations[80],
+      locations[81],
+      locations[82],
+      locations[83],
+      locations[84],
+      locations[85],
+      locations[86],
+      locations[87],
+      locations[88],
+      locations[89],
+      locations[90],
+      locations[91],
     ]
   },
   {
@@ -521,7 +585,7 @@ export const pokemons = [
       locations[21],
       locations[26],
       locations[28],
-      areas[4].locations[11]
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -540,7 +604,7 @@ export const pokemons = [
       locations[21],
       locations[26],
       locations[28],
-      areas[4].locations[11]
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -560,8 +624,8 @@ export const pokemons = [
       locations[12],
       locations[13],
       locations[16],
-      areas[2].locations[2],
-      areas[2].locations[19],
+      locations[36],
+      locations[53],
     ],
     specialCondition: [
       {
@@ -588,8 +652,8 @@ export const pokemons = [
       locations[8],
       locations[11],
       locations[13],
-      areas[2].locations[2],
-      areas[2].locations[19],
+      locations[36],
+      locations[53],
     ],
     specialCondition: [
       {
@@ -615,7 +679,7 @@ export const pokemons = [
     id: 14,
     location: [
       locations[0],
-      areas[2].locations[2]
+      locations[36]
     ],
     specialCondition: [{}],
     toDos: [
@@ -635,7 +699,7 @@ export const pokemons = [
       locations[3],
       locations[5],
       locations[7],
-      areas[3].locations[16]
+      locations[72]
     ],
     specialCondition: [{}],
     toDos: [
@@ -654,10 +718,10 @@ export const pokemons = [
       locations[3],
       locations[7],
       locations[11],
-      areas[3].locations[0],
-      areas[3].locations[10],
-      areas[3].locations[12],
-      areas[3].locations[16]
+      locations[56],
+      locations[66],
+      locations[68],
+      locations[72]
     ],
     specialCondition: [{}],
     toDos: [
@@ -674,10 +738,10 @@ export const pokemons = [
     id: 17,
     location: [
       locations[11],
-      areas[3].locations[0],
-      areas[3].locations[10],
-      areas[3].locations[12],
-      areas[3].locations[16]
+      locations[56],
+      locations[66],
+      locations[68],
+      locations[72]
     ],
     specialCondition: [{}],
     toDos: [
@@ -739,7 +803,7 @@ export const pokemons = [
       locations[2],
       locations[3],
       locations[6],
-      areas[2].locations[6]
+      locations[40]
     ],
     specialCondition: [
       {
@@ -791,7 +855,7 @@ export const pokemons = [
       locations[2],
       locations[3],
       locations[6],
-      areas[2].locations[6]
+      locations[40]
     ],
     specialCondition: [
       {
@@ -864,9 +928,9 @@ export const pokemons = [
     id: 25,
     location: [
       locations[12],
-      areas[2].locations[17],
-      areas[4].locations[4],
-      areas[4].locations[11],
+      locations[51],
+      locations[79],
+      locations[86],
       areas[5]
     ],
     specialCondition: [{}],
@@ -994,9 +1058,9 @@ export const pokemons = [
       locations[22],
       locations[24],
       locations[31],
-      areas[3].locations[8],
-      areas[3].locations[10],
-      areas[4].locations[12]
+      locations[64],
+      locations[66],
+      locations[87]
     ],
     specialCondition: [
       {
@@ -1024,9 +1088,9 @@ export const pokemons = [
       locations[22],
       locations[24],
       locations[31],
-      areas[3].locations[8],
-      areas[3].locations[10],
-      areas[4].locations[12]
+      locations[64],
+      locations[66],
+      locations[87]
     ],
     specialCondition: [
       {
@@ -1050,8 +1114,8 @@ export const pokemons = [
   {
     id: 36,
     location: [
-      areas[3].locations[8],
-      areas[4].locations[1]
+      locations[64],
+      locations[76]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1072,12 +1136,12 @@ export const pokemons = [
       locations[5],
       locations[8],
       locations[12],
-      areas[2].locations[0],
-      areas[2].locations[2],
-      areas[2].locations[4],
-      areas[2].locations[19],
-      areas[4].locations[11],
-      areas[4].locations[14]
+      locations[34],
+      locations[36],
+      locations[38],
+      locations[53],
+      locations[86],
+      locations[89]
     ],
     specialCondition: [
       {
@@ -1103,12 +1167,12 @@ export const pokemons = [
     location: [
       locations[8],
       locations[11],
-      areas[2].locations[0],
-      areas[2].locations[2],
-      areas[2].locations[4],
-      areas[2].locations[19],
-      areas[4].locations[11],
-      areas[4].locations[14]
+      locations[34],
+      locations[36],
+      locations[38],
+      locations[53],
+      locations[86],
+      locations[89]
     ],
     specialCondition: [
       {
@@ -1172,8 +1236,8 @@ export const pokemons = [
       locations[12],
       locations[14],
       locations[16],
-      areas[2].locations[0],
-      areas[2].locations[9]
+      locations[34],
+      locations[43]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1189,8 +1253,8 @@ export const pokemons = [
     id: 42,
     location: [
       locations[14],
-      areas[2].locations[0],
-      areas[2].locations[9]
+      locations[34],
+      locations[43]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1214,18 +1278,18 @@ export const pokemons = [
       locations[29],
       locations[31],
       locations[32],
-      areas[2].locations[0],
-      areas[2].locations[6],
-      areas[2].locations[18],
-      areas[2].locations[19],
-      areas[3].locations[3],
-      areas[3].locations[10],
-      areas[3].locations[14],
-      areas[3].locations[15],
-      areas[4].locations[4],
-      areas[4].locations[5],
-      areas[4].locations[6],
-      areas[4].locations[14],
+      locations[34],
+      locations[40],
+      locations[52],
+      locations[53],
+      locations[59],
+      locations[66],
+      locations[70],
+      locations[71],
+      locations[79],
+      locations[80],
+      locations[81],
+      locations[89],
     ],
     specialCondition: [{}],
     toDos: [
@@ -1245,18 +1309,18 @@ export const pokemons = [
       locations[11],
       locations[21],
       locations[29],
-      areas[2].locations[0],
-      areas[2].locations[6],
-      areas[2].locations[18],
-      areas[2].locations[19],
-      areas[3].locations[3],
-      areas[3].locations[10],
-      areas[3].locations[14],
-      areas[3].locations[15],
-      areas[4].locations[4],
-      areas[4].locations[5],
-      areas[4].locations[6],
-      areas[4].locations[14],
+      locations[34],
+      locations[40],
+      locations[52],
+      locations[53],
+      locations[59],
+      locations[66],
+      locations[70],
+      locations[71],
+      locations[79],
+      locations[80],
+      locations[81],
+      locations[89],
     ],
     specialCondition: [{}],
     toDos: [
@@ -1274,11 +1338,11 @@ export const pokemons = [
     id: 45,
     location: [
       locations[6],
-      areas[2].locations[6],
-      areas[2].locations[9],
-      areas[2].locations[19],
-      areas[2].locations[21],
-      areas[3].locations[2]
+      locations[40],
+      locations[43],
+      locations[53],
+      locations[55],
+      locations[58]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1301,13 +1365,13 @@ export const pokemons = [
       locations[21],
       locations[22],
       locations[26],
-      areas[2].locations[0],
-      areas[2].locations[6],
-      areas[2].locations[9],
-      areas[2].locations[19],
-      areas[3].locations[7],
-      areas[3].locations[13],
-      areas[3].locations[14]
+      locations[34],
+      locations[40],
+      locations[43],
+      locations[53],
+      locations[63],
+      locations[69],
+      locations[70]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1330,14 +1394,14 @@ export const pokemons = [
       locations[21],
       locations[22],
       locations[26],
-      areas[2].locations[5],
-      areas[2].locations[10],
-      areas[2].locations[15],
-      areas[2].locations[21],
-      areas[3].locations[7],
-      areas[3].locations[10],
-      areas[3].locations[13],
-      areas[3].locations[14]
+      locations[39],
+      locations[44],
+      locations[49],
+      locations[55],
+      locations[63],
+      locations[66],
+      locations[69],
+      locations[70]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1353,7 +1417,7 @@ export const pokemons = [
   {
     id: 48,
     location: [
-      areas[3].locations[7]
+      locations[63]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1370,8 +1434,8 @@ export const pokemons = [
     id: 49,
     location: [
       locations[10],
-      areas[3].locations[2],
-      areas[4].locations[14]
+      locations[58],
+      locations[89]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1398,7 +1462,7 @@ export const pokemons = [
     id: 51,
     location: [
       locations[10],
-      areas[4].locations[13]
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1412,7 +1476,7 @@ export const pokemons = [
   {
     id: 52,
     location: [
-      areas[4].locations[13]
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1433,9 +1497,9 @@ export const pokemons = [
       locations[29],
       locations[30],
       locations[31],
-      areas[2].locations[5],
-      areas[3].locations[2],
-      areas[3].locations[10]
+      locations[39],
+      locations[58],
+      locations[66]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1456,9 +1520,9 @@ export const pokemons = [
       locations[29],
       locations[30],
       locations[31],
-      areas[2].locations[5],
-      areas[3].locations[2],
-      areas[3].locations[10]
+      locations[39],
+      locations[58],
+      locations[66]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1530,7 +1594,7 @@ export const pokemons = [
     location: [
       locations[11],
       locations[16],
-      areas[4].locations[5]
+      locations[80]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1547,7 +1611,7 @@ export const pokemons = [
     id: 59,
     location: [
       locations[11],
-      areas[4].locations[5]
+      locations[80]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1626,8 +1690,8 @@ export const pokemons = [
     id: 64,
     location: [
       locations[2],
-      areas[4].locations[6],
-      areas[4].locations[13]
+      locations[81],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1643,8 +1707,8 @@ export const pokemons = [
     id: 65,
     location: [
       locations[2],
-      areas[4].locations[6],
-      areas[4].locations[13]
+      locations[81],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1663,9 +1727,9 @@ export const pokemons = [
     location: [
       locations[2],
       locations[21],
-      areas[3].locations[5],
-      areas[3].locations[9],
-      areas[3].locations[11]
+      locations[61],
+      locations[65],
+      locations[67]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1681,9 +1745,9 @@ export const pokemons = [
     location: [
       locations[2],
       locations[21],
-      areas[3].locations[5],
-      areas[3].locations[9],
-      areas[3].locations[11]
+      locations[61],
+      locations[65],
+      locations[67]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1702,9 +1766,9 @@ export const pokemons = [
       locations[18],
       locations[21],
       locations[29],
-      areas[2].locations[0],
-      areas[3].locations[2],
-      areas[3].locations[11]
+      locations[34],
+      locations[58],
+      locations[67]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1721,10 +1785,10 @@ export const pokemons = [
     id: 69,
     location: [
       locations[18],
-      areas[2].locations[0],
-      areas[2].locations[21],
-      areas[3].locations[2],
-      areas[3].locations[11]
+      locations[34],
+      locations[55],
+      locations[58],
+      locations[67]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1748,7 +1812,7 @@ export const pokemons = [
       locations[28],
       locations[30],
       locations[31],
-      areas[2].locations[9]
+      locations[43]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1785,7 +1849,7 @@ export const pokemons = [
     id: 72,
     location: [
       locations[1],
-      areas[3].locations[5]
+      locations[61]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1830,7 +1894,7 @@ export const pokemons = [
     id: 75,
     location: [
       locations[6],
-      areas[3].locations[8]
+      locations[64]
     ],
     specialCondition: [
       {
@@ -1889,12 +1953,12 @@ export const pokemons = [
     id: 78,
     location: [
       locations[8],
-      areas[2].locations[7],
-      areas[2].locations[9],
-      areas[4].locations[8],
-      areas[4].locations[13],
-      areas[4].locations[14],
-      areas[4].locations[16]
+      locations[41],
+      locations[43],
+      locations[83],
+      locations[88],
+      locations[89],
+      locations[91]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1911,9 +1975,9 @@ export const pokemons = [
   {
     id: 79,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[8],
-      areas[4].locations[10],
+      locations[79],
+      locations[83],
+      locations[85],
     ],
     specialCondition: [{}],
     toDos: [
@@ -1932,7 +1996,7 @@ export const pokemons = [
     location: [
       locations[4],
       locations[9],
-      areas[3].locations[9]
+      locations[65]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1950,8 +2014,8 @@ export const pokemons = [
     location: [
       locations[4],
       locations[9],
-      areas[2].locations[16],
-      areas[3].locations[5]
+      locations[50],
+      locations[61]
     ],
     specialCondition: [{}],
     toDos: [
@@ -1988,7 +2052,7 @@ export const pokemons = [
     location: [
       locations[8],
       locations[11],
-      areas[2].locations[20]
+      locations[54]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2004,9 +2068,9 @@ export const pokemons = [
   {
     id: 84,
     location: [
-      areas[2].locations[4],
-      areas[2].locations[10],
-      areas[2].locations[14],
+      locations[38],
+      locations[44],
+      locations[48],
     ],
     specialCondition: [{}],
     toDos: [
@@ -2035,8 +2099,8 @@ export const pokemons = [
     location: [
       locations[4],
       locations[7],
-      areas[2].locations[7],
-      areas[4].locations[4]
+      locations[41],
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2051,9 +2115,9 @@ export const pokemons = [
     id: 87,
     location: [
       locations[4],
-      areas[2].locations[7],
-      areas[2].locations[8],
-      areas[4].locations[4]
+      locations[41],
+      locations[42],
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2070,7 +2134,7 @@ export const pokemons = [
     id: 88,
     location: [
       locations[4],
-      areas[4].locations[4]
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2089,7 +2153,7 @@ export const pokemons = [
     location: [
       locations[20],
       locations[29],
-      areas[3].locations[9]
+      locations[65]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2107,7 +2171,7 @@ export const pokemons = [
     location: [
       locations[21],
       locations[31],
-      areas[3].locations[9],
+      locations[65],
     ],
     specialCondition: [{}],
     toDos: [
@@ -2144,7 +2208,7 @@ export const pokemons = [
       locations[21],
       locations[29],
       locations[31],
-      areas[3].locations[11]
+      locations[67]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2190,7 +2254,7 @@ export const pokemons = [
     id: 95,
     location: [
       locations[21],
-      areas[2].locations[17]
+      locations[51]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2226,7 +2290,7 @@ export const pokemons = [
     location: [
       locations[21],
       locations[23],
-      areas[3].locations[8]
+      locations[64]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2245,7 +2309,7 @@ export const pokemons = [
     location: [
       locations[21],
       locations[23],
-      areas[3].locations[8]
+      locations[64]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2264,7 +2328,7 @@ export const pokemons = [
       locations[18],
       locations[20],
       locations[21],
-      areas[4].locations[4]
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2282,8 +2346,8 @@ export const pokemons = [
     id: 100,
     location: [
       locations[18],
-      areas[2].locations[21],
-      areas[3].locations[4]
+      locations[55],
+      locations[60]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2303,8 +2367,8 @@ export const pokemons = [
     location: [
       locations[21],
       locations[32],
-      areas[4].locations[8],
-      areas[4].locations[12]
+      locations[83],
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2321,8 +2385,8 @@ export const pokemons = [
     id: 102,
     location: [
       locations[32],
-      areas[4].locations[8],
-      areas[4].locations[12]
+      locations[83],
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2338,7 +2402,7 @@ export const pokemons = [
   {
     id: 103,
     location: [
-      areas[4].locations[8]
+      locations[83]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2354,7 +2418,7 @@ export const pokemons = [
   {
     id: 104,
     location: [
-      areas[4].locations[12]
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2374,7 +2438,7 @@ export const pokemons = [
       locations[21],
       locations[26],
       locations[28],
-      areas[3].locations[10]
+      locations[66]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2391,7 +2455,7 @@ export const pokemons = [
     id: 106,
     location: [
       locations[28],
-      areas[3].locations[10]
+      locations[66]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2410,7 +2474,7 @@ export const pokemons = [
     location: [
       locations[20],
       locations[25],
-      areas[3].locations[15]
+      locations[71]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2429,7 +2493,7 @@ export const pokemons = [
     location: [
       locations[20],
       locations[25],
-      areas[3].locations[15]
+      locations[71]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2464,7 +2528,7 @@ export const pokemons = [
     id: 110,
     location: [
       locations[20],
-      areas[3].locations[4]
+      locations[60]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2481,7 +2545,7 @@ export const pokemons = [
     id: 111,
     location: [
       locations[20],
-      areas[3].locations[4]
+      locations[60]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2499,7 +2563,7 @@ export const pokemons = [
     id: 112,
     location: [
       locations[26],
-      areas[3].locations[16]
+      locations[72]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2516,7 +2580,7 @@ export const pokemons = [
     id: 113,
     location: [
       locations[26],
-      areas[3].locations[16]
+      locations[72]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2546,7 +2610,7 @@ export const pokemons = [
     id: 115,
     location: [
       locations[18],
-      areas[3].locations[4]
+      locations[60]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2563,7 +2627,7 @@ export const pokemons = [
     id: 116,
     location: [
       locations[18],
-      areas[3].locations[4]
+      locations[60]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2578,7 +2642,7 @@ export const pokemons = [
   {
     id: 117,
     location: [
-      areas[3].locations[4]
+      locations[60]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2597,7 +2661,7 @@ export const pokemons = [
       locations[20],
       locations[22],
       locations[23],
-      areas[3].locations[15]
+      locations[71]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2613,7 +2677,7 @@ export const pokemons = [
   {
     id: 119,
     location: [
-      areas[3].locations[15]
+      locations[71]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2633,8 +2697,8 @@ export const pokemons = [
       locations[22],
       locations[24],
       locations[32],
-      areas[3].locations[0],
-      areas[3].locations[15]
+      locations[56],
+      locations[71]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2651,8 +2715,8 @@ export const pokemons = [
   {
     id: 121,
     location: [
-      areas[3].locations[0],
-      areas[3].locations[15],
+      locations[56],
+      locations[71],
       areas[5]
     ],
     specialCondition: [{}],
@@ -2669,7 +2733,7 @@ export const pokemons = [
   {
     id: 122,
     location: [
-      areas[3].locations[0],
+      locations[56],
       areas[5]
     ],
     specialCondition: [{}],
@@ -2689,7 +2753,7 @@ export const pokemons = [
     id: 123,
     location: [
       locations[31],
-      areas[3].locations[14]
+      locations[70]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2705,7 +2769,7 @@ export const pokemons = [
     id: 124,
     location: [
       locations[31],
-      areas[3].locations[14]
+      locations[70]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2723,8 +2787,8 @@ export const pokemons = [
     id: 125,
     location: [
       locations[32],
-      areas[4].locations[4],
-      areas[4].locations[13]
+      locations[79],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2740,8 +2804,8 @@ export const pokemons = [
   {
     id: 126,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[13]
+      locations[79],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2759,8 +2823,8 @@ export const pokemons = [
     id: 127,
     location: [
       locations[30],
-      areas[2].locations[0],
-      areas[2].locations[4]
+      locations[34],
+      locations[38]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2778,7 +2842,7 @@ export const pokemons = [
     location: [
       locations[22],
       locations[30],
-      areas[2].locations[4]
+      locations[38]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2901,10 +2965,10 @@ export const pokemons = [
       locations[21],
       locations[29],
       locations[32],
-      areas[3].locations[0],
-      areas[3].locations[7],
-      areas[3].locations[14],
-      areas[4].locations[6]
+      locations[56],
+      locations[63],
+      locations[70],
+      locations[81]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2924,10 +2988,10 @@ export const pokemons = [
       locations[21],
       locations[30],
       locations[32],
-      areas[3].locations[0],
-      areas[3].locations[7],
-      areas[3].locations[14],
-      areas[4].locations[6]
+      locations[56],
+      locations[63],
+      locations[70],
+      locations[81]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2968,10 +3032,10 @@ export const pokemons = [
     id: 140,
     location: [
       locations[31],
-      areas[2].locations[6],
-      areas[2].locations[7],
-      areas[2].locations[10],
-      areas[2].locations[17]
+      locations[40],
+      locations[41],
+      locations[44],
+      locations[51]
     ],
     specialCondition: [{}],
     toDos: [
@@ -2988,7 +3052,7 @@ export const pokemons = [
     id: 141,
     location: [
       locations[31],
-      areas[2].locations[0]
+      locations[34]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3013,7 +3077,7 @@ export const pokemons = [
   {
     id: 143,
     location: [
-      areas[2].locations[19]
+      locations[53]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3029,7 +3093,7 @@ export const pokemons = [
   {
     id: 144,
     location: [
-      areas[2].locations[10],
+      locations[44],
     ],
     specialCondition: [{}],
     toDos: [
@@ -3045,8 +3109,8 @@ export const pokemons = [
   {
     id: 145,
     location: [
-      areas[2].locations[9],
-      areas[2].locations[10]
+      locations[43],
+      locations[44]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3063,9 +3127,9 @@ export const pokemons = [
   {
     id: 146,
     location: [
-      areas[2].locations[4],
-      areas[2].locations[16],
-      areas[2].locations[18]
+      locations[38],
+      locations[50],
+      locations[52]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3081,8 +3145,8 @@ export const pokemons = [
   {
     id: 147,
     location: [
-      areas[2].locations[10],
-      areas[2].locations[18]
+      locations[44],
+      locations[52]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3099,8 +3163,8 @@ export const pokemons = [
   {
     id: 148,
     location: [
-      areas[2].locations[18],
-      areas[2].locations[19]
+      locations[52],
+      locations[53]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3115,7 +3179,7 @@ export const pokemons = [
   {
     id: 149,
     location: [
-      areas[2].locations[19],
+      locations[53],
     ],
     specialCondition: [{}],
     toDos: [
@@ -3132,8 +3196,8 @@ export const pokemons = [
   {
     id: 150,
     location: [
-      areas[2].locations[5],
-      areas[2].locations[6],
+      locations[39],
+      locations[40],
     ],
     specialCondition: [{}],
     toDos: [
@@ -3163,9 +3227,9 @@ export const pokemons = [
   {
     id: 152,
     location: [
-      areas[2].locations[6],
-      areas[2].locations[17],
-      areas[4].locations[14]
+      locations[40],
+      locations[51],
+      locations[89]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3181,9 +3245,9 @@ export const pokemons = [
   {
     id: 153,
     location: [
-      areas[2].locations[6],
-      areas[2].locations[17],
-      areas[4].locations[14]
+      locations[40],
+      locations[51],
+      locations[89]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3202,12 +3266,12 @@ export const pokemons = [
     location: [
       locations[4],
       locations[7],
-      areas[2].locations[18],
-      areas[3].locations[7],
-      areas[3].locations[12],
-      areas[4].locations[1],
-      areas[4].locations[10],
-      areas[4].locations[13]
+      locations[52],
+      locations[63],
+      locations[68],
+      locations[76],
+      locations[85],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3225,12 +3289,12 @@ export const pokemons = [
     id: 155,
     location: [
       locations[4],
-      areas[2].locations[18],
-      areas[3].locations[7],
-      areas[3].locations[12],
-      areas[4].locations[1],
-      areas[4].locations[10],
-      areas[4].locations[13]
+      locations[52],
+      locations[63],
+      locations[68],
+      locations[76],
+      locations[85],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3246,7 +3310,7 @@ export const pokemons = [
   {
     id: 156,
     location: [
-      areas[4].locations[10]
+      locations[85]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3263,7 +3327,7 @@ export const pokemons = [
   {
     id: 157,
     location: [
-      areas[2].locations[2]
+      locations[36]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3279,9 +3343,9 @@ export const pokemons = [
   {
     id: 158,
     location: [
-      areas[2].locations[2],
-      areas[4].locations[4],
-      areas[4].locations[10]
+      locations[36],
+      locations[79],
+      locations[85]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3298,9 +3362,9 @@ export const pokemons = [
   {
     id: 159,
     location: [
-      areas[2].locations[2],
-      areas[4].locations[4],
-      areas[4].locations[10]
+      locations[36],
+      locations[79],
+      locations[85]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3316,7 +3380,7 @@ export const pokemons = [
   {
     id: 160,
     location: [
-      areas[2].locations[2]
+      locations[36]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3333,7 +3397,7 @@ export const pokemons = [
   {
     id: 161,
     location: [
-      areas[2].locations[21]
+      locations[55]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3347,7 +3411,7 @@ export const pokemons = [
   {
     id: 162,
     location: [
-      areas[2].locations[21]
+      locations[55]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3361,7 +3425,7 @@ export const pokemons = [
   {
     id: 163,
     location: [
-      areas[2].locations[10]
+      locations[44]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3377,8 +3441,8 @@ export const pokemons = [
   {
     id: 164,
     location: [
-      areas[2].locations[4],
-      areas[2].locations[19]
+      locations[38],
+      locations[53]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3394,7 +3458,7 @@ export const pokemons = [
   {
     id: 165,
     location: [
-      areas[2].locations[4]
+      locations[38]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3410,11 +3474,11 @@ export const pokemons = [
   {
     id: 166,
     location: [
-      areas[2].locations[4],
-      areas[2].locations[10],
-      areas[3].locations[9],
-      areas[4].locations[5],
-      areas[4].locations[8]
+      locations[38],
+      locations[44],
+      locations[65],
+      locations[80],
+      locations[83]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3439,7 +3503,7 @@ export const pokemons = [
   {
     id: 168,
     location: [
-      areas[2].locations[6]
+      locations[40]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3457,7 +3521,7 @@ export const pokemons = [
   {
     id: 169,
     location: [
-      areas[2].locations[15]
+      locations[49]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3474,9 +3538,9 @@ export const pokemons = [
   {
     id: 170,
     location: [
-      areas[2].locations[10],
-      areas[2].locations[14],
-      areas[2].locations[20]
+      locations[44],
+      locations[48],
+      locations[54]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3492,9 +3556,9 @@ export const pokemons = [
   {
     id: 171,
     location: [
-      areas[2].locations[10],
-      areas[2].locations[14],
-      areas[2].locations[20]
+      locations[44],
+      locations[48],
+      locations[54]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3511,7 +3575,7 @@ export const pokemons = [
   {
     id: 172,
     location: [
-      areas[2].locations[20]
+      locations[54]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3528,7 +3592,7 @@ export const pokemons = [
   {
     id: 173,
     location: [
-      areas[2].locations[20]
+      locations[54]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3545,7 +3609,7 @@ export const pokemons = [
   {
     id: 174,
     location: [
-      areas[2].locations[15]
+      locations[49]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3560,7 +3624,7 @@ export const pokemons = [
   {
     id: 175,
     location: [
-      areas[2].locations[15]
+      locations[49]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3620,9 +3684,9 @@ export const pokemons = [
   {
     id: 179,
     location: [
-      areas[3].locations[9],
-      areas[3].locations[13],
-      areas[3].locations[15],
+      locations[65],
+      locations[69],
+      locations[71],
     ],
     specialCondition: [{}],
     toDos: [
@@ -3636,12 +3700,12 @@ export const pokemons = [
   {
     id: 180,
     location: [
-      areas[3].locations[3],
-      areas[3].locations[4],
-      areas[3].locations[13],
-      areas[3].locations[14],
-      areas[4].locations[5],
-      areas[4].locations[12]
+      locations[59],
+      locations[60],
+      locations[69],
+      locations[70],
+      locations[80],
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3658,12 +3722,12 @@ export const pokemons = [
   {
     id: 181,
     location: [
-      areas[3].locations[3],
-      areas[3].locations[4],
-      areas[3].locations[13],
-      areas[3].locations[14],
-      areas[4].locations[5],
-      areas[4].locations[12]
+      locations[59],
+      locations[60],
+      locations[69],
+      locations[70],
+      locations[80],
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3680,9 +3744,9 @@ export const pokemons = [
   {
     id: 182,
     location: [
-      areas[3].locations[12],
-      areas[4].locations[1],
-      areas[4].locations[10]
+      locations[68],
+      locations[76],
+      locations[85]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3697,9 +3761,9 @@ export const pokemons = [
   {
     id: 183,
     location: [
-      areas[3].locations[12],
-      areas[4].locations[1],
-      areas[4].locations[10]
+      locations[68],
+      locations[76],
+      locations[85]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3715,7 +3779,7 @@ export const pokemons = [
   {
     id: 184,
     location: [
-      areas[3].locations[12]
+      locations[68]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3732,12 +3796,12 @@ export const pokemons = [
   {
     id: 185,
     location: [
-      areas[3].locations[5],
-      areas[3].locations[12],
-      areas[3].locations[13],
-      areas[3].locations[14],
-      areas[4].locations[10],
-      areas[4].locations[14]
+      locations[61],
+      locations[68],
+      locations[69],
+      locations[70],
+      locations[85],
+      locations[89]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3754,7 +3818,7 @@ export const pokemons = [
   {
     id: 186,
     location: [
-      areas[3].locations[5]
+      locations[61]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3771,9 +3835,9 @@ export const pokemons = [
   {
     id: 187,
     location: [
-      areas[3].locations[8],
-      areas[3].locations[13],
-      areas[4].locations[4]
+      locations[64],
+      locations[69],
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3790,8 +3854,8 @@ export const pokemons = [
   {
     id: 188,
     location: [
-      areas[3].locations[13],
-      areas[4].locations[4]
+      locations[69],
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3807,7 +3871,7 @@ export const pokemons = [
   {
     id: 189,
     location: [
-      areas[4].locations[4]
+      locations[79]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3825,8 +3889,8 @@ export const pokemons = [
   {
     id: 190,
     location: [
-      areas[3].locations[5],
-      areas[3].locations[14]
+      locations[61],
+      locations[70]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3844,7 +3908,7 @@ export const pokemons = [
   {
     id: 191,
     location: [
-      areas[3].locations[5]
+      locations[61]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3861,7 +3925,7 @@ export const pokemons = [
   {
     id: 192,
     location: [
-      areas[3].locations[0]
+      locations[56]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3890,8 +3954,8 @@ export const pokemons = [
   {
     id: 194,
     location: [
-      areas[3].locations[0],
-      areas[3].locations[3]
+      locations[56],
+      locations[59]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3906,8 +3970,8 @@ export const pokemons = [
   {
     id: 195,
     location: [
-      areas[3].locations[0],
-      areas[4].locations[5],
+      locations[56],
+      locations[80],
     ],
     specialCondition: [{}],
     toDos: [
@@ -3923,8 +3987,8 @@ export const pokemons = [
   {
     id: 196,
     location: [
-      areas[3].locations[15],
-      areas[4].locations[5]
+      locations[71],
+      locations[80]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3941,10 +4005,10 @@ export const pokemons = [
   {
     id: 197,
     location: [
-      areas[3].locations[0],
-      areas[3].locations[3],
-      areas[3].locations[14],
-      areas[4].locations[6]
+      locations[56],
+      locations[59],
+      locations[70],
+      locations[81]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3960,7 +4024,7 @@ export const pokemons = [
   {
     id: 198,
     location: [
-      areas[3].locations[3]
+      locations[59]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3977,7 +4041,7 @@ export const pokemons = [
   {
     id: 199,
     location: [
-      areas[3].locations[9]
+      locations[65]
     ],
     specialCondition: [{}],
     toDos: [
@@ -3993,7 +4057,7 @@ export const pokemons = [
   {
     id: 200,
     location: [
-      areas[3].locations[9]
+      locations[65]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4010,7 +4074,7 @@ export const pokemons = [
   {
     id: 201,
     location: [
-      areas[3].locations[9]
+      locations[65]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4069,10 +4133,10 @@ export const pokemons = [
   {
     id: 205,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[6],
-      areas[4].locations[11],
-      areas[4].locations[16]
+      locations[79],
+      locations[81],
+      locations[86],
+      locations[91]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4088,10 +4152,10 @@ export const pokemons = [
   {
     id: 206,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[6],
-      areas[4].locations[11],
-      areas[4].locations[12]
+      locations[79],
+      locations[81],
+      locations[86],
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4109,9 +4173,9 @@ export const pokemons = [
   {
     id: 207,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[6],
-      areas[4].locations[11]
+      locations[79],
+      locations[81],
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4180,9 +4244,9 @@ export const pokemons = [
   {
     id: 212,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[6],
-      areas[4].locations[11]
+      locations[79],
+      locations[81],
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4199,9 +4263,9 @@ export const pokemons = [
   {
     id: 213,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[6],
-      areas[4].locations[11]
+      locations[79],
+      locations[81],
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4216,9 +4280,9 @@ export const pokemons = [
   {
     id: 214,
     location: [
-      areas[4].locations[4],
-      areas[4].locations[6],
-      areas[4].locations[11]
+      locations[79],
+      locations[81],
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4236,8 +4300,8 @@ export const pokemons = [
   {
     id: 215,
     location: [
-      areas[4].locations[10],
-      areas[4].locations[11]
+      locations[85],
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4253,7 +4317,7 @@ export const pokemons = [
   {
     id: 216,
     location: [
-      areas[4].locations[11]
+      locations[86]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4269,8 +4333,8 @@ export const pokemons = [
   {
     id: 217,
     location: [
-      areas[4].locations[11],
-      areas[4].locations[14]
+      locations[86],
+      locations[89]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4286,8 +4350,8 @@ export const pokemons = [
   {
     id: 218,
     location: [
-      areas[4].locations[11],
-      areas[4].locations[14]
+      locations[86],
+      locations[89]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4304,7 +4368,7 @@ export const pokemons = [
   {
     id: 219,
     location: [
-      areas[4].locations[6]
+      locations[81]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4320,7 +4384,7 @@ export const pokemons = [
   {
     id: 220,
     location: [
-      areas[4].locations[6]
+      locations[81]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4336,8 +4400,8 @@ export const pokemons = [
   {
     id: 221,
     location: [
-      areas[4].locations[5],
-      areas[4].locations[15]
+      locations[80],
+      locations[90]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4353,7 +4417,7 @@ export const pokemons = [
   {
     id: 222,
     location: [
-      areas[4].locations[5]
+      locations[80]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4367,8 +4431,8 @@ export const pokemons = [
   {
     id: 223,
     location: [
-      areas[4].locations[1],
-      areas[4].locations[13]
+      locations[76],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4381,8 +4445,8 @@ export const pokemons = [
   {
     id: 224,
     location: [
-      areas[4].locations[1],
-      areas[4].locations[13]
+      locations[76],
+      locations[88]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4397,7 +4461,7 @@ export const pokemons = [
   {
     id: 225,
     location: [
-      areas[4].locations[5]
+      locations[80]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4441,7 +4505,7 @@ export const pokemons = [
   {
     id: 228,
     location: [
-      areas[2].locations[1]
+      locations[35]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4455,7 +4519,7 @@ export const pokemons = [
   {
     id: 229,
     location: [
-      areas[4].locations[12]
+      locations[87]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4469,7 +4533,7 @@ export const pokemons = [
   {
     id: 230,
     location: [
-      areas[3].locations[1]
+      locations[57]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4482,7 +4546,7 @@ export const pokemons = [
   {
     id: 231,
     location: [
-      areas[4].locations[6]
+      locations[81]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4495,7 +4559,7 @@ export const pokemons = [
   {
     id: 232,
     location: [
-      areas[2].locations[10]
+      locations[44]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4534,7 +4598,7 @@ export const pokemons = [
   {
     id: 235,
     location: [
-      areas[3].locations[17]
+      locations[73]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4548,7 +4612,7 @@ export const pokemons = [
   {
     id: 236,
     location: [
-      areas[3].locations[17]
+      locations[73]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4562,7 +4626,7 @@ export const pokemons = [
   {
     id: 237,
     location: [
-      areas[2].locations[12]
+      locations[46]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4576,7 +4640,7 @@ export const pokemons = [
   {
     id: 238,
     location: [
-      areas[3].locations[17]
+      locations[73]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4586,7 +4650,7 @@ export const pokemons = [
   {
     id: 239,
     location: [
-      areas[2].locations[11]
+      locations[45]
     ],
     specialCondition: [{}],
     toDos: [
@@ -4599,7 +4663,7 @@ export const pokemons = [
   {
     id: 240,
     location: [
-      areas[2].locations[11]
+      locations[45]
     ],
     specialCondition: [{}],
     toDos: [
