@@ -9,11 +9,18 @@ const PokemonTodosInfo = ({todos}) => {
     return data.name
   }
 
+  function getGoalText(goal, done){
+    if (done === goal) {
+      return 'Completed'
+    }
+    return `${done} of ${goal}`
+  }
+
   if (todos !== undefined) {
     return (
       <PokemonDetailContent>
         <h3>Tareas de la Pokédex</h3>
-        {todos.map((todo,index) => <span key={index}>{getTodoText(todo.id)} -> Goal: {todo.goal}</span>)}
+        {todos.map((todo,index) => <span key={index}>{getTodoText(todo.id)} -> Goal: {getGoalText(todo.goal, todo.done)}</span>)}
       </PokemonDetailContent>
     )
   }
