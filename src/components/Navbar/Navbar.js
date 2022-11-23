@@ -1,10 +1,41 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Header, LogoArceus, LoginContainer, LinksMenu, LinkMenu, LogoContainer } from './NavbarStyled'
 import Modal from '../Modal/Modal'
+import { Header, LogoArceus, LoginContainer, LinksMenu, LinkMenu, LogoContainer } from './NavbarStyled'
 import { useLoggedContext } from '../../application/PageLayout'
-import { pokemonLogo } from '../../data'
-import {PrimaryButton} from '../../commonStyled'
+import { PrimaryButton } from '../../commonStyled'
+import { costaText, distorsionText, laderaText, pantanalText, pokemonLogo, praderaText, tundraText } from '../../data'
+
+export const generalTabs = [
+  {
+    link: '/',
+    name: 'Todo Hisui'
+  },
+  {
+    link: '/pradera-obsidiana',
+    name: praderaText
+  },
+  {
+    link: '/pantanal-carmesi',
+    name: pantanalText
+  },
+  {
+    link: '/costa-cobalto',
+    name: costaText
+  },
+  {
+    link: '/ladera-corona',
+    name: laderaText
+  },
+  {
+    link: '/tundra-alba',
+    name: tundraText
+  },
+  {
+    link: '/distorion-espaciotemporal',
+    name: distorsionText
+  },
+]
 
 const Navbar = () => {
   const [logged, setLogged] = useLoggedContext ()
@@ -47,11 +78,13 @@ const Navbar = () => {
         }
       </Header>
       <LinksMenu>
-        <LinkMenu>
-          <Link to={'/'}>
-            Todo Hisui
-          </Link>
-        </LinkMenu>
+        {generalTabs.map(tab =>
+          <LinkMenu key={tab.name}>
+            <Link to={tab.link}>
+              {tab.name}
+            </Link>
+          </LinkMenu>
+        )}
         <LinkMenu>
           {logged &&
             <Link to={'/myList'}>
