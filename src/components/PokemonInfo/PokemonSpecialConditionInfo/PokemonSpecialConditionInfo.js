@@ -1,27 +1,26 @@
 import React from 'react'
-import { FlexColumn, FlexRow } from '../../../commonStyled'
+import { FlexRow } from '../../../commonStyled'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 
 const PokemonSpecialConditionInfo = ({conditions}) => {
+  function checkPlentyConditions(){
+    return conditions[0].name !== undefined
+  }
+
   return (
     <PokemonDetailContent>
       <h3>Special Condition</h3>
-      {/*<FlexRow>
-          <h5>Time:</h5>
-          {conditions.time.map((time, index) =>
-            <span key={time.id}>{time.name}{index !== conditions.time.length-1 && ', '}</span>
-          )}
+      {checkPlentyConditions() && conditions.map((specialCondition, indexSpecial) =>
+        <FlexRow key={indexSpecial}>
+          <h5>{specialCondition.name}</h5>
+          <FlexRow>
+            {specialCondition.conditions.map((condition, index) =>
+              <span key={condition.id}>{condition.name}{index !== specialCondition.conditions.length-1 && ', '}</span>
+            )}
+          </FlexRow>
         </FlexRow>
-
-        TODO: Fix weather conditions
-        {conditions.weather.length > 0 &&
-        <FlexRow>
-          <h5>Weather:</h5>
-          {conditions.weather.map((weather, index) =>
-            <span key={weather.id}>{weather.name}{index !== conditions.weather.length-1 && ', '}</span>
-          )}
-        </FlexRow>
-      }*/}
+      )}
+      {!checkPlentyConditions() && <p>No special conditions</p>}
     </PokemonDetailContent>
   )
 }
