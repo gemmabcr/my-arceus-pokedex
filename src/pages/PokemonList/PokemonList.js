@@ -27,7 +27,7 @@ const PokemonList = () => {
             <Link
               key={pokemon.index}
               to={`/pokemon/${pokemon.index}`}
-              state={{ urlPokemon: pokemon.url, index: pokemon.index }}
+              state={{ urlPokemon: pokemon.url }}
             >
               <PokemonCard
                 urlPokemon={pokemon.url}

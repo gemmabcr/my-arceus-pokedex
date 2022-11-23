@@ -11,9 +11,9 @@ import { PokeService } from '../../service/pokeService'
 import Loading from '../../components/Loading/Loading'
 
 const PokemonDetail = () => {
-  const {id} = useParams()
+  const { id } = useParams()
   const location = useLocation()
-  const { urlPokemon, index } = location.state
+  const { urlPokemon } = location.state
 
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
@@ -26,7 +26,7 @@ const PokemonDetail = () => {
 
   React.useEffect(()=>{
     const pokeService = new PokeService()
-    pokeService.getPokemonData(urlPokemon, index)
+    pokeService.getPokemonData(urlPokemon, Number(id))
       .then(data=> {
         setEvolutionChainData(data.evolutionChain)
         setEvolutionFromData(data.evolutionFrom)
@@ -38,7 +38,7 @@ const PokemonDetail = () => {
       })
       .catch((error)=>console.log(error))
       .finally(()=> setLoading(false))
-  },[urlPokemon, index])
+  },[urlPokemon, id])
 
   return (
     <PokemonDetailContainer>
@@ -52,7 +52,7 @@ const PokemonDetail = () => {
         <FlexColumn>
           <PokemonInfo
             urlDataPokemon={urlDataPokemon}
-            index={index}
+            index={id}
           />
           <PokemonLocationInfo locations={locationsData} />
           <PokemonSpecialConditionInfo conditions={specialConditionsData} />
