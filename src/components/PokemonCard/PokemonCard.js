@@ -1,6 +1,5 @@
 import React from 'react'
 import { PokemonCardContainer, PokemonCardContent } from './PokemonCardStyled'
-import { FlexColumn, FlexRow } from '../../commonStyled'
 import PokemonInfo from '../PokemonInfo/PokemonInfo'
 import { PokeService } from '../../service/pokeService'
 import PokemonTodosInfo from '../PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
@@ -25,16 +24,11 @@ const PokemonCard = ({urlPokemon, index, todos}) => {
       {loading && <Loading />}
       {!loading &&
         <PokemonCardContent>
-          <FlexRow>
-            <p>{index}</p>
-            <PokemonInfo
-              urlDataPokemon={urlDataPokemon}
-            />
-          </FlexRow>
-          <FlexColumn>
-            <h4>Tareas de la pokedex</h4>
-            <PokemonTodosInfo todos={todos} />
-          </FlexColumn>
+          <PokemonInfo
+            index={index}
+            urlDataPokemon={urlDataPokemon}
+          />
+          <PokemonTodosInfo todos={todos} />
         </PokemonCardContent>
       }
     </PokemonCardContainer>

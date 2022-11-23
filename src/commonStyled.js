@@ -5,6 +5,7 @@ export const FlexRow = styled.div `
   align-items: center;
   display: flex;
   gap: 0.5rem;
+  justify-content: center;
   width: 100%;
 `
 export const FlexColumn = styled.div `

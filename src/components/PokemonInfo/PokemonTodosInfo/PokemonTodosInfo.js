@@ -13,7 +13,7 @@ const PokemonTodosInfo = ({todos}) => {
     return (
       <PokemonDetailContent>
         <h3>Tareas de la Pokédex</h3>
-        {todos.map((todo,index) => <p key={index}>{getTodoText(todo.id)} -> Goal: {todo.goal}</p>)}
+        {todos.map((todo,index) => <span key={index}>{getTodoText(todo.id)} -> Goal: {todo.goal}</span>)}
       </PokemonDetailContent>
     )
   }
