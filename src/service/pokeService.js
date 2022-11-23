@@ -42,10 +42,13 @@ export class PokeService {
 
   async getPokemonData(urlPokemon, index) {
     const response = await this.sendRequest(urlPokemon)
+    const hisuiPokemon = this.checkHusuiPokemon(response.varieties)
+    const fetchedHisuiPokemon = await this.getPokemon(hisuiPokemon)
     return {
       evolutionChain : response.evolution_chain,
       evolutionFrom : response.evolves_from_species,
       hisuiPokemon: this.checkHusuiPokemon(response.varieties),
+      newHisuiPokemon: fetchedHisuiPokemon.data,
       locations: this.getAddedPokemonData(index).location,
       specialConditions: this.getAddedPokemonData(index).specialCondition,
       toDos: this.getAddedPokemonData(index).toDos,

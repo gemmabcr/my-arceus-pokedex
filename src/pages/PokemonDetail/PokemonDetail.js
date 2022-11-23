@@ -15,6 +15,7 @@ const PokemonDetail = () => {
   const { urlPokemon, index } = location.state
 
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
+  const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
   const [evolutionChainData, setEvolutionChainData] = React.useState([])
   const [evolutionFromData, setEvolutionFromData] = React.useState([])
   const [locationsData, setLocationsData] = React.useState([])
@@ -29,6 +30,7 @@ const PokemonDetail = () => {
         setEvolutionChainData(data.evolutionChain)
         setEvolutionFromData(data.evolutionFrom)
         setUrlDataPokemon(data.hisuiPokemon)
+        setHisuiDataPokemon(data.newHisuiPokemon)
         setLocationsData(data.locations)
         setSpecialConditionsData(data.specialConditions)
         setTodosData(data.toDos)
@@ -55,6 +57,7 @@ const PokemonDetail = () => {
           <PokemonSpecialConditionInfo conditions={specialConditionsData} />
           {evolutionChainData &&
             <PokemonEvolutionInfo
+              namePokemon={hisuiDataPokemon.name}
               evolutionChainData={evolutionChainData.url}
               evolutionFromData={evolutionFromData}
             />
