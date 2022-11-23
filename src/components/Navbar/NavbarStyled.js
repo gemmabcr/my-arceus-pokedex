@@ -33,6 +33,7 @@ export const LoginContainer = styled.div `
 export const LinksMenu = styled.div `
   background-color: #dedede;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   -webkit-box-shadow: -8px 10px 30px -15px rgba(0,0,0,0.44);

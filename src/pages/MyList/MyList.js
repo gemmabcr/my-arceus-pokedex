@@ -1,11 +1,12 @@
 import React, {Fragment} from 'react'
 import { Link } from 'react-router-dom'
 import { PokemonListContainer, PokemonListContent } from '../PokemonList/PokemonListStyled'
-import PokemonCard from '../../components/PokemonCard/PokemonCard'
-import {PokeService} from '../../service/pokeService'
+import { loggedUsername } from '../../commonFunctions'
+import { FlexRow } from '../../commonStyled'
+import CompletedPokemon from '../../components/CompletedPokemon/CompletedPokemon'
 import Loading from '../../components/Loading/Loading'
-import {formatedName, loggedUsername} from '../../commonFunctions'
-import {FlexRow} from "../../commonStyled";
+import PokemonCard from '../../components/PokemonCard/PokemonCard'
+import { PokeService } from '../../service/pokeService'
 
 const MyList = () => {
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
@@ -20,7 +21,6 @@ const MyList = () => {
   },[])
 
   const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done === todo.goal))
-  console.log(completedPokemons)
   const uncompletedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.find(todo => todo.done < todo.goal))
 
   return (
@@ -33,7 +33,11 @@ const MyList = () => {
           {completedPokemons.length > 0 &&
             <FlexRow style={{flexWrap: 'wrap'}}>
               {completedPokemons.map(completedPokemon =>
-                <h5 key={completedPokemon.name}>#{completedPokemon.index} {formatedName(completedPokemon.name)}</h5>
+                <CompletedPokemon
+                  key={completedPokemon.name}
+                  urlPokemon={completedPokemon.url}
+                  index={completedPokemon.index}
+                />
               )}
             </FlexRow>
           }
