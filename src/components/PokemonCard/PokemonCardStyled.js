@@ -10,6 +10,7 @@ export const PokemonCardContainer = styled.div `
 export const PokemonCardImg = styled.img `
   background-color: rgba(255,255,255,0.75);
   border-radius: 50%;
+  margin-bottom: 1rem;
   max-width: 80px;
   object-fit: contain;
 `
