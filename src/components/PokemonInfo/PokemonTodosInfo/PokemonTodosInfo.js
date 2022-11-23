@@ -13,10 +13,7 @@ const PokemonTodosInfo = ({todos}) => {
   }
 
   function getGoalText(goal, done){
-    if (done === goal) {
-      return 'Completed'
-    }
-    return `${done} of ${goal}`
+    return `${done} de ${goal}`
   }
 
   return (
@@ -27,15 +24,39 @@ const PokemonTodosInfo = ({todos}) => {
           {uncompletedTodos.length === 0 &&
             <p>Completada!!</p>
           }
-          {uncompletedTodos.length > 0 && uncompletedTodos.map((todo,index) =>
-            <span key={index}>{getTodoText(todo.id)} -> Goal: {getGoalText(todo.goal, todo.done)}</span>
-          )}
+          {uncompletedTodos.length > 0 &&
+            <table>
+              <tbody>
+                <tr>
+                  <th>Progreso</th>
+                  <th>Descripción</th>
+                </tr>
+                {uncompletedTodos.map((todo,index) =>
+                  <tr key={index}>
+                    <th>{getGoalText(todo.goal, todo.done)}</th>
+                    <th>{getTodoText(todo.id)}</th>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          }
         </Fragment>
       }
       {!logged &&
-        <Fragment>
-          {todos.map((todo,index) => <span key={index}>{getTodoText(todo.id)} -> Goal: {getGoalText(todo.goal, todo.done)}</span>)}
-        </Fragment>
+        <table>
+          <tbody>
+          <tr>
+            <th>Meta</th>
+            <th>Descripción</th>
+          </tr>
+          {todos.map((todo,index) =>
+            <tr key={index}>
+              <th>{todo.goal}</th>
+              <th>{getTodoText(todo.id)}</th>
+            </tr>
+          )}
+          </tbody>
+        </table>
       }
     </PokemonDetailContent>
   )
