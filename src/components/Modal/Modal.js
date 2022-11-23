@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Overlay, WrapperModal, HeaderModal, ContentModal, InputWrapper, InputModal, CloseButton } from './ModalStyled'
 import { PrimaryButton } from '../../commonStyled'
 
-const Modal = ({ show, setShow, setLogged }) => {
+const Modal = ({ show, setShow, setLogged, hisuiPokedex }) => {
 
   const [username, setUsername] = React.useState(()=>{
     if (localStorage.getItem('username') === null)
@@ -23,6 +23,7 @@ const Modal = ({ show, setShow, setLogged }) => {
 
   function submit(){
     localStorage.setItem('logged', JSON.stringify(true))
+    localStorage.setItem('savedPokedex', JSON.stringify(hisuiPokedex))
     setLogged(true)
     closeModal()
   }

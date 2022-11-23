@@ -14,6 +14,7 @@ import { useLoggedContext } from '../../application/PageLayout'
 import { PrimaryButton } from '../../commonStyled'
 import { loggedUsername } from '../../commonFunctions'
 import { pokemonLogo, links, areaText } from '../../data'
+import { PokeService } from '../../service/pokeService'
 
 export const generalTabs = [
   { link: '/', name: 'Todo Hisui' },
@@ -28,6 +29,14 @@ export const generalTabs = [
 const Navbar = () => {
   const [logged, setLogged] = useLoggedContext ()
   const [loginModal, setLoginModal] = useState(false)
+  const [hisuiPokedex, setHisuiPokedex] = React.useState([])
+
+  React.useEffect(()=>{
+    const pokeService = PokeService.getInstance()
+    pokeService.getPokemons()
+      .then(data => setHisuiPokedex(data))
+      .catch((error)=>console.log(error))
+  },[])
 
   function loginButton(){
     setLoginModal(!loginModal)
@@ -80,6 +89,7 @@ const Navbar = () => {
         show={loginModal}
         setShow={setLoginModal}
         setLogged={setLogged}
+        hisuiPokedex={hisuiPokedex}
       />
     </NavbarContainer>
   )
