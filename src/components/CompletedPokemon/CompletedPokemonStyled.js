@@ -16,6 +16,7 @@ export const CompletedPokemonCard = styled.div `
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   padding: 1rem;
 `
 

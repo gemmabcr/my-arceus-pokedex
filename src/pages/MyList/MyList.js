@@ -21,11 +21,16 @@ const MyList = () => {
             <h4>Pokémons completados ({completedPokemons.length}/{hisuiPokedex.length})</h4>
             <CompletedPokemonRow>
               {completedPokemons.map(completedPokemon =>
-                <CompletedPokemon
+                <Link
                   key={completedPokemon.name}
-                  urlPokemon={completedPokemon.url}
-                  index={completedPokemon.index}
-                />
+                  to={`/pokemon/${completedPokemon.index}`}
+                  state={{ urlPokemon: completedPokemon.url }}
+                >
+                  <CompletedPokemon
+                    urlPokemon={completedPokemon.url}
+                    index={completedPokemon.index}
+                  />
+                </Link>
               )}
             </CompletedPokemonRow>
           </MyListSection>
