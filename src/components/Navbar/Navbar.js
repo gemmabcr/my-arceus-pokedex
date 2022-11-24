@@ -8,7 +8,7 @@ import {
   LoginContainer,
   LinksMenu,
   LinkMenu,
-  LogoContainer, LinkTitle,
+  LogoContainer, LinkPokedex, LoggedContainer, LogoutPokedex, LoggedUser, LoggedUserText, LinkMenuTitle
 } from './NavbarStyled'
 import { useLoggedContext } from '../../application/PageLayout'
 import { PrimaryButton } from '../../commonStyled'
@@ -50,33 +50,40 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Header>
-        <h1>Pokédex tracking list</h1>
+        <h2>Pokédex tracking list</h2>
         <LogoContainer>
           <LogoArceus src={pokemonLogo} alt='Pokemon Leyendas: Arceus' />
         </LogoContainer>
         <LoginContainer>
-          {logged &&
-            <LinkMenu>
-              <Link to={links.myList}>
-                Pokedex de {loggedUsername()}
-              </Link>
-            </LinkMenu>
+          {!logged &&
+            <PrimaryButton onClick={()=> loginButton()}>
+              Log in
+            </PrimaryButton>
           }
-          <PrimaryButton onClick={()=> {
-            if(!logged) {
-              loginButton()
-            }
-            if (logged) {
-              logoutButton()
-            }
-          }}>
-            {logged? 'Log Out' : 'Log in'}
-          </PrimaryButton>
+          {logged &&
+            <LoggedContainer>
+              <LoggedUser>
+                <LoggedUserText>
+                  {loggedUsername()}
+                </LoggedUserText>
+                <LogoutPokedex
+                  onClick={()=> logoutButton()}
+                >
+                  Log Out
+                </LogoutPokedex>
+              </LoggedUser>
+              <Link to={links.myList}>
+                  <LinkPokedex>
+                    Mi Pokédex
+                  </LinkPokedex>
+                </Link>
+            </LoggedContainer>
+          }
         </LoginContainer>
       </Header>
       <hr />
       <LinksMenu>
-        <LinkTitle>Areas:</LinkTitle>
+        <LinkMenuTitle>Areas:</LinkMenuTitle>
         {generalTabs.map(tab =>
           <LinkMenu key={tab.name}>
             <Link to={tab.link}>
