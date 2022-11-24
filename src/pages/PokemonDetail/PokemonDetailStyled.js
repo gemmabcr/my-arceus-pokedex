@@ -11,13 +11,20 @@ export const BackButtonContainer = styled.div `
   width: 100%;
 `
 
-export const PokemonDetailContent = styled.div `
-  align-items: center;
+export const PokemonDetailInfoContent = styled.div `
   background-color: lightcoral;
   border: 1px solid dimgrey;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+`
+
+export const PokemonDetailContent = styled.div `
+  align-items: center;
+  border-top: 1px solid dimgrey;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
-  width: 95%;
 `

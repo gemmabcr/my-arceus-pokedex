@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, useParams, useLocation } from 'react-router-dom'
-import { PokemonDetailContainer, BackButtonContainer } from './PokemonDetailStyled'
-import { FlexColumn } from '../../commonStyled'
+import { PokemonDetailContainer, BackButtonContainer, PokemonDetailInfoContent } from './PokemonDetailStyled'
 import PokemonEvolutionInfo from '../../components/PokemonInfo/PokemonEvolutionInfo/PokemonEvolutionInfo'
 import PokemonInfo from '../../components/PokemonInfo/PokemonInfo'
 import PokemonLocationInfo from '../../components/PokemonInfo/PokemonLocationInfo/PokemonLocationInfo'
@@ -49,7 +48,7 @@ const PokemonDetail = () => {
       </BackButtonContainer>
       {loading && <Loading />}
       {!loading &&
-        <FlexColumn>
+        <PokemonDetailInfoContent>
           <PokemonInfo
             urlDataPokemon={urlDataPokemon}
             index={id}
@@ -64,7 +63,7 @@ const PokemonDetail = () => {
             />
           }
           <PokemonTodosInfo todos={todosData} />
-        </FlexColumn>
+        </PokemonDetailInfoContent>
       }
     </PokemonDetailContainer>
   )

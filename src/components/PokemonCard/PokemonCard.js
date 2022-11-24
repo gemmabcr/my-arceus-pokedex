@@ -1,5 +1,5 @@
 import React from 'react'
-import { PokemonCardContainer, PokemonCardContent } from './PokemonCardStyled'
+import { PokemonCardContent } from './PokemonCardStyled'
 import PokemonInfo from '../PokemonInfo/PokemonInfo'
 import { PokeService } from '../../service/pokeService'
 import PokemonTodosInfo from '../PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
@@ -20,7 +20,7 @@ const PokemonCard = ({urlPokemon, index, todos}) => {
   },[urlPokemon, index])
 
   return (
-    <PokemonCardContainer>
+    <>
       {loading && <Loading />}
       {!loading &&
         <PokemonCardContent>
@@ -31,7 +31,7 @@ const PokemonCard = ({urlPokemon, index, todos}) => {
           <PokemonTodosInfo todos={todos} />
         </PokemonCardContent>
       }
-    </PokemonCardContainer>
+    </>
   )
 }
 

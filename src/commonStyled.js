@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {backgroundImage} from './data'
 
 export const maxWidthScreen = '900px'
+export const breakpointTablet = '960px'
 
 export const FlexRow = styled.div `
   align-items: center;

@@ -4,7 +4,8 @@ export const PokemonListContainer = styled.div `
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  gap: 2rem;
+  padding: 2rem 1rem;
 `
 
 export const PokemonListContent = styled.div `

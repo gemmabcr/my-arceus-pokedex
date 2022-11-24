@@ -1,12 +1,5 @@
 import styled from 'styled-components'
-
-export const PokemonCardContainer = styled.div `
-  align-items: flex-start;
-  display: flex;
-  gap: 0.5rem;
-  padding: 1rem;
-  width: 100%;
-`
+import { breakpointTablet } from '../../commonStyled'
 
 export const PokemonCardImg = styled.img `
   background-color: rgba(255,255,255,0.75);
@@ -17,8 +10,13 @@ export const PokemonCardImg = styled.img `
 `
 
 export const PokemonCardContent = styled.div `
+  background-color: lightcoral;
+  border: 1px solid dimgrey;
   display: grid;
-  gap: 1rem;
   grid-template-columns: 240px 1fr;
-  width: 100%;
+
+  @media (max-width: ${breakpointTablet}) {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
 `
