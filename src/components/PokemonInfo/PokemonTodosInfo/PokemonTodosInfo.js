@@ -8,6 +8,13 @@ const PokemonTodosInfo = ({todos}) => {
   const [logged, setLogged] = useLoggedContext ()
   const uncompletedTodos = todos.filter(todo => todo.done < todo.goal)
 
+  function getLenghtTodos(){
+    if (logged) {
+      return `${uncompletedTodos.length}/${todos.length}`
+    }
+    return todos.length
+  }
+
   function getTodoText(id){
     const data = (PokeService.getInstance().getTodoPokedexText(id))
     return data.name
@@ -19,7 +26,7 @@ const PokemonTodosInfo = ({todos}) => {
 
   return (
     <PokemonDetailContent>
-      <h3>Tareas de la Pokédex</h3>
+      <h3>Tareas de la Pokédex por hacer ({getLenghtTodos()})</h3>
       {logged &&
         <Fragment>
           {uncompletedTodos.length === 0 &&

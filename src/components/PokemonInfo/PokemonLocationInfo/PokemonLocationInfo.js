@@ -106,7 +106,7 @@ const PokemonLocationInfo = ({locations}) => {
         {distorsionLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.distorsion} alt={areaText.distorsion} width={24} height={24} />
+              <img src={areasLogos.distorsionEspaciotemporal} alt={areaText.distorsion} width={24} height={24} />
               <h5>{areaText.distorsion}</h5>
             </FlexRow>
             <FlexColumn>

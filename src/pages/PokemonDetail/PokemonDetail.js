@@ -49,6 +49,7 @@ const PokemonDetail = () => {
             index={id}
           />
           <PokemonLocationInfo locations={locationsData} />
+          {/* TODO: finish these sections
           <PokemonSpecialConditionInfo conditions={specialConditionsData} />
           {evolutionChainData &&
             <PokemonEvolutionInfo
@@ -57,6 +58,7 @@ const PokemonDetail = () => {
               evolutionFromData={evolutionFromData}
             />
           }
+          */}
           <PokemonTodosInfo todos={todosData} />
         </PokemonDetailInfoContent>
       }
