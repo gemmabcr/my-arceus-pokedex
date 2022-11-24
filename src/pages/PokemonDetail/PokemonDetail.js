@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, useParams, useLocation } from 'react-router-dom'
-import { PokemonDetailContainer, BackButtonContainer, PokemonDetailInfoContent } from './PokemonDetailStyled'
+import { useParams, useLocation } from 'react-router-dom'
+import { PokemonDetailContainer, PokemonDetailInfoContent } from './PokemonDetailStyled'
 import PokemonEvolutionInfo from '../../components/PokemonInfo/PokemonEvolutionInfo/PokemonEvolutionInfo'
 import PokemonInfo from '../../components/PokemonInfo/PokemonInfo'
 import PokemonLocationInfo from '../../components/PokemonInfo/PokemonLocationInfo/PokemonLocationInfo'
@@ -41,11 +41,6 @@ const PokemonDetail = () => {
 
   return (
     <PokemonDetailContainer>
-      <BackButtonContainer>
-        <Link to={'/'}>
-          <p>Atrás</p>
-        </Link>
-      </BackButtonContainer>
       {loading && <Loading />}
       {!loading &&
         <PokemonDetailInfoContent>

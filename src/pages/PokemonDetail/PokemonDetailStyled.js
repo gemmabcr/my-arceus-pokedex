@@ -1,19 +1,18 @@
 import styled from 'styled-components'
+import { colors, boxShadow, bottomBorderRadius, borderType } from '../../commonStyled'
 
 export const PokemonDetailContainer = styled.div `
   align-items: center;
+  color: ${colors.mediumBlack};
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-`
-
-export const BackButtonContainer = styled.div `
-  width: 100%;
+  padding: 2rem 1rem;
 `
 
 export const PokemonDetailInfoContent = styled.div `
-  background-color: lightcoral;
-  border: 1px solid dimgrey;
+  background-color: ${colors.light};
+  border-radius: ${bottomBorderRadius};
+  box-shadow: ${boxShadow};
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -22,7 +21,7 @@ export const PokemonDetailInfoContent = styled.div `
 
 export const PokemonDetailContent = styled.div `
   align-items: center;
-  border-top: 1px solid dimgrey;
+  border-top: ${borderType};
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

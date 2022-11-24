@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { PokeService } from '../../../service/pokeService'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import { useLoggedContext } from '../../../application/PageLayout'
+import { TodosTable, TodosTableHeader, TodosTableBody } from './PokemonTodosInfoStyled'
 
 const PokemonTodosInfo = ({todos}) => {
   const [logged, setLogged] = useLoggedContext ()
@@ -25,38 +26,54 @@ const PokemonTodosInfo = ({todos}) => {
             <p>Completada!!</p>
           }
           {uncompletedTodos.length > 0 &&
-            <table>
+            <TodosTable>
               <tbody>
                 <tr>
-                  <th>Progreso</th>
-                  <th>Descripción</th>
+                  <TodosTableHeader>
+                    Progreso
+                  </TodosTableHeader>
+                  <TodosTableHeader>
+                    Descripción
+                  </TodosTableHeader>
                 </tr>
                 {uncompletedTodos.map((todo,index) =>
                   <tr key={index}>
-                    <th>{getGoalText(todo.goal, todo.done)}</th>
-                    <th>{getTodoText(todo.id)}</th>
+                    <TodosTableBody>
+                      {getGoalText(todo.goal, todo.done)}
+                    </TodosTableBody>
+                    <TodosTableBody>
+                      {getTodoText(todo.id)}
+                    </TodosTableBody>
                   </tr>
                 )}
               </tbody>
-            </table>
+            </TodosTable>
           }
         </Fragment>
       }
       {!logged &&
-        <table>
+        <TodosTable>
           <tbody>
           <tr>
-            <th>Meta</th>
-            <th>Descripción</th>
+            <TodosTableHeader>
+              Meta
+            </TodosTableHeader>
+            <TodosTableHeader>
+              Descripción
+            </TodosTableHeader>
           </tr>
           {todos.map((todo,index) =>
             <tr key={index}>
-              <th>{todo.goal}</th>
-              <th>{getTodoText(todo.id)}</th>
+              <TodosTableBody>
+                {todo.goal}
+              </TodosTableBody>
+              <TodosTableBody>
+                {getTodoText(todo.id)}
+              </TodosTableBody>
             </tr>
           )}
           </tbody>
-        </table>
+        </TodosTable>
       }
     </PokemonDetailContent>
   )

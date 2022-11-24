@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpointTablet } from '../../commonStyled'
+import { breakpointTablet, colors, boxShadow, bottomBorderRadius } from '../../commonStyled'
 
 export const PokemonCardImg = styled.img `
   background-color: rgba(255,255,255,0.75);
@@ -10,8 +10,9 @@ export const PokemonCardImg = styled.img `
 `
 
 export const PokemonCardContent = styled.div `
-  background-color: lightcoral;
-  border: 1px solid dimgrey;
+  background-color: ${colors.light};
+  border-radius: ${bottomBorderRadius};
+  box-shadow: ${boxShadow};
   display: grid;
   grid-template-columns: 240px 1fr;
 

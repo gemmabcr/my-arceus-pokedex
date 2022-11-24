@@ -1,11 +1,12 @@
 import React from 'react'
 import { PokemonCardImg } from '../PokemonCard/PokemonCardStyled'
 import PokemonTypeInfo from './PokemonTypeInfo/PokemonTypeInfo'
-import { FlexColumn, FlexRow } from '../../commonStyled'
+import { FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { PokeService } from '../../service/pokeService'
-import {PokemonDetailContent} from "../../pages/PokemonDetail/PokemonDetailStyled";
+import { PokemonDetailContent } from '../../pages/PokemonDetail/PokemonDetailStyled'
 import Loading from '../Loading/Loading'
+import { PokemonInfoContent } from './PokemonInfoStyled'
 
 const PokemonInfo = ({urlDataPokemon, index}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
@@ -28,7 +29,7 @@ const PokemonInfo = ({urlDataPokemon, index}) => {
     <PokemonDetailContent>
       {loading && <Loading />}
       {!loading &&
-        <FlexColumn>
+        <PokemonInfoContent>
           <h3>#{index} {formatedName(dataPokemon.name)}</h3>
           <PokemonCardImg
             alt={dataPokemon.name}
@@ -42,7 +43,7 @@ const PokemonInfo = ({urlDataPokemon, index}) => {
               />
             )}
           </FlexRow>
-        </FlexColumn>
+        </PokemonInfoContent>
       }
     </PokemonDetailContent>
   )

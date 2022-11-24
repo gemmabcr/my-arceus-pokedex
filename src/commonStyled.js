@@ -3,6 +3,22 @@ import {backgroundImage} from './data'
 
 export const maxWidthScreen = '900px'
 export const breakpointTablet = '960px'
+export const boxShadow = 'rgba(0, 0, 0, 0.16) 0 1px 4px'
+export const bottomBorderRadius = '0 0 1rem 1rem'
+
+export const colors = {
+  light: '#F2F0E3',
+  darkerLight: '#D8D2AB',
+  green: '#44C190',
+  darkBlue: '#1A4A63',
+  mediumBlue: '#0063A1',
+  brightBlue: '#009CDD',
+  highBlack: 'rgba(0,0, 0, 0.87)',
+  mediumBlack: 'rgba(0,0, 0, 0.60)',
+  lowBlack: 'rgba(0,0, 0, 0.38)',
+}
+
+export const borderType = `1px solid ${colors.darkerLight}`
 
 export const FlexRow = styled.div `
   align-items: center;

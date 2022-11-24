@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { borderType, colors } from '../../commonStyled'
 
 export const CompletedPokemonRow = styled.div `
   display: grid;
@@ -10,8 +11,8 @@ export const CompletedPokemonRow = styled.div `
 
 export const CompletedPokemonCard = styled.div `
   align-items: center;
-  background-color: lightgoldenrodyellow;
-  border: 1px solid lightgray;
+  background-color: ${colors.darkerLight};
+  border: ${borderType};
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ export const CompletedPokemonCard = styled.div `
 `
 
 export const CompletedPokemonCardImg = styled.img `
-  background-color: rgba(255,255,255,0.75);
+  background-color: ${colors.light};
   border-radius: 50%;
   max-width: 80px;
   object-fit: contain;

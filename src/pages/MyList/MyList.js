@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { PokemonListContainer, PokemonListContent } from '../PokemonList/PokemonListStyled'
 import { loggedUsername } from '../../commonFunctions'
-import { FlexColumn } from '../../commonStyled'
 import CompletedPokemon from '../../components/CompletedPokemon/CompletedPokemon'
 import { CompletedPokemonRow } from '../../components/CompletedPokemon/CompletedPokemonStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
+import { MyListSection } from './MyListStyled'
 
 const MyList = () => {
   const hisuiPokedex = JSON.parse(localStorage.getItem('savedPokedex'))
@@ -17,7 +17,7 @@ const MyList = () => {
       <h3>Pokedéx de {loggedUsername()}</h3>
       <PokemonListContent>
         {completedPokemons.length > 0 &&
-          <FlexColumn>
+          <MyListSection>
             <h4>Pokémons completados ({completedPokemons.length}/{hisuiPokedex.length})</h4>
             <CompletedPokemonRow>
               {completedPokemons.map(completedPokemon =>
@@ -28,10 +28,10 @@ const MyList = () => {
                 />
               )}
             </CompletedPokemonRow>
-          </FlexColumn>
+          </MyListSection>
         }
         {uncompletedPokemons.length > 0 &&
-          <FlexColumn>
+          <MyListSection>
             <h4>Pokémons en progreso ({uncompletedPokemons.length}/{hisuiPokedex.length})</h4>
             {uncompletedPokemons.map(pokemon =>
               <Link
@@ -47,7 +47,7 @@ const MyList = () => {
                 />
               </Link>
             )}
-          </FlexColumn>
+          </MyListSection>
         }
       </PokemonListContent>
     </PokemonListContainer>

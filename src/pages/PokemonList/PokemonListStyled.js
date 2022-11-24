@@ -11,6 +11,6 @@ export const PokemonListContainer = styled.div `
 export const PokemonListContent = styled.div `
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
 `
