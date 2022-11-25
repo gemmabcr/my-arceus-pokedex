@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { borderType, colors } from '../../../commonStyled'
+import { borderType, breakpointTablet, colors } from '../../../commonStyled'
 
 export const TodosTable = styled.table `
   border-collapse: collapse;
@@ -27,4 +27,50 @@ export const TodosTableBody = styled.th `
 export const InputEditableTable = styled.input `
   margin-right: 0.5rem;
   width: 40px;
+`
+
+export const EditableTodoMobile = styled.div `
+  align-items: baseline;
+  display: flex;
+  gap: 0.25rem;
+  
+  @media (min-width: ${breakpointTablet}) {
+    display: none;
+  }
+`
+
+export const EditableTodoMobileButton = styled.button `
+  background-color: #30a7d7;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 80%;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+
+  &:hover {
+    background-color: #218db9;
+  }
+`
+
+export const EditableTodoMobileText = styled.p `
+  text-align: center;
+  width: 20px
+`
+
+
+export const EditableTodoPC = styled.div `
+  @media (max-width: ${breakpointTablet}) {
+    display: none;
+  }
 `

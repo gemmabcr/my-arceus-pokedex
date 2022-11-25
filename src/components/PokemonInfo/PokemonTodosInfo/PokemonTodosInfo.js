@@ -8,7 +8,7 @@ import PokemonTodosEditableTable from './EditableTable/PokemonTodosEditableTable
 import PokemonTodosReadonlyTable from './ReadonlyTable/PokemonTodosReadonlyTable'
 import { FlexColumn, FlexRow } from '../../../commonStyled'
 
-const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
+const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
   const [logged, setLogged] = useLoggedContext ()
   const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
   const completedTodos = formData.filter(todo => todo.done === todo.goal)
@@ -66,6 +66,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
                     <PokemonTodosEditableTable
                       todos={uncompletedTodos}
                       onChangeInput={onChangeInput}
+                      onChangeButton={onChangeButton}
                     />
                   </FlexColumn>
                 }
@@ -75,6 +76,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
                     <PokemonTodosEditableTable
                       todos={completedTodos}
                       onChangeInput={onChangeInput}
+                      onChangeButton={onChangeButton}
                     />
                   </FlexColumn>
                 }

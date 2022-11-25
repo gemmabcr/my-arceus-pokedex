@@ -33,6 +33,33 @@ const PokemonCard = ({urlPokemon, index, todos, setHisuiPokedex, hisuiPokedex}) 
     })
   }
 
+  function onChangeButton(symbol, name){
+    let number = 0;
+    if (symbol === '+'){
+      number = 1
+    }
+    if (symbol === '-'){
+      number = -1
+    }
+    setFormData(prevFormData => {
+      const newFormData = []
+      for (let i = 0 ; i < prevFormData.length; i++){
+        const currentItem = prevFormData[i]
+        if (currentItem.id === Number(name)) {
+          const updatedItem = {
+            ...currentItem,
+            done: currentItem.done + number,
+          }
+          newFormData.push(updatedItem)
+        }
+        else {
+          newFormData.push(currentItem)
+        }
+      }
+      return newFormData
+    })
+  }
+
   React.useEffect(()=>{
     const pokeService = new PokeService()
       pokeService.getPokemonData(urlPokemon, index)
@@ -58,6 +85,7 @@ const PokemonCard = ({urlPokemon, index, todos, setHisuiPokedex, hisuiPokedex}) 
           <PokemonTodosInfo
             formData={formData}
             onChangeInput={onChangeInput}
+            onChangeButton={onChangeButton}
             editMode={editMode}
             setEditMode={setEditMode}
             setHisuiPokedex={setHisuiPokedex}
