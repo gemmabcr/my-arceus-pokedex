@@ -1,8 +1,8 @@
 import React from 'react'
 import { areasLogos, areaText } from '../../../data'
-import {FlexColumn, FlexRow, LocationImage} from '../../../commonStyled'
+import { FlexColumn, FlexRow, LocationImage } from '../../../commonStyled'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
-import { LocationsContainer } from './PokemonLocationInfoStyled'
+import { LocationsContainer, LocationsGridItem } from './PokemonLocationInfoStyled'
 
 const PokemonLocationInfo = ({locations}) => {
   const [praderaLocations, setPraderaLocations] = React.useState([])
@@ -49,7 +49,7 @@ const PokemonLocationInfo = ({locations}) => {
       <h3>Localización</h3>
       <LocationsContainer>
         {praderaLocations.length > 0 &&
-          <FlexColumn>
+          <LocationsGridItem>
             <FlexRow>
               <LocationImage src={areasLogos.praderaObsidiana} alt={areaText.pradera}  />
               <h5>{areaText.pradera}</h5>
@@ -57,10 +57,10 @@ const PokemonLocationInfo = ({locations}) => {
             <FlexColumn>
               {praderaLocations.map(location => <span key={location.id}>{location.name}</span> )}
             </FlexColumn>
-          </FlexColumn>
+          </LocationsGridItem>
         }
         {pantanalLocations.length > 0 &&
-          <FlexColumn>
+          <LocationsGridItem>
             <FlexRow>
               <LocationImage src={areasLogos.pantanalCarmesi} alt={areaText.pantanal}  />
               <h5>{areaText.pantanal}</h5>
@@ -68,10 +68,10 @@ const PokemonLocationInfo = ({locations}) => {
             <FlexColumn>
               {pantanalLocations.map(location => <span key={location.id}>{location.name}</span> )}
             </FlexColumn>
-          </FlexColumn>
+          </LocationsGridItem>
         }
         {costaLocations.length > 0 &&
-          <FlexColumn>
+          <LocationsGridItem>
             <FlexRow>
               <LocationImage src={areasLogos.costaCobalto} alt={areaText.costa}  />
               <h5>{areaText.costa}</h5>
@@ -79,10 +79,10 @@ const PokemonLocationInfo = ({locations}) => {
             <FlexColumn>
               {costaLocations.map(location => <span key={location.id}>{location.name}</span> )}
             </FlexColumn>
-          </FlexColumn>
+          </LocationsGridItem>
         }
         {laderaLocations.length > 0 &&
-          <FlexColumn>
+          <LocationsGridItem>
             <FlexRow>
               <LocationImage src={areasLogos.laderaCorona} alt={areaText.ladera}  />
               <h5>{areaText.ladera}</h5>
@@ -90,10 +90,10 @@ const PokemonLocationInfo = ({locations}) => {
             <FlexColumn>
               {laderaLocations.map(location => <span key={location.id}>{location.name}</span> )}
             </FlexColumn>
-          </FlexColumn>
+          </LocationsGridItem>
         }
         {tundraLocations.length > 0 &&
-          <FlexColumn>
+          <LocationsGridItem>
             <FlexRow>
               <LocationImage src={areasLogos.tundraAlba} alt={areaText.tundra}  />
               <h5>{areaText.tundra}</h5>
@@ -101,15 +101,15 @@ const PokemonLocationInfo = ({locations}) => {
             <FlexColumn>
               {tundraLocations.map(location => <span key={location.id}>{location.name}</span> )}
             </FlexColumn>
-          </FlexColumn>
+          </LocationsGridItem>
         }
         {distorsionLocations.length > 0 &&
-          <FlexColumn>
+          <LocationsGridItem>
             <FlexRow>
               <LocationImage src={areasLogos.distorsionEspaciotemporal} alt={areaText.distorsion} />
               <h5>{areaText.distorsion}</h5>
             </FlexRow>
-          </FlexColumn>
+          </LocationsGridItem>
         }
       </LocationsContainer>
     </PokemonDetailContent>

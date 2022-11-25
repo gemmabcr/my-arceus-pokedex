@@ -3,6 +3,7 @@ import {backgroundImage} from './data'
 
 export const maxWidthScreen = '900px'
 export const breakpointTablet = '960px'
+export const breakpointMobile = '600px'
 export const boxShadow = 'rgba(0, 0, 0, 0.16) 0 1px 4px'
 export const bottomBorderRadius = '0 0 1rem 1rem'
 

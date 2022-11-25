@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { maxWidthScreen } from '../../commonStyled'
+import { breakpointTablet, breakpointMobile, maxWidthScreen } from '../../commonStyled'
 
 export const NavbarContainer = styled.div `
   background-color: white;
@@ -19,11 +19,21 @@ export const Header = styled.div`
   padding: 1.5rem;
   position: relative;
   width: 100%;
+  
+  @media (max-width: ${breakpointTablet}) {
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    height: fit-content;
+  }
 `;
 
 export const LogoContainer = styled.div `
   display: flex;
   justify-content: center;
+
+  @media (max-width: ${breakpointTablet}) {
+    display: none;
+  }
 `
 
 export const LogoArceus = styled.img `
@@ -47,6 +57,10 @@ export const LinksMenu = styled.div `
   margin: 0 auto;
   max-width: ${maxWidthScreen};
   padding: 0 1.5rem 1rem 1.5rem;
+
+  @media (max-width: ${breakpointMobile}) {
+    display: none;
+  }
 `;
 
 export const LoggedContainer = styled.div `
@@ -54,12 +68,22 @@ export const LoggedContainer = styled.div `
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
+
+  @media (max-width: ${breakpointTablet}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 export const LoggedUser = styled.div `
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
+
+  @media (max-width: ${breakpointTablet}) {
+    order: 1;
+  }
 `
 
 export const LoggedUserText = styled.p `
@@ -67,6 +91,10 @@ export const LoggedUserText = styled.p `
   font-weight: 600;
   margin-bottom: 0;
   text-transform: uppercase;
+
+  @media (max-width: ${breakpointTablet}) {
+    display: none;
+  }
 `
 
 export const LogoutPokedex = styled.button `
@@ -121,3 +149,37 @@ export const LinkMenu = styled.div `
     color: #30a7d7;
   }
 `;
+
+export const DropdownContainer = styled.div `
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  padding: 1rem;
+
+  @media (min-width: ${breakpointMobile}) {
+    display: none;
+  }
+`
+
+export const Dropdown = styled.div `
+  align-items: baseline;
+  display: inline-block;
+  position: relative;
+`
+
+export const MyDropdown = styled.div `
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+`
+
+export const MyDropdownLine = styled.li `
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+  &:hover {background-color: #ddd;}
+`

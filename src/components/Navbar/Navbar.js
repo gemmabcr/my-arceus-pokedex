@@ -8,7 +8,13 @@ import {
   LoginContainer,
   LinksMenu,
   LinkMenu,
-  LogoContainer, LinkPokedex, LoggedContainer, LogoutPokedex, LoggedUser, LoggedUserText, LinkMenuTitle
+  LogoContainer,
+  LinkPokedex,
+  LoggedContainer,
+  LogoutPokedex,
+  LoggedUser,
+  LoggedUserText,
+  LinkMenuTitle, Dropdown, MyDropdown, MyDropdownLine, DropdownContainer
 } from './NavbarStyled'
 import { useLoggedContext } from '../../App'
 import { PrimaryButton } from '../../commonStyled'
@@ -30,6 +36,7 @@ const Navbar = () => {
   const [logged, setLogged] = useLoggedContext ()
   const [loginModal, setLoginModal] = useState(false)
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
+  const [showMobileMenu, setShowMobileMenu] = React.useState(false)
 
   React.useEffect(()=>{
     const pokeService = PokeService.getInstance()
@@ -45,6 +52,15 @@ const Navbar = () => {
   function logoutButton(){
     localStorage.setItem('logged', JSON.stringify(false))
     setLogged(false)
+  }
+
+  function toggleShowMobileMenu(){
+    if (showMobileMenu) {
+      setShowMobileMenu(false)
+    }
+    else {
+      setShowMobileMenu(true)
+    }
   }
 
   return (
@@ -73,10 +89,10 @@ const Navbar = () => {
                 </LogoutPokedex>
               </LoggedUser>
               <Link to={links.myList}>
-                  <LinkPokedex>
-                    Mi Pokédex
-                  </LinkPokedex>
-                </Link>
+                <LinkPokedex>
+                  Mi Pokédex
+                </LinkPokedex>
+              </Link>
             </LoggedContainer>
           }
         </LoginContainer>
@@ -92,6 +108,27 @@ const Navbar = () => {
           </LinkMenu>
         )}
       </LinksMenu>
+      <DropdownContainer>
+        <LinkMenuTitle>Areas:</LinkMenuTitle>
+        <Dropdown>
+          <LinkPokedex
+            onClick={()=>toggleShowMobileMenu()}
+          >
+            {showMobileMenu? 'Ocultar areas' : 'Mostrar Areas'}
+          </LinkPokedex>
+          {showMobileMenu &&
+            <MyDropdown>
+              {generalTabs.map(tab =>
+                <Link to={tab.link} key={tab.name}>
+                  <MyDropdownLine onClick={()=>setShowMobileMenu(false)}>
+                    {tab.name}
+                  </MyDropdownLine>
+                </Link>
+              )}
+            </MyDropdown>
+          }
+        </Dropdown>
+      </DropdownContainer>
       <Modal
         show={loginModal}
         setShow={setLoginModal}

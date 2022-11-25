@@ -8,7 +8,7 @@ import { formatedName } from '../../../commonFunctions'
 import { PokemonCardImg } from '../../PokemonCard/PokemonCardStyled'
 import { FlexRow } from '../../../commonStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
-import { LogoutPokedex } from '../../Navbar/NavbarStyled'
+import { VerMasButton } from '../../../pages/PokemonList/PokemonListStyled'
 
 const PokemonListInfo = ({todos, url, urlDataPokemon, index}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
@@ -49,9 +49,9 @@ const PokemonListInfo = ({todos, url, urlDataPokemon, index}) => {
             to={`/pokemon/${index}`}
             state={{ urlPokemon: url, todos: todos }}
           >
-            <LogoutPokedex>
+            <VerMasButton>
               Ver más información
-            </LogoutPokedex>
+            </VerMasButton>
           </Link>
         </PokemonInfoContent>
       }
