@@ -16,14 +16,6 @@ export class PokeService {
       specialConditions: this.getAddedPokemonData(pokemonEntry.entry_number).specialCondition,
       toDos: this.getAddedPokemonData(pokemonEntry.entry_number).toDos,
     }})
-
-    /* TODO: fetched2
-    const fetched2 = newData.map(pokemon => {
-      pokemon = {
-        ...pokemon,
-        fetched: this.sendRequest(pokemon.url)
-      }
-    })*/
     return newData;
   }
 
