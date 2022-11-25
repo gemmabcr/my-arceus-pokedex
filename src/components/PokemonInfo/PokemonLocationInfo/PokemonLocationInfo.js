@@ -109,9 +109,6 @@ const PokemonLocationInfo = ({locations}) => {
               <LocationImage src={areasLogos.distorsionEspaciotemporal} alt={areaText.distorsion} />
               <h5>{areaText.distorsion}</h5>
             </FlexRow>
-            <FlexColumn>
-              {distorsionLocations.map(location => <span key={location.id}>{location.name}</span> )}
-            </FlexColumn>
           </FlexColumn>
         }
       </LocationsContainer>

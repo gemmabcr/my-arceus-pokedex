@@ -16,7 +16,6 @@ const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
   const [locationsData, setLocationsData] = React.useState([])
-
   const [formData, setFormData] = React.useState(todos)
   const [editMode, setEditMode] = React.useState(false)
 
@@ -66,14 +65,17 @@ const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
                 urlDataPokemon={urlDataPokemon}
                 index={id}
               />
-              <PokemonLocationInfo locations={locationsData} />
+              <PokemonLocationInfo
+                locations={locationsData}
+              />
               <PokemonTodosInfo
                 formData={formData}
+                index={id}
                 onChangeInput={onChangeInput}
                 editMode={editMode}
                 setEditMode={setEditMode}
-                setHisuiPokedex={setHisuiPokedex}
                 hisuiPokedex={hisuiPokedex}
+                setHisuiPokedex={setHisuiPokedex}
               />
             </PokemonDetailInfoContent>
           }
