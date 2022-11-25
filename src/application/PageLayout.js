@@ -6,7 +6,7 @@ import { finalBanner } from '../data'
 
 const PageLayout = () => {
   return (
-    <MainContainer>
+    <MainContainer id='mainContainer'>
       <Navbar />
       <ContentContainer>
         <Outlet />

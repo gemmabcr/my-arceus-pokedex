@@ -4,7 +4,7 @@ import { PokeService } from '../../../service/pokeService'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import Loading from '../../Loading/Loading'
 import { PokemonInfoContent } from '../PokemonInfoStyled'
-import { formatedName } from '../../../commonFunctions'
+import { formatedName, scrollToTop } from '../../../commonFunctions'
 import { PokemonCardImg } from '../../PokemonCard/PokemonCardStyled'
 import { FlexRow } from '../../../commonStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
@@ -49,7 +49,7 @@ const PokemonListInfo = ({todos, url, urlDataPokemon, index}) => {
             to={`/pokemon/${index}`}
             state={{ urlPokemon: url, todos: todos }}
           >
-            <VerMasButton>
+            <VerMasButton onClick={scrollToTop}>
               Ver más información
             </VerMasButton>
           </Link>

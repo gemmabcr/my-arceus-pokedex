@@ -20,3 +20,7 @@ export function compoundName(name) {
 export function loggedUsername(){
   return JSON.parse(localStorage.getItem('username'))
 }
+
+export function scrollToTop(){
+  document.getElementById('mainContainer').scrollTo(0, 0)
+}

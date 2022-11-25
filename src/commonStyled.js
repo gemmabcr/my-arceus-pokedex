@@ -37,7 +37,10 @@ export const FlexColumn = styled.div `
 `
 
 export const FinalBannerImg = styled.img `
-  max-width: 100%;
+  margin-top: 4rem;
+  max-height: 800px;
+  object-fit: cover;
+  width: 100%;
 `
 
 export const MainContainer = styled.div `
