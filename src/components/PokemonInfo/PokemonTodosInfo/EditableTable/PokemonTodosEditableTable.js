@@ -1,8 +1,8 @@
 import React from 'react'
 import { TodosTable, TodosTableBody, TodosTableHeader, InputEditableTable } from '../PokemonTodosInfoStyled'
-import { getGoalText, getTodoText } from '../ToDosFunctions'
+import {getGoalText, getTodoText} from '../ToDosFunctions'
 
-const PokemonTodosEditableTable = ({formData, onChangeInput}) => {
+const PokemonTodosEditableTable = ({todos, onChangeInput}) => {
   return(
     <TodosTable>
       <tbody>
@@ -14,7 +14,7 @@ const PokemonTodosEditableTable = ({formData, onChangeInput}) => {
           Descripción
         </TodosTableHeader>
       </tr>
-      {formData.map((todo,index) =>
+      {todos.map((todo,index) =>
         <tr key={index}>
           <TodosTableBody>
             <InputEditableTable

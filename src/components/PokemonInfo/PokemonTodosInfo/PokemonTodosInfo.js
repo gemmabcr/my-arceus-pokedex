@@ -6,7 +6,7 @@ import { useLoggedContext } from '../../../application/PageLayout'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import PokemonTodosEditableTable from './EditableTable/PokemonTodosEditableTable'
 import PokemonTodosReadonlyTable from './ReadonlyTable/PokemonTodosReadonlyTable'
-import { FlexRow } from '../../../commonStyled'
+import { FlexColumn, FlexRow } from '../../../commonStyled'
 
 const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
   const [logged, setLogged] = useLoggedContext ()
@@ -74,10 +74,26 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
           }
           {editMode &&
             <div style={{width: '100%'}}>
-              <PokemonTodosEditableTable
-                formData={formData}
-                onChangeInput={onChangeInput}
-              />
+              <>
+                {uncompletedTodos.length > 0 &&
+                  <FlexColumn>
+                    <h5>En progreso ({getLengthTodos(logged, uncompletedTodos, formData)})</h5>
+                    <PokemonTodosEditableTable
+                      todos={uncompletedTodos}
+                      onChangeInput={onChangeInput}
+                    />
+                  </FlexColumn>
+                }
+                {completedTodos.length > 0 &&
+                  <FlexColumn>
+                    <h5>🎉 Completadas ({getLengthTodos(logged, completedTodos, formData)})</h5>
+                    <PokemonTodosEditableTable
+                      todos={completedTodos}
+                      onChangeInput={onChangeInput}
+                    />
+                  </FlexColumn>
+                }
+              </>
               <LinkPokedex onClick={()=>saveTodos()}>
                 Guardar
               </LinkPokedex>
