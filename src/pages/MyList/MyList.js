@@ -19,9 +19,12 @@ const MyList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
         <>
           <h3>Pokedéx de {loggedUsername()}</h3>
           <PokemonListContent>
-            {completedPokemons.length > 0 &&
-              <MyListSection>
-                <h4>Pokémons completados ({completedPokemons.length}/{hisuiPokedex.length})</h4>
+            <MyListSection>
+              <h4>Pokémons completados ({completedPokemons.length}/{hisuiPokedex.length})</h4>
+              {completedPokemons.length === 0 &&
+                <p>😔. Todavía no hay ningún pokemon completado</p>
+              }
+              {completedPokemons.length > 0 &&
                 <CompletedPokemonRow>
                   {completedPokemons.map(completedPokemon =>
                     <Link
@@ -36,8 +39,8 @@ const MyList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
                     </Link>
                   )}
                 </CompletedPokemonRow>
-              </MyListSection>
-            }
+              }
+            </MyListSection>
             {uncompletedPokemons.length > 0 &&
               <MyListSection>
                 <h4>Pokémons en progreso ({uncompletedPokemons.length}/{hisuiPokedex.length})</h4>
