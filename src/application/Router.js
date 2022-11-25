@@ -11,21 +11,57 @@ import MyList from '../pages/MyList/MyList'
 import PokemonDetail from '../pages/PokemonDetail/PokemonDetail'
 import PokemonList from '../pages/PokemonList/PokemonList'
 import { links } from '../data'
+import {PokeService} from "../service/pokeService";
 
 const Router = () => {
+  const [hisuiPokedex, setHisuiPokedex] = React.useState([])
+  const [loading, setLoading] = React.useState(true)
+
+  React.useEffect(()=>{
+    const pokeService = PokeService.getInstance()
+    pokeService.getPokemons()
+      .then(data => {
+        if (localStorage.getItem('savedPokedex')!== null) {
+          setHisuiPokedex(JSON.parse(localStorage.getItem('savedPokedex')))
+        }
+        else {
+          setHisuiPokedex(data)
+        }
+      })
+      .catch((error)=>console.log(error))
+      .finally(()=>setLoading(false))
+  },[])
+
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<PageLayout />}>
-          <Route path={'/'} element={<PokemonList />} />
-          <Route path={links.pradera} element={<PraderaList />} />
-          <Route path={links.pantanal} element={<PantanalList />} />
-          <Route path={links.costa} element={<CostaList />} />
-          <Route path={links.ladera} element={<LaderaList />} />
-          <Route path={links.tundra} element={<TundraList />} />
-          <Route path={links.distorsion} element={<DistorsionList />} />
-          <Route path={'pokemon/:id'} element={<PokemonDetail />} />
-          <Route path={links.myList} element={<MyList />} />
+          <Route path={'/'} element={<PokemonList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.pradera}
+                 element={<PraderaList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.pantanal}
+                 element={<PantanalList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.costa}
+                 element={<CostaList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.ladera}
+                 element={<LaderaList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.tundra}
+                 element={<TundraList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.distorsion}
+                 element={<DistorsionList loading={loading} hisuiPokedex={hisuiPokedex}
+          />} />
+          <Route path={'pokemon/:id'}
+                 element={<PokemonDetail loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
+          <Route path={links.myList}
+                 element={<MyList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          />
           <Route path='*' element={<div>404</div>} />
         </Route>
       </Routes>
