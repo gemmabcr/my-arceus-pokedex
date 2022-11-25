@@ -14,8 +14,10 @@ function getSource(area){
       return areasLogos.laderaCorona
     case areaText.tundra:
       return areasLogos.tundraAlba
-    default:
+    case areaText.distorsion:
       return areasLogos.distorsionEspaciotemporal
+    default:
+      return 'Hisui'
   }
 }
 
@@ -23,7 +25,9 @@ const PageAreaTitle = ({area}) =>
    (
     <FlexRow>
       <h3>Pokémons de</h3>
-      <LocationImage src={getSource(area)} alt={area} />
+      {area !== 'Hisui' &&
+        <LocationImage src={getSource(area)} alt={area} />
+      }
       <h3>{area}</h3>
     </FlexRow>
   )

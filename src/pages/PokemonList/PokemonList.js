@@ -2,11 +2,12 @@ import React from 'react'
 import { PokemonListContainer, PokemonListContent } from './PokemonListStyled'
 import Loading from '../../components/Loading/Loading'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
+import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 
-const PokemonList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
+const PokemonList = ({firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisui'}) => {
   return (
     <PokemonListContainer>
-      <h3>Pokémons de Hisui</h3>
+      <PageAreaTitle area={area} />
       {firstLoading && <Loading />}
       {!firstLoading &&
         <PokemonListContent>
