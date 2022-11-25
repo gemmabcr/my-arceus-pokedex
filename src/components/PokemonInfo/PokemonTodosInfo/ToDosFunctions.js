@@ -18,3 +18,22 @@ export function getGoalText(goal, done, edit = false){
   }
   return `${done} de ${goal}`
 }
+
+export function updatePokedex(prevhisuiPokedex, index, formData){
+  const newHisuiPokedex = []
+  for (let i = 0 ; i < prevhisuiPokedex.length; i++){
+    const currentPokemon = prevhisuiPokedex[i]
+    if (currentPokemon.index === Number(index)) {
+      const updatedPokemon = {
+        ...currentPokemon,
+        toDos: formData,
+      }
+      newHisuiPokedex.push(updatedPokemon)
+    }
+    else {
+      newHisuiPokedex.push(currentPokemon)
+    }
+  }
+  localStorage.setItem('savedPokedex', JSON.stringify(newHisuiPokedex))
+  return newHisuiPokedex
+}

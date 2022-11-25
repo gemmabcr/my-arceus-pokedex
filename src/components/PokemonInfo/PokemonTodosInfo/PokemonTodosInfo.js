@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import { TodosTable, TodosTableHeader, TodosTableBody } from './PokemonTodosInfoStyled'
-import { getLengthTodos, getTodoText } from './ToDosFunctions'
+import { TodosTable, TodosTableBody, TodosTableHeader } from './PokemonTodosInfoStyled'
+import { getLengthTodos, getTodoText, updatePokedex } from './ToDosFunctions'
 import { LinkPokedex } from '../../Navbar/NavbarStyled'
 import { useLoggedContext } from '../../../App'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
@@ -15,22 +15,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
 
   function saveTodos() {
     setHisuiPokedex(prevhisuiPokedex => {
-      const newHisuiPokedex = []
-      for (let i = 0 ; i < prevhisuiPokedex.length; i++){
-        const currentPokemon = prevhisuiPokedex[i]
-        if (currentPokemon.index === Number(index)) {
-          const updatedPokemon = {
-            ...currentPokemon,
-            toDos: formData,
-          }
-          newHisuiPokedex.push(updatedPokemon)
-        }
-        else {
-          newHisuiPokedex.push(currentPokemon)
-        }
-      }
-      localStorage.setItem('savedPokedex', JSON.stringify(newHisuiPokedex))
-      return newHisuiPokedex
+      return updatePokedex(prevhisuiPokedex, index, formData)
     })
     setEditMode(false)
   }
