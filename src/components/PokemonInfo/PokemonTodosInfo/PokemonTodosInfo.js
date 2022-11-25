@@ -80,28 +80,31 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
         </Fragment>
       }
       {!logged &&
-        <TodosTable>
-          <tbody>
-          <tr>
-            <TodosTableHeader>
-              Meta
-            </TodosTableHeader>
-            <TodosTableHeader>
-              Descripción
-            </TodosTableHeader>
-          </tr>
-          {formData.map((todo,index) =>
-            <tr key={index}>
-              <TodosTableBody>
-                {todo.goal}
-              </TodosTableBody>
-              <TodosTableBody>
-                {getTodoText(todo.id)}
-              </TodosTableBody>
+        <>
+          <h3>Tareas de la Pokédex</h3>
+          <TodosTable>
+            <tbody>
+            <tr>
+              <TodosTableHeader>
+                Meta
+              </TodosTableHeader>
+              <TodosTableHeader>
+                Descripción
+              </TodosTableHeader>
             </tr>
-          )}
-          </tbody>
-        </TodosTable>
+            {formData.map((todo,index) =>
+              <tr key={index}>
+                <TodosTableBody>
+                  {todo.goal}
+                </TodosTableBody>
+                <TodosTableBody>
+                  {getTodoText(todo.id)}
+                </TodosTableBody>
+              </tr>
+            )}
+            </tbody>
+          </TodosTable>
+        </>
       }
     </PokemonDetailContent>
   )
