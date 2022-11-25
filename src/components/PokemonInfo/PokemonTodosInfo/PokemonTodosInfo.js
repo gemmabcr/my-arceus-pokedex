@@ -7,37 +7,10 @@ import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetail
 import PokemonTodosEditableTable from "./EditableTable/PokemonTodosEditableTable";
 import PokemonTodosReadonlyTable from "./ReadonlyTable/PokemonTodosReadonlyTable";
 
-const PokemonTodosInfo = ({todos}) => {
+const PokemonTodosInfo = ({ formData, onChangeInput, editMode, setEditMode }) => {
   const [logged, setLogged] = useLoggedContext ()
-  const [editMode, setEditMode] = React.useState(false)
-  const [formData, setFormData] = React.useState(todos)
   const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
   const completedTodos = formData.filter(todo => todo.done === todo.goal)
-
-  function onChangeInput(event) {
-    const {name, value} = event.target
-    setFormData(prevFormData => {
-      const newFormData = []
-      for (let i = 0 ; i < prevFormData.length; i++){
-        const currentItem = prevFormData[i]
-        if (currentItem.id === Number(name)) {
-          const updatedItem = {
-            ...currentItem,
-            done: Number(value),
-          }
-          newFormData.push(updatedItem)
-        }
-        else {
-          newFormData.push(currentItem)
-        }
-      }
-      return newFormData
-    })
-  }
-
-  function saveEditedTodos(){
-    setEditMode(false)
-  }
 
   return (
     <PokemonDetailContent>
@@ -53,14 +26,14 @@ const PokemonTodosInfo = ({todos}) => {
                   <LinkPokedex onClick={()=>setEditMode(true)}>
                     Editar progreso de las tareas
                   </LinkPokedex>
-                  <h3>Tareas de la Pokédex por hacer ({getLengthTodos(logged, uncompletedTodos, todos)})</h3>
+                  <h3>Tareas de la Pokédex por hacer ({getLengthTodos(logged, uncompletedTodos, formData)})</h3>
                   <PokemonTodosReadonlyTable
                     todos={uncompletedTodos}
                   />
 
                   {completedTodos.length > 0 &&
                     <>
-                      <h3>🎉 Tareas de la Pokédex completadas ({getLengthTodos(logged, completedTodos, todos)})</h3>
+                      <h3>🎉 Tareas de la Pokédex completadas ({getLengthTodos(logged, completedTodos, formData)})</h3>
                       <PokemonTodosReadonlyTable
                         todos={completedTodos}
                       />
@@ -76,9 +49,8 @@ const PokemonTodosInfo = ({todos}) => {
               <PokemonTodosEditableTable
                 formData={formData}
                 onChangeInput={onChangeInput}
-                todos={todos}
               />
-              <LinkPokedex onClick={()=>saveEditedTodos()}>
+              <LinkPokedex onClick={()=>setEditMode(false)}>
                 Guardar
               </LinkPokedex>
             </div>
@@ -96,7 +68,7 @@ const PokemonTodosInfo = ({todos}) => {
               Descripción
             </TodosTableHeader>
           </tr>
-          {todos.map((todo,index) =>
+          {formData.map((todo,index) =>
             <tr key={index}>
               <TodosTableBody>
                 {todo.goal}

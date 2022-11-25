@@ -14,14 +14,39 @@ const PokemonDetail = () => {
   const location = useLocation()
   const { urlPokemon } = location.state
 
+  const [loading, setLoading] = React.useState(true)
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
+  const [locationsData, setLocationsData] = React.useState([])
+
   const [evolutionChainData, setEvolutionChainData] = React.useState([])
   const [evolutionFromData, setEvolutionFromData] = React.useState([])
-  const [locationsData, setLocationsData] = React.useState([])
   const [specialConditionsData, setSpecialConditionsData] = React.useState([])
-  const [todosData, setTodosData] = React.useState([])
-  const [loading, setLoading] = React.useState(true)
+
+  const [formData, setFormData] = React.useState([])
+  const [editMode, setEditMode] = React.useState(false)
+
+  function onChangeInput(event) {
+    const {name, value} = event.target
+    setFormData(prevFormData => {
+      const newFormData = []
+      for (let i = 0 ; i < prevFormData.length; i++){
+        const currentItem = prevFormData[i]
+        if (currentItem.id === Number(name)) {
+          const updatedItem = {
+            ...currentItem,
+            done: Number(value),
+          }
+          newFormData.push(updatedItem)
+        }
+        else {
+          newFormData.push(currentItem)
+        }
+      }
+      return newFormData
+    })
+  }
+
 
   React.useEffect(()=>{
     const pokeService = new PokeService()
@@ -33,7 +58,7 @@ const PokemonDetail = () => {
         setHisuiDataPokemon(data.newHisuiPokemon)
         setLocationsData(data.locations)
         setSpecialConditionsData(data.specialConditions)
-        setTodosData(data.toDos)
+        setFormData(data.toDos)
       })
       .catch((error)=>console.log(error))
       .finally(()=> setLoading(false))
@@ -59,7 +84,12 @@ const PokemonDetail = () => {
             />
           }
           */}
-          <PokemonTodosInfo todos={todosData} />
+          <PokemonTodosInfo
+            formData={formData}
+            onChangeInput={onChangeInput}
+            editMode={editMode}
+            setEditMode={setEditMode}
+          />
         </PokemonDetailInfoContent>
       }
     </PokemonDetailContainer>
