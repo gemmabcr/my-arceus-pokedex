@@ -23,3 +23,8 @@ export const TodosTableBody = styled.th `
   padding: 0.5rem;
   text-align: left;
 `
+
+export const InputEditableTable = styled.input `
+  margin-right: 0.5rem;
+  max-width: 80px;
+`

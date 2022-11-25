@@ -88,6 +88,7 @@ export const LinkPokedex = styled.p `
   border: 1px solid #1684b0;
   border-radius: 0.25rem;
   color: #1684b0;
+  cursor: pointer;
   font-weight: 600;
   margin: 0 0.5rem 0 0;
   padding: 0.25rem 0.5rem;
