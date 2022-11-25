@@ -18,7 +18,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
       const newHisuiPokedex = []
       for (let i = 0 ; i < prevhisuiPokedex.length; i++){
         const currentPokemon = prevhisuiPokedex[i]
-        if (currentPokemon.index === index) {
+        if (currentPokemon.index === Number(index)) {
           const updatedPokemon = {
             ...currentPokemon,
             toDos: formData,
