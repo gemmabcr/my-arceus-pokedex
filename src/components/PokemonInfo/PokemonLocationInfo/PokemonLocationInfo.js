@@ -1,8 +1,8 @@
 import React from 'react'
 import { areasLogos, areaText } from '../../../data'
-import { FlexColumn, FlexRow, LocationImage } from '../../../commonStyled'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
-import { LocationsContainer, LocationsGridItem } from './PokemonLocationInfoStyled'
+import { LocationsContainer } from './PokemonLocationInfoStyled'
+import LocationsGrid from './LocationsGrid/LocationsGrid'
 
 const PokemonLocationInfo = ({locations}) => {
   const [praderaLocations, setPraderaLocations] = React.useState([])
@@ -49,67 +49,46 @@ const PokemonLocationInfo = ({locations}) => {
       <h3>Localización</h3>
       <LocationsContainer>
         {praderaLocations.length > 0 &&
-          <LocationsGridItem>
-            <FlexRow>
-              <LocationImage src={areasLogos.praderaObsidiana} alt={areaText.pradera}  />
-              <h5>{areaText.pradera}</h5>
-            </FlexRow>
-            <FlexColumn>
-              {praderaLocations.map(location => <span key={location.id}>{location.name}</span> )}
-            </FlexColumn>
-          </LocationsGridItem>
+          <LocationsGrid
+            locations={praderaLocations}
+            logo={areasLogos.praderaObsidiana}
+            text={areaText.pradera}
+          />
         }
         {pantanalLocations.length > 0 &&
-          <LocationsGridItem>
-            <FlexRow>
-              <LocationImage src={areasLogos.pantanalCarmesi} alt={areaText.pantanal}  />
-              <h5>{areaText.pantanal}</h5>
-            </FlexRow>
-            <FlexColumn>
-              {pantanalLocations.map(location => <span key={location.id}>{location.name}</span> )}
-            </FlexColumn>
-          </LocationsGridItem>
+          <LocationsGrid
+            locations={pantanalLocations}
+            logo={areasLogos.pantanalCarmesi}
+            text={areaText.pantanal}
+          />
         }
         {costaLocations.length > 0 &&
-          <LocationsGridItem>
-            <FlexRow>
-              <LocationImage src={areasLogos.costaCobalto} alt={areaText.costa}  />
-              <h5>{areaText.costa}</h5>
-            </FlexRow>
-            <FlexColumn>
-              {costaLocations.map(location => <span key={location.id}>{location.name}</span> )}
-            </FlexColumn>
-          </LocationsGridItem>
+          <LocationsGrid
+            locations={costaLocations}
+            logo={areasLogos.costaCobalto}
+            text={areaText.costa}
+          />
         }
         {laderaLocations.length > 0 &&
-          <LocationsGridItem>
-            <FlexRow>
-              <LocationImage src={areasLogos.laderaCorona} alt={areaText.ladera}  />
-              <h5>{areaText.ladera}</h5>
-            </FlexRow>
-            <FlexColumn>
-              {laderaLocations.map(location => <span key={location.id}>{location.name}</span> )}
-            </FlexColumn>
-          </LocationsGridItem>
+          <LocationsGrid
+            locations={laderaLocations}
+            logo={areasLogos.laderaCorona}
+            text={areaText.ladera}
+          />
         }
         {tundraLocations.length > 0 &&
-          <LocationsGridItem>
-            <FlexRow>
-              <LocationImage src={areasLogos.tundraAlba} alt={areaText.tundra}  />
-              <h5>{areaText.tundra}</h5>
-            </FlexRow>
-            <FlexColumn>
-              {tundraLocations.map(location => <span key={location.id}>{location.name}</span> )}
-            </FlexColumn>
-          </LocationsGridItem>
+          <LocationsGrid
+            locations={tundraLocations}
+            logo={areasLogos.tundraAlba}
+            text={areaText.tundra}
+          />
         }
         {distorsionLocations.length > 0 &&
-          <LocationsGridItem>
-            <FlexRow>
-              <LocationImage src={areasLogos.distorsionEspaciotemporal} alt={areaText.distorsion} />
-              <h5>{areaText.distorsion}</h5>
-            </FlexRow>
-          </LocationsGridItem>
+          <LocationsGrid
+            locations={distorsionLocations}
+            logo={areasLogos.distorsionEspaciotemporal}
+            text={areaText.distorsion}
+          />
         }
       </LocationsContainer>
     </PokemonDetailContent>
