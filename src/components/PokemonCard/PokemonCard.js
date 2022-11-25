@@ -5,11 +5,11 @@ import PokemonTodosInfo from '../PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
 import Loading from '../Loading/Loading'
 import PokemonListInfo from '../PokemonInfo/PokemonListInfo/PokemonListInfo'
 
-const PokemonCard = ({urlPokemon, index, setHisuiPokedex, hisuiPokedex}) => {
+const PokemonCard = ({urlPokemon, index, todos, setHisuiPokedex, hisuiPokedex}) => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [loading, setLoading] = React.useState(true)
   const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
-  const [formData, setFormData] = React.useState([])
+  const [formData, setFormData] = React.useState(todos)
   const [editMode, setEditMode] = React.useState(false)
 
   function onChangeInput(event) {
@@ -39,7 +39,6 @@ const PokemonCard = ({urlPokemon, index, setHisuiPokedex, hisuiPokedex}) => {
       .then(data=> {
         setUrlDataPokemon(data.hisuiPokemon)
         setHisuiDataPokemon(data.newHisuiPokemon)
-        setFormData(data.toDos)
       })
       .catch((error)=>console.log(error))
       .finally(()=> setLoading(false))
