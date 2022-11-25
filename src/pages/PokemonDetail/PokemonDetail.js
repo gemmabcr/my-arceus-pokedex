@@ -9,7 +9,7 @@ import PokemonTodosInfo from '../../components/PokemonInfo/PokemonTodosInfo/Poke
 import { PokeService } from '../../service/pokeService'
 import Loading from '../../components/Loading/Loading'
 
-const PokemonDetail = () => {
+const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const { id } = useParams()
   const location = useLocation()
   const { urlPokemon } = location.state
@@ -47,7 +47,6 @@ const PokemonDetail = () => {
     })
   }
 
-
   React.useEffect(()=>{
     const pokeService = new PokeService()
     pokeService.getPokemonData(urlPokemon, Number(id))
@@ -65,16 +64,20 @@ const PokemonDetail = () => {
   },[urlPokemon, id])
 
   return (
-    <PokemonDetailContainer>
-      {loading && <Loading />}
-      {!loading &&
-        <PokemonDetailInfoContent>
-          <PokemonInfo
-            urlDataPokemon={urlDataPokemon}
-            index={id}
-          />
-          <PokemonLocationInfo locations={locationsData} />
-          {/* TODO: finish these sections
+    <>
+      {firstLoading && <Loading />}
+      {!firstLoading &&
+        <PokemonDetailContainer>
+          <h3>Pokemon Detail</h3>
+          {loading && <Loading/>}
+          {!loading &&
+            <PokemonDetailInfoContent>
+              <PokemonInfo
+                urlDataPokemon={urlDataPokemon}
+                index={id}
+              />
+              <PokemonLocationInfo locations={locationsData} />
+              {/* TODO: finish these sections
           <PokemonSpecialConditionInfo conditions={specialConditionsData} />
           {evolutionChainData &&
             <PokemonEvolutionInfo
@@ -84,15 +87,19 @@ const PokemonDetail = () => {
             />
           }
           */}
-          <PokemonTodosInfo
-            formData={formData}
-            onChangeInput={onChangeInput}
-            editMode={editMode}
-            setEditMode={setEditMode}
-          />
-        </PokemonDetailInfoContent>
+              <PokemonTodosInfo
+                formData={formData}
+                onChangeInput={onChangeInput}
+                editMode={editMode}
+                setEditMode={setEditMode}
+                setHisuiPokedex={setHisuiPokedex}
+                hisuiPokedex={hisuiPokedex}
+              />
+            </PokemonDetailInfoContent>
+          }
+        </PokemonDetailContainer>
       }
-    </PokemonDetailContainer>
+    </>
   )
 }
 

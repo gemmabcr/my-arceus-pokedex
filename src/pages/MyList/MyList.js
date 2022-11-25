@@ -8,14 +8,14 @@ import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import { MyListSection } from './MyListStyled'
 import Loading from '../../components/Loading/Loading'
 
-const MyList = ({loading, hisuiPokedex}) => {
+const MyList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done === todo.goal))
   const uncompletedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.find(todo => todo.done < todo.goal))
 
   return (
     <PokemonListContainer>
-      {loading && <Loading />}
-      {!loading &&
+      {firstLoading && <Loading />}
+      {!firstLoading &&
         <>
           <h3>Pokedéx de {loggedUsername()}</h3>
           <PokemonListContent>
@@ -47,6 +47,8 @@ const MyList = ({loading, hisuiPokedex}) => {
                     urlPokemon={pokemon.url}
                     index={pokemon.index}
                     todos={pokemon.toDos}
+                    setHisuiPokedex={setHisuiPokedex}
+                    hisuiPokedex={hisuiPokedex}
                   />
                 )}
               </MyListSection>

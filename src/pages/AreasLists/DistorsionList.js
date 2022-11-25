@@ -4,7 +4,7 @@ import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
 
-const DistorsionList = ({loading, hisuiPokedex}) => {
+const DistorsionList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const distorsionText = areaText.distorsion
   const costaPokedex = hisuiPokedex.filter(pokemon =>{
     return pokemon.locations.find(location => location.area === distorsionText)
@@ -13,8 +13,8 @@ const DistorsionList = ({loading, hisuiPokedex}) => {
   return (
     <PokemonListContainer>
       <h3>Pokémons de {distorsionText}</h3>
-      {loading && <Loading />}
-      {!loading &&
+      {firstLoading && <Loading />}
+      {!firstLoading &&
         <PokemonListContent>
           {costaPokedex.map(pokemon =>
             <PokemonCard
@@ -22,6 +22,8 @@ const DistorsionList = ({loading, hisuiPokedex}) => {
               urlPokemon={pokemon.url}
               index={pokemon.index}
               todos={pokemon.toDos}
+              setHisuiPokedex={setHisuiPokedex}
+              hisuiPokedex={hisuiPokedex}
             />
           )}
         </PokemonListContent>

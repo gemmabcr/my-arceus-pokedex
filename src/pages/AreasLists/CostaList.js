@@ -4,7 +4,7 @@ import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
 
-const CostaList = ({loading, hisuiPokedex}) => {
+const CostaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const costaText = areaText.costa
   const costaPokedex = hisuiPokedex.filter(pokemon =>{
     return pokemon.locations.find(location => location.area === costaText)
@@ -13,8 +13,8 @@ const CostaList = ({loading, hisuiPokedex}) => {
   return (
     <PokemonListContainer>
       <h3>Pokémons de {costaText}</h3>
-      {loading && <Loading />}
-      {!loading &&
+      {firstLoading && <Loading />}
+      {!firstLoading &&
         <PokemonListContent>
           {costaPokedex.map(pokemon =>
             <PokemonCard
@@ -22,6 +22,8 @@ const CostaList = ({loading, hisuiPokedex}) => {
               urlPokemon={pokemon.url}
               index={pokemon.index}
               todos={pokemon.toDos}
+              setHisuiPokedex={setHisuiPokedex}
+              hisuiPokedex={hisuiPokedex}
             />
           )}
         </PokemonListContent>

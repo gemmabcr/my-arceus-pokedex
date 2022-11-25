@@ -36,31 +36,31 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<PageLayout />}>
-          <Route path={'/'} element={<PokemonList loading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
+          <Route path={'/'} element={<PokemonList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.pradera}
-                 element={<PraderaList loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<PraderaList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.pantanal}
-                 element={<PantanalList loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<PantanalList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.costa}
-                 element={<CostaList loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<CostaList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.ladera}
-                 element={<LaderaList loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<LaderaList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.tundra}
-                 element={<TundraList loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<TundraList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.distorsion}
-                 element={<DistorsionList loading={loading} hisuiPokedex={hisuiPokedex}
-          />} />
+                 element={<DistorsionList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
+          />
           <Route path={'pokemon/:id'}
-                 element={<PokemonDetail loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<PokemonDetail firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.myList}
-                 element={<MyList loading={loading} hisuiPokedex={hisuiPokedex} />}
+                 element={<MyList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path='*' element={<div>404</div>} />
         </Route>

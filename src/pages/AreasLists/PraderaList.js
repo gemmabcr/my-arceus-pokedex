@@ -4,7 +4,7 @@ import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
 
-const PraderaList = ({loading, hisuiPokedex}) => {
+const PraderaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const praderaText = areaText.pradera
   const praderaPokedex = hisuiPokedex.filter(pokemon =>{
     return pokemon.locations.find(location => location.area === praderaText)
@@ -13,8 +13,8 @@ const PraderaList = ({loading, hisuiPokedex}) => {
   return (
     <PokemonListContainer>
       <h3>Pokémons de {praderaText}</h3>
-      {loading && <Loading />}
-      {!loading &&
+      {firstLoading && <Loading />}
+      {!firstLoading &&
         <PokemonListContent>
           {praderaPokedex.map(pokemon =>
             <PokemonCard
@@ -22,6 +22,8 @@ const PraderaList = ({loading, hisuiPokedex}) => {
               urlPokemon={pokemon.url}
               index={pokemon.index}
               todos={pokemon.toDos}
+              setHisuiPokedex={setHisuiPokedex}
+              hisuiPokedex={hisuiPokedex}
             />
           )}
         </PokemonListContent>

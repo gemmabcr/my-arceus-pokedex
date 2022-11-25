@@ -3,12 +3,12 @@ import { PokemonListContainer, PokemonListContent } from './PokemonListStyled'
 import Loading from '../../components/Loading/Loading'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 
-const PokemonList = ({loading, hisuiPokedex, setHisuiPokedex}) => {
+const PokemonList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   return (
     <PokemonListContainer>
       <h3>Pokémons de Hisui</h3>
-      {loading && <Loading />}
-      {!loading &&
+      {firstLoading && <Loading />}
+      {!firstLoading &&
         <PokemonListContent>
           {hisuiPokedex.map(pokemon =>
             <PokemonCard
