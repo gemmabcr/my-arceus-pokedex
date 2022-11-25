@@ -3,6 +3,7 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
+import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 
 const PraderaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const praderaText = areaText.pradera
@@ -12,7 +13,7 @@ const PraderaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
 
   return (
     <PokemonListContainer>
-      <h3>Pokémons de {praderaText}</h3>
+      <PageAreaTitle area={praderaText} />
       {firstLoading && <Loading />}
       {!firstLoading &&
         <PokemonListContent>

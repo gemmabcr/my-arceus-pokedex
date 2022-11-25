@@ -81,3 +81,11 @@ export const PrimaryButton = styled.button `
     background-color: #218db9;
   }
 `;
+
+export const LocationImage = styled.img `
+  background-color: ${colors.mediumBlue};
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+`
+

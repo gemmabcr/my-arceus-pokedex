@@ -1,6 +1,6 @@
 import React from 'react'
 import { areasLogos, areaText } from '../../../data'
-import { FlexColumn, FlexRow } from '../../../commonStyled'
+import {FlexColumn, FlexRow, LocationImage} from '../../../commonStyled'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import { LocationsContainer } from './PokemonLocationInfoStyled'
 
@@ -51,7 +51,7 @@ const PokemonLocationInfo = ({locations}) => {
         {praderaLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.praderaObsidiana} alt={areaText.pradera} width={24} height={24} />
+              <LocationImage src={areasLogos.praderaObsidiana} alt={areaText.pradera}  />
               <h5>{areaText.pradera}</h5>
             </FlexRow>
             <FlexColumn>
@@ -62,7 +62,7 @@ const PokemonLocationInfo = ({locations}) => {
         {pantanalLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.pantanalCarmesi} alt={areaText.pantanal} width={24} height={24} />
+              <LocationImage src={areasLogos.pantanalCarmesi} alt={areaText.pantanal}  />
               <h5>{areaText.pantanal}</h5>
             </FlexRow>
             <FlexColumn>
@@ -73,7 +73,7 @@ const PokemonLocationInfo = ({locations}) => {
         {costaLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.costaCobalto} alt={areaText.costa} width={24} height={24} />
+              <LocationImage src={areasLogos.costaCobalto} alt={areaText.costa}  />
               <h5>{areaText.costa}</h5>
             </FlexRow>
             <FlexColumn>
@@ -84,7 +84,7 @@ const PokemonLocationInfo = ({locations}) => {
         {laderaLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.laderaCorona} alt={areaText.ladera} width={24} height={24} />
+              <LocationImage src={areasLogos.laderaCorona} alt={areaText.ladera}  />
               <h5>{areaText.ladera}</h5>
             </FlexRow>
             <FlexColumn>
@@ -95,7 +95,7 @@ const PokemonLocationInfo = ({locations}) => {
         {tundraLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.tundraAlba} alt={areaText.tundra} width={24} height={24} />
+              <LocationImage src={areasLogos.tundraAlba} alt={areaText.tundra}  />
               <h5>{areaText.tundra}</h5>
             </FlexRow>
             <FlexColumn>
@@ -106,7 +106,7 @@ const PokemonLocationInfo = ({locations}) => {
         {distorsionLocations.length > 0 &&
           <FlexColumn>
             <FlexRow>
-              <img src={areasLogos.distorsionEspaciotemporal} alt={areaText.distorsion} width={24} height={24} />
+              <LocationImage src={areasLogos.distorsionEspaciotemporal} alt={areaText.distorsion} />
               <h5>{areaText.distorsion}</h5>
             </FlexRow>
             <FlexColumn>

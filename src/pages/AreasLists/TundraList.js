@@ -3,6 +3,7 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
+import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 
 const TundraList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const tundraText = areaText.tundra
@@ -12,7 +13,7 @@ const TundraList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
 
   return (
     <PokemonListContainer>
-      <h3>Pokémons de {tundraText}</h3>
+      <PageAreaTitle area={tundraText} />
       {firstLoading && <Loading />}
       {!firstLoading &&
         <PokemonListContent>

@@ -3,6 +3,7 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
+import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 
 const LaderaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const laderaText = areaText.ladera
@@ -12,7 +13,7 @@ const LaderaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
 
   return (
     <PokemonListContainer>
-      <h3>Pokémons de {laderaText}</h3>
+      <PageAreaTitle area={laderaText} />
       {firstLoading && <Loading />}
       {!firstLoading &&
         <PokemonListContent>

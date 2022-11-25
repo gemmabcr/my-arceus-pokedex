@@ -3,6 +3,7 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
+import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 
 const CostaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const costaText = areaText.costa
@@ -12,7 +13,7 @@ const CostaList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
 
   return (
     <PokemonListContainer>
-      <h3>Pokémons de {costaText}</h3>
+      <PageAreaTitle area={costaText} />
       {firstLoading && <Loading />}
       {!firstLoading &&
         <PokemonListContent>

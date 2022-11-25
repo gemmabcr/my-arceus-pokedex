@@ -3,6 +3,7 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import Loading from '../../components/Loading/Loading'
 import { areaText } from '../../data'
+import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 
 const DistorsionList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const distorsionText = areaText.distorsion
@@ -12,7 +13,7 @@ const DistorsionList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
 
   return (
     <PokemonListContainer>
-      <h3>Pokémons de {distorsionText}</h3>
+      <PageAreaTitle area={distorsionText} />
       {firstLoading && <Loading />}
       {!firstLoading &&
         <PokemonListContent>
