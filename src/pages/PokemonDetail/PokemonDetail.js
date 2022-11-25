@@ -12,18 +12,18 @@ import Loading from '../../components/Loading/Loading'
 const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const { id } = useParams()
   const location = useLocation()
-  const { urlPokemon } = location.state
+  const { urlPokemon, todos } = location.state
 
   const [loading, setLoading] = React.useState(true)
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
   const [locationsData, setLocationsData] = React.useState([])
 
-  const [evolutionChainData, setEvolutionChainData] = React.useState([])
+  /*const [evolutionChainData, setEvolutionChainData] = React.useState([])
   const [evolutionFromData, setEvolutionFromData] = React.useState([])
-  const [specialConditionsData, setSpecialConditionsData] = React.useState([])
+  const [specialConditionsData, setSpecialConditionsData] = React.useState([])*/
 
-  const [formData, setFormData] = React.useState([])
+  const [formData, setFormData] = React.useState(todos)
   const [editMode, setEditMode] = React.useState(false)
 
   function onChangeInput(event) {
@@ -51,13 +51,12 @@ const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
     const pokeService = new PokeService()
     pokeService.getPokemonData(urlPokemon, Number(id))
       .then(data=> {
-        setEvolutionChainData(data.evolutionChain)
-        setEvolutionFromData(data.evolutionFrom)
         setUrlDataPokemon(data.hisuiPokemon)
         setHisuiDataPokemon(data.newHisuiPokemon)
         setLocationsData(data.locations)
-        setSpecialConditionsData(data.specialConditions)
-        setFormData(data.toDos)
+        /*setEvolutionChainData(data.evolutionChain)
+        setEvolutionFromData(data.evolutionFrom)
+        setSpecialConditionsData(data.specialConditions)*/
       })
       .catch((error)=>console.log(error))
       .finally(()=> setLoading(false))

@@ -53,6 +53,7 @@ const PokemonCard = ({urlPokemon, index, todos, setHisuiPokedex, hisuiPokedex}) 
             index={index}
             urlDataPokemon={urlDataPokemon}
             url={urlPokemon}
+            todos={formData}
           />
           <PokemonTodosInfo
             formData={formData}

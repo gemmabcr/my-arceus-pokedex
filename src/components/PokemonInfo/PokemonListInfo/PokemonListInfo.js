@@ -10,7 +10,7 @@ import { FlexRow } from '../../../commonStyled'
 import PokemonTypeInfo from '../PokemonTypeInfo/PokemonTypeInfo'
 import { LogoutPokedex } from '../../Navbar/NavbarStyled'
 
-const PokemonListInfo = ({url, urlDataPokemon, index}) => {
+const PokemonListInfo = ({todos, url, urlDataPokemon, index}) => {
   const [dataPokemon, setDataPokemon] = React.useState([])
   const [imagePokemon, setImagePokemon] = React.useState([])
   const [typeDataPokemon, setTypeDataPokemon] = React.useState([])
@@ -47,7 +47,7 @@ const PokemonListInfo = ({url, urlDataPokemon, index}) => {
           </FlexRow>
           <Link
             to={`/pokemon/${index}`}
-            state={{ urlPokemon: url }}
+            state={{ urlPokemon: url, todos: todos }}
           >
             <LogoutPokedex>
               Ver más información
