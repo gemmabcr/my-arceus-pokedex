@@ -42,18 +42,12 @@ const MyList = ({loading, hisuiPokedex}) => {
               <MyListSection>
                 <h4>Pokémons en progreso ({uncompletedPokemons.length}/{hisuiPokedex.length})</h4>
                 {uncompletedPokemons.map(pokemon =>
-                  <Link
+                  <PokemonCard
                     key={pokemon.index}
-                    to={`/pokemon/${pokemon.index}`}
-                    state={{urlPokemon: pokemon.url}}
-                    style={{width: '100%'}}
-                  >
-                    <PokemonCard
-                      urlPokemon={pokemon.url}
-                      index={pokemon.index}
-                      todos={pokemon.toDos}
-                    />
-                  </Link>
+                    urlPokemon={pokemon.url}
+                    index={pokemon.index}
+                    todos={pokemon.toDos}
+                  />
                 )}
               </MyListSection>
             }
