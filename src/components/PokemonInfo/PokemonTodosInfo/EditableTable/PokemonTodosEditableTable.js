@@ -1,11 +1,14 @@
 import React from 'react'
 import { TodosTable, TodosTableBody, TodosTableHeader, InputEditableTable } from '../PokemonTodosInfoStyled'
-import { getGoalText, getTodoText } from '../ToDosFunctions'
+import {getGoalText, getTodoText} from '../ToDosFunctions'
+import { FlexColumn } from '../../../../commonStyled'
 
 const PokemonTodosEditableTable = ({formData, onChangeInput}) => {
   return(
-    <TodosTable>
-      <tbody>
+    <FlexColumn>
+      <h3>Tareas de la Pokédex</h3>
+      <TodosTable>
+        <tbody>
         <tr>
           <TodosTableHeader>
             Progreso
@@ -19,6 +22,8 @@ const PokemonTodosEditableTable = ({formData, onChangeInput}) => {
             <TodosTableBody>
               <InputEditableTable
                 id={todo.id}
+                min={0}
+                max={todo.goal}
                 name={todo.id}
                 onChange={onChangeInput}
                 placeholder={todo.done}
@@ -32,8 +37,9 @@ const PokemonTodosEditableTable = ({formData, onChangeInput}) => {
             </TodosTableBody>
           </tr>
         )}
-      </tbody>
-    </TodosTable>
+        </tbody>
+      </TodosTable>
+    </FlexColumn>
   )
 }
 

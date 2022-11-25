@@ -26,5 +26,5 @@ export const TodosTableBody = styled.th `
 
 export const InputEditableTable = styled.input `
   margin-right: 0.5rem;
-  max-width: 80px;
+  width: 40px;
 `

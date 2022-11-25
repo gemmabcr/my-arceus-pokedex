@@ -1,17 +1,18 @@
 import React, { Fragment } from 'react'
 import { TodosTable, TodosTableHeader, TodosTableBody } from './PokemonTodosInfoStyled'
-import { getLengthTodos, getTodoText, getGoalText } from './ToDosFunctions'
+import { getLengthTodos, getTodoText } from './ToDosFunctions'
 import { LinkPokedex } from '../../Navbar/NavbarStyled'
 import { useLoggedContext } from '../../../application/PageLayout'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import PokemonTodosEditableTable from "./EditableTable/PokemonTodosEditableTable";
+import PokemonTodosReadonlyTable from "./ReadonlyTable/PokemonTodosReadonlyTable";
 
 const PokemonTodosInfo = ({todos}) => {
   const [logged, setLogged] = useLoggedContext ()
-  const uncompletedTodos = todos.filter(todo => todo.done < todo.goal)
   const [editMode, setEditMode] = React.useState(false)
-
   const [formData, setFormData] = React.useState(todos)
+  const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
+  const completedTodos = formData.filter(todo => todo.done === todo.goal)
 
   function onChangeInput(event) {
     const {name, value} = event.target
@@ -40,7 +41,6 @@ const PokemonTodosInfo = ({todos}) => {
 
   return (
     <PokemonDetailContent>
-      <h3>Tareas de la Pokédex por hacer ({getLengthTodos(logged, uncompletedTodos, todos)})</h3>
       {logged &&
         <Fragment>
           {uncompletedTodos.length === 0 &&
@@ -53,34 +53,25 @@ const PokemonTodosInfo = ({todos}) => {
                   <LinkPokedex onClick={()=>setEditMode(true)}>
                     Editar progreso de las tareas
                   </LinkPokedex>
-                  <TodosTable>
-                    <tbody>
-                    <tr>
-                      <TodosTableHeader>
-                        Progreso
-                      </TodosTableHeader>
-                      <TodosTableHeader>
-                        Descripción
-                      </TodosTableHeader>
-                    </tr>
-                    {uncompletedTodos.map((todo,index) =>
-                      <tr key={index}>
-                        <TodosTableBody>
-                          {getGoalText(todo.goal, todo.done)}
-                        </TodosTableBody>
-                        <TodosTableBody>
-                          {getTodoText(todo.id)}
-                        </TodosTableBody>
-                      </tr>
-                    )}
-                    </tbody>
-                  </TodosTable>
+                  <h3>Tareas de la Pokédex por hacer ({getLengthTodos(logged, uncompletedTodos, todos)})</h3>
+                  <PokemonTodosReadonlyTable
+                    todos={uncompletedTodos}
+                  />
+
+                  {completedTodos.length > 0 &&
+                    <>
+                      <h3>🎉 Tareas de la Pokédex completadas ({getLengthTodos(logged, completedTodos, todos)})</h3>
+                      <PokemonTodosReadonlyTable
+                        todos={completedTodos}
+                      />
+                    </>
+                  }
                 </>
               }
             </>
           }
           {editMode &&
-            <div>
+            <div style={{width: '100%'}}>
               <p>Editando el progreso de las tareas... </p>
               <PokemonTodosEditableTable
                 formData={formData}
