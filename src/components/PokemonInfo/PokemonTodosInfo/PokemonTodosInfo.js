@@ -6,6 +6,7 @@ import { useLoggedContext } from '../../../application/PageLayout'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import PokemonTodosEditableTable from './EditableTable/PokemonTodosEditableTable'
 import PokemonTodosReadonlyTable from './ReadonlyTable/PokemonTodosReadonlyTable'
+import { FlexRow } from '../../../commonStyled'
 
 const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
   const [logged, setLogged] = useLoggedContext ()
@@ -36,6 +37,16 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
 
   return (
     <PokemonDetailContent>
+      <FlexRow>
+        <h3>{editMode && 'Editando las '}Tareas de la Pokédex</h3>
+        {logged && !editMode &&
+          <div>
+            <LinkPokedex onClick={()=>setEditMode(true)}>
+              Editar
+            </LinkPokedex>
+          </div>
+        }
+      </FlexRow>
       {logged &&
         <Fragment>
           {uncompletedTodos.length === 0 &&
@@ -45,17 +56,13 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
             <>
               {!editMode &&
                 <>
-                  <LinkPokedex onClick={()=>setEditMode(true)}>
-                    Editar progreso de las tareas
-                  </LinkPokedex>
-                  <h3>Tareas de la Pokédex por hacer ({getLengthTodos(logged, uncompletedTodos, formData)})</h3>
+                  <h5>En progreso ({getLengthTodos(logged, uncompletedTodos, formData)})</h5>
                   <PokemonTodosReadonlyTable
                     todos={uncompletedTodos}
                   />
-
                   {completedTodos.length > 0 &&
                     <>
-                      <h3>🎉 Tareas de la Pokédex completadas ({getLengthTodos(logged, completedTodos, formData)})</h3>
+                      <h5>🎉 Completadas ({getLengthTodos(logged, completedTodos, formData)})</h5>
                       <PokemonTodosReadonlyTable
                         todos={completedTodos}
                       />
@@ -67,7 +74,6 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
           }
           {editMode &&
             <div style={{width: '100%'}}>
-              <p>Editando el progreso de las tareas... </p>
               <PokemonTodosEditableTable
                 formData={formData}
                 onChangeInput={onChangeInput}
@@ -80,31 +86,28 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMod
         </Fragment>
       }
       {!logged &&
-        <>
-          <h3>Tareas de la Pokédex</h3>
-          <TodosTable>
-            <tbody>
-            <tr>
-              <TodosTableHeader>
-                Meta
-              </TodosTableHeader>
-              <TodosTableHeader>
-                Descripción
-              </TodosTableHeader>
+        <TodosTable>
+          <tbody>
+          <tr>
+            <TodosTableHeader>
+              Meta
+            </TodosTableHeader>
+            <TodosTableHeader>
+              Descripción
+            </TodosTableHeader>
+          </tr>
+          {formData.map((todo,index) =>
+            <tr key={index}>
+              <TodosTableBody>
+                {todo.goal}
+              </TodosTableBody>
+              <TodosTableBody>
+                {getTodoText(todo.id)}
+              </TodosTableBody>
             </tr>
-            {formData.map((todo,index) =>
-              <tr key={index}>
-                <TodosTableBody>
-                  {todo.goal}
-                </TodosTableBody>
-                <TodosTableBody>
-                  {getTodoText(todo.id)}
-                </TodosTableBody>
-              </tr>
-            )}
-            </tbody>
-          </TodosTable>
-        </>
+          )}
+          </tbody>
+        </TodosTable>
       }
     </PokemonDetailContent>
   )

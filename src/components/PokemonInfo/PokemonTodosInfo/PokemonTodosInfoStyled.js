@@ -3,7 +3,7 @@ import { borderType, colors } from '../../../commonStyled'
 
 export const TodosTable = styled.table `
   border-collapse: collapse;
-  margin: 1rem;
+  margin: 0 1rem 1rem 1rem;
   width: 100%;
 `
 

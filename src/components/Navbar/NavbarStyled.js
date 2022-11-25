@@ -83,15 +83,18 @@ export const LogoutPokedex = styled.button `
   }
 `
 
-export const LinkPokedex = styled.p `
+export const LinkPokedex = styled.button `
   background: #c8e6f1;
   border: 1px solid #1684b0;
   border-radius: 0.25rem;
   color: #1684b0;
   cursor: pointer;
+  display: flex;
   font-weight: 600;
+  justify-content: center;
   margin: 0 0.5rem 0 0;
   padding: 0.25rem 0.5rem;
+  width: 100%;
 
   &:hover {
     background: #aacfdc;

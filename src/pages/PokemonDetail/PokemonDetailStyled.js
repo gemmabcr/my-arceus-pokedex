@@ -6,6 +6,7 @@ export const PokemonDetailContainer = styled.div `
   color: ${colors.mediumBlack};
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   padding: 2rem 1rem;
 `
 
