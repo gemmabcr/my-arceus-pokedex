@@ -73,7 +73,7 @@ const Navbar = () => {
         <LoginContainer>
           {!logged &&
             <PrimaryButton onClick={()=> loginButton()}>
-              Log in
+              Iniciar sesión
             </PrimaryButton>
           }
           {logged &&
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <LogoutPokedex
                   onClick={()=> logoutButton()}
                 >
-                  Log Out
+                  Cerrar sesión
                 </LogoutPokedex>
               </LoggedUser>
               <Link to={links.myList}>
