@@ -4,13 +4,35 @@ import { getLengthTodos, getTodoText } from './ToDosFunctions'
 import { LinkPokedex } from '../../Navbar/NavbarStyled'
 import { useLoggedContext } from '../../../application/PageLayout'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
-import PokemonTodosEditableTable from "./EditableTable/PokemonTodosEditableTable";
-import PokemonTodosReadonlyTable from "./ReadonlyTable/PokemonTodosReadonlyTable";
+import PokemonTodosEditableTable from './EditableTable/PokemonTodosEditableTable'
+import PokemonTodosReadonlyTable from './ReadonlyTable/PokemonTodosReadonlyTable'
 
-const PokemonTodosInfo = ({ formData, onChangeInput, editMode, setEditMode }) => {
+const PokemonTodosInfo = ({ index, formData, onChangeInput, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
   const [logged, setLogged] = useLoggedContext ()
   const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
   const completedTodos = formData.filter(todo => todo.done === todo.goal)
+
+  function saveTodos() {
+    setHisuiPokedex(prevhisuiPokedex => {
+      const newHisuiPokedex = []
+      for (let i = 0 ; i < prevhisuiPokedex.length; i++){
+        const currentPokemon = prevhisuiPokedex[i]
+        if (currentPokemon.index === index) {
+          const updatedPokemon = {
+            ...currentPokemon,
+            toDos: formData,
+          }
+          newHisuiPokedex.push(updatedPokemon)
+        }
+        else {
+          newHisuiPokedex.push(currentPokemon)
+        }
+      }
+      localStorage.setItem('savedPokedex', JSON.stringify(newHisuiPokedex))
+      return newHisuiPokedex
+    })
+    setEditMode(false)
+  }
 
   return (
     <PokemonDetailContent>
@@ -50,7 +72,7 @@ const PokemonTodosInfo = ({ formData, onChangeInput, editMode, setEditMode }) =>
                 formData={formData}
                 onChangeInput={onChangeInput}
               />
-              <LinkPokedex onClick={()=>setEditMode(false)}>
+              <LinkPokedex onClick={()=>saveTodos()}>
                 Guardar
               </LinkPokedex>
             </div>

@@ -36,7 +36,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<PageLayout />}>
-          <Route path={'/'} element={<PokemonList loading={loading} hisuiPokedex={hisuiPokedex} />}
+          <Route path={'/'} element={<PokemonList loading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
           <Route path={links.pradera}
                  element={<PraderaList loading={loading} hisuiPokedex={hisuiPokedex} />}

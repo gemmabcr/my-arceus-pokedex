@@ -5,7 +5,7 @@ import PokemonTodosInfo from '../PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
 import Loading from '../Loading/Loading'
 import PokemonListInfo from '../PokemonInfo/PokemonListInfo/PokemonListInfo'
 
-const PokemonCard = ({urlPokemon, index}) => {
+const PokemonCard = ({urlPokemon, index, setHisuiPokedex, hisuiPokedex}) => {
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [loading, setLoading] = React.useState(true)
   const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
@@ -60,6 +60,9 @@ const PokemonCard = ({urlPokemon, index}) => {
             onChangeInput={onChangeInput}
             editMode={editMode}
             setEditMode={setEditMode}
+            setHisuiPokedex={setHisuiPokedex}
+            hisuiPokedex={hisuiPokedex}
+            index={index}
           />
         </PokemonCardContent>
       }
