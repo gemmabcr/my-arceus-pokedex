@@ -10,7 +10,7 @@ import {
   LinkMenu,
   LogoContainer, LinkPokedex, LoggedContainer, LogoutPokedex, LoggedUser, LoggedUserText, LinkMenuTitle
 } from './NavbarStyled'
-import { useLoggedContext } from '../../application/PageLayout'
+import { useLoggedContext } from '../../App'
 import { PrimaryButton } from '../../commonStyled'
 import { loggedUsername } from '../../commonFunctions'
 import { pokemonLogo, links, areaText } from '../../data'
