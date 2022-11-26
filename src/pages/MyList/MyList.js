@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { PokemonListContainer, PokemonListContent } from '../PokemonList/PokemonListStyled'
-import { loggedUsername } from '../../commonFunctions'
+import {Link} from 'react-router-dom'
+import {PokemonListContainer, PokemonListContent} from '../PokemonList/PokemonListStyled'
+import {loggedUsername} from '../../commonFunctions'
 import CompletedPokemon from '../../components/CompletedPokemon/CompletedPokemon'
-import { CompletedPokemonRow } from '../../components/CompletedPokemon/CompletedPokemonStyled'
+import {CompletedPokemonRow} from '../../components/CompletedPokemon/CompletedPokemonStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
-import { MyListSection } from './MyListStyled'
+import {MyListSection} from './MyListStyled'
 import Loading from '../../components/Loading/Loading'
+import MyTeamSection from '../../components/MyTeamSection/MyTeamSection'
 
 const MyList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done === todo.goal))
@@ -18,6 +19,11 @@ const MyList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
       {!firstLoading &&
         <>
           <h3>Pokedéx de {loggedUsername()}</h3>
+          <MyTeamSection
+            hisuiPokedex={hisuiPokedex}
+            setHisuiPokedex={setHisuiPokedex}
+          />
+          <hr />
           <PokemonListContent>
             <MyListSection>
               <h4>Pokémons completados ({completedPokemons.length}/{hisuiPokedex.length})</h4>
