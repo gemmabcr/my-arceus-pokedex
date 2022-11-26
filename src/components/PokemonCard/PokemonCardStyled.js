@@ -15,6 +15,7 @@ export const PokemonCardContent = styled.div `
   box-shadow: ${boxShadow};
   display: grid;
   grid-template-columns: 240px 1fr;
+  width: 100%;
 
   @media (max-width: ${breakpointTablet}) {
     gap: 0;

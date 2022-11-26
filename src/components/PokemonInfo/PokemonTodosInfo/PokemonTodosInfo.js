@@ -34,7 +34,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, edit
       </FlexRow>
       {logged &&
         <Fragment>
-          {uncompletedTodos.length === 0 &&
+          {!editMode && uncompletedTodos.length === 0 &&
             <p>Completada!!</p>
           }
           {uncompletedTodos.length > 0 &&

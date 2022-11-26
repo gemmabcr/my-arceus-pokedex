@@ -8,7 +8,7 @@ export function getLengthTodos(logged, uncompletedTodos, todos){
 }
 
 export function getTodoText(id){
-  const data = (PokeService.getInstance().getTodoPokedexText(id))
+  const data = id !== undefined ? (PokeService.getInstance().getTodoPokedexText(id)) : ''
   return data.name
 }
 
