@@ -44,6 +44,14 @@ const MyTeamSection = ({hisuiPokedex, setHisuiPokedex}) => {
     }
   }
 
+  function resetMyTeam(){
+    setMyTeam(prevFormData => {
+      const resetFormData = []
+      localStorage.setItem('myTeam', JSON.stringify(resetFormData))
+      return resetFormData
+    })
+  }
+
   const renderToAdd = hisuiPokedex.filter(pokemon => myTeam.indexOf(pokemon.index) === -1)
   const renderToDelete = myTeam.map(item => hisuiPokedex.find(pokemon => pokemon.index === item ))
 
@@ -75,25 +83,30 @@ const MyTeamSection = ({hisuiPokedex, setHisuiPokedex}) => {
             <button onClick={addToMyTeam}>Añadir</button>
           </FlexRow>
           {myTeam.length > 0 &&
-            <FlexRow>
-              <label htmlFor="removeFromTeam">Eliminar de mi equipo:</label>
-              <select
-                onChange={selectValue}
-                name="removeFromTeam"
-                id="removeFromTeam"
-              >
-                <option>- Select -</option>
-                {renderToDelete.map(pokemon =>
-                  <option
-                    key={pokemon.index}
-                    value={pokemon.index}
-                  >
-                    #{pokemon.index} - {formatedName(pokemon.name)}
-                  </option>
-                )}
-              </select>
-              <button onClick={removeFromMyTeam}>Eliminar</button>
-            </FlexRow>
+            <FlexColumn>
+              <FlexRow>
+                <label htmlFor="removeFromTeam">Eliminar de mi equipo:</label>
+                <select
+                  onChange={selectValue}
+                  name="removeFromTeam"
+                  id="removeFromTeam"
+                >
+                  <option>- Select -</option>
+                  {renderToDelete.map(pokemon =>
+                    <option
+                      key={pokemon.index}
+                      value={pokemon.index}
+                    >
+                      #{pokemon.index} - {formatedName(pokemon.name)}
+                    </option>
+                  )}
+                </select>
+                <button onClick={removeFromMyTeam}>Eliminar</button>
+              </FlexRow>
+              <button onClick={resetMyTeam}>
+                Eliminar todo el equipo
+              </button>
+            </FlexColumn>
           }
         </FlexColumn>
       }
