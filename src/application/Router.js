@@ -59,8 +59,6 @@ const Router = () => {
         <Route element={<PageLayout />}>
           <Route path={'/'} element={<PokemonList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} />}
           />
-
-
           <Route path={links.pradera}
                  element={
             <PokemonList

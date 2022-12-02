@@ -28,3 +28,5 @@ p {
   color: rgba(0,0, 0, 0.87);
   margin-top: 0;
 }
+
+img { max-width: 100%; }

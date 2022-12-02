@@ -93,3 +93,19 @@ export const LocationImage = styled.img `
   width: 24px;
 `
 
+export const ScrollTopButton = styled.button `
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  background: #c8e6f1;
+  border: 1px solid #1684b0;
+  border-radius: 50%;
+  color: #1684b0;
+  cursor: pointer;
+  font-weight: 600;
+  justify-Content: center;
+  padding: 0.5rem;
+`
