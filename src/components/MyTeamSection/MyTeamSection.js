@@ -1,56 +1,101 @@
 import React from 'react'
-import { FlexRow } from '../../commonStyled'
+import { FlexColumn, FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { MyListSection } from '../../pages/MyList/MyListStyled'
 import PokemonLine from './PokemonLine/PokemonLine'
 
 const MyTeamSection = ({hisuiPokedex, setHisuiPokedex}) => {
-  const [formData, setFormData] = React.useState([])
   const [myTeam, setMyTeam] = React.useState(()=>{
     if (localStorage.getItem('myTeam') === null) {
       return []
     }
     return JSON.parse(localStorage.getItem('myTeam'))
   })
+  const [addFormData, setAddFormData] = React.useState([])
+  const [removeFormData, setRemoveFormData] = React.useState([])
 
-  function setMyTeamButton(){
+  function selectValue(event){
+    const indexPokemon = Number(event.target.value)
+    if (event.target.name === 'addToTeam') {
+      setAddFormData(indexPokemon)
+    }
+    if (event.target.name === 'removeFromTeam') {
+      setRemoveFormData(indexPokemon)
+    }
+  }
+
+  function addToMyTeam(){
     setMyTeam(prevFormData => {
-      const newFormData = [...prevFormData, formData]
+      const newFormData = [...prevFormData, addFormData]
       localStorage.setItem('myTeam', JSON.stringify(newFormData))
       return newFormData
     })
   }
 
-  function selectValue(event){
-    const indexPokemon = Number(event.target.value)
-    setFormData(indexPokemon)
+  function removeFromMyTeam(){
+    const indexPokemon = myTeam.indexOf(removeFormData)
+    if (indexPokemon > -1) {
+      setMyTeam(prevFormData => {
+        const newFormData = [...prevFormData]
+        newFormData.splice(indexPokemon, 1)
+        localStorage.setItem('myTeam', JSON.stringify(newFormData))
+        return newFormData
+      })
+    }
   }
+
+  const renderToAdd = hisuiPokedex.filter(pokemon => myTeam.indexOf(pokemon.index) === -1)
+  const renderToDelete = myTeam.map(item => hisuiPokedex.find(pokemon => pokemon.index === item ))
 
   return (
     <MyListSection>
       <h4>Mi equipo</h4>
       {myTeam.length < 6 &&
-      <FlexRow>
-        {myTeam.length === 0 &&
-          <p>🧐  You haven't set your team</p>
-        }
-        <label htmlFor="selectTeam">Añadir a mi equipo:</label>
-        <select
-          onChange={selectValue}
-          name="selectTeam"
-          id="selectTeam"
-        >
-          {hisuiPokedex.map(pokemon =>
-            <option
-              key={pokemon.index}
-              value={pokemon.index}
+        <FlexColumn>
+          {myTeam.length === 0 &&
+            <p>🧐  You haven't set your team</p>
+          }
+          <FlexRow>
+            <label htmlFor="addToTeam">Añadir a mi equipo:</label>
+            <select
+              onChange={selectValue}
+              name="addToTeam"
+              id="addToTeam"
             >
-              #{pokemon.index} - {formatedName(pokemon.name)}
-            </option>
-          )}
-        </select>
-        <button onClick={setMyTeamButton}>Añadir</button>
-      </FlexRow>
+              <option>- Select -</option>
+              {renderToAdd.map(pokemon =>
+                <option
+                  key={pokemon.index}
+                  value={pokemon.index}
+                >
+                  #{pokemon.index} - {formatedName(pokemon.name)}
+                </option>
+              )}
+            </select>
+            <button onClick={addToMyTeam}>Añadir</button>
+          </FlexRow>
+          {myTeam.length > 0 &&
+            <FlexRow>
+              <label htmlFor="removeFromTeam">Eliminar de mi equipo:</label>
+              <select
+                onChange={selectValue}
+                name="removeFromTeam"
+                id="removeFromTeam"
+              >
+                <option>- Select -</option>
+                {renderToDelete.map(pokemon =>
+                  <option
+                    key={pokemon.index}
+                    value={pokemon.index}
+                  >
+                    #{pokemon.index} - {formatedName(pokemon.name)}
+                  </option>
+                )}
+              </select>
+              <button onClick={removeFromMyTeam}>Eliminar</button>
+            </FlexRow>
+          }
+        </FlexColumn>
       }
       <PokemonLine
         hisuiPokedex={hisuiPokedex}
