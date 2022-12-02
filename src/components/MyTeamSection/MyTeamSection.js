@@ -1,32 +1,30 @@
 import React from 'react'
-import { FlexColumn } from '../../commonStyled'
+import {FlexColumn, FlexRow} from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { MyListSection } from '../../pages/MyList/MyListStyled'
 import PokemonLine from './PokemonLine/PokemonLine'
 
 const MyTeamSection = ({hisuiPokedex, setHisuiPokedex}) => {
-  const [myTeam, setMyTeam] = React.useState([65,49,60,45,77,129])
+  const [formData, setFormData] = React.useState([])
+  const [myTeam, setMyTeam] = React.useState([])
+
+  function setMyTeamButton(){
+    setMyTeam(prevFormData => [...prevFormData, formData])
+  }
 
   function selectValue(event){
-    setMyTeam(prevFormData => {
-      const newFormData = prevFormData
-      newFormData.push({
-        id: prevFormData.length,
-        value: Number(event.target.value),
-      })
-      return newFormData
-    })
+    const indexPokemon = Number(event.target.value)
+    setFormData(indexPokemon)
   }
 
   return (
     <MyListSection>
       <h4>Mi equipo</h4>
       {myTeam.length < 6 &&
-      <FlexColumn>
+      <FlexRow>
         {myTeam.length === 0 &&
           <p>🧐  You haven't set your team</p>
         }
-
         <label htmlFor="selectTeam">Añadir a mi equipo:</label>
         <select
           onChange={selectValue}
@@ -42,7 +40,8 @@ const MyTeamSection = ({hisuiPokedex, setHisuiPokedex}) => {
             </option>
           )}
         </select>
-      </FlexColumn>
+        <button onClick={setMyTeamButton}>Añadir</button>
+      </FlexRow>
       }
       <PokemonLine
         hisuiPokedex={hisuiPokedex}
