@@ -6,10 +6,19 @@ import PokemonLine from './PokemonLine/PokemonLine'
 
 const MyTeamSection = ({hisuiPokedex, setHisuiPokedex}) => {
   const [formData, setFormData] = React.useState([])
-  const [myTeam, setMyTeam] = React.useState([])
+  const [myTeam, setMyTeam] = React.useState(()=>{
+    if (localStorage.getItem('myTeam') === null) {
+      return []
+    }
+    return JSON.parse(localStorage.getItem('myTeam'))
+  })
 
   function setMyTeamButton(){
-    setMyTeam(prevFormData => [...prevFormData, formData])
+    setMyTeam(prevFormData => {
+      const newFormData = [...prevFormData, formData]
+      localStorage.setItem('myTeam', JSON.stringify(newFormData))
+      return newFormData
+    })
   }
 
   function selectValue(event){
