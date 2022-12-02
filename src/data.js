@@ -17,7 +17,8 @@ export const links = {
   ladera: '/ladera-corona',
   tundra: '/tundra-alba',
   distorsion: '/distorion-espaciotemporal',
-  myList: 'my-list'
+  myList: 'my-list',
+  myTeam: 'my-team'
 }
 
 export const areaText = {
@@ -301,6 +302,7 @@ export const todoPokedex = [
   {id: 93, name: 'Veces que lo has visto usar Paz Mental'},
   {id: 94, name: 'Veces que lo has visto usar Picotazo Veneno'},
   {id: 151, name: 'Veces que lo has visto usar Placaje'},
+  {id: 208, name: 'Veces que lo has visto usar Plegaria Lunar'},
   {id: 196, name: 'Veces que lo has visto usar Poder Místico'},
   {id: 131, name: 'Veces que lo has visto usar Poder Pasado'},
   {id: 95, name: 'Veces que lo has visto usar Polvo Veneno'},
@@ -361,18 +363,18 @@ export const pokemons = [
       {id: 26, goal: 1, done: 0}
     ]
   },
-  { //TODO: check
+  {
     id: 2,
     location: [locations[92]],
     specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
+      {id: 121, goal: 15, done: 0},
+      {id: 120, goal: 15, done: 0},
+      {id: 77, goal: 15, done: 0},
       {id: 42, goal: 15, done: 0},
       {id: 43, goal: 15, done: 0},
-      {id: 77, goal: 15, done: 0},
-      {id: 120, goal: 15, done: 0},
-      {id: 26, goal: 3, done: 0},
-      {id: 121, goal: 15, done: 0}
+      {id: 26, goal: 3, done: 0}
     ]
   },
   { //TODO: check
@@ -764,7 +766,7 @@ export const pokemons = [
       {id: 10, goal: 25, done: 0},
       {id: 21, goal: 10, done: 0},
       {id: 95, goal: 25, done: 0},
-      {id: 43, goal: 25, done: 0},
+      {id: 42, goal: 25, done: 0},
       {id: 41, goal: 2, done: 0}
     ]
   },
@@ -3499,7 +3501,7 @@ export const pokemons = [
       {id: 41, goal: 2, done: 0}
     ]
   },
-  { //TODO: check
+  {
     id: 174,
     location: [
       locations[49]
@@ -3507,11 +3509,11 @@ export const pokemons = [
     specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
-      {id: 6, goal: 1, done: 0},
       {id: 7, goal: 10, done: 0},
-      {id: 26, goal: 3, done: 0},
+      {id: 6, goal: 1, done: 0},
+      {id: 104, goal: 25, done: 0},
       {id: 44, goal: 10, done: 0},
-      {id: 104, goal: 25, done: 0}
+      {id: 26, goal: 3, done: 0}
     ]
   },
   {
@@ -4321,7 +4323,7 @@ export const pokemons = [
       {id: 42, goal: 70, done: 0}
     ]
   },
-  { //TODO: check
+  {
     id: 223,
     location: [
       locations[76],
@@ -4329,10 +4331,12 @@ export const pokemons = [
     ],
     specialCondition: [{}],
     toDos: [
-      {id: 3, goal: 1, done: 0},
-      {id: 42, goal: 40, done: 0},
-      {id: 43, goal: 70, done: 0},
-      {id: 93, goal: 40, done: 0}
+      {id: 3, goal: 15, done: 0},
+      {id: 25, goal: 10, done: 0},
+      {id: 78, goal: 25, done: 0},
+      {id: 44, goal: 5, done: 0},
+      {id: 46, goal: 10, done: 0},
+      {id: 26, goal: 1, done: 0}
     ]
   },
   {
@@ -4397,7 +4401,7 @@ export const pokemons = [
       {id: 43, goal: 70, done: 0}
     ]
   },
-  { //TODO: check
+  {
     id: 228,
     location: [
       locations[35]
@@ -4405,10 +4409,10 @@ export const pokemons = [
     specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
-      {id: 42, goal: 40, done: 0},
-      {id: 43, goal: 25, done: 0},
       {id: 161, goal: 25, done: 0},
-      {id: 197, goal: 25, done: 0}
+      {id: 197, goal: 25, done: 0},
+      {id: 42, goal: 40, done: 0},
+      {id: 43, goal: 25, done: 0}
     ]
   },
   { //TODO: check
@@ -4425,7 +4429,7 @@ export const pokemons = [
       {id: 149, goal: 25, done: 0}
     ]
   },
-  { //TODO: check
+  {
     id: 230,
     location: [
       locations[57]
@@ -4433,9 +4437,10 @@ export const pokemons = [
     specialCondition: [{}],
     toDos: [
       {id: 3, goal: 1, done: 0},
+      {id: 76, goal: 25, done: 0},
+      {id: 208, goal: 25, done: 0},
       {id: 42, goal: 25, done: 0},
-      {id: 43, goal: 40, done: 0},
-      {id: 198, goal: 25, done: 0}
+      {id: 43, goal: 40, done: 0}
     ]
   },
   { //TODO: check

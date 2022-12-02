@@ -1,5 +1,5 @@
 import React from 'react'
-import {FlexColumn, FlexRow} from '../../commonStyled'
+import { FlexRow } from '../../commonStyled'
 import { formatedName } from '../../commonFunctions'
 import { MyListSection } from '../../pages/MyList/MyListStyled'
 import PokemonLine from './PokemonLine/PokemonLine'

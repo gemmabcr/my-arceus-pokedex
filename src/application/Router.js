@@ -7,6 +7,7 @@ import MyList from '../pages/MyList/MyList'
 import PokemonDetail from '../pages/PokemonDetail/PokemonDetail'
 import PokemonList from '../pages/PokemonList/PokemonList'
 import { PokeService } from '../service/pokeService'
+import MyTeam from '../pages/MyTeam/MyTeam'
 
 const Router = () => {
   const [logged, setLogged] = useLoggedContext()
@@ -119,6 +120,9 @@ const Router = () => {
           />
           <Route path={links.myList}
                  element={ logged ? <MyList firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} /> : <Navigate to={'/'} />}
+          />
+          <Route path={links.myTeam}
+                 element={ logged ? <MyTeam firstLoading={loading} hisuiPokedex={hisuiPokedex} setHisuiPokedex={setHisuiPokedex} /> : <Navigate to={'/'} />}
           />
           <Route path='*' element={<div>404</div>} />
         </Route>

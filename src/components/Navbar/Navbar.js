@@ -93,6 +93,11 @@ const Navbar = () => {
                   Mi Pokédex
                 </LinkPokedex>
               </Link>
+              <Link to={links.myTeam}>
+                <LinkPokedex>
+                  Mi Equipo
+                </LinkPokedex>
+              </Link>
             </LoggedContainer>
           }
         </LoginContainer>
