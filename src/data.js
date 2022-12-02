@@ -187,7 +187,7 @@ export const todoPokedex = [
   {id: 148, name: 'Investiga el caso del Sudowoodo alicaído'},
   {id: 176, name: 'Investiga el proverbio acerca de Nosepass'},
   {id: 140, name: 'Investiga formas de combatir junto a Pachirisu'},
-  {id: 38, name: 'Investiga la increíble visión nocturna de los Zubat'},
+  {id: 209, name: 'Investiga la increíble visión nocturna de los Zubat'},
   {id: 40, name: 'Investiga las diferencias entre Silcoon y Cascoon'},
   {id: 183, name: 'Investiga si los Clefairy bailan bajo la luz de la luna'},
   {id: 41, name: 'Variaciones de forma y aspecto avistadas'},
@@ -369,7 +369,7 @@ export const pokemons = [
     specialCondition: [{}],
     toDos: [
       {id: 3, goal: 5, done: 0},
-      {id: 121, goal: 15, done: 0},
+      {id: 119, goal: 15, done: 0},
       {id: 120, goal: 15, done: 0},
       {id: 77, goal: 15, done: 0},
       {id: 42, goal: 15, done: 0},
@@ -973,7 +973,7 @@ export const pokemons = [
       {id: 109, goal: 25, done: 0},
       {id: 41, goal: 2, done: 0},
       {id: 26, goal: 1, done: 0},
-      {id: 38, goal: 1, done: 0}
+      {id: 209, goal: 1, done: 0}
     ]
   },
   {
@@ -2246,8 +2246,8 @@ export const pokemons = [
     ],
     specialCondition: [{}],
     toDos: [
-      {id: 0, goal: 1, done: 0},
       {id: 3, goal: 15, done: 0},
+      {id: 0, goal: 1, done: 0},
       {id: 10, goal: 25, done: 0},
       {id: 21, goal: 20, done: 0},
       {id: 61, goal: 40, done: 0},
@@ -2379,8 +2379,8 @@ export const pokemons = [
       {id: 20, goal: 10, done: 0},
       {id: 88, goal: 25, done: 0},
       {id: 44, goal: 8, done: 0},
-      {id: 26, goal: 1, done: 0},
-      {id: 41, goal: 2, done: 0}
+      {id: 41, goal: 2, done: 0},
+      {id: 26, goal: 1, done: 0}
     ]
   },
   {
@@ -2395,7 +2395,7 @@ export const pokemons = [
       {id: 3, goal: 15, done: 0},
       {id: 0, goal: 3, done: 0},
       {id: 10, goal: 15, done: 0},
-      {id: 25, goal: 25, done: 0},
+      {id: 18, goal: 25, done: 0},
       {id: 59, goal: 40, done: 0},
       {id: 42, goal: 40, done: 0},
       {id: 46, goal: 5, done: 0},
@@ -3840,8 +3840,8 @@ export const pokemons = [
     toDos: [
       {id: 3, goal: 5, done: 0},
       {id: 112, goal: 25, done: 0},
-      {id: 56, goal: 25, done: 0},
       {id: 179, goal: 40, done: 0},
+      {id: 56, goal: 25, done: 0},
       {id: 42, goal: 25, done: 0},
       {id: 43, goal: 40, done: 0}
     ]
