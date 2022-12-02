@@ -5,19 +5,18 @@ import MyTeamSection from '../../components/MyTeamSection/MyTeamSection'
 import { PokemonListContainer } from '../PokemonList/PokemonListStyled'
 
 const MyTeam = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
+  if (firstLoading){
+    return (
+      <Loading />
+    )
+  }
   return (
     <PokemonListContainer>
-      {firstLoading && <Loading />}
-      {!firstLoading &&
-        <>
-          <h3>Equipo Pokémon de {loggedUsername()}</h3>
-          <MyTeamSection
-            hisuiPokedex={hisuiPokedex}
-            setHisuiPokedex={setHisuiPokedex}
-          />
-        </>
-      }
-
+      <h3>Equipo Pokémon de {loggedUsername()}</h3>
+      <MyTeamSection
+        hisuiPokedex={hisuiPokedex}
+        setHisuiPokedex={setHisuiPokedex}
+      />
     </PokemonListContainer>
   )
 }

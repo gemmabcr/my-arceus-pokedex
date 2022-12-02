@@ -52,36 +52,37 @@ const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
       .finally(()=> setLoading(false))
   },[urlPokemon, id])
 
+  if (firstLoading) {
+    return (
+      <Loading />
+    )
+  }
+
   return (
-    <>
-      {firstLoading && <Loading />}
-      {!firstLoading &&
-        <PokemonDetailContainer>
-          <h3>Pokemon Detail</h3>
-          {loading && <Loading/>}
-          {!loading &&
-            <PokemonDetailInfoContent>
-              <PokemonInfo
-                urlDataPokemon={urlDataPokemon}
-                index={id}
-              />
-              <PokemonLocationInfo
-                locations={locationsData}
-              />
-              <PokemonTodosInfo
-                formData={formData}
-                index={id}
-                onChangeInput={onChangeInput}
-                editMode={editMode}
-                setEditMode={setEditMode}
-                hisuiPokedex={hisuiPokedex}
-                setHisuiPokedex={setHisuiPokedex}
-              />
-            </PokemonDetailInfoContent>
-          }
-        </PokemonDetailContainer>
+    <PokemonDetailContainer>
+      <h3>Pokemon Detail</h3>
+      {loading && <Loading/>}
+      {!loading &&
+        <PokemonDetailInfoContent>
+          <PokemonInfo
+            urlDataPokemon={urlDataPokemon}
+            index={id}
+          />
+          <PokemonLocationInfo
+            locations={locationsData}
+          />
+          <PokemonTodosInfo
+            formData={formData}
+            index={id}
+            onChangeInput={onChangeInput}
+            editMode={editMode}
+            setEditMode={setEditMode}
+            hisuiPokedex={hisuiPokedex}
+            setHisuiPokedex={setHisuiPokedex}
+          />
+        </PokemonDetailInfoContent>
       }
-    </>
+    </PokemonDetailContainer>
   )
 }
 
