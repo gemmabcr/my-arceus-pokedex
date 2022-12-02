@@ -3,12 +3,12 @@ import PokemonCard from '../../PokemonCard/PokemonCard'
 import {FlexColumn} from '../../../commonStyled'
 
 const PokemonLine = ({hisuiPokedex, setHisuiPokedex, myTeam }) => {
-  const renderTeam = myTeam.map(index => hisuiPokedex.find(pokemon => pokemon.index === index))
-  const sortedTeam = renderTeam.sort((a, b) => a.index - b.index)
+  const sortedTeam = myTeam.sort((a,b) => a-b)
+  const renderTeam = sortedTeam.map(index => hisuiPokedex.find(pokemon => pokemon.index === index))
 
   return (
     <FlexColumn>
-      {renderTeam.length > 0 && sortedTeam.map(pokemon => {
+      {renderTeam.length > 0 && renderTeam.map(pokemon => {
         return (
           <PokemonCard
             key={pokemon.index}
