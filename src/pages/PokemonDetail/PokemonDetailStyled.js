@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { colors, boxShadow, bottomBorderRadius, borderType } from '../../commonStyled'
 
-export const PokemonDetailContainer = styled.div `
+export const PokemonDetailContainer = styled.div`
   align-items: center;
   color: ${colors.mediumBlack};
   display: flex;
@@ -10,7 +10,7 @@ export const PokemonDetailContainer = styled.div `
   padding: 2rem 1rem;
 `
 
-export const PokemonDetailInfoContent = styled.div `
+export const PokemonDetailInfoContent = styled.div`
   background-color: ${colors.light};
   border-radius: ${bottomBorderRadius};
   box-shadow: ${boxShadow};
@@ -20,7 +20,7 @@ export const PokemonDetailInfoContent = styled.div `
   width: 100%;
 `
 
-export const PokemonDetailContent = styled.div `
+export const PokemonDetailContent = styled.div`
   align-items: center;
   border-top: ${borderType};
   display: flex;

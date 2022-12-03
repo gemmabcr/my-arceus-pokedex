@@ -4,12 +4,14 @@ import { PrimaryButton } from '../../commonStyled'
 
 const Modal = ({ show, setShow, setLogged, hisuiPokedex }) => {
 
-  const [username, setUsername] = React.useState(()=>{
-    if (localStorage.getItem('username') === null)
+  const [username, setUsername] = React.useState(() => {
+    if (localStorage.getItem('username') === null) {
       return ''
-    else
+    }
+    else {
       return JSON.parse(localStorage.getItem('username'))
-  });
+    }
+  })
 
   function onChange(event){
     const {name, value} = event.target

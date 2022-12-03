@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 import { PokemonListContainer, PokemonListContent } from '../PokemonList/PokemonListStyled'
 import { loggedUsername } from '../../commonFunctions'
 import CompletedPokemon from '../../components/CompletedPokemon/CompletedPokemon'
-import {CompletedPokemonRow } from '../../components/CompletedPokemon/CompletedPokemonStyled'
+import { CompletedPokemonRow } from '../../components/CompletedPokemon/CompletedPokemonStyled'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import { MyListSection } from './MyListStyled'
 import Loading from '../../components/Loading/Loading'
 
-const MyList = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
+const MyList = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
   const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done === todo.goal))
   const uncompletedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.find(todo => todo.done < todo.goal))
 
-  if(firstLoading) {
+  if (firstLoading) {
     return (
       <Loading />
     )

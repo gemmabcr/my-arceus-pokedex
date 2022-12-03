@@ -7,7 +7,7 @@ import PokemonTodosInfo from '../../components/PokemonInfo/PokemonTodosInfo/Poke
 import { PokeService } from '../../service/pokeService'
 import Loading from '../../components/Loading/Loading'
 
-const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
+const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
   const { id } = useParams()
   const location = useLocation()
   const { urlPokemon, todos } = location.state
@@ -19,20 +19,19 @@ const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
   const [formData, setFormData] = React.useState(todos)
   const [editMode, setEditMode] = React.useState(false)
 
-  function onChangeInput(event) {
-    const {name, value} = event.target
+  function onChangeInput (event) {
+    const { name, value } = event.target
     setFormData(prevFormData => {
       const newFormData = []
-      for (let i = 0 ; i < prevFormData.length; i++){
+      for (let i = 0; i < prevFormData.length; i++) {
         const currentItem = prevFormData[i]
         if (currentItem.id === Number(name)) {
           const updatedItem = {
             ...currentItem,
-            done: Number(value),
+            done: Number(value)
           }
           newFormData.push(updatedItem)
-        }
-        else {
+        } else {
           newFormData.push(currentItem)
         }
       }
@@ -40,17 +39,17 @@ const PokemonDetail = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
     })
   }
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     const pokeService = new PokeService()
     pokeService.getPokemonData(urlPokemon, Number(id))
-      .then(data=> {
+      .then(data => {
         setUrlDataPokemon(data.hisuiPokemon)
         setHisuiDataPokemon(data.newHisuiPokemon)
         setLocationsData(data.locations)
       })
-      .catch((error)=>console.log(error))
-      .finally(()=> setLoading(false))
-  },[urlPokemon, id])
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false))
+  }, [urlPokemon, id])
 
   if (firstLoading) {
     return (

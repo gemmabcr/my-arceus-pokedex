@@ -5,10 +5,10 @@ import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 import { useLoggedContext } from '../../App'
 
-const PokemonList = ({firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisui'}) => {
-  const [logged, setLogged] = useLoggedContext ()
+const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisui' }) => {
+  const [logged, setLogged] = useLoggedContext()
 
-  if(firstLoading){
+  if (firstLoading) {
     return (
       <Loading />
     )

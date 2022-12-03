@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const PokemonListContainer = styled.div `
+export const PokemonListContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -8,14 +8,14 @@ export const PokemonListContainer = styled.div `
   padding: 2rem 1rem;
 `
 
-export const PokemonListContent = styled.div `
+export const PokemonListContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
 `
 
-export const VerMasButton = styled.button `
+export const VerMasButton = styled.button`
   background: transparent;
   border: 1px solid #3695bb;
   border-radius: 0.25rem;

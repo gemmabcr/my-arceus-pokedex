@@ -4,8 +4,8 @@ import { loggedUsername } from '../../commonFunctions'
 import MyTeamSection from '../../components/MyTeamSection/MyTeamSection'
 import { PokemonListContainer } from '../PokemonList/PokemonListStyled'
 
-const MyTeam = ({firstLoading, hisuiPokedex, setHisuiPokedex}) => {
-  if (firstLoading){
+const MyTeam = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
+  if (firstLoading) {
     return (
       <Loading />
     )
