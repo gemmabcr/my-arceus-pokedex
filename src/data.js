@@ -2126,8 +2126,8 @@ export const pokemons = [
     specialCondition: [{}],
     toDos: [
       {id: 3, goal: 25, done: 0},
-      {id: 29, goal: 20, done: 0},
-      {id: 7, goal: 10, done: 0},
+      {id: 29, goal: 10, done: 0},
+      {id: 7, goal: 20, done: 0},
       {id: 10, goal: 15, done: 0},
       {id: 95, goal: 25, done: 0},
       {id: 44, goal: 10, done: 0},

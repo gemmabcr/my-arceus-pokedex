@@ -11,7 +11,7 @@ import { FlexColumn, FlexRow } from '../../../commonStyled'
 const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
   const [logged, setLogged] = useLoggedContext ()
   const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
-  const completedTodos = formData.filter(todo => todo.done === todo.goal)
+  const completedTodos = formData.filter(todo => todo.done >= todo.goal)
 
   function saveTodos() {
     setHisuiPokedex(prevhisuiPokedex => {
