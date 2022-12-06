@@ -4,16 +4,24 @@ import Loading from '../../components/Loading/Loading'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 import { useLoggedContext } from '../../App'
+import { FlexRow } from '../../commonStyled'
 
 const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisui' }) => {
   const logged = useLoggedContext()
   const [searchPokemon, setSearchPokemon] = React.useState('')
+  const [searchNum, setSearchNum] = React.useState('')
 
-  function searchChange (event) {
+  function searchNameChange (event) {
     setSearchPokemon(event.target.value)
+    setSearchNum('')
   }
 
-  function filteredList () {
+  function searchNumChange (event) {
+    setSearchNum(event.target.value)
+    setSearchPokemon('')
+  }
+
+  function filteredNameList () {
     return hisuiPokedex.filter(item => {
       const title = item.name
       const lowerTitle = title.toLowerCase()
@@ -21,6 +29,12 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
       return lowerTitle.includes(lowerSearch)
     })
   }
+
+  function filteredNumList () {
+    return hisuiPokedex.find(item => item.index === Number(searchNum))
+  }
+
+  console.log(hisuiPokedex)
 
   if (firstLoading) {
     return (
@@ -35,14 +49,27 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
       }
       <PageAreaTitle area={area} />
       <PokemonListContent>
-        <input
-          id={ 'searchPokemon' }
-          name={ 'searchPokemon' }
-          placeholder='Search by name'
-          value={ searchPokemon }
-          onChange={ searchChange }
-        />
-        { searchPokemon === '' && hisuiPokedex.map(pokemon =>
+        <FlexRow>
+          <p>Search by name</p>
+          <input
+            id={ 'searchPokemon' }
+            name={ 'searchPokemon' }
+            placeholder='Search by name'
+            value={ searchPokemon }
+            onChange={ searchNameChange }
+          />
+        </FlexRow>
+        <FlexRow>
+          <p>Search by number</p>
+          <input
+            id={ 'searchNumber' }
+            name={ 'searchNumber' }
+            placeholder='Search by number'
+            value={ searchNum }
+            onChange={ searchNumChange }
+          />
+        </FlexRow>
+        { searchPokemon === '' && searchNum === '' && hisuiPokedex.map(pokemon =>
           <PokemonCard
             key={pokemon.index}
             urlPokemon={pokemon.url}
@@ -52,7 +79,7 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
             hisuiPokedex={hisuiPokedex}
           />
         ) }
-        { searchPokemon !== '' && filteredList().map(pokemon =>
+        { searchPokemon !== '' && filteredNameList().map(pokemon =>
           <PokemonCard
             key={pokemon.index}
             urlPokemon={pokemon.url}
@@ -62,6 +89,16 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
             hisuiPokedex={hisuiPokedex}
           />
         ) }
+        { searchNum !== '' &&
+          <PokemonCard
+            key={filteredNumList().index}
+            urlPokemon={filteredNumList().url}
+            index={filteredNumList().index}
+            todos={filteredNumList().toDos}
+            setHisuiPokedex={setHisuiPokedex}
+            hisuiPokedex={hisuiPokedex}
+          />
+        }
       </PokemonListContent>
     </PokemonListContainer>
   )
