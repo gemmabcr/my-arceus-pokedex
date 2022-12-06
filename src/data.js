@@ -4357,24 +4357,21 @@ export const pokemons = [
       { id: 46, goal: 10, done: 0 }
     ]
   },
-  { // TODO: check
+  {
     id: 225,
     location: [
       locations[80]
     ],
     specialCondition: [{}],
     toDos: [
-      { id: 0, goal: 1, done: 0 },
-      { id: 3, goal: 15, done: 0 },
-      { id: 10, goal: 15, done: 0 },
-      { id: 16, goal: 10, done: 0 },
-      { id: 43, goal: 70, done: 0 },
-      { id: 46, goal: 20, done: 0 },
-      { id: 47, goal: 40, done: 0 },
-      { id: 195, goal: 70, done: 0 }
+      { id: 3, goal: 1, done: 0 },
+      { id: 196, goal: 25, done: 0 },
+      { id: 93, goal: 40, done: 0 },
+      { id: 42, goal: 40, done: 0 },
+      { id: 43, goal: 70, done: 0 }
     ]
   },
-  { // TODO: check
+  {
     id: 226,
     location: [
       locations[9]
@@ -4382,9 +4379,10 @@ export const pokemons = [
     specialCondition: [{}],
     toDos: [
       { id: 3, goal: 1, done: 0 },
+      { id: 196, goal: 25, done: 0 },
+      { id: 102, goal: 40, done: 0 },
       { id: 42, goal: 40, done: 0 },
-      { id: 43, goal: 70, done: 0 },
-      { id: 102, goal: 40, done: 0 }
+      { id: 43, goal: 70, done: 0 }
     ]
   },
   {

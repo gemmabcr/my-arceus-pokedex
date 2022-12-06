@@ -6,7 +6,21 @@ import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
 import { useLoggedContext } from '../../App'
 
 const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisui' }) => {
-  const [logged, setLogged] = useLoggedContext()
+  const logged = useLoggedContext()
+  const [searchPokemon, setSearchPokemon] = React.useState('')
+
+  function searchChange (event) {
+    setSearchPokemon(event.target.value)
+  }
+
+  function filteredList () {
+    return hisuiPokedex.filter(item => {
+      const title = item.name
+      const lowerTitle = title.toLowerCase()
+      const lowerSearch = searchPokemon.toLowerCase()
+      return lowerTitle.includes(lowerSearch)
+    })
+  }
 
   if (firstLoading) {
     return (
@@ -21,7 +35,14 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
       }
       <PageAreaTitle area={area} />
       <PokemonListContent>
-        {hisuiPokedex.map(pokemon =>
+        <input
+          id={ 'searchPokemon' }
+          name={ 'searchPokemon' }
+          placeholder='Search by name'
+          value={ searchPokemon }
+          onChange={ searchChange }
+        />
+        { searchPokemon === '' && hisuiPokedex.map(pokemon =>
           <PokemonCard
             key={pokemon.index}
             urlPokemon={pokemon.url}
@@ -30,7 +51,17 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
             setHisuiPokedex={setHisuiPokedex}
             hisuiPokedex={hisuiPokedex}
           />
-        )}
+        ) }
+        { searchPokemon !== '' && filteredList().map(pokemon =>
+          <PokemonCard
+            key={pokemon.index}
+            urlPokemon={pokemon.url}
+            index={pokemon.index}
+            todos={pokemon.toDos}
+            setHisuiPokedex={setHisuiPokedex}
+            hisuiPokedex={hisuiPokedex}
+          />
+        ) }
       </PokemonListContent>
     </PokemonListContainer>
   )
