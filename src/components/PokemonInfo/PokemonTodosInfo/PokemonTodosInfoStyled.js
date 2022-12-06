@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 import { borderType, breakpointTablet, colors } from '../../../commonStyled'
 
-export const TodosTable = styled.table `
+export const TodosTable = styled.table`
   border-collapse: collapse;
   margin: 0 1rem 1rem 1rem;
   width: 100%;
 `
 
-export const TodosTableHeader = styled.th `
+export const TodosTableHeader = styled.th`
+  background-color: rgba(255, 255, 255, 0.3);
   border: ${borderType};
   color: ${colors.mediumBlack};
   font-weight: 400;
@@ -16,20 +17,30 @@ export const TodosTableHeader = styled.th `
   text-transform: uppercase;
 `
 
-export const TodosTableBody = styled.th `
+export const TodosTableBody = styled.th`
   border: ${borderType};
-  color: ${colors.mediumBlack};
+  background-color: ${props => props.completed ? 'transparent' : 'rgba(255, 255, 255, 0.5)'};
+  color: ${props => props.completed ? colors.lowBlack : colors.mediumBlack};
+  text-decoration: ${props => props.completed ? 'line-through' : 'none'};
   font-weight: 600;
   padding: 0.5rem;
   text-align: left;
 `
 
-export const InputEditableTable = styled.input `
+export const CompletedTable = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const InputEditableTable = styled.input`
   margin-right: 0.5rem;
   width: 40px;
 `
 
-export const EditableTodoMobile = styled.div `
+export const EditableTodoMobile = styled.div`
   align-items: baseline;
   display: flex;
   gap: 0.25rem;
@@ -39,7 +50,7 @@ export const EditableTodoMobile = styled.div `
   }
 `
 
-export const EditableTodoMobileButton = styled.button `
+export const EditableTodoMobileButton = styled.button`
   background-color: #30a7d7;
   border-radius: 50%;
   border: none;
@@ -63,13 +74,12 @@ export const EditableTodoMobileButton = styled.button `
   }
 `
 
-export const EditableTodoMobileText = styled.p `
+export const EditableTodoMobileText = styled.p`
   text-align: center;
   width: 20px
 `
 
-
-export const EditableTodoPC = styled.div `
+export const EditableTodoPC = styled.div`
   @media (max-width: ${breakpointTablet}) {
     display: none;
   }

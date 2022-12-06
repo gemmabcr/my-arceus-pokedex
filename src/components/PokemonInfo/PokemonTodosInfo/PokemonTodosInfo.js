@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { TodosTable, TodosTableBody, TodosTableHeader } from './PokemonTodosInfoStyled'
+import {CompletedTable, TodosTable, TodosTableBody, TodosTableHeader} from './PokemonTodosInfoStyled'
 import { getLengthTodos, getTodoText, updatePokedex } from './ToDosFunctions'
 import { LinkPokedex } from '../../Navbar/NavbarStyled'
 import { useLoggedContext } from '../../../App'
@@ -9,11 +9,11 @@ import PokemonTodosReadonlyTable from './ReadonlyTable/PokemonTodosReadonlyTable
 import { FlexColumn, FlexRow } from '../../../commonStyled'
 
 const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
-  const [logged, setLogged] = useLoggedContext ()
+  const logged = useLoggedContext()
   const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
-  const completedTodos = formData.filter(todo => todo.done >= todo.goal)
+  const everyTodosDone = formData.every(todo => todo.done >= todo.goal)
 
-  function saveTodos() {
+  function saveTodos () {
     setHisuiPokedex(prevhisuiPokedex => {
       return updatePokedex(prevhisuiPokedex, index, formData)
     })
@@ -26,7 +26,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, edit
         <h3>{editMode && 'Editando las '}Tareas de la Pokédex</h3>
         {logged && !editMode &&
           <div>
-            <LinkPokedex onClick={()=>setEditMode(true)}>
+            <LinkPokedex onClick={ () => setEditMode(true) }>
               Editar
             </LinkPokedex>
           </div>
@@ -34,54 +34,35 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, edit
       </FlexRow>
       {logged &&
         <Fragment>
-          {!editMode && uncompletedTodos.length === 0 &&
-            <p>Completada!!</p>
-          }
-          {uncompletedTodos.length > 0 &&
+          {!editMode &&
             <>
-              {!editMode &&
+              {everyTodosDone &&
+                <CompletedTable>
+                  🎉 Completada!!
+                </CompletedTable>
+              }
+              {!everyTodosDone &&
                 <>
                   <h5>En progreso ({getLengthTodos(logged, uncompletedTodos, formData)})</h5>
                   <PokemonTodosReadonlyTable
-                    todos={uncompletedTodos}
+                    todos={formData}
                   />
-                  {completedTodos.length > 0 &&
-                    <>
-                      <h5>🎉 Completadas ({getLengthTodos(logged, completedTodos, formData)})</h5>
-                      <PokemonTodosReadonlyTable
-                        todos={completedTodos}
-                      />
-                    </>
-                  }
                 </>
               }
             </>
           }
           {editMode &&
-            <div style={{width: '100%'}}>
-              <>
-                {uncompletedTodos.length > 0 &&
-                  <FlexColumn>
-                    <h5>En progreso ({getLengthTodos(logged, uncompletedTodos, formData)})</h5>
-                    <PokemonTodosEditableTable
-                      todos={uncompletedTodos}
-                      onChangeInput={onChangeInput}
-                      onChangeButton={onChangeButton}
-                    />
-                  </FlexColumn>
-                }
-                {completedTodos.length > 0 &&
-                  <FlexColumn>
-                    <h5>🎉 Completadas ({getLengthTodos(logged, completedTodos, formData)})</h5>
-                    <PokemonTodosEditableTable
-                      todos={completedTodos}
-                      onChangeInput={onChangeInput}
-                      onChangeButton={onChangeButton}
-                    />
-                  </FlexColumn>
-                }
-              </>
-              <LinkPokedex onClick={()=>saveTodos()}>
+            <div style={{ width: '100%' }}>
+              {everyTodosDone &&
+                <FlexColumn>
+                  <PokemonTodosEditableTable
+                    todos={formData}
+                    onChangeInput={onChangeInput}
+                    onChangeButton={onChangeButton}
+                  />
+                </FlexColumn>
+              }
+              <LinkPokedex onClick={ () => saveTodos() }>
                 Guardar
               </LinkPokedex>
             </div>
@@ -99,7 +80,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, edit
               Descripción
             </TodosTableHeader>
           </tr>
-          {formData.map((todo,index) =>
+          { formData.map((todo, index) =>
             <tr key={index}>
               <TodosTableBody>
                 {todo.goal}
@@ -108,7 +89,7 @@ const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, edit
                 {getTodoText(todo.id)}
               </TodosTableBody>
             </tr>
-          )}
+          ) }
           </tbody>
         </TodosTable>
       }

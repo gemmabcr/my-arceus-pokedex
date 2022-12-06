@@ -9,7 +9,7 @@ import { MyListSection } from './MyListStyled'
 import Loading from '../../components/Loading/Loading'
 
 const MyList = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
-  const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done === todo.goal))
+  const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done >= todo.goal))
   const uncompletedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.find(todo => todo.done < todo.goal))
 
   if (firstLoading) {
