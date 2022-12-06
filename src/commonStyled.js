@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {backgroundImage} from './data'
+import { backgroundImage } from './data'
 
 export const maxWidthScreen = '900px'
 export const breakpointTablet = '960px'
@@ -16,19 +16,19 @@ export const colors = {
   brightBlue: '#009CDD',
   highBlack: 'rgba(0,0, 0, 0.87)',
   mediumBlack: 'rgba(0,0, 0, 0.60)',
-  lowBlack: 'rgba(0,0, 0, 0.38)',
+  lowBlack: 'rgba(0,0, 0, 0.38)'
 }
 
 export const borderType = `1px solid ${colors.darkerLight}`
 
-export const FlexRow = styled.div `
+export const FlexRow = styled.div`
   align-items: center;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
   width: 100%;
 `
-export const FlexColumn = styled.div `
+export const FlexColumn = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -36,14 +36,14 @@ export const FlexColumn = styled.div `
   width: 100%;
 `
 
-export const FinalBannerImg = styled.img `
+export const FinalBannerImg = styled.img`
   margin-top: 4rem;
   max-height: 800px;
   object-fit: cover;
   width: 100%;
 `
 
-export const MainContainer = styled.div `
+export const MainContainer = styled.div`
   background-image: url(${backgroundImage});
   background-position: center;
   background-repeat: no-repeat;
@@ -53,12 +53,12 @@ export const MainContainer = styled.div `
   overflow-y: scroll;
 `
 
-export const ContentContainer = styled.div `
+export const ContentContainer = styled.div`
   margin: 0 auto;
   max-width: ${maxWidthScreen};
 `
 
-export const PrimaryButton = styled.button `
+export const PrimaryButton = styled.button`
   background-color: #30a7d7;
   border-radius: 10px;
   border: none;
@@ -84,16 +84,16 @@ export const PrimaryButton = styled.button `
   &:hover {
     background-color: #218db9;
   }
-`;
+`
 
-export const LocationImage = styled.img `
+export const LocationImage = styled.img`
   background-color: ${colors.mediumBlue};
   border-radius: 50%;
   height: 24px;
   width: 24px;
 `
 
-export const ScrollTopButton = styled.button `
+export const ScrollTopButton = styled.button`
   display: flex;
   flex-direction: column;
   position: fixed;

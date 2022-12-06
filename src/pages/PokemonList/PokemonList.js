@@ -34,8 +34,6 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
     return hisuiPokedex.find(item => item.index === Number(searchNum))
   }
 
-  console.log(hisuiPokedex)
-
   if (firstLoading) {
     return (
       <Loading />
@@ -50,24 +48,26 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
       <PageAreaTitle area={area} />
       <PokemonListContent>
         <FlexRow>
-          <p>Search by name</p>
-          <input
-            id={ 'searchPokemon' }
-            name={ 'searchPokemon' }
-            placeholder='Search by name'
-            value={ searchPokemon }
-            onChange={ searchNameChange }
-          />
-        </FlexRow>
-        <FlexRow>
-          <p>Search by number</p>
-          <input
-            id={ 'searchNumber' }
-            name={ 'searchNumber' }
-            placeholder='Search by number'
-            value={ searchNum }
-            onChange={ searchNumChange }
-          />
+          <FlexRow>
+            <p>Search by name</p>
+            <input
+              id={ 'searchPokemon' }
+              name={ 'searchPokemon' }
+              placeholder='Search by name'
+              value={ searchPokemon }
+              onChange={ searchNameChange }
+            />
+          </FlexRow>
+          <FlexRow>
+            <p>Search by number</p>
+            <input
+              id={ 'searchNumber' }
+              name={ 'searchNumber' }
+              placeholder='Search by number'
+              value={ searchNum }
+              onChange={ searchNumChange }
+            />
+          </FlexRow>
         </FlexRow>
         { searchPokemon === '' && searchNum === '' && hisuiPokedex.map(pokemon =>
           <PokemonCard
