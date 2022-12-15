@@ -55,6 +55,11 @@ const ShowPokedex = ({ hisuiPokedex, setHisuiPokedex, area = 'Hisui' }) => {
     filteredPokedex()
   }
 
+  function resetFilters () {
+    setSearchName('')
+    setSearchNum('')
+  }
+
   return (
     <PokemonListContent>
       <FlexRow>
@@ -71,6 +76,12 @@ const ShowPokedex = ({ hisuiPokedex, setHisuiPokedex, area = 'Hisui' }) => {
           </FilterContainer>
         )}
       </FlexRow>
+      { (searchNum !== '' || searchName !== '') &&
+        <FlexRow>
+          <p style={{ marginBottom: 0 }}>Results for: {searchName !== '' && <strong>{searchName}</strong>} {searchNum !== '' && <strong>#{searchNum}</strong>}</p>
+          <button onClick={resetFilters}>Reset filters</button>
+        </FlexRow>
+      }
       { filteredPokedex().length > 0 && filteredPokedex().map(pokemon =>
         <PokemonCard
           key={pokemon.index}
