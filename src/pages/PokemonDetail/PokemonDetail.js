@@ -6,6 +6,8 @@ import PokemonLocationInfo from '../../components/PokemonInfo/PokemonLocationInf
 import PokemonTodosInfo from '../../components/PokemonInfo/PokemonTodosInfo/PokemonTodosInfo'
 import { PokeService } from '../../service/pokeService'
 import Loading from '../../components/Loading/Loading'
+import PokemonEvolutionInfo from '../../components/PokemonInfo/PokemonEvolutionInfo/PokemonEvolutionInfo'
+import PokemonSpecialConditionInfo from '../../components/PokemonInfo/PokemonSpecialConditionsInfo/PokemonSpecialConditionInfo'
 
 const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
   const { id } = useParams()
@@ -15,6 +17,9 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
   const [loading, setLoading] = React.useState(true)
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
   const [locationsData, setLocationsData] = React.useState([])
+  const [specialConditionsData, setSpecialConditionsData] = React.useState([])
+  const [evolutionChainData, setEvolutionChainData] = React.useState([])
+  const [evolutionFromData, setEvolutionFromData] = React.useState([])
   const [formData, setFormData] = React.useState(todos)
   const [editMode, setEditMode] = React.useState(false)
 
@@ -42,8 +47,12 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
     const pokeService = new PokeService()
     pokeService.getPokemonData(urlPokemon, Number(id))
       .then(data => {
+        console.log(data)
         setUrlDataPokemon(data.hisuiPokemon)
         setLocationsData(data.locations)
+        setSpecialConditionsData(data.specialConditions)
+        setEvolutionChainData(data.evolutionChain)
+        setEvolutionFromData(data.evolutionFrom)
       })
       .catch((error) => console.log(error))
       .finally(() => setLoading(false))
@@ -77,7 +86,15 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
             hisuiPokedex={hisuiPokedex}
             setHisuiPokedex={setHisuiPokedex}
           />
-        </PokemonDetailInfoContent>
+          <PokemonEvolutionInfo
+            evolutionChainData={evolutionChainData}
+            evolutionFromData={evolutionFromData}
+            namePokemon={''}
+          />
+          <PokemonSpecialConditionInfo
+            conditions={specialConditionsData}
+          />
+        </PokemonDetailInfoContent >
       }
     </PokemonDetailContainer>
   )

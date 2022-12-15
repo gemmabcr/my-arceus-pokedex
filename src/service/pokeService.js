@@ -47,6 +47,14 @@ export class PokeService {
       specialConditions: this.getAddedPokemonData(index).specialCondition,
       toDos: this.getAddedPokemonData(index).toDos
     }
+
+    /* TODO: fetched2
+    const fetched2 = newData.map(pokemon => {
+      pokemon = {
+        ...pokemon,
+        fetched: this.sendRequest(pokemon.url)
+      }
+    }) */
   }
 
   checkHusuiPokemon (varieties) {
