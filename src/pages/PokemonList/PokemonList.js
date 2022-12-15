@@ -11,27 +11,39 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
   const [searchPokemon, setSearchPokemon] = React.useState('')
   const [searchNum, setSearchNum] = React.useState('')
 
+  function filtredPokedex () {
+    let filtredPokedex = hisuiPokedex
+    if (area !== 'Hisui') {
+      filtredPokedex = filtredPokedex.filter(pokemon => {
+        return pokemon.locations.find(location => location.area === area)
+      })
+    }
+    if (searchPokemon !== '') {
+      filtredPokedex = filtredPokedex.filter(item => {
+        const title = item.name
+        const lowerTitle = title.toLowerCase()
+        const lowerSearch = searchPokemon.toLowerCase()
+        return lowerTitle.includes(lowerSearch)
+      })
+    }
+    if (searchNum !== '') {
+      filtredPokedex = filtredPokedex.filter(item => {
+        return Number(searchNum) === item.index
+      })
+    }
+    return filtredPokedex
+  }
+
   function searchNameChange (event) {
     setSearchPokemon(event.target.value)
     setSearchNum('')
+    filtredPokedex()
   }
 
   function searchNumChange (event) {
     setSearchNum(event.target.value)
     setSearchPokemon('')
-  }
-
-  function filteredNameList () {
-    return hisuiPokedex.filter(item => {
-      const title = item.name
-      const lowerTitle = title.toLowerCase()
-      const lowerSearch = searchPokemon.toLowerCase()
-      return lowerTitle.includes(lowerSearch)
-    })
-  }
-
-  function filteredNumList () {
-    return hisuiPokedex.find(item => item.index === Number(searchNum))
+    filtredPokedex()
   }
 
   if (firstLoading) {
@@ -69,7 +81,7 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
             />
           </FlexRow>
         </FlexRow>
-        { searchPokemon === '' && searchNum === '' && hisuiPokedex.map(pokemon =>
+        { filtredPokedex().map(pokemon =>
           <PokemonCard
             key={pokemon.index}
             urlPokemon={pokemon.url}
@@ -79,26 +91,6 @@ const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisu
             hisuiPokedex={hisuiPokedex}
           />
         ) }
-        { searchPokemon !== '' && filteredNameList().map(pokemon =>
-          <PokemonCard
-            key={pokemon.index}
-            urlPokemon={pokemon.url}
-            index={pokemon.index}
-            todos={pokemon.toDos}
-            setHisuiPokedex={setHisuiPokedex}
-            hisuiPokedex={hisuiPokedex}
-          />
-        ) }
-        { searchNum !== '' &&
-          <PokemonCard
-            key={filteredNumList().index}
-            urlPokemon={filteredNumList().url}
-            index={filteredNumList().index}
-            todos={filteredNumList().toDos}
-            setHisuiPokedex={setHisuiPokedex}
-            hisuiPokedex={hisuiPokedex}
-          />
-        }
       </PokemonListContent>
     </PokemonListContainer>
   )

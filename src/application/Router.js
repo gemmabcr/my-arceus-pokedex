@@ -28,31 +28,6 @@ const Router = () => {
       .finally(() => setLoading(false))
   }, [])
 
-  const costaText = areaText.costa
-  const costaPokedex = hisuiPokedex.filter(pokemon => {
-    return pokemon.locations.find(location => location.area === costaText)
-  })
-  const distorsionText = areaText.distorsion
-  const distorsionPokedex = hisuiPokedex.filter(pokemon => {
-    return pokemon.locations.find(location => location.area === distorsionText)
-  })
-  const laderaText = areaText.ladera
-  const laderaPokedex = hisuiPokedex.filter(pokemon => {
-    return pokemon.locations.find(location => location.area === laderaText)
-  })
-  const pantanalText = areaText.pantanal
-  const pantanalPokedex = hisuiPokedex.filter(pokemon => {
-    return pokemon.locations.find(location => location.area === pantanalText)
-  })
-  const praderaText = areaText.pradera
-  const praderaPokedex = hisuiPokedex.filter(pokemon => {
-    return pokemon.locations.find(location => location.area === praderaText)
-  })
-  const tundraText = areaText.tundra
-  const tundraPokedex = hisuiPokedex.filter(pokemon => {
-    return pokemon.locations.find(location => location.area === tundraText)
-  })
-
   return (
     <BrowserRouter>
       <Routes>
@@ -63,7 +38,7 @@ const Router = () => {
                  element={
             <PokemonList
               firstLoading={loading}
-              hisuiPokedex={praderaPokedex}
+              hisuiPokedex={hisuiPokedex}
               setHisuiPokedex={setHisuiPokedex}
               area={areaText.pradera}
             />}
@@ -72,7 +47,7 @@ const Router = () => {
                  element={
             <PokemonList
               firstLoading={loading}
-              hisuiPokedex={pantanalPokedex}
+              hisuiPokedex={hisuiPokedex}
               setHisuiPokedex={setHisuiPokedex}
               area={areaText.pantanal}
             />}
@@ -81,7 +56,7 @@ const Router = () => {
                  element={
             <PokemonList
               firstLoading={loading}
-              hisuiPokedex={costaPokedex}
+              hisuiPokedex={hisuiPokedex}
               setHisuiPokedex={setHisuiPokedex}
               area={areaText.costa}
             />}
@@ -90,7 +65,7 @@ const Router = () => {
                  element={
             <PokemonList
               firstLoading={loading}
-              hisuiPokedex={laderaPokedex}
+              hisuiPokedex={hisuiPokedex}
               setHisuiPokedex={setHisuiPokedex}
               area={areaText.ladera}
             />}
@@ -99,7 +74,7 @@ const Router = () => {
                  element={
             <PokemonList
               firstLoading={loading}
-              hisuiPokedex={tundraPokedex}
+              hisuiPokedex={hisuiPokedex}
               setHisuiPokedex={setHisuiPokedex}
               area={areaText.tundra}
             />}
@@ -108,7 +83,7 @@ const Router = () => {
                  element={
             <PokemonList
               firstLoading={loading}
-              hisuiPokedex={distorsionPokedex}
+              hisuiPokedex={hisuiPokedex}
               setHisuiPokedex={setHisuiPokedex}
               area={areaText.distorsion}
             />}
