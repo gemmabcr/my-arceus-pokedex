@@ -1,20 +1,6 @@
-import React, { createContext, useContext } from 'react'
+import React from 'react'
 import Router from './application/Router'
-
-export const AppProvider = createContext()
-export const useLoggedContext = () => useContext(AppProvider)
-
-const Provider = ({ children }) => {
-  const [logged, setLogged] = React.useState(()=>{
-    return JSON.parse(localStorage.getItem('logged')) === true
-  })
-
-  return (
-    <AppProvider.Provider value={[logged, setLogged]}>
-      {children}
-    </AppProvider.Provider>
-  )
-}
+import Provider from './application/Provider'
 
 const App = () => {
   return (
@@ -24,4 +10,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App

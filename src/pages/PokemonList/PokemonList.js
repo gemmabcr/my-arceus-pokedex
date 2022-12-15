@@ -3,11 +3,11 @@ import { PokemonListContainer, PokemonListContent } from './PokemonListStyled'
 import Loading from '../../components/Loading/Loading'
 import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import PageAreaTitle from '../../components/PageAreaTitle/PageAreaTitle'
-import { useLoggedContext } from '../../App'
 import { FlexRow } from '../../commonStyled'
+import { useProviderContext } from '../../application/Provider'
 
 const PokemonList = ({ firstLoading, hisuiPokedex, setHisuiPokedex, area = 'Hisui' }) => {
-  const logged = useLoggedContext()
+  const logged = useProviderContext()
   const [searchPokemon, setSearchPokemon] = React.useState('')
   const [searchNum, setSearchNum] = React.useState('')
 

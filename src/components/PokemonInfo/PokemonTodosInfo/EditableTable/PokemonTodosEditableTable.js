@@ -6,10 +6,10 @@ import {
   InputEditableTable,
   EditableTodoMobile, EditableTodoPC, EditableTodoMobileButton, EditableTodoMobileText
 } from '../PokemonTodosInfoStyled'
-import {getGoalText, getTodoText} from '../ToDosFunctions'
+import { getGoalText, getTodoText } from '../ToDosFunctions'
 
-const PokemonTodosEditableTable = ({todos, onChangeInput, onChangeButton}) => {
-  return(
+const PokemonTodosEditableTable = ({ todos, onChangeInput, onChangeButton }) => {
+  return (
     <TodosTable>
       <tbody>
       <tr>
@@ -20,12 +20,12 @@ const PokemonTodosEditableTable = ({todos, onChangeInput, onChangeButton}) => {
           Descripción
         </TodosTableHeader>
       </tr>
-      {todos.map((todo,index) =>
+      {todos.map((todo, index) =>
         <tr key={index}>
           <TodosTableBody>
             <EditableTodoMobile>
               <EditableTodoMobileButton
-                onClick={()=>onChangeButton('-', todo.id)}
+                onClick={() => onChangeButton('-', todo.id)}
               >
                 -
               </EditableTodoMobileButton>
@@ -33,7 +33,7 @@ const PokemonTodosEditableTable = ({todos, onChangeInput, onChangeButton}) => {
                 {todo.done}
               </EditableTodoMobileText>
               <EditableTodoMobileButton
-                onClick={()=>onChangeButton('+', todo.id)}
+                onClick={() => onChangeButton('+', todo.id)}
               >
                 +
               </EditableTodoMobileButton>

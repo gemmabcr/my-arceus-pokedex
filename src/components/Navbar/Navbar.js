@@ -16,11 +16,11 @@ import {
   LoggedUserText,
   LinkMenuTitle, Dropdown, MyDropdown, MyDropdownLine, DropdownContainer
 } from './NavbarStyled'
-import { useLoggedContext } from '../../App'
 import { PrimaryButton } from '../../commonStyled'
 import { loggedUsername } from '../../commonFunctions'
 import { pokemonLogo, links, areaText } from '../../data'
 import { PokeService } from '../../service/pokeService'
+import { useProviderContext } from '../../application/Provider'
 
 export const generalTabs = [
   { link: '/', name: 'Todo Hisui' },
@@ -29,36 +29,35 @@ export const generalTabs = [
   { link: links.costa, name: areaText.costa },
   { link: links.ladera, name: areaText.ladera },
   { link: links.tundra, name: areaText.tundra },
-  { link: links.distorsion, name: areaText.distorsion },
+  { link: links.distorsion, name: areaText.distorsion }
 ]
 
 const Navbar = () => {
-  const [logged, setLogged] = useLoggedContext ()
+  const [logged, setLogged] = useProviderContext()
   const [loginModal, setLoginModal] = useState(false)
   const [hisuiPokedex, setHisuiPokedex] = React.useState([])
   const [showMobileMenu, setShowMobileMenu] = React.useState(false)
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     const pokeService = PokeService.getInstance()
     pokeService.getPokemons()
       .then(data => setHisuiPokedex(data))
-      .catch((error)=>console.log(error))
-  },[])
+      .catch((error) => console.log(error))
+  }, [])
 
-  function loginButton(){
+  function loginButton () {
     setLoginModal(!loginModal)
   }
 
-  function logoutButton(){
+  function logoutButton () {
     localStorage.setItem('logged', JSON.stringify(false))
     setLogged(false)
   }
 
-  function toggleShowMobileMenu(){
+  function toggleShowMobileMenu () {
     if (showMobileMenu) {
       setShowMobileMenu(false)
-    }
-    else {
+    } else {
       setShowMobileMenu(true)
     }
   }
@@ -72,7 +71,7 @@ const Navbar = () => {
         </LogoContainer>
         <LoginContainer>
           {!logged &&
-            <PrimaryButton onClick={()=> loginButton()}>
+            <PrimaryButton onClick={() => loginButton()}>
               Iniciar sesión
             </PrimaryButton>
           }
@@ -83,7 +82,7 @@ const Navbar = () => {
                   {loggedUsername()}
                 </LoggedUserText>
                 <LogoutPokedex
-                  onClick={()=> logoutButton()}
+                  onClick={() => logoutButton()}
                 >
                   Cerrar sesión
                 </LogoutPokedex>
@@ -117,15 +116,15 @@ const Navbar = () => {
         <LinkMenuTitle>Areas:</LinkMenuTitle>
         <Dropdown>
           <LinkPokedex
-            onClick={()=>toggleShowMobileMenu()}
+            onClick={() => toggleShowMobileMenu()}
           >
-            {showMobileMenu? 'Ocultar areas' : 'Mostrar Areas'}
+            {showMobileMenu ? 'Ocultar areas' : 'Mostrar Areas'}
           </LinkPokedex>
           {showMobileMenu &&
             <MyDropdown>
               {generalTabs.map(tab =>
                 <Link to={tab.link} key={tab.name}>
-                  <MyDropdownLine onClick={()=>setShowMobileMenu(false)}>
+                  <MyDropdownLine onClick={() => setShowMobileMenu(false)}>
                     {tab.name}
                   </MyDropdownLine>
                 </Link>

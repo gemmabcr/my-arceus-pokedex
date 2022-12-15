@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react'
-import {CompletedTable, TodosTable, TodosTableBody, TodosTableHeader} from './PokemonTodosInfoStyled'
+import { CompletedTable, TodosTable, TodosTableBody, TodosTableHeader } from './PokemonTodosInfoStyled'
 import { getLengthTodos, getTodoText, updatePokedex } from './ToDosFunctions'
 import { LinkPokedex } from '../../Navbar/NavbarStyled'
-import { useLoggedContext } from '../../../App'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import PokemonTodosEditableTable from './EditableTable/PokemonTodosEditableTable'
 import PokemonTodosReadonlyTable from './ReadonlyTable/PokemonTodosReadonlyTable'
 import { FlexColumn, FlexRow } from '../../../commonStyled'
+import { useProviderContext } from '../../../application/Provider'
 
 const PokemonTodosInfo = ({ index, formData, onChangeInput, onChangeButton, editMode, setEditMode, setHisuiPokedex, hisuiPokedex }) => {
-  const logged = useLoggedContext()
+  const logged = useProviderContext()
   const uncompletedTodos = formData.filter(todo => todo.done < todo.goal)
   const everyTodosDone = formData.every(todo => todo.done >= todo.goal)
 

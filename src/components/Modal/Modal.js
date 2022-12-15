@@ -3,34 +3,32 @@ import { Overlay, WrapperModal, HeaderModal, ContentModal, InputWrapper, InputMo
 import { PrimaryButton } from '../../commonStyled'
 
 const Modal = ({ show, setShow, setLogged, hisuiPokedex }) => {
-
   const [username, setUsername] = React.useState(() => {
     if (localStorage.getItem('username') === null) {
       return ''
-    }
-    else {
+    } else {
       return JSON.parse(localStorage.getItem('username'))
     }
   })
 
-  function onChange(event){
-    const {name, value} = event.target
+  function onChange (event) {
+    const { name, value } = event.target
     setUsername(value)
     localStorage.setItem(name, JSON.stringify(value))
   }
 
-  function closeModal(){
+  function closeModal () {
     setShow(false)
   }
 
-  function submit(){
+  function submit () {
     localStorage.setItem('logged', JSON.stringify(true))
     localStorage.setItem('savedPokedex', JSON.stringify(hisuiPokedex))
     setLogged(true)
     closeModal()
   }
 
-  return(
+  return (
     <Fragment>
       {show &&
         <Overlay>
@@ -38,22 +36,22 @@ const Modal = ({ show, setShow, setLogged, hisuiPokedex }) => {
             <HeaderModal>
               <h2>Enter your username</h2>
             </HeaderModal>
-            <CloseButton onClick={()=>closeModal()}>
+            <CloseButton onClick={() => closeModal()}>
               X
             </CloseButton>
             <ContentModal>
               <InputWrapper>
                 <InputModal
-                  id={'username'}
-                  name={'username'}
+                  id='username'
+                  name='username'
                   onChange={onChange}
-                  placeholder={'username'}
+                  placeholder='username'
                   type='text'
                   value={username}
                 />
               </InputWrapper>
               <PrimaryButton
-                onClick={()=>submit()}
+                onClick={() => submit()}
               >
                 Login
               </PrimaryButton>
@@ -63,6 +61,6 @@ const Modal = ({ show, setShow, setLogged, hisuiPokedex }) => {
       }
     </Fragment>
   )
-};
+}
 
 export default Modal
