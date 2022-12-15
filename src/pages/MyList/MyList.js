@@ -4,9 +4,10 @@ import { PokemonListContainer, PokemonListContent } from '../PokemonList/Pokemon
 import { loggedUsername } from '../../commonFunctions'
 import CompletedPokemon from '../../components/CompletedPokemon/CompletedPokemon'
 import { CompletedPokemonRow } from '../../components/CompletedPokemon/CompletedPokemonStyled'
-import PokemonCard from '../../components/PokemonCard/PokemonCard'
 import { MyListSection } from './MyListStyled'
 import Loading from '../../components/Loading/Loading'
+import ShowPokedex from '../../components/ShowPokedex/ShowPokedex'
+import { FlexColumn } from '../../commonStyled'
 
 const MyList = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
   const completedPokemons = hisuiPokedex.filter(pokemon => pokemon.toDos.every(todo => todo.done >= todo.goal))
@@ -46,19 +47,13 @@ const MyList = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
         </MyListSection>
       </PokemonListContent>
       {uncompletedPokemons.length > 0 &&
-        <MyListSection>
+        <FlexColumn>
           <h4>Pokémons en progreso ({uncompletedPokemons.length}/{hisuiPokedex.length})</h4>
-          {uncompletedPokemons.map(pokemon =>
-            <PokemonCard
-              key={pokemon.index}
-              urlPokemon={pokemon.url}
-              index={pokemon.index}
-              todos={pokemon.toDos}
-              setHisuiPokedex={setHisuiPokedex}
-              hisuiPokedex={hisuiPokedex}
-            />
-          )}
-        </MyListSection>
+          <ShowPokedex
+            hisuiPokedex={uncompletedPokemons}
+            setHisuiPokedex={setHisuiPokedex}
+          />
+        </FlexColumn>
       }
     </PokemonListContainer>
   )
