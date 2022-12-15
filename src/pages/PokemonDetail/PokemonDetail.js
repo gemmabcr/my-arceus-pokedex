@@ -14,7 +14,6 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
 
   const [loading, setLoading] = React.useState(true)
   const [urlDataPokemon, setUrlDataPokemon] = React.useState([])
-  const [hisuiDataPokemon, setHisuiDataPokemon] = React.useState([])
   const [locationsData, setLocationsData] = React.useState([])
   const [formData, setFormData] = React.useState(todos)
   const [editMode, setEditMode] = React.useState(false)
@@ -44,7 +43,6 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
     pokeService.getPokemonData(urlPokemon, Number(id))
       .then(data => {
         setUrlDataPokemon(data.hisuiPokemon)
-        setHisuiDataPokemon(data.newHisuiPokemon)
         setLocationsData(data.locations)
       })
       .catch((error) => console.log(error))
