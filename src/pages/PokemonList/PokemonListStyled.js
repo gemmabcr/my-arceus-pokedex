@@ -15,6 +15,14 @@ export const PokemonListContent = styled.div`
   width: 100%;
 `
 
+export const FilterContainer = styled.div`
+  align-items: baseline;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+`
+
 export const VerMasButton = styled.button`
   background: transparent;
   border: 1px solid #3695bb;

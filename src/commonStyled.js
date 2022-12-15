@@ -28,6 +28,7 @@ export const FlexRow = styled.div`
   justify-content: center;
   width: 100%;
 `
+
 export const FlexColumn = styled.div`
   align-items: center;
   display: flex;
