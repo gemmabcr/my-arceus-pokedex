@@ -2,9 +2,7 @@ import React from 'react'
 import { formatedName } from '../../../commonFunctions'
 
 export function getFirstPlaceName (data) {
-  if (data.species && data.species.name) {
-    return formatedName(data.species.name)
-  }
+  return formatedName(data.species.name)
 }
 
 export function checkFirstPlaceInChain (evolvesFrom) {
@@ -16,9 +14,7 @@ export function evolvesFromName (evolvesFrom) {
 }
 
 export function checkEvolvesTo (data) {
-  if (data.evolves_to) {
-    return data.evolves_to.length > 0
-  }
+  return data.evolves_to.length > 0
 }
 
 export function checkMultipleEvolution (data) {

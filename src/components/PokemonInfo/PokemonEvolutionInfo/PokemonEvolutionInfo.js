@@ -13,7 +13,7 @@ import { PokeService } from '../../../service/pokeService'
 import { PokemonDetailContent } from '../../../pages/PokemonDetail/PokemonDetailStyled'
 import Loading from '../../Loading/Loading'
 
-const PokemonEvolutionInfo = ({ evolutionChainData, evolutionFromData, namePokemon }) => {
+const PokemonEvolutionInfo = ({ evolutionChainData, evolutionFromData }) => {
   const [loading, setLoading] = React.useState(true)
   const [evolutionChain, setEvolutionChain] = React.useState([])
 
@@ -21,12 +21,10 @@ const PokemonEvolutionInfo = ({ evolutionChainData, evolutionFromData, namePokem
 
   React.useEffect(() => {
     const pokeService = PokeService.getInstance()
-    pokeService.getEvolutionData(evolutionChainData)
-      .then(data => {
-        setEvolutionChain(data)
-      })
+    pokeService.getEvolutionData(evolutionChainData.url)
+      .then(data => setEvolutionChain(data))
       .catch(error => console.log(error))
-      .finally(() => { setLoading(false) })
+      .finally(() => setLoading(false))
   }, [evolutionChainData])
 
   return (

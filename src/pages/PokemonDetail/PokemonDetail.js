@@ -47,7 +47,6 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
     const pokeService = new PokeService()
     pokeService.getPokemonData(urlPokemon, Number(id))
       .then(data => {
-        console.log(data)
         setUrlDataPokemon(data.hisuiPokemon)
         setLocationsData(data.locations)
         setSpecialConditionsData(data.specialConditions)
@@ -89,7 +88,6 @@ const PokemonDetail = ({ firstLoading, hisuiPokedex, setHisuiPokedex }) => {
           <PokemonEvolutionInfo
             evolutionChainData={evolutionChainData}
             evolutionFromData={evolutionFromData}
-            namePokemon={''}
           />
           <PokemonSpecialConditionInfo
             conditions={specialConditionsData}
